@@ -192,16 +192,46 @@ export function compare(num1, num2){
 
 
 /**
- * <h4>数値の有効範囲を適用します</h4>
- * <p>有効範囲の数値化チェックし、有効範囲の数値に最適化して返す</p>
+ * <h4>値の符号化</h4>
+ * <p>numが正なら+1.0、0.0なら0.0、負なら-1.0を返す</p>
  * @static
- * @method constrain
+ * @method sign
+ * @param  {Number} num
+ * @return {Number} -1, 0, 1のいずれかの値
+ */
+export function sign(num){
+  if(0 < num){
+    return 1;
+  } else if(0 > num){
+    return -1;
+  } else {
+    return 0;
+  }
+};
+
+
+/**
+ * <h4>小数点を取り出す</h4>
+ * @static
+ * @method fract
+ * @param  {Number} num
+ * @return {Number}
+ */
+export function fract(num){
+	return num - Math.floor(num);
+};
+
+
+/**
+ * <h4>数値の有効範囲を適用して返す</h4>
+ * @static
+ * @method clamp
  * @param {Number} num 数値
  * @param {Number} min 最小値
  * @param {Number} max 最大値
  * @return {Number} 有効範囲を適用した数値
  */
-export function constrain(num, min, max){
+export function clamp(num, min, max){
   return Math.max(Math.min(num, max), min);
 };
 
@@ -255,7 +285,6 @@ export function isIntersect(rangeMin1, rangeMax1, rangeMin2, rangeMax2){
 
 /**
  * <h4>指定の値を線形補間した値を返します</h4>
- *
  * @static
  * @method lerp
  * @param  {Number} val 線形補間する指定の値
@@ -265,6 +294,23 @@ export function isIntersect(rangeMin1, rangeMax1, rangeMin2, rangeMax2){
  */
 export function lerp(val, min, max){
   return (max - min) * val + min;
+};
+
+
+/**
+ * <h4>エルミート補完</h4>
+ * <p>valを、minからmaxの範囲で正規化する</p>
+ * @static
+ * @method smoothstep
+ * @param  {Number} val 線形補間する指定の値
+ * @param  {Number} min   最小値
+ * @param  {Number} max   最大値
+ * @return {Number}       線形補間した値
+ */
+export function smoothstep(val, min, max){
+	// return clamp((val - min) / (max - min), 0, 1);
+	let t = clamp((val - min) / (max - min), 0, 1);
+	return t * t * (3 - 2 * t );
 };
 
 

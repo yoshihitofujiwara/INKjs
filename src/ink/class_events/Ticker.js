@@ -94,7 +94,7 @@ export default class Ticker extends Events {
    * @return {Ticker}
    */
   setFPS(fps){
-    this.fps = utils.constrain(fps, 1, MAX_FPS);
+    this.fps = utils.clamp(fps, 1, MAX_FPS);
     return this;
   }
 

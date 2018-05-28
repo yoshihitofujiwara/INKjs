@@ -107,7 +107,7 @@
     strength;
 
     // constrain?
-    // distance = AMP.constrain(distance, 5, 25);
+    // distance = AMP.clamp(distance, 5, 25);
 
     strength = (this.g * this.mass * particle.mass) / (distance * distance);
     force.normalize().mult(strength);

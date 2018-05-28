@@ -143,8 +143,8 @@
    */
   p.lookup = function(x, y){
     var v = new AMP.Vector2(x, y),
-    col = Math.round(AMP.constrain(v.x / this.region, 0, this.cols - 1)),
-    row = Math.round(AMP.constrain(v.y / this.region, 0, this.rows - 1));
+    col = Math.round(AMP.clamp(v.x / this.region, 0, this.cols - 1)),
+    row = Math.round(AMP.clamp(v.y / this.region, 0, this.rows - 1));
     return this.field[col][row];
   };
 

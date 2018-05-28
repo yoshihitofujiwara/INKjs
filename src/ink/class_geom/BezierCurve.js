@@ -114,7 +114,7 @@ export default class BezierCurve {
    */
   update(placing){
     // 正規化された値の範囲に収める
-    this.placing = utils.constrain(placing, 0, 1);
+    this.placing = utils.clamp(placing, 0, 1);
 
     let
     vertices = this.vertices.concat(),
