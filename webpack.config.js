@@ -19,9 +19,7 @@ let plugins = [
 
 module.exports = {
   entry: {
-    "ink"        : `${JS}ink/index.js`,
-    "ink.jquery" : `${JS}jquery/index.js`,
-    "ink.plugins": `${JS}plugins/index.js`
+		"ink": `${JS}ink/ink.js`
   },
 
   output: {
@@ -44,36 +42,9 @@ module.exports = {
           }
         }],
         exclude: /node_modules/
-      },
-      // {
-      //   test: /\.(glsl|frag|vert)$/,
-      //   loader: "glslify-import-loader",
-      //   exclude: /node_modules/
-      // },
-      // {
-      //   test: /\.(glsl|frag|vert)$/,
-      //   loader: "raw-loader",
-      //   exclude: /node_modules/
-      // },
-      // {
-      //   test: /\.(glsl|frag|vert)$/,
-      //   loader: "glslify-loader",
-      //   exclude: /node_modules/
-      // },
-      // {
-      //   test: /\.(glsl|frag|vert)$/,
-      //   loader: "glsl-strip-comments",
-      //   exclude: /node_modules/
-      // }
+      }
     ]
   },
-
-  // externals: [
-  //   {
-  //     jquery: "jQuery",
-  //     $: "jQuery"
-  //   }
-  // ],
 
   plugins: plugins
 };

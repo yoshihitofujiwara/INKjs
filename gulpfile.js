@@ -57,7 +57,7 @@ $.gulp.task("watch", () => {
 $.gulp.task("browserSync", () => {
 	$.browserSync.init({
 		server: {
-			baseDir: PATH.dist
+			baseDir: "./"
 		}
 	});
 });
