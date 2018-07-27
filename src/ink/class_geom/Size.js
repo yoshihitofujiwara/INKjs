@@ -5,7 +5,6 @@
 /// Copyright (c) 2012 Yoshihito Fujiwara
 
 import * as utils from "../utils";
-import Vector2 from "./Vector2";
 
 
 /**
@@ -152,10 +151,13 @@ export default class Size {
 	/**
 	 * <h4>中心の取得</h4>
 	 * @method getCenter
-	 * @return {Vector2}
+	 * @return {Object} x, y
 	 */
 	getCenter(){
-		return new Vector2(this.width / 2, this.height / 2);
+		return {
+			x: this.width / 2,
+			y: this.height / 2
+		};
 	}
 
 

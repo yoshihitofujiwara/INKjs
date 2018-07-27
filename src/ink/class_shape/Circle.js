@@ -6,7 +6,6 @@
 
 import * as utils from "../utils";
 import Vector2 from "../class_geom/Vector2";
-import Line from "../class_geom/Line";
 
 
 /**
@@ -56,7 +55,8 @@ export default class Circle {
    * @return {Boolean}
    */
   static isCollision(circle1, circle2){
-    let diff = Vector2.sub(circle2.position, circle1.position);
+    // let diff = Vector2.sub(circle2.position, circle1.position);
+		let diff = circle1.position.clone().sub(circle2.position);
     return diff.mag() <= circle1.radius + circle2.radius;
   }
 

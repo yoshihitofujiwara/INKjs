@@ -7,7 +7,6 @@
 import Events from "../class_events/Events";
 import * as utils from "../utils";
 import getUserMedia from "get-user-media-promise";
-// import * as utils from '../utils';
 
 
 /**

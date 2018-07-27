@@ -4,7 +4,6 @@
 /// Author Yoshihito Fujiwara
 /// Copyright (c) 2012 Yoshihito Fujiwara
 
-import * as array from "./array";
 import * as is from "./is";
 
 /**
@@ -25,14 +24,17 @@ export function hasHash(key){
   if(url.href.indexOf("#") > -1){
     if(key){
       let k = " " + key.replace(/^#/, "") + " ",
-      vals = url.hash.split("#");
+      vals = url.hash.split("#"),
+			i = 0,
+			l = vals.length;
 
-      array.each(vals, (i, v) => {
-        if(k.indexOf(" " + v + " ") !== -1){
+			for(; i < l; i+=1){
+				if (k.indexOf(" " + vals[i] + " ") !== -1){
           flag = true;
-          return false;
+					break;
         }
-      });
+			}
+
     } else {
       flag = true;
     }

@@ -18,6 +18,7 @@ export default class Vector2 {
   /**
    * constructor
    */
+
   constructor(x, y) {
     /**
      * <h4>X座標</h4>
@@ -32,36 +33,6 @@ export default class Vector2 {
      * @type {Number}
      */
     this.y = y;
-  }
-
-
-  /**
-   * <h4>argumentsからVector2を生成</h4>
-   * @static
-   * @method coordToJson
-   * @param {Number} x x座標値
-   * @param {Number} y y座標値
-   * @return {Object}
-   */
-  static coordToJson(x, y){
-    if(utils.isObject(x)){
-      return {
-        x: utils.isNumber(x.x) ? x.x : 0,
-        y: utils.isNumber(x.y) ? x.y : 0
-      };
-
-    } else if(utils.isArray(x)){
-      return {
-        x: utils.isNumber(x[0]) ? x[0] : 0,
-        y: utils.isNumber(x[1]) ? x[1] : 0
-      };
-
-    } else {
-      return {
-        x: utils.isNumber(x) ? x : 0,
-        y: utils.isNumber(y) ? y : 0
-      };
-    }
   }
 
 

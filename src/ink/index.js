@@ -11,7 +11,7 @@ export * from "./class_geom";
 export * from "./class_shape";
 // export * from "./class_algorithm"; 未実装
 
-const VERSION = "0.0.2";
+const VERSION = "0.0.3";
 
 export {
 	VERSION

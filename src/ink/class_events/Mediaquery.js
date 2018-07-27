@@ -1,10 +1,11 @@
-/// utilsjs Javascript Library
+/// INKjs Javascript Library
 /// The MIT License (MIT)
 /// Author Yoshihito Fujiwara
 /// Source https://bitbucket.org/yoshihitofujiwara/ampjs
 /// Copyright (c) 2012 Yoshihito Fujiwara
 
 import Events from "./Events";
+import * as utils from "../utils";
 
 
 /// NOTE: アップデート予定なし

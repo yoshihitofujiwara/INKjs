@@ -255,7 +255,7 @@ export default class Triangle {
 
     utils.each(triangle.vertices, (v, i) => {
       let n = (i + 1) % 3;
-      if(Vector2.ccw(vec2, triangle.vertices[i], triangle.vertices[n]) < 0){
+			if (Triangle.ccw(vec2, v, triangle.vertices[n]) < 0){
         flag = false;
         return false;
       }
@@ -263,4 +263,21 @@ export default class Triangle {
 
     return flag;
   }
+
+
+  /**
+   * <h4>反時計回り(Counter ClockWise)か調べ数値を返す</h4>
+   * <p>反時計回りの場合は正の値、時計回りの場合は負の値、一直線上の場合は0を返す</p>
+   *
+   * @static
+   * @method ccw
+   * @param {Vec2} v1 Vec2
+   * @param {Vec2} v2 Vec2
+   * @param {Vec2} v3 Vec2
+   * @return {Number} 反時計回りの場合は正の値、時計回りの場合は負の値、一直線上の場合は0を返す
+   */
+	static ccw(v1, v2, v3) {
+		let vector = new Vector2(v2.x - v1.x, v2.y - v1.y);
+		return vector.cross(v3.x - v2.x, v3.y - v2.y);
+	}
 }

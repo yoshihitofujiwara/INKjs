@@ -118,11 +118,9 @@ export default class Events {
    */
   _addEvent(type, listener, context){
     let events = type.split(' ');
-
-    if(is.isFunction(listener)){
-      utils.each(events, (item) => {
+    if(utils.isFunction(listener)){
+			utils.each(events, (item) => {
         let eventObj = this._getEventNameMap(item);
-
         this._listeners[eventObj.type] = this._listeners[eventObj.type] || [];
         this._listeners[eventObj.type].push({
           attr    : eventObj.attr,
@@ -222,6 +220,7 @@ export default class Events {
     let flag = false,
     events = this._getEventNameMap(type),
     listeners = this._listeners[events.type];
+
 
     // イベントリスナーの有無
     if(listeners){

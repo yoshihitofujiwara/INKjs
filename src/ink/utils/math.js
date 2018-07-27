@@ -157,7 +157,7 @@ export function diagonal(x, y){
 
 
 /**
- * <h4>対角線の長さから辺の長さを求める（なす角45°）</h4>
+ * <h4>対角線の長さから正方形の辺の長さを求める（なす角45°）</h4>
  * @static
  * @method diagonalToSideLength
  * @param  {Number} diagonal 対角線の長さ
@@ -310,7 +310,7 @@ export function lerp(val, min, max){
 export function smoothstep(val, min, max){
 	// return clamp((val - min) / (max - min), 0, 1);
 	let t = clamp((val - min) / (max - min), 0, 1);
-	return t * t * (3 - 2 * t );
+	return t * t * (3 - 2 * t);
 };
 
 

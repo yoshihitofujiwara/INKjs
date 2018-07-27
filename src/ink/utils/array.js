@@ -46,7 +46,7 @@ export function each(obj, callback){
     let l = obj.length;
     i = 0;
     for(; i < l; i += 1){
-      isContinue = callback.call(obj[i], i, obj[i]);
+			isContinue = callback.call(obj[i], obj[i], i, obj);
       if(isContinue === false){
         break;
       }
@@ -54,7 +54,7 @@ export function each(obj, callback){
 
   } else if(is.isObject(obj) || is.isFunction(obj)){
     for(i in obj){
-      isContinue = callback.call(obj[i], i, obj[i]);
+			isContinue = callback.call(obj[i], obj[i], i, obj);
       if(isContinue === false){
         break;
       }
@@ -63,7 +63,7 @@ export function each(obj, callback){
   } else if(is.isNumber(obj)){
     i = 0;
     for(; i < obj; i += 1){
-      isContinue = callback.call(null, i, obj);
+			isContinue = callback.call(null, i, i, obj);
       if(isContinue === false){
         break;
       }

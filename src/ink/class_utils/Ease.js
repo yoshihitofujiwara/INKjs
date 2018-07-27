@@ -21,8 +21,8 @@ export default function Ease(){}
  * @param {Number} pow
  * @return {Function}
  **/
-Ease.createPowIn = function(pow){
-	return function(t){
+Ease.createPowIn = (pow) => {
+	return (t) => {
 		return Math.pow(t, pow);
 	};
 };
@@ -34,8 +34,8 @@ Ease.createPowIn = function(pow){
  * @param {Number} pow
  * @return {Function}
  **/
-Ease.createPowOut = function(pow){
-	return function(t){
+Ease.createPowOut = (pow) => {
+	return (t) => {
 		return 1 - Math.pow(1 - t, pow);
 	};
 };
@@ -47,8 +47,8 @@ Ease.createPowOut = function(pow){
  * @param {Number} pow
  * @return {Function}
  **/
-Ease.createPowInOut = function(pow){
-	return function(t){
+Ease.createPowInOut = (pow) => {
+	return (t) => {
 		if((t *= 2) < 1){
 			return 0.5 * Math.pow(t, pow);
 		} else {
@@ -64,8 +64,8 @@ Ease.createPowInOut = function(pow){
  * @param {Number} amount
  * @return {Function}
  **/
-Ease.createBackIn = function(amount){
-	return function(t){
+Ease.createBackIn = (amount) => {
+	return (t) => {
 		return t * t * ((amount + 1) * t - amount);
 	};
 };
@@ -77,8 +77,8 @@ Ease.createBackIn = function(amount){
  * @param {Number} amount
  * @return {Function}
  **/
-Ease.createBackOut = function(amount){
-	return function(t){
+Ease.createBackOut = (amount) => {
+	return (t) => {
 		return (--t * t * ((amount + 1) * t + amount) + 1);
 	};
 };
@@ -90,9 +90,9 @@ Ease.createBackOut = function(amount){
  * @param {Number} amount
  * @return {Function}
  **/
-Ease.createBackInOut = function(amount){
+Ease.createBackInOut = (amount) => {
 	amount *= 1.525;
-	return function(t){
+	return (t) => {
 		if ((t *= 2) < 1){
 			return 0.5 * (t * t * ((amount + 1) * t - amount));
 		} else {
@@ -109,8 +109,8 @@ Ease.createBackInOut = function(amount){
  * @param {Number} period
  * @return {Function}
  **/
-Ease.createElasticIn = function(amplitude, period){
-	return function(t){
+Ease.createElasticIn = (amplitude, period) => {
+	return (t) => {
 		if(t === 0 || t === 1){
 			return t;
 		} else {
@@ -128,8 +128,8 @@ Ease.createElasticIn = function(amplitude, period){
  * @param {Number} period
  * @return {Function}
  **/
-Ease.createElasticOut = function(amplitude, period){
-	return function(t){
+Ease.createElasticOut = (amplitude, period) => {
+	return (t) => {
 		if(t === 0 || t === 1){
 			return t;
 		} else {
@@ -147,7 +147,7 @@ Ease.createElasticOut = function(amplitude, period){
  * @param {Number} period
  * @return {Function}
  **/
-Ease.createElasticInOut = function(amplitude, period){
+Ease.createElasticInOut = (amplitude, period) => {
 	return function(t){
 		let s = period / utils.TWO_PI * Math.asin(1 / amplitude);
 		if((t *= 2) < 1){
@@ -187,7 +187,7 @@ Ease.sineIn = Ease.easeInSine = (t) => {
  * @param {Number} t
  * @return {Number}
  **/
-Ease.sineOut = Ease.easeOutSine = function(t) {
+Ease.sineOut = Ease.easeOutSine = (t) => {
 	return Math.sin(t * Math.PI / 2);
 };
 

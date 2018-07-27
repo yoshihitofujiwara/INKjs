@@ -5,6 +5,8 @@
 /// Copyright (c) 2012 Yoshihito Fujiwara
 
 import Events from "./Events";
+import * as utils from "../utils";
+
 
 // MAX_FPS {Number} FPSのMAX値
 const MAX_FPS = 60;
@@ -148,7 +150,7 @@ export default class Ticker extends Events {
     this._removeEvent(type, listener);
     if(!this.hasEvent(this._EVENTS.TICK)){
       this._isTick = false;
-      utils.cancelAnimationFrame(this._tickerId);
+      cancelAnimationFrame(this._tickerId);
     }
     return this;
   }
@@ -161,7 +163,7 @@ export default class Ticker extends Events {
    * @return {Void}
    */
   _tick(){
-    this._tickerId = utils.requestAnimationFrame(this._tick.bind(this));
+    this._tickerId = requestAnimationFrame(this._tick.bind(this));
     this.lastTime  = performance.now() - this.startTime;
     this.fpsCount  = MAX_FPS < this.fpsCount + 1 ? 1 : this.fpsCount + 1;
 

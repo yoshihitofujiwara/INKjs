@@ -5,7 +5,6 @@
 /// Copyright (c) 2012 Yoshihito Fujiwara
 
 
-// import * as utils from "../utils";
 import Vector2 from "./Vector2";
 
 
@@ -128,22 +127,6 @@ export default class Line {
     }
 
     return flag;
-  }
-
-
-  /**
-   * <h4>反時計回り(Counter ClockWise)か調べ数値を返す</h4>
-   * <p>反時計回りの場合は正の値、時計回りの場合は負の値、一直線上の場合は0を返す</p>
-   * @static
-   * @method ccw
-   * @param {Vector2} v1 Vector2
-   * @param {Vector2} v2 Vector2
-   * @param {Vector2} v3 Vector2
-   * @return {Number} 反時計回りの場合は正の値、時計回りの場合は負の値、一直線上の場合は0を返す
-   */
-  static ccw(v1, v2, v3){
-    let vector = new Vector2(v2.x - v1.x, v2.y - v1.y);
-    return vector.cross(v3.x - v2.x, v3.y - v2.y);
   }
 
 

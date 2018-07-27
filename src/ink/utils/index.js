@@ -7,11 +7,9 @@
 export * from "./array";
 export * from "./config";
 export * from "./date";
-export * from "./extend";
 export * from "./has";
 export * from "./is";
 export * from "./location";
 export * from "./math";
 export * from "./string";
 export * from "./utility";
-// export * from "./webgl";

@@ -18,6 +18,7 @@ export function nowDate() {
   let date = new Date();
 
   return {
+		date  : date,
     year  : date.getFullYear(),
     month : date.getMonth() + 1,
     day   : date.getDate(),

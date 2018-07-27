@@ -4,8 +4,6 @@
 /// Author Yoshihito Fujiwara
 /// Copyright (c) 2012 Yoshihito Fujiwara
 
-import * as array from "./array";
-
 /**
  * @class Location
  */
@@ -24,9 +22,11 @@ let url = window.location;
 export function getHash(){
   let ary = url.hash.split("#").slice(1);
   if(ary.length){
-    array.each(ary, (i, item) => {
-      ary[i] = "#" + item;
-    });
+		let i = 0,
+		l = ary.length;
+		for (; i < l; i += 1) {
+			ary[i] = "#" + ary[i];
+		}
   }
   return ary;
 };

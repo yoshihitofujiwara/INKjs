@@ -231,4 +231,20 @@ export default class Debug {
   static isShow(){
     return _isShow;
   }
+
+  /**
+   * <h4>ログの表示状態</h4>
+   * @static
+   * @method position
+	 * @param {Number} x
+	 * @param {Number} y
+   * @return {Debug}
+   */
+	static position(x, y) {
+		let position = "position:fixed;";
+		position += "top:" + (x || 0) + "px;";
+		position += "left:" + (y || 0) + "px;";
+		_views.wrap.setAttribute("style", position);
+    return Debug;
+	}
 }
