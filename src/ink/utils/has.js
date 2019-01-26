@@ -12,7 +12,7 @@ import * as is from "./is";
 let url = window.location;
 
 /**
- * <h4>LocationHashの有無</h4>
+ * LocationHashの有無
  * @static
  * @method hasHash
  * @param {String} key ハッシュ名 省略可
@@ -45,7 +45,7 @@ export function hasHash(key){
 
 
 /**
- * <h4>文字列を検索し、指定の文字列があるか判定</h4>
+ * 文字列を検索し、指定の文字列があるか判定
  * @static
  * @method hasString
  * @param {String} str 対象の文字列
@@ -58,7 +58,7 @@ export function hasString(str, hasStr){
 
 
 /**
- * <h4>ユーザーエージェントに指定の文字列があるか判定します</h4>
+ * ユーザーエージェントに指定の文字列があるか判定します
  * @static
  * @method hasUA
  * @param {String} str 指定の文字列

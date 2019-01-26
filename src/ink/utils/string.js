@@ -32,7 +32,7 @@ export function zeroPadding(value, digit, isBeyondValue){
 
 
 /**
- * <h4>id生成します</h4>
+ * id生成します
  * <p>文字列にナンバーを追加して返します</p>
  *
  * @static
@@ -51,7 +51,7 @@ export const createId = (() => {
 
 
 /**
- * <h4>ランダムな4桁のコードを返す</h4>
+ * ランダムな4桁のコードを返す
  * @static
  * @method digit
  * @return {String} ランダムな4桁のコード
@@ -62,7 +62,7 @@ export function digit(){
 
 
 /**
- * <h4>objectToQuery オブジェクトをクエリ文字列に変換 (ネスト構造に再起処理はしません)</h4>
+ * objectToQuery オブジェクトをクエリ文字列に変換 (ネスト構造に再起処理はしません)
  * @static
  * @method objectToQuery
  * @param  {Object} obj 対象のオブジェクト
@@ -94,7 +94,7 @@ export function objectToQuery(obj, isQuestion){
 
 
 /**
- * <h4>空白文字の削除</h4>
+ * 空白文字の削除
  * @static
  * @method removeSpace
  * @param {String} str 対象の文字列
@@ -106,7 +106,7 @@ export function removeSpace(str){
 
 
 /**
- * <h4>文字列の全置換</h4>
+ * 文字列の全置換
  * <p>対象の文字列と、削除文字列がマッチしたものを全置換します</p>
  * @static
  * @method replaceAll
@@ -135,7 +135,7 @@ export function toHarfNumber(str){
 
 
 /**
- * <h4>UUIDの生成して返す</h4>
+ * UUIDの生成して返す
  * @static
  * @method uuid
  * @return {String} UUID

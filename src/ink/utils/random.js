@@ -1,4 +1,3 @@
-
 /// INKjs Javascript Library
 /// The MIT License (MIT)
 /// Source https://github.com/yoshihitofujiwara/INKjs
@@ -6,7 +5,8 @@
 /// Copyright (c) 2012 Yoshihito Fujiwara
 
 
-// FIXME: npm module化
-import * as INK from "./index";
+// FIXME: 追加予定
+/**
+ * @class Random
+ */
 
-global.INK = INK;

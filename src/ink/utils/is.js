@@ -4,6 +4,7 @@
 /// Author Yoshihito Fujiwara
 /// Copyright (c) 2012 Yoshihito Fujiwara
 
+
 /**
  * @class Is
  */
@@ -14,7 +15,7 @@ let toString = Object.prototype.toString
 
 
 /**
- * <h4>ユーザーエージェント</h4>
+ * ユーザーエージェント
  * @static
  * @property UA
  * @type {String}
@@ -23,7 +24,7 @@ export const UA = navigator.userAgent;
 
 
 /**
- * <h4>ユーザーエージェント toLowerCase</h4>
+ * ユーザーエージェント toLowerCase
  * @static
  * @property ua
  * @type {String}
@@ -34,7 +35,7 @@ export const ua = UA.toLowerCase();
 /* isType
 -----------------------------------------------------------------*/
 /**
- * <h4>配列型判定</h4>
+ * 配列型判定
  * @static
  * @method isArray
  * @param {Object} obj 判定するオブジェクト
@@ -46,7 +47,7 @@ export const isArray = Array.isArray || function(obj){
 
 
 /**
- * <h4>真偽型判定</h4>
+ * 真偽型判定
  * @static
  * @method isBoolean
  * @param {Object} obj 判定するオブジェクト
@@ -58,7 +59,7 @@ export function isBoolean(obj){
 
 
 /**
- * <h4>関数型判定</h4>
+ * 関数型判定
  * @static
  * @method isFunction
  * @param {Object} obj 判定するオブジェクト
@@ -70,7 +71,7 @@ export function isFunction(obj){
 
 
 /**
- * <h4>数値型判定</h4>
+ * 数値型判定
  * @static
  * @method isNumber
  * @param {Object} obj 判定するオブジェクト
@@ -82,7 +83,7 @@ export function isNumber(obj){
 
 
 /**
- * <h4>オブジェクト型判定</h4>
+ * オブジェクト型判定
  * @static
  * @method isObject
  * @param {Object} obj 判定するオブジェクト
@@ -94,7 +95,7 @@ export function isObject(obj){
 
 
 /**
- * <h4>プレーンオブジェクト判定</h4>
+ * プレーンオブジェクト判定
  * @static
  * @method isPlainObject
  * @param {Object} obj 判定するオブジェクト
@@ -106,7 +107,7 @@ export function isPlainObject(obj){
 
 
 /**
- * <h4>文字列型判定</h4>
+ * 文字列型判定
  * @static
  * @method isString
  * @param {Object} obj 判定するオブジェクト
@@ -118,7 +119,7 @@ export function isString(obj){
 
 
 /**
- * <h4>正規表現判定</h4>
+ * 正規表現判定
  * @static
  * @method isRegexp
  * @param {Object} obj 判定するオブジェクト
@@ -130,7 +131,7 @@ export function isRegexp(obj) {
 
 
 /**
- * <h4>undefined判定</h4>
+ * undefined判定
  * @static
  * @method isUndefined
  * @param {Object} obj 判定するオブジェクト
@@ -142,7 +143,7 @@ export function isUndefined(obj){
 
 
 /**
- * <h4>null判定</h4>
+ * null判定
  * @static
  * @method isNull
  * @param {Object} obj 判定するオブジェクト
@@ -154,7 +155,7 @@ export function isNull(obj){
 
 
 /**
- * <h4>マルチバイト文字列判定</h4>
+ * マルチバイト文字列判定
  * @static
  * @method isMultibyte
  * @param  {String}  chara 一文字
@@ -166,7 +167,7 @@ export function isMultibyte(chara){
 
 
 /**
- * <h4>isEmail Email判定</h4>
+ * isEmail Email判定
  * @param  {String}  email メールアドレス
  * @return {Boolean}
  */
@@ -178,7 +179,7 @@ export function isEmail(email){
 /* OS
 -----------------------------------------------------------------*/
 /**
- * <h4>OS判定<h4>
+ * OS判定
  * @static
  * @method isOS
  * @param {String} os OS名 [windows, mac, ios, android]
@@ -204,7 +205,7 @@ export function isOS(os, ver){
 
 
 /**
- * <h4>Windows判定</h4>
+ * Windows判定
  * @static
  * @method isWindows
  * @param {Number|String} バージョン名[7, 8, 8.1, 10] 省略可
@@ -239,8 +240,7 @@ export function isWindows(ver){
 
 
 /**
- * <h4>Mac判定</h4>
- * <p>isoは、含みません</p>
+ * Mac判定 ※isoは、含みません
  * @static
  * @method isMac
  * @param {Number|String} バージョンナンバー 省略可
@@ -257,7 +257,7 @@ export function isMac(ver){
 
 
 /**
- * <h4>ios判定</h4>
+ * ios判定
  * @static
  * @method isIos
  * @param {Number|String} バージョンナンバー 省略可
@@ -274,7 +274,7 @@ export function isIos(ver){
 
 
 /**
- * <h4>Android判定</h4>
+ * Android判定
  * @static
  * @method isAndroid
  * @param {Number|String} バージョンナンバー 省略可
@@ -292,7 +292,7 @@ export function isAndroid (ver){
 /* Device
 -----------------------------------------------------------------*/
 /**
- * <h4>デバイス判定</h4>
+ * デバイス判定
  *
  * @static
  * @method isDevice
@@ -337,7 +337,7 @@ export function isDevice(device){
 
 
 /**
- * <h4>PC判定</h4>
+ * PC判定
  * @static
  * @method isPC
  * @return {Boolean}
@@ -348,7 +348,7 @@ export function isPC(){
 
 
 /**
- * <h4>スマートデバイス判定</h4>
+ * スマートデバイス判定
  * @static
  * @method isSmartDevice
  * @return {Boolean}
@@ -359,7 +359,7 @@ export function isSmartDevice(){
 
 
 /**
- * <h4>SmartPhone判定</h4>
+ * SmartPhone判定
  * @static
  * @method isSmartPhone
  * @return {Boolean}
@@ -370,7 +370,7 @@ export function isSmartPhone(){
 
 
 /**
- * <h4>タブレット判定</h4>
+ * タブレット判定
  * @static
  * @method isTablet
  * @return {Boolean}
@@ -381,7 +381,7 @@ export function isTablet(){
 
 
 /**
- * <h4>iPhone判定</h4>
+ * iPhone判定
  * @static
  * @method isIPhone
  * @return {Boolean}
@@ -392,7 +392,7 @@ export function isIPhone(){
 
 
 /**
- * <h4>iPad判定</h4>
+ * iPad判定
  * @static
  * @method isIPad
  * @return {Boolean}
@@ -403,7 +403,7 @@ export function isIPad(){
 
 
 /**
- * <h4>iPod判定</h4>
+ * iPod判定
  * @static
  * @method isIPod
  * @return {Boolean}
@@ -414,7 +414,7 @@ export function isIPod(){
 
 
 /**
- * <h4>AndroidPhone判定</h4>
+ * AndroidPhone判定
  * @static
  * @method isAndroidPhone
  * @return {Boolean}
@@ -425,7 +425,7 @@ export function isAndroidPhone(){
 
 
 /**
- * <h4>AndroidTablet判定</h4>
+ * AndroidTablet判定
  * @static
  * @method isAndroidTablet
  * @return {Boolean}
@@ -438,7 +438,7 @@ export function isAndroidTablet(){
 /* Browser
 -----------------------------------------------------------------*/
 /**
- * <h4>ブラウザ判定</h4>
+ * ブラウザ判定
  * @static
  * @method isBrowser
  * @param {String} key ブラウザ名<br>
@@ -490,7 +490,7 @@ export function isBrowser(browser, ver){
 
 
 /**
- * <h4>IE判定</h4>
+ * IE判定
  * @static
  * @method isIE
  * @param {Number}  ver バージョンナンバー 省略可
@@ -505,8 +505,9 @@ export function isIE(ver){
 };
 
 
+// FIXME: edgeがChromium採用予定なので判定処理をアップデート予定
 /**
- * <h4>Microsoft Edge判定</h4>
+ * Microsoft Edge判定
  * @static
  * @method isEdge
  * @param {Number|String}  ver バージョン名
@@ -519,7 +520,7 @@ export function isEdge(ver){
 
 
 /**
- * <h4>PC版 Chrome判定</h4>
+ * PC版 Chrome判定
  * @static
  * @method isChrome
  * @return {Boolean}
@@ -534,7 +535,7 @@ export function isChrome(ver){
 
 
 /**
- * <h4>PC版 Firefox判定</h4>
+ * PC版 Firefox判定
  * @static
  * @method isFirefox
  * @return {Boolean}
@@ -549,7 +550,7 @@ export function isFirefox(ver){
 
 
 /**
- * <h4>PC版 Safari判定</h4>
+ * PC版 Safari判定
  * @static
  * @method isSafari
  * @return {Boolean}
@@ -564,7 +565,7 @@ export function isSafari(ver){
 
 
 /**
- * <h4>MobileSafari判定</h4>
+ * MobileSafari判定
  * @static
  * @method isMobileSafari
  * @param {Number|String} ver バージョンナンバー  省略可
@@ -580,7 +581,7 @@ export function isMobileSafari(ver){
 
 
 /**
- * <h4>Android標準Browser判定</h4>
+ * Android標準Browser判定
  * @static
  * @method isAndroidBrowser
  * @param {Number|String} ver バージョンナンバー 省略可
@@ -596,7 +597,7 @@ export function isAndroidBrowser(ver){
 
 
 /**
- * <h4>Mobile Chrome判定</h4>
+ * Mobile Chrome判定
  * @static
  * @method isMobileChrome
  * @param {Number|String} ver バージョンナンバー 省略可
@@ -608,7 +609,7 @@ export function isMobileChrome(ver){
 
 
 /**
- * <h4>ios Chrome判定</h4>
+ * ios Chrome判定
  * @static
  * @method isIosChrome
  * @param {Number|String} ver バージョンナンバー 省略可
@@ -624,7 +625,7 @@ export function isIosChrome(ver){
 
 
 /**
- * <h4>Android Chrome判定</h4>
+ * Android Chrome判定
  * @static
  * @method isAndroidChrome
  * @param {Number|String} ver バージョンナンバー 省略可
@@ -640,7 +641,7 @@ export function isAndroidChrome(ver){
 
 
 /**
- * <h4>webkit ブラウザ判定</h4>
+ * webkit ブラウザ判定
  * @static
  * @method isWebkit
  * @return {Boolean}
@@ -653,7 +654,7 @@ export function isWebkit(){
 /* Utility
 -----------------------------------------------------------------*/
 /**
- * <h4>File APIの有無</h4>
+ * File APIの有無
  * @static
  * @method isFileAPI
  * @return {Boolean}
@@ -664,7 +665,7 @@ export function isFileAPI(){
 
 
 /**
- * <h4>RequestFileSystemの有無</h4>
+ * RequestFileSystemの有無
  * @static
  * @method isRequestFileSystem
  * @return {Boolean}
@@ -675,7 +676,7 @@ export function isRequestFileSystem(){
 
 
 /**
- * <h4>Storage機能が使えるか判定</h4>
+ * Storage機能が使えるか判定
  * @static
  * @method isStorage
  * @return {Boolean}
@@ -698,7 +699,7 @@ export function isStorage(){
 
 
 /**
- * <h4>TouchScreen判定</h4>
+ * TouchScreen判定
  * @static
  * @method isTouchScreen
  * @return {Boolean}
