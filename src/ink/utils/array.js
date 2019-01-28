@@ -11,8 +11,8 @@ import * as is from "./is";
  */
 
 /**
- * <h4>argumentsを配列に変換して返す</h4>
- * <p>スライス位置を指定して切り取り可能</p>
+ * argumentsを配列に変換して返す
+ * スライス位置を指定して切り取り可能
  * @static
  * @method argsToArray
  * @param {arguments} args arguments
@@ -31,8 +31,9 @@ export const argsToArray = (() => {
 })();
 
 
+// FIXME: ES6 forEachに合わせる
 /**
- * <h4>each</h4>
+ * each
  * @static
  * @method each
  * @param {Array|Object|Number} obj eachを行うオブジェクト、または回数
@@ -75,7 +76,7 @@ export function each(obj, callback){
 
 
 /**
- * <h4>配列から最大値を探す</h4>
+ * 配列から最大値を探す
  * @static
  * @method findMax
  * @param  {Array} nums 数値を格納した配列
@@ -87,7 +88,7 @@ export function findMax(nums){
 
 
 /**
- * <h4>配列から最小値を探す</h4>
+ * 配列から最小値を探す
  * @static
  * @method findMin
  * @param  {Array} nums 数値を格納した配列
@@ -99,7 +100,7 @@ export function findMin(nums){
 
 
 /**
- * <h4>配列をシャッフルして返す</h4>
+ * 配列をシャッフルして返す
  * @static
  * @method shuffle
  * @param {Array} ary シャッフルする配列

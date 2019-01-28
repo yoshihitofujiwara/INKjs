@@ -13,9 +13,9 @@ import * as array from "./array";
 
 
 /**
- * <h4>base64画像のファイルサイズ取得(bytes)</h4>
- * <p>厳密なファイルサイズではありません。
- * デバッグ時におおよそのファイルサイズを見るために使用しますので多少誤差があります</p>
+ * base64画像のファイルサイズ取得(bytes)
+ * 厳密なファイルサイズではありません。
+ * デバッグ時におおよそのファイルサイズを見るために使用しますので多少誤差があります
  * @static
  * @method base64FileSize
  * @param  {Base64} base64 base64画像
@@ -29,7 +29,7 @@ export function base64FileSize(base64){
 
 
 /**
- * <h4>オブジェクトの拡張</h4>
+ * オブジェクトの拡張
  * @static
  * @method mixin
  * @param {Boolean} isDeep ディープコピーするか 初期値: false 省略可
@@ -89,8 +89,8 @@ export function mixin(isDeep, objA, objB) {
 
 
 /**
- * <h4>匿名関数名を返す</h4>
- * <p>無名関数はundefinedを返します</p>
+ * 匿名関数名を返す
+ * 無名関数はundefinedを返します
  * @static
  * @method getFunctionName
  * @param {Function} fn 名前を取得したい関数
@@ -108,7 +108,7 @@ export function getFunctionName(fn){
 
 
 /**
- * <h4>型名取得</h4>
+ * 型名取得
  * @static
  * @method typeOf
  * @param {Object} 判定するオブジェクト
@@ -140,7 +140,7 @@ export function typeOf(obj){
 
 
 /**
- * <h4>画像のプリロード</h4>
+ * 画像のプリロード
  * @static
  * @method preload
  * @param {String} src 画像パス
@@ -154,7 +154,7 @@ export function preload(src){
 
 
 /**
- * <h4>空の関数</h4>
+ * 空の関数
  * @static
  * @method noop
  * @return {Function}
@@ -163,7 +163,7 @@ export function noop(){};
 
 
 /**
- * <h4>コンソールログの出力</h4>
+ * コンソールログの出力
  * @static
  * @method log
  * @return {Function}

@@ -14,7 +14,7 @@ let url = window.location;
   @method
 ----------------------------------------------------------------------*/
 /**
- * <h4>hashを配列にして返す</h4>
+ * hashを配列にして返す
  * @static
  * @method getHash
  * @return {Array} hashの配列
@@ -31,9 +31,9 @@ export function getHash(){
   return ary;
 };
 
-
+// FIXME: queryの引数が正確に取れているのか確認
 /**
- * <h4>リクエストパラメータ値を連想配列として取得</h4>
+ * リクエストパラメータ値を連想配列として取得
  * @static
  * @method queryHashMap
  * @param {String} query urlもしくは、パラメーター。省略時は現在のURL

@@ -9,7 +9,7 @@
  */
 
 /**
- * <h4>現在の日時情報を格納したオブジェクトを返す</h4>
+ * 現在の日時情報を格納したオブジェクトを返す
  * @static
  * @method nowDate
  * @return {Object}
@@ -21,7 +21,8 @@ export function nowDate() {
 		date  : date,
     year  : date.getFullYear(),
     month : date.getMonth() + 1,
-    day   : date.getDate(),
+    day   : date.getDay(),
+    date  : date.getDate(),
     hour  : date.getHours(),
     minute: date.getMinutes(),
     second: date.getSeconds()

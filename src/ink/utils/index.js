@@ -11,5 +11,6 @@ export * from "./has";
 export * from "./is";
 export * from "./location";
 export * from "./math";
+// export * from "./random";
 export * from "./string";
 export * from "./utility";

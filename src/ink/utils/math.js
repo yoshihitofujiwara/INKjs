@@ -6,12 +6,13 @@
 
 import * as is from "./is";
 
+// FIXME calcに変える？
 /**
  * @class Math
  */
 
 /**
- * <h4>π (半円)</h4>
+ * π (半円)
  * @static
  * @property PI
  * @type {Number}
@@ -20,7 +21,7 @@ export const PI = Math.PI;
 
 
 /**
- * <h4>π * 2 (円)</h4>
+ * π * 2 (円)
  * @static
  * @property TWO_PI
  * @type {Number}
@@ -29,7 +30,7 @@ export const TWO_PI = PI * 2;
 
 
 /**
- * <h4>π * 2 (1/4円)</h4>
+ * π * 2 (1/4円)
  * @static
  * @property HARF_PI
  * @type {Number}
@@ -38,7 +39,7 @@ export const HARF_PI = PI / 2;
 
 
 /**
- * <h4>ラジアンからに角度変換する積数</h4>
+ * ラジアンからに角度変換する積数
  * @static
  * @property RAD_TO_DEG
  * @type {Number}
@@ -47,7 +48,7 @@ export const RAD_TO_DEG = 180 / PI;
 
 
 /**
- * <h4>角度からラジアンに変換する積数</h4>
+ * 角度からラジアンに変換する積数
  * @static
  * @property DEG_TO_RAD
  * @type {Number}
@@ -56,7 +57,7 @@ export const DEG_TO_RAD = PI / 180;
 
 
 /**
- * <h4>√2</h4>
+ * √2
  * @static
  * @property sqrt2
  * @type {Number}
@@ -67,7 +68,7 @@ export const sqrt2 = Math.sqrt(2);
 /* Convert
 -----------------------------------------------------------------*/
 /**
- * <h4>ラジアンと半径から座標生成</h4>
+ * ラジアンと半径から座標生成
  * @method radToCoord
  * @param  {Number} rad ラジアン
  * @param  {Number} radius 半径
@@ -82,7 +83,7 @@ export function radToCoord(rad, radius){
 
 
 /**
- * <h4>角度と半径から座標を生成</h4>
+ * 角度と半径から座標を生成
  * @method degToCoord
  * @param  {Number} deg ラジアン
  * @param  {Number} radius 半径
@@ -94,7 +95,7 @@ export function degToCoord(deg, radius){
 
 
 /**
- * <h4>座標からRadianを取得</h4>
+ * 座標からRadianを取得
  * @static
  * @method coordToRad
  * @param  {Number} x x座標値
@@ -107,7 +108,7 @@ export function coordToRad(x, y){
 
 
 /**
- * <h4>座標からDegreesを取得</h4>
+ * 座標からDegreesを取得
  * @static
  * @method coordToDeg
  * @param  {Number} x x座標値
@@ -120,7 +121,7 @@ export function coordToDeg(x, y){
 
 
 /**
- * <h4>ラジアンから角度を求める</h4>
+ * ラジアンから角度を求める
  * @static
  * @method radToDeg
  * @param {Number} rad ラジアン
@@ -132,7 +133,7 @@ export function radToDeg(rad){
 
 
 /**
- * <h4>角度をラジアンに変換して返す</h4>
+ * 角度をラジアンに変換して返す
  * @static
  * @method degToRad
  * @param {Number} deg 角度
@@ -144,7 +145,7 @@ export function degToRad (deg){
 
 
 /**
- * <h4>対角線の長さ</h4>
+ * 対角線の長さ
  * @static
  * @method diagonal
  * @param  {Number} x 横
@@ -157,7 +158,7 @@ export function diagonal(x, y){
 
 
 /**
- * <h4>対角線の長さから正方形の辺の長さを求める（なす角45°）</h4>
+ * 対角線の長さから正方形の辺の長さを求める（なす角45°）
  * @static
  * @method diagonalToSideLength
  * @param  {Number} diagonal 対角線の長さ
@@ -171,9 +172,8 @@ export function diagonalToSideLength(diagonal){
 /* Utilitys
 -----------------------------------------------------------------*/
 /**
- * <h4>順序付けのために2つの引数を比較</h4>
- * <p>引数が等しい場合は0、2番目より小さい場合は負の整数、<br>
- * 最初の引数が2番目の引数より大きい場合は正の整数を返す</p>
+ * 順序付けのために2つの引数を比較
+ * 引数が等しい場合は0、2番目より小さい場合は負の整数、最初の引数が2番目の引数より大きい場合は正の整数を返す
  * @static
  * @method compare
  * @param  {Number} num1 指定数値
@@ -192,8 +192,8 @@ export function compare(num1, num2){
 
 
 /**
- * <h4>値の符号化</h4>
- * <p>numが正なら+1.0、0.0なら0.0、負なら-1.0を返す</p>
+ * 値の符号化
+ * numが正なら+1.0、0.0なら0.0、負なら-1.0を返す
  * @static
  * @method sign
  * @param  {Number} num
@@ -211,7 +211,7 @@ export function sign(num){
 
 
 /**
- * <h4>小数点を取り出す</h4>
+ * 小数点を取り出す
  * @static
  * @method fract
  * @param  {Number} num
@@ -223,7 +223,7 @@ export function fract(num){
 
 
 /**
- * <h4>数値の有効範囲を適用して返す</h4>
+ * 値の有効範囲を適用して返す
  * @static
  * @method clamp
  * @param {Number} num 数値
@@ -237,7 +237,7 @@ export function clamp(num, min, max){
 
 
 /**
- * <h4>階乗の計算</h4>
+ * 階乗の計算
  * @static
  * @method factorial
  * @param {Number} num 階乗数
@@ -254,7 +254,7 @@ export function factorial(num){
 
 
 /**
- * <h4>範囲内に値があるか</h4>
+ * 範囲内に値があるか
  * @static
  * @method inRange
  * @param  {Number} val 数値
@@ -268,7 +268,7 @@ export function inRange(val, min, max){
 
 
 /**
- * <h4>範囲が交差するか</h4>
+ * 値の範囲が交差するか
  * @static
  * @method isIntersect
  * @param  {Number} rangeMin1 範囲1の最小値
@@ -284,7 +284,7 @@ export function isIntersect(rangeMin1, rangeMax1, rangeMin2, rangeMax2){
 
 
 /**
- * <h4>指定の値を線形補間した値を返します</h4>
+ * 線形補間
  * @static
  * @method lerp
  * @param  {Number} val 線形補間する指定の値
@@ -298,8 +298,7 @@ export function lerp(val, min, max){
 
 
 /**
- * <h4>エルミート補完</h4>
- * <p>valを、minからmaxの範囲で正規化する</p>
+ * エルミート補完
  * @static
  * @method smoothstep
  * @param  {Number} val 線形補間する指定の値
@@ -315,7 +314,7 @@ export function smoothstep(val, min, max){
 
 
 /**
- * <h4>値を正規化します</h4>
+ * 正規化(0.0-1.0)
  * @static
  * @method normalize
  * @param  {Number} val 正規化する値
@@ -329,8 +328,8 @@ export function normalize(val, min, max){
 
 
 /**
- * <h4>値を最適化します</h4>
- * <p>valueを範囲scorpeA1 - scorpeA2から範囲scorpeB1 - scorpeB2へ変換</p>
+ * 値の有効範囲の最適化（マッピング）
+ * valueを範囲scorpeA1 - scorpeA2から範囲scorpeB1 - scorpeB2へ変換
  * @static
  * @method map
  * @param  {Number} val   最適化する値
@@ -345,8 +344,9 @@ export function map(val, fromMin, fromMax, toMin, toMax) {
 };
 
 
+// FIXME: ランダムに移動
 /**
- * <h4>乱数の生成</h4>
+ * 乱数の生成
  * @static
  * @param {Number} min 最小値 ※省略可
  * @param {Number} max 最大値 ※省略可
@@ -383,6 +383,7 @@ export function random(min, max, isInt){
 
 
 /**
+<<<<<<< HEAD
  * <h4>int型の乱数の生成</h4>
  * @static
  * @param {Number} min 最小値 ※省略可
@@ -396,6 +397,9 @@ export function randomInt(min, max){
 
 /**
  * <h4>数を固定小数点に変換します</h4>
+=======
+ * 数を固定小数点に変換します
+>>>>>>> c446774970a043256d437eb5a970d7287f1feb3c
  * @static
  * @method roundToDigit
  * @param  {Number} value 値
