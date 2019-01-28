@@ -6,7 +6,7 @@
 
 
 import * as utils from "../utils";
-import Vector2 from "../class_geom/Vector2";
+import Vector2 from "./Vector2";
 import Triangle from "./Triangle";
 
 

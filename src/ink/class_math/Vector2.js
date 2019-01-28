@@ -106,7 +106,7 @@ export default class Vector2 {
    * @return {Vector2}
    */
   clone(){
-    return new Vector2(this.x, this.y, (this.angleMode === ANGLE_MODE_DEGREES));
+    return new Vector2(this.x, this.y);
   }
 
 

@@ -7,8 +7,7 @@
 export * from "./utils";
 export * from "./class_events";
 export * from "./class_utils";
-export * from "./class_geom";
-export * from "./class_shape";
+export * from "./class_math";
 // export * from "./class_algorithm"; 未実装
 
 const VERSION = "0.0.3";

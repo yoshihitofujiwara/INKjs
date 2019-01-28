@@ -383,6 +383,18 @@ export function random(min, max, isInt){
 
 
 /**
+ * <h4>int型の乱数の生成</h4>
+ * @static
+ * @param {Number} min 最小値 ※省略可
+ * @param {Number} max 最大値 ※省略可
+ * @return {Number} 乱数を返します
+ */
+export function randomInt(min, max){
+  return random(min, max, true);
+}
+
+
+/**
  * <h4>数を固定小数点に変換します</h4>
  * @static
  * @method roundToDigit
