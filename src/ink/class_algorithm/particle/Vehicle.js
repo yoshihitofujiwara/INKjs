@@ -13,13 +13,13 @@
     @constructor
   ----------------------------------------------------------------------*/
   /**
-   * <h4>Vehicle</h4>
+   * Vehicle
    *
    * @class AMP.Vehicle
    * @extends AMP.ParticleInterface
    * @param {Number|AMP.Vector2} x x座標 もしくは座標オブジェクト
-   * @param {Number} y y座標
-   * @param {Object} option値
+   * @param {number} y y座標
+   * @param {object} option値
    */
   function Vehicle(x, y, options){
     // super class call
@@ -38,46 +38,46 @@
     @property
   --------------------------------------------------------------------------*/
   /**
-   * <h4>バージョン情報</h4>
+   * バージョン情報
    *
    * @static
    * @property VERSION
-   * @type {String}
+   * @type {string}
    */
   Vehicle.VERSION = '1.0.0';
 
 
   /**
-   * <h4>デフォルト値オブジェクト</h4>
-   * <p>コンストラクタが呼び出し時に、引数とoptionsをmixinしてプロパティとしてエクスポートします</p>
+   * デフォルト値オブジェクト
+   * コンストラクタが呼び出し時に、引数とoptionsをmixinしてプロパティとしてエクスポートします
    *
    * @static
    * @property OPTIONS
-   * @type {Object}
+   * @type {object}
    */
   /**
-   * <h4>最高速スケール値</h4>
+   * 最高速スケール値
    *
    * @static
    * @property OPTIONS.maxAxcel
    * @default 4
-   * @type {Number}
+   * @type {number}
    */
   /**
-   * <h4>加速度の最大値</h4>
+   * 加速度の最大値
    *
    * @static
    * @property OPTIONS.maxForce
    * @default 0.1
-   * @type {Number}
+   * @type {number}
    */
   /**
-   * <h4>目標地の減速ポイント（距離）</h4>
+   * 目標地の減速ポイント（距離）
    *
    * @static
    * @property OPTIONS.targetArea
    * @default null
-   * @type {Number}
+   * @type {number}
    */
   Vehicle.OPTIONS = Vehicle.OPTIONS || {};
   Vehicle.OPTIONS.maxAxcel = 4;
@@ -90,12 +90,12 @@
     @method
   --------------------------------------------------------------------------*/
   /**
-   * <h4>Vehicleインスタンスの生成</h4>
+   * Vehicleインスタンスの生成
    *
    * @static
-   * @param {Number} x x座標
-   * @param {Number} y y座標
-   * @param {Object} option値
+   * @param {number} x x座標
+   * @param {number} y y座標
+   * @param {object} option値
    * @return {Vehicle}
    */
   Vehicle.get = function(x, y, options){
@@ -104,11 +104,11 @@
 
 
   /**
-   * <h4>現在地から目標地へ移動距離を加算</h4>
+   * 現在地から目標地へ移動距離を加算
    *
    * @method seek
    * @param  {Number|AMP.Vector} x 目的地のx座標
-   * @param  {Number} y 目的地のy座標
+   * @param  {number} y 目的地のy座標
    * @return {AMP.Vector}
    */
   p.seek = function(x, y){
@@ -124,12 +124,12 @@
 
 
   /**
-   * <h4>現在地から目標地へ移動距離を加算</h4>
-   * <p>targetAreaに入ると減速します</p>
+   * 現在地から目標地へ移動距離を加算
+   * targetAreaに入ると減速します
    *
    * @method arrive
    * @param  {Number|AMP.Vector} x 目的地のx座標
-   * @param  {Number} y 目的地のy座標
+   * @param  {number} y 目的地のy座標
    * @return {AMP.Vector}
    */
   p.arrive = function(x, y){

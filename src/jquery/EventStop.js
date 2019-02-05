@@ -9,14 +9,14 @@
     ストップイベント
   ======================================================================*/
 	/**
-	 * <h4>jQueryイベント拡張</h4>
+	 * jQueryイベント拡張
 	 * <p>jQueryイベントオブジェクトを拡張し、resizestop, scrollstopイベントを追加</p>
 	 *
 	 * @class jQuery.Stop
 	 */
 
 	/**
-	 * <h4>リサイズイベントを間引き、リサイズ完了後発火します</h4>
+	 * リサイズイベントを間引き、リサイズ完了後発火します
 	 *
 	 * @event resizestop
 	 * @param {Object} 間引く時間を指定 default {timer: 50}
@@ -25,7 +25,7 @@
 	 * $(window).on('resizestop', {timer: 1000}, callback);
 	 */
 	/**
-	 * <h4>スクロールイベントを間引き、スクロール完了後発火します</h4>
+	 * スクロールイベントを間引き、スクロール完了後発火します
 	 *
 	 * @event scrollstop
 	 * @param {Object} 間引く時間を指定 default {timer: 50}

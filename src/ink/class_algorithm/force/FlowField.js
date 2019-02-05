@@ -13,21 +13,21 @@
     @constructor
   ----------------------------------------------------------------------*/
   /**
-   * <h4>流れ場</h4>
+   * 流れ場
    *
    * @constructor
    * @class AMP.FlowField
    * @extends AMP.BaseClass
    * @param {Number|AMP.Size} width 幅
-   * @param {Number} height 高さ
-   * @param {Number} region 1マスの領域
+   * @param {number} height 高さ
+   * @param {number} region 1マスの領域
    */
   function FlowField(width, height, region){
     // super class call
     AMP.ForceInterface.call(this);
 
     /**
-     * <h4>サイズ</h4>
+     * サイズ
      *
      * @property size
      * @type {AMP.Size}
@@ -35,31 +35,31 @@
     this.size = new AMP.Size(width, height);
 
     /**
-     * <h4>領域</h4>
+     * 領域
      *
      * @property region
-     * @type {Number}
+     * @type {number}
      */
     this.region = region || 1;
 
     /**
-     * <h4>行</h4>
+     * 行
      *
      * @property cols
-     * @type {Number}
+     * @type {number}
      */
     this.cols = Math.round(this.size.width / this.region);
 
     /**
-     * <h4>列</h4>
+     * 列
      *
      * @property rows
-     * @type {Number}
+     * @type {number}
      */
     this.rows = Math.round(this.size.height / this.region);
 
     /**
-     * <h4>field</h4>
+     * field
      *
      * @property field description
      * @type {Array[Vector]}
@@ -79,11 +79,11 @@
     @property
   --------------------------------------------------------------------------*/
   /**
-   * <h4>バージョン情報</h4>
+   * バージョン情報
    *
    * @static
    * @property VERSION
-   * @type {String}
+   * @type {string}
    */
   FlowField.VERSION = '1.0.0';
 
@@ -93,12 +93,12 @@
     @method
   --------------------------------------------------------------------------*/
   /**
-   * <h4>FlowFieldインスタンスの生成</h4>
+   * FlowFieldインスタンスの生成
    *
    * @static
    * @param {Number|AMP.Size} width 幅
-   * @param {Number} height 高さ
-   * @param {Number} region 1マスの領域
+   * @param {number} height 高さ
+   * @param {number} region 1マスの領域
    * @return {AMP.FlowField}
    */
   FlowField.get = function(width, height, region){
@@ -107,10 +107,10 @@
 
 
   /**
-   * <h4>fieldの生成</h4>
+   * fieldの生成
    *
    * @method createField
-   * @param  {Function} callback field領域ごとのcallbackが呼び出されます
+   * @param  {function} callback field領域ごとのcallbackが呼び出されます
    * @return {AMP.FlowField}
    */
   p.createField = function(callback){
@@ -134,11 +134,11 @@
 
 
   /**
-   * <h4>範囲の検索</h4>
+   * 範囲の検索
    *
    * @method lookup
    * @param  {Number|AMP.Vector2} x x座標
-   * @param  {Number} y y座標
+   * @param  {number} y y座標
    * @return {AMP.Vector2}
    */
   p.lookup = function(x, y){
@@ -150,10 +150,10 @@
 
 
   /**
-   * <h4>fieldのeach</h4>
+   * fieldのeach
    *
    * @method each
-   * @param  {Function} callback eachコールバック
+   * @param  {function} callback eachコールバック
    * @return {FlowField}
    */
   p.each = function(callback){

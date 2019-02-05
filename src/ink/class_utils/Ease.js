@@ -6,20 +6,19 @@
 
 import * as utils from "../utils";
 
-
 /**
- * <h4>Ease</h4>
+ * Ease
  * @class Ease
  * @constructor
  **/
-export default function Ease(){}
+export default function Ease() { }
 
 /**
- * <h4>PowIn</h4>
+ * PowIn
  * @static
  * @method createPowIn
- * @param {Number} pow
- * @return {Function}
+ * @param {number} pow
+ * @return {function}
  **/
 Ease.createPowIn = (pow) => {
 	return (t) => {
@@ -28,11 +27,11 @@ Ease.createPowIn = (pow) => {
 };
 
 /**
- * <h4>PowOut</h4>
+ * PowOut
  * @static
  * @method createPowOut
- * @param {Number} pow
- * @return {Function}
+ * @param {number} pow
+ * @return {function}
  **/
 Ease.createPowOut = (pow) => {
 	return (t) => {
@@ -41,28 +40,28 @@ Ease.createPowOut = (pow) => {
 };
 
 /**
- * <h4>PowInOut</h4>
+ * PowInOut
  * @static
  * @method createPowInOut
- * @param {Number} pow
- * @return {Function}
+ * @param {number} pow
+ * @return {function}
  **/
 Ease.createPowInOut = (pow) => {
 	return (t) => {
-		if((t *= 2) < 1){
+		if ((t *= 2) < 1) {
 			return 0.5 * Math.pow(t, pow);
 		} else {
-			return 1 - 0.5 * Math.abs(Math.pow(2 - t , pow));
+			return 1 - 0.5 * Math.abs(Math.pow(2 - t, pow));
 		}
 	};
 };
 
 /**
- * <h4>BackIn</h4>
+ * BackIn
  * @static
  * @method createBackIn
- * @param {Number} amount
- * @return {Function}
+ * @param {number} amount
+ * @return {function}
  **/
 Ease.createBackIn = (amount) => {
 	return (t) => {
@@ -71,11 +70,11 @@ Ease.createBackIn = (amount) => {
 };
 
 /**
- * <h4>BackOut</h4>
+ * BackOut
  * @static
  * @method createBackOut
- * @param {Number} amount
- * @return {Function}
+ * @param {number} amount
+ * @return {function}
  **/
 Ease.createBackOut = (amount) => {
 	return (t) => {
@@ -84,16 +83,16 @@ Ease.createBackOut = (amount) => {
 };
 
 /**
- * <h4>BackInOut</h4>
+ * BackInOut
  * @static
  * @method createBackInOut
- * @param {Number} amount
- * @return {Function}
+ * @param {number} amount
+ * @return {function}
  **/
 Ease.createBackInOut = (amount) => {
 	amount *= 1.525;
 	return (t) => {
-		if ((t *= 2) < 1){
+		if ((t *= 2) < 1) {
 			return 0.5 * (t * t * ((amount + 1) * t - amount));
 		} else {
 			return 0.5 * ((t -= 2) * t * ((amount + 1) * t + amount) + 2);
@@ -102,16 +101,16 @@ Ease.createBackInOut = (amount) => {
 };
 
 /**
- * <h4>ElasticIn</h4>
+ * ElasticIn
  * @static
  * @method createElasticIn
- * @param {Number} amplitude
- * @param {Number} period
- * @return {Function}
+ * @param {number} amplitude
+ * @param {number} period
+ * @return {function}
  **/
 Ease.createElasticIn = (amplitude, period) => {
 	return (t) => {
-		if(t === 0 || t === 1){
+		if (t === 0 || t === 1) {
 			return t;
 		} else {
 			let s = period / utils.TWO_PI * Math.asin(1 / amplitude);
@@ -121,16 +120,16 @@ Ease.createElasticIn = (amplitude, period) => {
 };
 
 /**
- * <h4>ElasticOut</h4>
+ * ElasticOut
  * @static
  * @method createElasticOut
- * @param {Number} amplitude
- * @param {Number} period
- * @return {Function}
+ * @param {number} amplitude
+ * @param {number} period
+ * @return {function}
  **/
 Ease.createElasticOut = (amplitude, period) => {
 	return (t) => {
-		if(t === 0 || t === 1){
+		if (t === 0 || t === 1) {
 			return t;
 		} else {
 			let s = period / utils.TWO_PI * Math.asin(1 / amplitude);
@@ -140,17 +139,17 @@ Ease.createElasticOut = (amplitude, period) => {
 };
 
 /**
- * <h4>ElasticInOut</h4>
+ * ElasticInOut
  * @static
  * @method createElasticInOut
- * @param {Number} amplitude
- * @param {Number} period
- * @return {Function}
+ * @param {number} amplitude
+ * @param {number} period
+ * @return {function}
  **/
 Ease.createElasticInOut = (amplitude, period) => {
-	return function(t){
+	return function (t) {
 		let s = period / utils.TWO_PI * Math.asin(1 / amplitude);
-		if((t *= 2) < 1){
+		if ((t *= 2) < 1) {
 			return -0.5 * (amplitude * Math.pow(2, 10 * (t -= 1)) * Math.sin((t - s) * utils.TWO_PI / period));
 		} else {
 			return amplitude * Math.pow(2, -10 * (t -= 1)) * Math.sin((t - s) * utils.TWO_PI / period) * 0.5 + 1;
@@ -163,8 +162,8 @@ Ease.createElasticInOut = (amplitude, period) => {
 /**
  * @static
  * @method linear
- * @param {Number} t
- * @return {Number}
+ * @param {number} t
+ * @return {number}
  **/
 Ease.linear = (t) => {
 	return t;
@@ -173,8 +172,8 @@ Ease.linear = (t) => {
 /**
  * @static
  * @method sineIn, easeInSine
- * @param {Number} t
- * @return {Number}
+ * @param {number} t
+ * @return {number}
  **/
 Ease.sineIn = Ease.easeInSine = (t) => {
 	return 1 - Math.cos(t * Math.PI / 2);
@@ -184,8 +183,8 @@ Ease.sineIn = Ease.easeInSine = (t) => {
 /**
  * @static
  * @method sineOut
- * @param {Number} t
- * @return {Number}
+ * @param {number} t
+ * @return {number}
  **/
 Ease.sineOut = Ease.easeOutSine = (t) => {
 	return Math.sin(t * Math.PI / 2);
@@ -194,8 +193,8 @@ Ease.sineOut = Ease.easeOutSine = (t) => {
 /**
  * @static
  * @method sineInOut
- * @param {Number} t
- * @return {Number}
+ * @param {number} t
+ * @return {number}
  **/
 Ease.sineInOut = Ease.easeInOutSine = (t) => {
 	return -0.5 * (Math.cos(Math.PI * t) - 1);
@@ -205,128 +204,128 @@ Ease.sineInOut = Ease.easeInOutSine = (t) => {
 /**
  * @static
  * @method quadIn
- * @param {Number} t
- * @return {Number}
+ * @param {number} t
+ * @return {number}
  **/
 Ease.quadIn = Ease.easeInQuad = Ease.createPowIn(2);
 
 /**
  * @static
  * @method quadOut
- * @param {Number} t
- * @return {Number}
+ * @param {number} t
+ * @return {number}
  **/
 Ease.quadOut = Ease.easeOutQuad = Ease.createPowOut(2);
 
 /**
  * @static
  * @method quadInOut
- * @param {Number} t
- * @return {Number}
+ * @param {number} t
+ * @return {number}
  **/
 Ease.quadInOut = Ease.easeInOutQuad = Ease.createPowInOut(2);
 
 /**
  * @static
  * @method cubicIn
- * @param {Number} t
- * @return {Number}
+ * @param {number} t
+ * @return {number}
  **/
 Ease.cubicIn = Ease.easeInCubic = Ease.createPowIn(3);
 
 /**
  * @static
  * @method cubicOut
- * @param {Number} t
- * @return {Number}
+ * @param {number} t
+ * @return {number}
  **/
 Ease.cubicOut = Ease.easeOutCubic = Ease.createPowOut(3);
 
 /**
  * @static
  * @method cubicInOut
- * @param {Number} t
- * @return {Number}
+ * @param {number} t
+ * @return {number}
  **/
 Ease.cubicInOut = Ease.easeInOutCubic = Ease.createPowInOut(3);
 
 /**
  * @static
  * @method quartIn
- * @param {Number} t
- * @return {Number}
+ * @param {number} t
+ * @return {number}
  **/
 Ease.quartIn = Ease.easeInQuart = Ease.createPowIn(4);
 
 /**
  * @static
  * @method quartOut
- * @param {Number} t
- * @return {Number}
+ * @param {number} t
+ * @return {number}
  **/
 Ease.quartOut = Ease.easeOutQuart = Ease.createPowOut(4);
 
 /**
  * @static
  * @method quartInOut
- * @param {Number} t
- * @return {Number}
+ * @param {number} t
+ * @return {number}
  **/
 Ease.quartInOut = Ease.easeInOutQuart = Ease.createPowInOut(4);
 
 /**
  * @static
  * @method quintIn
- * @param {Number} t
- * @return {Number}
+ * @param {number} t
+ * @return {number}
  **/
 Ease.quintIn = Ease.easeInQuint = Ease.createPowIn(5);
 
 /**
  * @static
  * @method quintOut
- * @param {Number} t
- * @return {Number}
+ * @param {number} t
+ * @return {number}
  **/
 Ease.quintOut = Ease.easeOutQuint = Ease.createPowOut(5);
 
 /**
  * @static
  * @method quintInOut
- * @param {Number} t
- * @return {Number}
+ * @param {number} t
+ * @return {number}
  **/
 Ease.quintInOut = Ease.easeInOutQuint = Ease.createPowInOut(5);
 
 /**
  * @static
  * @method expoIn
- * @param {Number} t
- * @return {Number}
+ * @param {number} t
+ * @return {number}
  **/
 Ease.expoIn = Ease.easeInExpo = Ease.createPowIn(6);
 
 /**
  * @static
  * @method expoOut
- * @param {Number} t
- * @return {Number}
+ * @param {number} t
+ * @return {number}
  **/
 Ease.expoOut = Ease.easeOutExpo = Ease.createPowOut(6);
 
 /**
  * @static
  * @method expoInOut
- * @param {Number} t
- * @return {Number}
+ * @param {number} t
+ * @return {number}
  **/
 Ease.expoInOut = Ease.easeInOutExpo = Ease.createPowInOut(6);
 
 /**
  * @static
  * @method circIn
- * @param {Number} t
- * @return {Number}
+ * @param {number} t
+ * @return {number}
  **/
 Ease.circIn = Ease.easeInCirc = (t) => {
 	return -(Math.sqrt(1 - t * t) - 1);
@@ -335,8 +334,8 @@ Ease.circIn = Ease.easeInCirc = (t) => {
 /**
  * @static
  * @method circOut
- * @param {Number} t
- * @return {Number}
+ * @param {number} t
+ * @return {number}
  **/
 Ease.circOut = Ease.easeOutCirc = (t) => {
 	return Math.sqrt(1 - (--t) * t);
@@ -345,70 +344,70 @@ Ease.circOut = Ease.easeOutCirc = (t) => {
 /**
  * @static
  * @method circInOut
- * @param {Number} t
- * @return {Number}
+ * @param {number} t
+ * @return {number}
  **/
 Ease.circInOut = Ease.easeInOutCirc = (t) => {
-	if ((t *= 2) < 1){
+	if ((t *= 2) < 1) {
 		return -0.5 * (Math.sqrt(1 - t * t) - 1);
 	} else {
-		return 0.5 * (Math.sqrt(1 - (t -= 2) * t ) + 1);
+		return 0.5 * (Math.sqrt(1 - (t -= 2) * t) + 1);
 	}
 };
 
 /**
  * @static
  * @method backIn
- * @param {Number} t
- * @return {Number}
+ * @param {number} t
+ * @return {number}
  **/
 Ease.backIn = Ease.easeInBack = Ease.createBackIn(1.7);
 
 /**
  * @static
  * @method backOut
- * @param {Number} t
- * @return {Number}
+ * @param {number} t
+ * @return {number}
  **/
 Ease.backOut = Ease.easeOutBack = Ease.createBackOut(1.7);
 
 /**
  * @static
  * @method backInOut
- * @param {Number} t
- * @return {Number}
+ * @param {number} t
+ * @return {number}
  **/
 Ease.backInOut = Ease.easeInOutBack = Ease.createBackInOut(1.7);
 
 /**
  * @static
  * @method elasticIn
- * @param {Number} t
- * @return {Number}
+ * @param {number} t
+ * @return {number}
  **/
 Ease.elasticIn = Ease.easeInElastic = Ease.createElasticIn(1, 0.3);
 
 /**
  * @static
  * @method elasticOut
- * @param {Number} t
- * @return {Number}
+ * @param {number} t
+ * @return {number}
  **/
 Ease.elasticOut = Ease.easeOutElastic = Ease.createElasticOut(1, 0.3);
 
 /**
  * @static
  * @method elasticInOut
- * @param {Number} t
- * @return {Number}
+ * @param {number} t
+ * @return {number}
  **/
 Ease.elasticInOut = Ease.easeInOutElastic = Ease.createElasticInOut(1, 0.3 * 1.5);
 
 /**
  * @method bounceIn
- * @param {Number} t
+ * @param {number} t
  * @static
- * @return {Number}
+ * @return {number}
  **/
 Ease.bounceIn = Ease.easeInBounce = (t) => {
 	return 1 - Ease.bounceOut(1 - t);
@@ -417,8 +416,8 @@ Ease.bounceIn = Ease.easeInBounce = (t) => {
 /**
  * @static
  * @method bounceOut
- * @param {Number} t
- * @return {Number}
+ * @param {number} t
+ * @return {number}
  **/
 Ease.bounceOut = Ease.easeOutBounce = (t) => {
 	if (t < 1 / 2.75) {
@@ -426,7 +425,7 @@ Ease.bounceOut = Ease.easeOutBounce = (t) => {
 	} else if (t < 2 / 2.75) {
 		return (7.5625 * (t -= 1.5 / 2.75) * t + 0.75);
 	} else if (t < 2.5 / 2.75) {
-		return (7.5625 *(t -= 2.25 / 2.75) * t + 0.9375);
+		return (7.5625 * (t -= 2.25 / 2.75) * t + 0.9375);
 	} else {
 		return (7.5625 * (t -= 2.625 / 2.75) * t + 0.984375);
 	}
@@ -435,12 +434,12 @@ Ease.bounceOut = Ease.easeOutBounce = (t) => {
 /**
  * @static
  * @method bounceInOut
- * @param {Number} t
- * @return {Number}
+ * @param {number} t
+ * @return {number}
  **/
 Ease.bounceInOut = Ease.easeInOutBounce = (t) => {
 	if (t < 0.5) {
-		return Ease.bounceIn (t * 2) * 0.5;
+		return Ease.bounceIn(t * 2) * 0.5;
 	} else {
 		return Ease.bounceOut(t * 2 - 1) * 0.5 + 0.5;
 	}

@@ -10,11 +10,14 @@ import Vector2 from './Vector2';
 import Circle from './Circle';
 
 
+
+
+// FIXME: class_graphicsに移動
 /*----------------------------------------------------------------------
   @constructor
 ----------------------------------------------------------------------*/
 /**
- * <h4>Triangle</h4>
+ * Triangle
  *
  * @class Triangle
  * @constructor
@@ -28,16 +31,16 @@ export default class Triangle {
    */
   constructor(vertexA, vertexB, vertexC) {
     /**
-     * <h4>頂点データ</h4>
+     * 頂点データ
      * @property vertices
-     * @type {Array}
+     * @type {array}
      */
     this.vertices = [vertexA, vertexB, vertexC];
   }
 
 
   /**
-   * <h4>クローンを生成</h4>
+   * クローンを生成
    *
    * @method clone
    * @return {Triangle}
@@ -48,7 +51,7 @@ export default class Triangle {
 
 
   /**
-   * <h4>3点の座標から外接円を求めます</h4>
+   * 3点の座標から外接円を求めます
    *
    * @static
    * @method outerCircle
@@ -82,7 +85,7 @@ export default class Triangle {
 
 
   /**
-   * <h4>3点の座標から内接円を求めます</h4>
+   * 3点の座標から内接円を求めます
    *
    * @static
    * @method innerCircle
@@ -108,14 +111,14 @@ export default class Triangle {
 
 
   /**
-   * <h4>3点の座標から傍接円を求めます</h4>
+   * 3点の座標から傍接円を求めます
    *
    * @static
    * @method excenter
    * @param {Vector2} vertexA 頂点A
    * @param {Vector2} vertexB 頂点B
    * @param {Vector2} vertexC 頂点C
-   * @return {Array} 傍接円a,b,cの座標、半径の円データ
+   * @return {array} 傍接円a,b,cの座標、半径の円データ
    */
   static excenter(vertexA, vertexB, vertexC){
     let sides = Triangle.verticesToSides(vertexA, vertexB, vertexC),
@@ -151,7 +154,7 @@ export default class Triangle {
 
 
   /**
-   * <h4>3点の座標から垂心座標を求めます</h4>
+   * 3点の座標から垂心座標を求めます
    *
    * @static
    * @method orthocenter
@@ -185,7 +188,7 @@ export default class Triangle {
 
 
   /**
-   * <h4>3点の座標から重心座標を求めます</h4>
+   * 3点の座標から重心座標を求めます
    * @static
    * @method centerGravity
    * @param {Vector2} vertexA 頂点A
@@ -202,13 +205,13 @@ export default class Triangle {
 
 
   /**
-   * <h4>三点の座標から辺の長さを返す</h4>
+   * 三点の座標から辺の長さを返す
    * @static
    * @method offsetsToSides
    * @param {Vector2} vertexA 頂点A
    * @param {Vector2} vertexB 頂点B
    * @param {Vector2} vertexC 頂点C
-   * @return {Array} a, b, cの辺の長さ
+   * @return {array} a, b, cの辺の長さ
    */
   static verticesToSides(vertexA, vertexB, vertexC){
     return [
@@ -220,13 +223,13 @@ export default class Triangle {
 
 
   /**
-   * <h4>頂点から角度を求める</h4>
+   * 頂点から角度を求める
    * @static
    * @method verticesToAngles
    * @param {Vector2} vertexA 頂点A
    * @param {Vector2} vertexB 頂点B
    * @param {Vector2} vertexC 頂点C
-   * @return {Array} a, b, c各辺の角度
+   * @return {array} a, b, c各辺の角度
    */
   static verticesToAngles (vertexA, vertexB, vertexC){
     let sides = Triangle.verticesToSides(vertexA, vertexB, vertexC),
@@ -243,7 +246,7 @@ export default class Triangle {
 
 
   /**
-   * <h4>三角形内に座標を含んでいるか</h4>
+   * 三角形内に座標を含んでいるか
    * @static
    * @method inside
    * @param  {Triangle} triangle triangle
@@ -266,15 +269,15 @@ export default class Triangle {
 
 
   /**
-   * <h4>反時計回り(Counter ClockWise)か調べ数値を返す</h4>
-   * <p>反時計回りの場合は正の値、時計回りの場合は負の値、一直線上の場合は0を返す</p>
+   * 反時計回り(Counter ClockWise)か調べ数値を返す
+   * 反時計回りの場合は正の値、時計回りの場合は負の値、一直線上の場合は0を返す
    *
    * @static
    * @method ccw
    * @param {Vec2} v1 Vec2
    * @param {Vec2} v2 Vec2
    * @param {Vec2} v3 Vec2
-   * @return {Number} 反時計回りの場合は正の値、時計回りの場合は負の値、一直線上の場合は0を返す
+   * @return {number} 反時計回りの場合は正の値、時計回りの場合は負の値、一直線上の場合は0を返す
    */
 	static ccw(v1, v2, v3) {
 		let vector = new Vector2(v2.x - v1.x, v2.y - v1.y);

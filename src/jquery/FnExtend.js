@@ -9,14 +9,14 @@
     jQueryプロトタイプ拡張
   ======================================================================*/
 	/**
-	 * <h4>jQueryプロトタイプ拡張</h4>
+	 * jQueryプロトタイプ拡張
 	 * <p>jQueryプロトタイプを拡張し機能追加します</p>
 	 *
 	 * @class jQuery.FnExtend
 	 */
 
 	/**
-	 * <h4>アニメーションキュー処理の追加</h4>
+	 * アニメーションキュー処理の追加
 	 *
 	 * @method addQ
 	 * @param {String|Function} attr メソッド名
@@ -41,7 +41,7 @@
 
 
 	/**
-	 * <h4>属性値のreplace処理</h4>
+	 * 属性値のreplace処理
 	 *
 	 * @method replaceAttr
 	 * @param {String} attr 属性名
@@ -62,7 +62,7 @@
 
 
   /**
-   * <h4>ファイルの拡張子を取得</h4>
+   * ファイルの拡張子を取得
    *
    * @method getExt
    * @param {String} attr 取得属性名

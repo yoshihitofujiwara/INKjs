@@ -13,13 +13,13 @@
     @constructor
   ----------------------------------------------------------------------*/
   /**
-   * <h4>バネ運動 v4実装予定</h4>
+   * バネ運動 v4実装予定
    *
    * @class AMP.Spring
    * @extends AMP.BaseClass
-   * @param {Number} x x座標
-   * @param {Number} y y座標
-   * @param {Object} option値
+   * @param {number} x x座標
+   * @param {number} y y座標
+   * @param {object} option値
    */
   function Spring(x, y, options){
     // super class call
@@ -48,46 +48,46 @@
     @property
   --------------------------------------------------------------------------*/
   /**
-   * <h4>バージョン情報</h4>
+   * バージョン情報
    *
    * @static
    * @property VERSION
-   * @type {String}
+   * @type {string}
    */
   Spring.VERSION = '1.0.0';
 
 
   /**
-   * <h4>デフォルト値オブジェクト</h4>
-   * <p>コンストラクタが呼び出し時に、引数とoptionsをmixinしてプロパティとしてエクスポートします</p>
+   * デフォルト値オブジェクト
+   * コンストラクタが呼び出し時に、引数とoptionsをmixinしてプロパティとしてエクスポートします
    *
    * @static
    * @property OPTIONS
-   * @type {Object}
+   * @type {object}
    */
   /**
-   * <h4>反発係数</h4>
+   * 反発係数
    *
    * @static
    * @property OPTIONS.rebound
    * @default 0.1
-   * @type {Number}
+   * @type {number}
    */
   /**
-   * <h4>バネの長さ（オブジェクトとの最小の距離）</h4>
+   * バネの長さ（オブジェクトとの最小の距離）
    *
    * @static
    * @property OPTIONS.distance
    * @default 0
-   * @type {Number}
+   * @type {number}
    */
   /**
-   * <h4>バネの最大の長さ（オブジェクトとの距離）</h4>
+   * バネの最大の長さ（オブジェクトとの距離）
    *
    * @static
    * @property OPTIONS.maxDistance
    * @default null
-   * @type {Number}
+   * @type {number}
    */
   Spring.OPTIONS = {
     rebound    : 0.1,
@@ -102,13 +102,13 @@
     @method
   --------------------------------------------------------------------------*/
   /**
-   * <h4>Springインスタンスの生成</h4>
+   * Springインスタンスの生成
    *
    * @static
    * @method get
-   * @param {Number} x x座標
-   * @param {Number} y y座標
-   * @param {Object} option値
+   * @param {number} x x座標
+   * @param {number} y y座標
+   * @param {object} option値
    * @return {Spring}
    */
   Spring.get = function(x, y, options){
@@ -118,11 +118,11 @@
 
   /**
    * /// FIXME : 計算ミス
-   * <h4>座標からSpringの力を取得します</h4>
+   * 座標からSpringの力を取得します
    *
    * @method getForce
    * @param  {Number|Vector2} x 座標
-   * @param  {Number} y 座標
+   * @param  {number} y 座標
    * @return {Vector2}
    */
   p.getForce = function(x, y){

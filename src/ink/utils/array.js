@@ -16,62 +16,60 @@ import * as is from "./is";
  * @static
  * @method argsToArray
  * @param {arguments} args arguments
- * @param {Number} index スライスする切り取り開始位置
- * @param {Number} lastIndex スライスする切り取り終了位置
- * @type {Array} argumentsを配列に変換して返す
+ * @param {number} index スライスする切り取り開始位置
+ * @param {number} lastIndex スライスする切り取り終了位置
+ * @type {array} argumentsを配列に変換して返す
  */
 export const argsToArray = (() => {
-  let slice = Array.prototype.slice;
+	let slice = Array.prototype.slice;
 
-  return (args, index, lastIndex) => {
-    index = index || 0;
-    lastIndex = lastIndex || args.length;
-    return slice.call(args, index, lastIndex);
-  };
+	return (args, index = 0, lastIndex) => {
+		lastIndex = lastIndex || args.length;
+		return slice.call(args, index, lastIndex);
+	};
 })();
 
 
-// FIXME: ES6 forEachに合わせる
 /**
  * each
  * @static
  * @method each
  * @param {Array|Object|Number} obj eachを行うオブジェクト、または回数
- * @param {Function} callback イテレーション毎のコールバック関数
- * @return {Object} 第一引数に渡されたオブジェクト
+ * @param {function} callback イテレーション毎のコールバック関数
+ * @return {object} 第一引数に渡されたオブジェクト
  */
-export function each(obj, callback){
-  let isContinue, i;
+export function each(obj, callback) {
+	let isContinue, i;
 
-  if(is.isArray(obj)){
-    let l = obj.length;
-    i = 0;
-    for(; i < l; i += 1){
+	if (is.isArray(obj)) {
+		let l = obj.length;
+		i = 0;
+		for (; i < l; i += 1) {
 			isContinue = callback.call(obj[i], obj[i], i, obj);
-      if(isContinue === false){
-        break;
-      }
-    }
+			if (isContinue === false) {
+				break;
+			}
+		}
 
-  } else if(is.isObject(obj) || is.isFunction(obj)){
-    for(i in obj){
+	} else if (is.isObject(obj) || is.isFunction(obj)) {
+		for (i in obj) {
 			isContinue = callback.call(obj[i], obj[i], i, obj);
-      if(isContinue === false){
-        break;
-      }
-    }
+			if (isContinue === false) {
+				break;
+			}
+		}
 
-  } else if(is.isNumber(obj)){
-    i = 0;
-    for(; i < obj; i += 1){
+	} else if (is.isNumber(obj)) {
+		i = 0;
+		for (; i < obj; i += 1) {
 			isContinue = callback.call(null, i, i, obj);
-      if(isContinue === false){
-        break;
-      }
-    }
-  }
+			if (isContinue === false) {
+				break;
+			}
+		}
+	}
 
-  return obj;
+	return obj;
 };
 
 
@@ -79,11 +77,11 @@ export function each(obj, callback){
  * 配列から最大値を探す
  * @static
  * @method findMax
- * @param  {Array} nums 数値を格納した配列
- * @return {Number}
+ * @param  {array} nums 数値を格納した配列
+ * @return {number}
  */
-export function findMax(nums){
-  return Math.max.apply(null, nums);
+export function findMax(nums) {
+	return Math.max.apply(null, nums);
 };
 
 
@@ -91,11 +89,11 @@ export function findMax(nums){
  * 配列から最小値を探す
  * @static
  * @method findMin
- * @param  {Array} nums 数値を格納した配列
- * @return {Number}
+ * @param  {array} nums 数値を格納した配列
+ * @return {number}
  */
-export function findMin(nums){
-  return Math.min.apply(null, nums);
+export function findMin(nums) {
+	return Math.min.apply(null, nums);
 };
 
 
@@ -103,11 +101,11 @@ export function findMin(nums){
  * 配列をシャッフルして返す
  * @static
  * @method shuffle
- * @param {Array} ary シャッフルする配列
- * @return {Array} 配列をシャッフルして返す
+ * @param {array} ary シャッフルする配列
+ * @return {array} 配列をシャッフルして返す
  */
-export function shuffle(ary){
-  return ary.sort(() => {
-    return Math.random() - 0.5;
-  });
+export function shuffle(ary) {
+	return ary.sort(() => {
+		return Math.random() - 0.5;
+	});
 };

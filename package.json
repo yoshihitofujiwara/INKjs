@@ -45,6 +45,5 @@
     "webpack-stream": "^4.0.1"
   },
   "dependencies": {
-    "get-user-media-promise": "^1.1.4"
   }
 }

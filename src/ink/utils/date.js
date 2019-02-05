@@ -12,7 +12,7 @@
  * 現在の日時情報を格納したオブジェクトを返す
  * @static
  * @method nowDate
- * @return {Object}
+ * @return {object}
  */
 export function nowDate() {
   let date = new Date();

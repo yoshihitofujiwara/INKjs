@@ -8,12 +8,15 @@ import * as utils from "../utils";
 import Vector2 from "./Vector2";
 
 
+// FIXME: class_graphicsに移動
+// FIXME: PIXIに合わす
+// see: https://github.com/pixijs/pixi.js/blob/dev/packages/graphics/src/utils/buildCircle.js
 /**
- * <h4>Circle</h4>
+ * Circle
  * @class Circle
- * @param  {Number} x      x座標
- * @param  {Number} y      y座標
- * @param  {Number} radius 半径
+ * @param  {number} x      x座標
+ * @param  {number} y      y座標
+ * @param  {number} radius 半径
  */
 export default class Circle {
   /**
@@ -21,23 +24,23 @@ export default class Circle {
    */
   constructor(x, y, radius) {
     /**
-     * <h4>座標</h4>
+     * 座標
      * @property position
      * @type {Vector2}
      */
     this.position = new Vector2(x, y);
 
     /**
-     * <h4>半径</h4>
+     * 半径
      * @property radius
-     * @type {Number}
+     * @type {number}
      */
     this.radius = radius;
   }
 
 
   /**
-   * <h4>クローンを生成</h4>
+   * クローンを生成
    * @method clone
    * @return {Circle}
    */
@@ -47,7 +50,7 @@ export default class Circle {
 
 
   /**
-   * <h4>衝突判定</h4>
+   * 衝突判定
    * @static
    * @method isCollision
    * @param  {Circle}  circle1 Circle1
@@ -62,7 +65,7 @@ export default class Circle {
 
 
   /**
-   * <h4>座標を含んでいるか</h4>
+   * 座標を含んでいるか
    * @static
    * @method inside
    * @param  {Circle}  circle Circle
@@ -76,12 +79,12 @@ export default class Circle {
 
 
   /**
-   * <h4>ラジアンと半径から円弧を求める</h4>
+   * ラジアンと半径から円弧を求める
    * @static
    * @method radToArc
-   * @param {Number} rad ラジアン
-   * @param {Number} radius 半径
-   * @return {Number} 円弧
+   * @param {number} rad ラジアン
+   * @param {number} radius 半径
+   * @return {number} 円弧
    */
   static radToArc(rad, radius){
     return (utils.TWO_PI * radius) * (rad / utils.TWO_PI);
@@ -89,13 +92,13 @@ export default class Circle {
 
 
   /**
-   * <h4>円周の現在の位置を返す</h4>
+   * 円周の現在の位置を返す
    * @static
    * @method betweenArc
-   * @param  {Number} radius        半径
-   * @param  {Number} startAngle    開始アングル
-   * @param  {Number} endAngle      終了アングル
-   * @param  {Number} tick          座標ポイント比 0-1の値
+   * @param  {number} radius        半径
+   * @param  {number} startAngle    開始アングル
+   * @param  {number} endAngle      終了アングル
+   * @param  {number} tick          座標ポイント比 0-1の値
    * @return {Vector}
    */
   static betweenArc(radius, startAngle, endAngle, tick){
@@ -108,15 +111,15 @@ export default class Circle {
 
 
   /**
-   * <h4>円周を分割して座標を配列格納して返します</h4>
+   * 円周を分割して座標を配列格納して返します
    * @static
    * @method circumference
-   * @param  {Number}   radius   半径
-   * @param  {Number}   split    分割数
-   * @param  {Number}   angle    スタートアングル
+   * @param  {number}   radius   半径
+   * @param  {number}   split    分割数
+   * @param  {number}   angle    スタートアングル
    * @param  {Boolean}   isCCW   反時計回り
-   * @param  {Function} callback コールバック関数
-   * @return {Array}
+   * @param  {function} callback コールバック関数
+   * @return {array}
    */
   static circumference(split, radius, angle, isCCW, callback){
     callback = callback || function(){};

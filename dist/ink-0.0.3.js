@@ -83,64 +83,65 @@
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "s", function() { return __WEBPACK_IMPORTED_MODULE_0__array__["b"]; });
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "u", function() { return __WEBPACK_IMPORTED_MODULE_0__array__["c"]; });
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "v", function() { return __WEBPACK_IMPORTED_MODULE_0__array__["d"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "_39", function() { return __WEBPACK_IMPORTED_MODULE_0__array__["e"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "_47", function() { return __WEBPACK_IMPORTED_MODULE_0__array__["e"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__config__ = __webpack_require__(11);
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "M", function() { return __WEBPACK_IMPORTED_MODULE_1__config__["a"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "N", function() { return __WEBPACK_IMPORTED_MODULE_1__config__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__date__ = __webpack_require__(12);
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "_28", function() { return __WEBPACK_IMPORTED_MODULE_2__date__["a"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "_29", function() { return __WEBPACK_IMPORTED_MODULE_2__date__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__has__ = __webpack_require__(13);
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "z", function() { return __WEBPACK_IMPORTED_MODULE_3__has__["a"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "A", function() { return __WEBPACK_IMPORTED_MODULE_3__has__["b"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "B", function() { return __WEBPACK_IMPORTED_MODULE_3__has__["c"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "A", function() { return __WEBPACK_IMPORTED_MODULE_3__has__["a"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "B", function() { return __WEBPACK_IMPORTED_MODULE_3__has__["b"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "C", function() { return __WEBPACK_IMPORTED_MODULE_3__has__["c"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__is__ = __webpack_require__(2);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "f", function() { return __WEBPACK_IMPORTED_MODULE_4__is__["a"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "D", function() { return __WEBPACK_IMPORTED_MODULE_4__is__["b"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "E", function() { return __WEBPACK_IMPORTED_MODULE_4__is__["c"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "F", function() { return __WEBPACK_IMPORTED_MODULE_4__is__["d"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "G", function() { return __WEBPACK_IMPORTED_MODULE_4__is__["e"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "H", function() { return __WEBPACK_IMPORTED_MODULE_4__is__["f"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "I", function() { return __WEBPACK_IMPORTED_MODULE_4__is__["g"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "J", function() { return __WEBPACK_IMPORTED_MODULE_4__is__["h"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "K", function() { return __WEBPACK_IMPORTED_MODULE_4__is__["i"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "L", function() { return __WEBPACK_IMPORTED_MODULE_4__is__["j"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "N", function() { return __WEBPACK_IMPORTED_MODULE_4__is__["k"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "O", function() { return __WEBPACK_IMPORTED_MODULE_4__is__["l"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "P", function() { return __WEBPACK_IMPORTED_MODULE_4__is__["m"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "Q", function() { return __WEBPACK_IMPORTED_MODULE_4__is__["n"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "R", function() { return __WEBPACK_IMPORTED_MODULE_4__is__["o"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "S", function() { return __WEBPACK_IMPORTED_MODULE_4__is__["p"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "T", function() { return __WEBPACK_IMPORTED_MODULE_4__is__["q"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "U", function() { return __WEBPACK_IMPORTED_MODULE_4__is__["r"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "V", function() { return __WEBPACK_IMPORTED_MODULE_4__is__["s"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "W", function() { return __WEBPACK_IMPORTED_MODULE_4__is__["t"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "Y", function() { return __WEBPACK_IMPORTED_MODULE_4__is__["u"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "Z", function() { return __WEBPACK_IMPORTED_MODULE_4__is__["v"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "_0", function() { return __WEBPACK_IMPORTED_MODULE_4__is__["w"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "_1", function() { return __WEBPACK_IMPORTED_MODULE_4__is__["x"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "_2", function() { return __WEBPACK_IMPORTED_MODULE_4__is__["y"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "_3", function() { return __WEBPACK_IMPORTED_MODULE_4__is__["z"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "_4", function() { return __WEBPACK_IMPORTED_MODULE_4__is__["A"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "_5", function() { return __WEBPACK_IMPORTED_MODULE_4__is__["B"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "_6", function() { return __WEBPACK_IMPORTED_MODULE_4__is__["C"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "_7", function() { return __WEBPACK_IMPORTED_MODULE_4__is__["D"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "_8", function() { return __WEBPACK_IMPORTED_MODULE_4__is__["E"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "_9", function() { return __WEBPACK_IMPORTED_MODULE_4__is__["F"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "_10", function() { return __WEBPACK_IMPORTED_MODULE_4__is__["G"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "_11", function() { return __WEBPACK_IMPORTED_MODULE_4__is__["H"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "_12", function() { return __WEBPACK_IMPORTED_MODULE_4__is__["I"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "_13", function() { return __WEBPACK_IMPORTED_MODULE_4__is__["J"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "_14", function() { return __WEBPACK_IMPORTED_MODULE_4__is__["K"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "_15", function() { return __WEBPACK_IMPORTED_MODULE_4__is__["L"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "_16", function() { return __WEBPACK_IMPORTED_MODULE_4__is__["M"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "_17", function() { return __WEBPACK_IMPORTED_MODULE_4__is__["N"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "_18", function() { return __WEBPACK_IMPORTED_MODULE_4__is__["O"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "_19", function() { return __WEBPACK_IMPORTED_MODULE_4__is__["P"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "_20", function() { return __WEBPACK_IMPORTED_MODULE_4__is__["Q"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "_21", function() { return __WEBPACK_IMPORTED_MODULE_4__is__["R"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "_45", function() { return __WEBPACK_IMPORTED_MODULE_4__is__["S"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "E", function() { return __WEBPACK_IMPORTED_MODULE_4__is__["b"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "F", function() { return __WEBPACK_IMPORTED_MODULE_4__is__["c"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "G", function() { return __WEBPACK_IMPORTED_MODULE_4__is__["d"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "H", function() { return __WEBPACK_IMPORTED_MODULE_4__is__["e"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "I", function() { return __WEBPACK_IMPORTED_MODULE_4__is__["f"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "J", function() { return __WEBPACK_IMPORTED_MODULE_4__is__["g"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "K", function() { return __WEBPACK_IMPORTED_MODULE_4__is__["h"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "L", function() { return __WEBPACK_IMPORTED_MODULE_4__is__["i"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "M", function() { return __WEBPACK_IMPORTED_MODULE_4__is__["j"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "O", function() { return __WEBPACK_IMPORTED_MODULE_4__is__["k"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "P", function() { return __WEBPACK_IMPORTED_MODULE_4__is__["l"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "Q", function() { return __WEBPACK_IMPORTED_MODULE_4__is__["m"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "R", function() { return __WEBPACK_IMPORTED_MODULE_4__is__["n"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "S", function() { return __WEBPACK_IMPORTED_MODULE_4__is__["o"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "T", function() { return __WEBPACK_IMPORTED_MODULE_4__is__["p"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "U", function() { return __WEBPACK_IMPORTED_MODULE_4__is__["q"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "V", function() { return __WEBPACK_IMPORTED_MODULE_4__is__["r"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "W", function() { return __WEBPACK_IMPORTED_MODULE_4__is__["s"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "X", function() { return __WEBPACK_IMPORTED_MODULE_4__is__["t"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "Z", function() { return __WEBPACK_IMPORTED_MODULE_4__is__["u"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "_0", function() { return __WEBPACK_IMPORTED_MODULE_4__is__["v"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "_1", function() { return __WEBPACK_IMPORTED_MODULE_4__is__["w"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "_2", function() { return __WEBPACK_IMPORTED_MODULE_4__is__["x"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "_3", function() { return __WEBPACK_IMPORTED_MODULE_4__is__["y"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "_4", function() { return __WEBPACK_IMPORTED_MODULE_4__is__["z"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "_5", function() { return __WEBPACK_IMPORTED_MODULE_4__is__["A"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "_6", function() { return __WEBPACK_IMPORTED_MODULE_4__is__["B"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "_7", function() { return __WEBPACK_IMPORTED_MODULE_4__is__["C"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "_8", function() { return __WEBPACK_IMPORTED_MODULE_4__is__["D"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "_9", function() { return __WEBPACK_IMPORTED_MODULE_4__is__["E"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "_10", function() { return __WEBPACK_IMPORTED_MODULE_4__is__["F"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "_11", function() { return __WEBPACK_IMPORTED_MODULE_4__is__["G"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "_12", function() { return __WEBPACK_IMPORTED_MODULE_4__is__["H"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "_13", function() { return __WEBPACK_IMPORTED_MODULE_4__is__["I"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "_14", function() { return __WEBPACK_IMPORTED_MODULE_4__is__["J"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "_15", function() { return __WEBPACK_IMPORTED_MODULE_4__is__["K"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "_16", function() { return __WEBPACK_IMPORTED_MODULE_4__is__["L"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "_17", function() { return __WEBPACK_IMPORTED_MODULE_4__is__["M"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "_18", function() { return __WEBPACK_IMPORTED_MODULE_4__is__["N"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "_19", function() { return __WEBPACK_IMPORTED_MODULE_4__is__["O"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "_20", function() { return __WEBPACK_IMPORTED_MODULE_4__is__["P"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "_21", function() { return __WEBPACK_IMPORTED_MODULE_4__is__["Q"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "_22", function() { return __WEBPACK_IMPORTED_MODULE_4__is__["R"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "_54", function() { return __WEBPACK_IMPORTED_MODULE_4__is__["S"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__location__ = __webpack_require__(14);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "y", function() { return __WEBPACK_IMPORTED_MODULE_5__location__["a"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "_31", function() { return __WEBPACK_IMPORTED_MODULE_5__location__["b"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "z", function() { return __WEBPACK_IMPORTED_MODULE_5__location__["b"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "_32", function() { return __WEBPACK_IMPORTED_MODULE_5__location__["c"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__math__ = __webpack_require__(15);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_6__math__["a"]; });
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_6__math__["b"]; });
@@ -157,41 +158,52 @@
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "q", function() { return __WEBPACK_IMPORTED_MODULE_6__math__["m"]; });
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "t", function() { return __WEBPACK_IMPORTED_MODULE_6__math__["n"]; });
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "w", function() { return __WEBPACK_IMPORTED_MODULE_6__math__["o"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "C", function() { return __WEBPACK_IMPORTED_MODULE_6__math__["p"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "X", function() { return __WEBPACK_IMPORTED_MODULE_6__math__["q"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "_22", function() { return __WEBPACK_IMPORTED_MODULE_6__math__["r"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "_24", function() { return __WEBPACK_IMPORTED_MODULE_6__math__["s"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "_27", function() { return __WEBPACK_IMPORTED_MODULE_6__math__["t"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "_32", function() { return __WEBPACK_IMPORTED_MODULE_6__math__["u"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "_33", function() { return __WEBPACK_IMPORTED_MODULE_6__math__["v"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "_34", function() { return __WEBPACK_IMPORTED_MODULE_6__math__["w"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "_35", function() { return __WEBPACK_IMPORTED_MODULE_6__math__["x"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "_38", function() { return __WEBPACK_IMPORTED_MODULE_6__math__["y"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "_40", function() { return __WEBPACK_IMPORTED_MODULE_6__math__["z"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "_41", function() { return __WEBPACK_IMPORTED_MODULE_6__math__["A"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "_42", function() { return __WEBPACK_IMPORTED_MODULE_6__math__["B"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__string__ = __webpack_require__(16);
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "m", function() { return __WEBPACK_IMPORTED_MODULE_7__string__["a"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "r", function() { return __WEBPACK_IMPORTED_MODULE_7__string__["b"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "_29", function() { return __WEBPACK_IMPORTED_MODULE_7__string__["c"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "_36", function() { return __WEBPACK_IMPORTED_MODULE_7__string__["d"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "_37", function() { return __WEBPACK_IMPORTED_MODULE_7__string__["e"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "_43", function() { return __WEBPACK_IMPORTED_MODULE_7__string__["f"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "_46", function() { return __WEBPACK_IMPORTED_MODULE_7__string__["g"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "_47", function() { return __WEBPACK_IMPORTED_MODULE_7__string__["h"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__utility__ = __webpack_require__(17);
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "h", function() { return __WEBPACK_IMPORTED_MODULE_8__utility__["a"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "x", function() { return __WEBPACK_IMPORTED_MODULE_8__utility__["b"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "_23", function() { return __WEBPACK_IMPORTED_MODULE_8__utility__["c"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "_25", function() { return __WEBPACK_IMPORTED_MODULE_8__utility__["d"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "_26", function() { return __WEBPACK_IMPORTED_MODULE_8__utility__["e"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "_30", function() { return __WEBPACK_IMPORTED_MODULE_8__utility__["f"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "_44", function() { return __WEBPACK_IMPORTED_MODULE_8__utility__["g"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "D", function() { return __WEBPACK_IMPORTED_MODULE_6__math__["p"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "Y", function() { return __WEBPACK_IMPORTED_MODULE_6__math__["q"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "_23", function() { return __WEBPACK_IMPORTED_MODULE_6__math__["r"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "_25", function() { return __WEBPACK_IMPORTED_MODULE_6__math__["s"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "_28", function() { return __WEBPACK_IMPORTED_MODULE_6__math__["t"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "_33", function() { return __WEBPACK_IMPORTED_MODULE_6__math__["u"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "_34", function() { return __WEBPACK_IMPORTED_MODULE_6__math__["v"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "_48", function() { return __WEBPACK_IMPORTED_MODULE_6__math__["w"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "_49", function() { return __WEBPACK_IMPORTED_MODULE_6__math__["x"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "_51", function() { return __WEBPACK_IMPORTED_MODULE_6__math__["y"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__random__ = __webpack_require__(16);
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "_35", function() { return __WEBPACK_IMPORTED_MODULE_7__random__["a"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "_36", function() { return __WEBPACK_IMPORTED_MODULE_7__random__["b"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "_37", function() { return __WEBPACK_IMPORTED_MODULE_7__random__["c"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "_38", function() { return __WEBPACK_IMPORTED_MODULE_7__random__["d"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "_39", function() { return __WEBPACK_IMPORTED_MODULE_7__random__["e"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "_40", function() { return __WEBPACK_IMPORTED_MODULE_7__random__["f"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "_41", function() { return __WEBPACK_IMPORTED_MODULE_7__random__["g"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "_42", function() { return __WEBPACK_IMPORTED_MODULE_7__random__["h"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "_43", function() { return __WEBPACK_IMPORTED_MODULE_7__random__["i"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "_44", function() { return __WEBPACK_IMPORTED_MODULE_7__random__["j"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__string__ = __webpack_require__(17);
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "m", function() { return __WEBPACK_IMPORTED_MODULE_8__string__["a"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "r", function() { return __WEBPACK_IMPORTED_MODULE_8__string__["b"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "_30", function() { return __WEBPACK_IMPORTED_MODULE_8__string__["c"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "_45", function() { return __WEBPACK_IMPORTED_MODULE_8__string__["d"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "_46", function() { return __WEBPACK_IMPORTED_MODULE_8__string__["e"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "_52", function() { return __WEBPACK_IMPORTED_MODULE_8__string__["f"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "_55", function() { return __WEBPACK_IMPORTED_MODULE_8__string__["g"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "_56", function() { return __WEBPACK_IMPORTED_MODULE_8__string__["h"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__utility__ = __webpack_require__(18);
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "h", function() { return __WEBPACK_IMPORTED_MODULE_9__utility__["a"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "x", function() { return __WEBPACK_IMPORTED_MODULE_9__utility__["b"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "_24", function() { return __WEBPACK_IMPORTED_MODULE_9__utility__["c"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "_26", function() { return __WEBPACK_IMPORTED_MODULE_9__utility__["d"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "_27", function() { return __WEBPACK_IMPORTED_MODULE_9__utility__["e"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "_31", function() { return __WEBPACK_IMPORTED_MODULE_9__utility__["f"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "_50", function() { return __WEBPACK_IMPORTED_MODULE_9__utility__["g"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "_53", function() { return __WEBPACK_IMPORTED_MODULE_9__utility__["h"]; });
 /// INKjs Javascript Library
 /// The MIT License (MIT)
 /// Source https://github.com/yoshihitofujiwara/INKjs
 /// Author Yoshihito Fujiwara
 /// Copyright (c) 2012 Yoshihito Fujiwara
+
+
 
 
 
@@ -222,10 +234,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 
 /**
- * <h4>2Dベクトル・座標を管理します</h4>
+ * 2Dベクトル・座標を管理します
  * @class Vector2
- * @param {Number} x x座標値
- * @param {Number} y y座標値
+ * @param {number} x x座標値
+ * @param {number} y y座標値
  * @param {Boolean} isDegrees アングルモードをDegreesにするか
  */
 
@@ -238,26 +250,26 @@ var Vector2 = function () {
     _classCallCheck(this, Vector2);
 
     /**
-     * <h4>X座標</h4>
+     * X座標
      * @property x
-     * @type {Number}
+     * @type {number}
      */
     this.x = x;
 
     /**
-     * <h4>Y座標</h4>
+     * Y座標
      * @property y
-     * @type {Number}
+     * @type {number}
      */
     this.y = y;
   }
 
   /**
-   * <h4>ラジアン角から2Dベクトルを作成</h4>
+   * ラジアン角から2Dベクトルを作成
    * @static
    * @method radToVector2
-   * @param {Number} rad radian
-   * @param {Number} mag ベクトルの大きさ
+   * @param {number} rad radian
+   * @param {number} mag ベクトルの大きさ
    * @return {Vector2}
    */
 
@@ -267,7 +279,7 @@ var Vector2 = function () {
 
 
     /**
-     * <h4>Vector2のcloneを生成します</h4>
+     * Vector2のcloneを生成します
      * @method clone
      * @return {Vector2}
      */
@@ -276,7 +288,7 @@ var Vector2 = function () {
     }
 
     /**
-     * <h4>初期値にセット</h4>
+     * 初期値にセット
      * @method identity
      * @return {Vector2}
      */
@@ -290,10 +302,10 @@ var Vector2 = function () {
     }
 
     /**
-     * <h4>ベクトル座標のセット</h4>
+     * ベクトル座標のセット
      * @method set
-     * @param {Number} x x座標値
-     * @param {Number} y y座標値
+     * @param {number} x x座標値
+     * @param {number} y y座標値
      * @return {Vector2}
      */
 
@@ -306,7 +318,7 @@ var Vector2 = function () {
     }
 
     /**
-     * <h4>ベクトル座標の加算</h4>
+     * ベクトル座標の加算
      * @method add
      * @param {Vector2} vec2 Vector2
      * @return {Vector2}
@@ -321,7 +333,7 @@ var Vector2 = function () {
     }
 
     /**
-     * <h4>ベクトル座標の減算</h4>
+     * ベクトル座標の減算
      * @method sub
      * @param {Vector2} vec2 Vector2
      * @return {Vector2}
@@ -336,9 +348,9 @@ var Vector2 = function () {
     }
 
     /**
-     * <h4>ベクトル座標の乗算</h4>
+     * ベクトル座標の乗算
      * @method mult
-     * @param {Number} num 乗数
+     * @param {number} num 乗数
      * @return {Vector2}
      */
 
@@ -351,9 +363,9 @@ var Vector2 = function () {
     }
 
     /**
-     * <h4>ベクトル座標の除算</h4>
+     * ベクトル座標の除算
      * @method div
-     * @param {Number} num 除数
+     * @param {number} num 除数
      * @return {Vector2}
      */
 
@@ -366,9 +378,9 @@ var Vector2 = function () {
     }
 
     /**
-     * <h4>ベクトルの大きさを設定</h4>
+     * ベクトルの大きさを設定
      * @method setMag
-     * @param {Number} mag ベクトルの大きさ
+     * @param {number} mag ベクトルの大きさ
      * @return {Vector2}
      */
 
@@ -381,9 +393,9 @@ var Vector2 = function () {
     }
 
     /**
-     * <h4>ベクトル2乗を返す</h4>
+     * ベクトル2乗を返す
      * @method magSq
-     * @return {Number} ベクトルの大きさ(長さ)の2乗を返す
+     * @return {number} ベクトルの大きさ(長さ)の2乗を返す
      */
 
   }, {
@@ -393,9 +405,9 @@ var Vector2 = function () {
     }
 
     /**
-     * <h4>ベクトルの大きさ(長さ)を返す</h4>
+     * ベクトルの大きさ(長さ)を返す
      * @method mag
-     * @return {Number} ベクトルの大きさ(長さ)を返す
+     * @return {number} ベクトルの大きさ(長さ)を返す
      */
 
   }, {
@@ -405,9 +417,9 @@ var Vector2 = function () {
     }
 
     /**
-     * <h4>ベクトルのアングル(angle mode指定)取得</h4>
+     * ベクトルのアングル(angle mode指定)取得
      * @method angle
-     * @return {Number} アングルを返す
+     * @return {number} アングルを返す
      */
 
   }, {
@@ -417,9 +429,9 @@ var Vector2 = function () {
     }
 
     /**
-     * <h4>ベクトルのアングル(angle mode指定)をセットする</h4>
+     * ベクトルのアングル(angle mode指定)をセットする
      * @method setAngle
-     * @param {Number} angle radianかdegrees値(angle mode指定)
+     * @param {number} angle radianかdegrees値(angle mode指定)
      * @return {Vector2}
      */
 
@@ -432,9 +444,9 @@ var Vector2 = function () {
     }
 
     /**
-     * <h4>ベクトルのアングル(ラジアン角)を加算</h4>
+     * ベクトルのアングル(ラジアン角)を加算
      * @method addAngle
-     * @param {Number} angle 加算するangle量
+     * @param {number} angle 加算するangle量
      * @return {Vector2}
      */
 
@@ -446,9 +458,9 @@ var Vector2 = function () {
     }
 
     /**
-     * <h4>ベクトルのアングル(ラジアン角)を減算</h4>
+     * ベクトルのアングル(ラジアン角)を減算
      * @method subAngle
-     * @param {Number} angle 減算するangle量
+     * @param {number} angle 減算するangle量
      * @return {Vector2}
      */
 
@@ -460,9 +472,9 @@ var Vector2 = function () {
     }
 
     /**
-     * <h4>ベクトルのアングル(ラジアン角)の乗算</h4>
+     * ベクトルのアングル(ラジアン角)の乗算
      * @method multAngle
-     * @param {Number} num 乗数
+     * @param {number} num 乗数
      * @return {Vector2}
      */
 
@@ -474,9 +486,9 @@ var Vector2 = function () {
     }
 
     /**
-     * <h4>ベクトルのアングル(ラジアン角)の除算</h4>
+     * ベクトルのアングル(ラジアン角)の除算
      * @method divAngle
-     * @param {Number} num 除数
+     * @param {number} num 除数
      * @return {Vector2}
      */
 
@@ -488,7 +500,7 @@ var Vector2 = function () {
     }
 
     /**
-     * <h4>正規化</h4>
+     * 正規化
      * @method normalize
      * @return {Vector2}
      */
@@ -504,9 +516,9 @@ var Vector2 = function () {
     }
 
     /**
-     * <h4>最大値の制限</h4>
+     * 最大値の制限
      * @method limit
-     * @param {Number} max 最大値
+     * @param {number} max 最大値
      * @return {Vector2}
      */
 
@@ -520,10 +532,10 @@ var Vector2 = function () {
     }
 
     /**
-     * <h4>線形補間</h4>
+     * 線形補間
      * @method lerp
      * @param {Vector2} vec2 Vector2
-     * @param {Number} amount amount量
+     * @param {number} amount amount量
      * @return {Vector2}
      */
 
@@ -536,10 +548,10 @@ var Vector2 = function () {
     }
 
     /**
-     * <h4>内積</h4>
+     * 内積
      * @method dot
      * @param {Vector2} vec2 Vector2
-     * @return {Number} ベクトルの内積
+     * @return {number} ベクトルの内積
      */
 
   }, {
@@ -549,10 +561,10 @@ var Vector2 = function () {
     }
 
     /**
-     * <h4>外積</h4>
+     * 外積
      * @method dot
      * @param {Vector2} vec2 Vector2
-     * @return {Number} ベクトルの外積
+     * @return {number} ベクトルの外積
      */
 
   }, {
@@ -565,7 +577,7 @@ var Vector2 = function () {
     /// Not Recommended
     ///==========================================================================
     /**
-     * <h4>ベクトル差分を返す</h4>
+     * ベクトル差分を返す
      * @method diff
      * @param {Vector2} vec2 Vector2
      * @return {Vector2}
@@ -578,10 +590,10 @@ var Vector2 = function () {
     }
 
     /**
-     * <h4>ベクトルの大きさ(長さ)の差分を返す</h4>
+     * ベクトルの大きさ(長さ)の差分を返す
      * @method diffMag
      * @param {Vector2} vec2 Vector2
-     * @return {Number}
+     * @return {number}
      */
 
   }, {
@@ -591,10 +603,10 @@ var Vector2 = function () {
     }
 
     /**
-     * <h4>ベクトルのラジアン差分を返す</h4>
+     * ベクトルのラジアン差分を返す
      * @method diffRad
      * @param {Vector2} vec2 Vector2
-     * @return {Number}
+     * @return {number}
      */
 
   }, {
@@ -607,11 +619,11 @@ var Vector2 = function () {
     }
 
     /**
-     * <h4>ベクトルの角度差分を返す</h4>
+     * ベクトルの角度差分を返す
      * @method diffDeg
      * @param {Vector2} vec2 Vector2
-     * @param {Number} y y座標値
-     * @return {Number}
+     * @param {number} y y座標値
+     * @return {number}
      */
 
   }, {
@@ -621,11 +633,11 @@ var Vector2 = function () {
     }
 
     /**
-     * <h4>2つのベクトルの大きさの中間値を返す</h4>
+     * 2つのベクトルの大きさの中間値を返す
      * @method betweenMag
      * @param {Vector2} vec2 Vector2
-     * @param {Number} ratio 中間ポイント 0 < 1 初期値: 0.5
-     * @return {Number}
+     * @param {number} ratio 中間ポイント 0 < 1 初期値: 0.5
+     * @return {number}
      */
 
   }, {
@@ -634,17 +646,17 @@ var Vector2 = function () {
       var mag1 = this.mag(),
           mag2 = vec2.mag();
 
-      ratio = __WEBPACK_IMPORTED_MODULE_0__utils__["_5" /* isNumber */](ratio) ? ratio : 0.5;
+      ratio = __WEBPACK_IMPORTED_MODULE_0__utils__["_6" /* isNumber */](ratio) ? ratio : 0.5;
 
       return mag1 + (mag2 - mag1) * ratio;
     }
 
     /**
-     * <h4>2つのベクトルの大きさの中間ラジアン値を返す</h4>
+     * 2つのベクトルの大きさの中間ラジアン値を返す
      * @method betweenRad
      * @param {Vector2} vec2 Vector2
-     * @param {Number} ratio 中間ポイント 0 < 1 初期値: 0.5
-     * @return {Number}
+     * @param {number} ratio 中間ポイント 0 < 1 初期値: 0.5
+     * @return {number}
      */
 
   }, {
@@ -653,16 +665,16 @@ var Vector2 = function () {
       var rad1 = Math.atan2(this.y, this.x),
           rad2 = Math.atan2(vec2.y, vec2.x);
 
-      ratio = __WEBPACK_IMPORTED_MODULE_0__utils__["_5" /* isNumber */](ratio) ? ratio : 0.5;
+      ratio = __WEBPACK_IMPORTED_MODULE_0__utils__["_6" /* isNumber */](ratio) ? ratio : 0.5;
       return rad1 + (rad2 - rad1) * ratio;
     }
 
     /**
-     * <h4>2つのベクトルの大きさの中間角を返す</h4>
+     * 2つのベクトルの大きさの中間角を返す
      * @method betweenDeg
      * @param {Vector2} vec2 Vector2
-     * @param {Number} ratio 中間ポイント 0 < 1 初期値: 0.5
-     * @return {Number}
+     * @param {number} ratio 中間ポイント 0 < 1 初期値: 0.5
+     * @return {number}
      */
 
   }, {
@@ -672,11 +684,11 @@ var Vector2 = function () {
     }
 
     /**
-     * <h4>角度から2Dベクトルを作成</h4>
+     * 角度から2Dベクトルを作成
      * @static
      * @method degTo2d
-     * @param {Number} deg degrees
-     * @param {Number} mag ベクトルの大きさ
+     * @param {number} deg degrees
+     * @param {number} mag ベクトルの大きさ
      * @return {Vector2}
      */
 
@@ -687,11 +699,11 @@ var Vector2 = function () {
     }
 
     /**
-     * <h4>角度から2Dベクトルを作成</h4>
+     * 角度から2Dベクトルを作成
      * @static
      * @method degToVector2
-     * @param {Number} deg degrees
-     * @param {Number} mag ベクトルの大きさ
+     * @param {number} deg degrees
+     * @param {number} mag ベクトルの大きさ
      * @return {Vector2}
      */
 
@@ -702,21 +714,21 @@ var Vector2 = function () {
     }
 
     /**
-     * <h4>ランダムな2Dベクトルを作成</h4>
+     * ランダムな2Dベクトルを作成
      * @static
      * @method random
-     * @param {Number} mag ベクトルの大きさ
+     * @param {number} mag ベクトルの大きさ
      * @return {Vector2}
      */
 
   }, {
     key: "random",
     value: function random(mag) {
-      return Vector2.radToVector2(__WEBPACK_IMPORTED_MODULE_0__utils__["_34" /* random */](__WEBPACK_IMPORTED_MODULE_0__utils__["e" /* TWO_PI */]), mag);
+      return Vector2.radToVector2(__WEBPACK_IMPORTED_MODULE_0__utils__["_35" /* random */](__WEBPACK_IMPORTED_MODULE_0__utils__["e" /* TWO_PI */]), mag);
     }
 
     /**
-     * <h4>座標の同値判定</h4>
+     * 座標の同値判定
      * @static
      * @method equals
      * @param {Vector2} v1 Vector2
@@ -731,12 +743,12 @@ var Vector2 = function () {
     }
 
     /**
-     * <h4>2つのベクトル座標間のユーグリッド距離</h4>
+     * 2つのベクトル座標間のユーグリッド距離
      * @static
      * @method distance
      * @param {Vector2} v1 Vector2
      * @param {Vector2} v2 Vector2
-     * @return {Number} 2つのベクトル間のユーグリッド距離
+     * @return {number} 2つのベクトル間のユーグリッド距離
      */
 
   }, {
@@ -753,11 +765,11 @@ var Vector2 = function () {
     }
 
     /**
-     * <h4>ベクトルの角度を取得する</h4>
+     * ベクトルの角度を取得する
      * @static
      * @method angle
      * @param {Vector2} vec2 Vector2
-     * @return {Number} アングルを返す
+     * @return {number} アングルを返す
      */
 
   }, {
@@ -767,13 +779,13 @@ var Vector2 = function () {
     }
 
     /**
-     * <h4>ベクトルの内積</h4>
+     * ベクトルの内積
      *
      * @static
      * @method dot
      * @param {Vector2} v1 Vector2
      * @param {Vector2} v2 Vector2
-     * @return {Number} ベクトルの内積
+     * @return {number} ベクトルの内積
      */
 
   }, {
@@ -783,12 +795,12 @@ var Vector2 = function () {
     }
 
     /**
-     * <h4>ベクトルの外積</h4>
+     * ベクトルの外積
      * @static
      * @method cross
      * @param {Vector2} v1 Vector2
      * @param {Vector2} v2 Vector2
-     * @return {Number} ベクトルの外積
+     * @return {number} ベクトルの外積
      */
 
   }, {
@@ -798,12 +810,12 @@ var Vector2 = function () {
     }
 
     /**
-     * <h4>ベクトル間の角度</h4>
+     * ベクトル間の角度
      * @static
      * @method angleBetween
      * @param {Vector2} v1 Vector2
      * @param {Vector2} v2 Vector2
-     * @return {Number} ラジアン角
+     * @return {number} ラジアン角
      */
 
   }, {
@@ -813,12 +825,12 @@ var Vector2 = function () {
     }
 
     /**
-     * <h4>別のベクトルに対する線形補間</h4>
+     * 別のベクトルに対する線形補間
      * @static
      * @method lerp
      * @param {Vector2} v1 Vector2
      * @param {Vector2} v2 Vector2
-     * @param {Number} amount amount量
+     * @param {number} amount amount量
      * @return {Vector2}
      */
 
@@ -892,38 +904,37 @@ var Vector2 = function () {
 /// Author Yoshihito Fujiwara
 /// Copyright (c) 2012 Yoshihito Fujiwara
 
+
 /**
  * @class Is
+ * see: http://diveintohtml5.info/everything.html
  */
 
 var toString = Object.prototype.toString;
 
-/// see: http://diveintohtml5.info/everything.html
-
-
 /**
- * <h4>ユーザーエージェント</h4>
+ * ユーザーエージェント
  * @static
  * @property UA
- * @type {String}
+ * @type {string}
  */
 var UA = navigator.userAgent;
 
 /**
- * <h4>ユーザーエージェント toLowerCase</h4>
+ * ユーザーエージェント toLowerCase
  * @static
  * @property ua
- * @type {String}
+ * @type {string}
  */
 var ua = UA.toLowerCase();
 
 /* isType
 -----------------------------------------------------------------*/
 /**
- * <h4>配列型判定</h4>
+ * 配列型判定
  * @static
  * @method isArray
- * @param {Object} obj 判定するオブジェクト
+ * @param {object} obj 判定するオブジェクト
  * @return {Boolean}
  */
 var isArray = Array.isArray || function (obj) {
@@ -931,10 +942,10 @@ var isArray = Array.isArray || function (obj) {
 };
 
 /**
- * <h4>真偽型判定</h4>
+ * 真偽型判定
  * @static
  * @method isBoolean
- * @param {Object} obj 判定するオブジェクト
+ * @param {object} obj 判定するオブジェクト
  * @return {Boolean}
  */
 function isBoolean(obj) {
@@ -942,10 +953,10 @@ function isBoolean(obj) {
 };
 
 /**
- * <h4>関数型判定</h4>
+ * 関数型判定
  * @static
  * @method isFunction
- * @param {Object} obj 判定するオブジェクト
+ * @param {object} obj 判定するオブジェクト
  * @return {Boolean}
  */
 function isFunction(obj) {
@@ -953,10 +964,10 @@ function isFunction(obj) {
 };
 
 /**
- * <h4>数値型判定</h4>
+ * 数値型判定
  * @static
  * @method isNumber
- * @param {Object} obj 判定するオブジェクト
+ * @param {object} obj 判定するオブジェクト
  * @return {Boolean}
  */
 function isNumber(obj) {
@@ -964,10 +975,10 @@ function isNumber(obj) {
 };
 
 /**
- * <h4>オブジェクト型判定</h4>
+ * オブジェクト型判定
  * @static
  * @method isObject
- * @param {Object} obj 判定するオブジェクト
+ * @param {object} obj 判定するオブジェクト
  * @return {Boolean}
  */
 function isObject(obj) {
@@ -975,10 +986,10 @@ function isObject(obj) {
 };
 
 /**
- * <h4>プレーンオブジェクト判定</h4>
+ * プレーンオブジェクト判定
  * @static
  * @method isPlainObject
- * @param {Object} obj 判定するオブジェクト
+ * @param {object} obj 判定するオブジェクト
  * @return {Boolean}
  */
 function isPlainObject(obj) {
@@ -986,10 +997,10 @@ function isPlainObject(obj) {
 };
 
 /**
- * <h4>文字列型判定</h4>
+ * 文字列型判定
  * @static
  * @method isString
- * @param {Object} obj 判定するオブジェクト
+ * @param {object} obj 判定するオブジェクト
  * @return {Boolean}
  */
 function isString(obj) {
@@ -997,10 +1008,10 @@ function isString(obj) {
 };
 
 /**
- * <h4>正規表現判定</h4>
+ * 正規表現判定
  * @static
  * @method isRegexp
- * @param {Object} obj 判定するオブジェクト
+ * @param {object} obj 判定するオブジェクト
  * @return {Boolean}
  */
 function isRegexp(obj) {
@@ -1008,10 +1019,10 @@ function isRegexp(obj) {
 };
 
 /**
- * <h4>undefined判定</h4>
+ * undefined判定
  * @static
  * @method isUndefined
- * @param {Object} obj 判定するオブジェクト
+ * @param {object} obj 判定するオブジェクト
  * @return {Boolean}
  */
 function isUndefined(obj) {
@@ -1019,10 +1030,10 @@ function isUndefined(obj) {
 };
 
 /**
- * <h4>null判定</h4>
+ * null判定
  * @static
  * @method isNull
- * @param {Object} obj 判定するオブジェクト
+ * @param {object} obj 判定するオブジェクト
  * @return {Boolean}
  */
 function isNull(obj) {
@@ -1030,10 +1041,10 @@ function isNull(obj) {
 };
 
 /**
- * <h4>マルチバイト文字列判定</h4>
+ * マルチバイト文字列判定
  * @static
  * @method isMultibyte
- * @param  {String}  chara 一文字
+ * @param  {string}  chara 一文字
  * @return {Boolean}
  */
 function isMultibyte(chara) {
@@ -1041,8 +1052,8 @@ function isMultibyte(chara) {
 };
 
 /**
- * <h4>isEmail Email判定</h4>
- * @param  {String}  email メールアドレス
+ * isEmail Email判定
+ * @param  {string}  email メールアドレス
  * @return {Boolean}
  */
 function isEmail(email) {
@@ -1052,10 +1063,10 @@ function isEmail(email) {
 /* OS
 -----------------------------------------------------------------*/
 /**
- * <h4>OS判定<h4>
+ * OS判定
  * @static
  * @method isOS
- * @param {String} os OS名 [windows, mac, ios, android]
+ * @param {string} os OS名 [windows, mac, ios, android]
  * @param {String|Number} ver バージョンナンバー Android ios のみ有効
  * @return {Boolean}
  */
@@ -1077,7 +1088,7 @@ function isOS(os, ver) {
 };
 
 /**
- * <h4>Windows判定</h4>
+ * Windows判定
  * @static
  * @method isWindows
  * @param {Number|String} バージョン名[7, 8, 8.1, 10] 省略可
@@ -1111,8 +1122,7 @@ function isWindows(ver) {
 };
 
 /**
- * <h4>Mac判定</h4>
- * <p>isoは、含みません</p>
+ * Mac判定 ※isoは、含みません
  * @static
  * @method isMac
  * @param {Number|String} バージョンナンバー 省略可
@@ -1128,7 +1138,7 @@ function isMac(ver) {
 };
 
 /**
- * <h4>ios判定</h4>
+ * ios判定
  * @static
  * @method isIos
  * @param {Number|String} バージョンナンバー 省略可
@@ -1144,7 +1154,7 @@ function isIos(ver) {
 };
 
 /**
- * <h4>Android判定</h4>
+ * Android判定
  * @static
  * @method isAndroid
  * @param {Number|String} バージョンナンバー 省略可
@@ -1161,11 +1171,11 @@ function isAndroid(ver) {
 /* Device
 -----------------------------------------------------------------*/
 /**
- * <h4>デバイス判定</h4>
+ * デバイス判定
  *
  * @static
  * @method isDevice
- * @param {String} device デバイス名<br>
+ * @param {string} device デバイス名<br>
  * デバイス名 | 引数文字列 <br>
  * PC (for Desktop) | pc <br>
  * Smart Device | sd, smartdevice <br>
@@ -1205,7 +1215,7 @@ function isDevice(device) {
 };
 
 /**
- * <h4>PC判定</h4>
+ * PC判定
  * @static
  * @method isPC
  * @return {Boolean}
@@ -1215,7 +1225,7 @@ function isPC() {
 };
 
 /**
- * <h4>スマートデバイス判定</h4>
+ * スマートデバイス判定
  * @static
  * @method isSmartDevice
  * @return {Boolean}
@@ -1225,7 +1235,7 @@ function isSmartDevice() {
 };
 
 /**
- * <h4>SmartPhone判定</h4>
+ * SmartPhone判定
  * @static
  * @method isSmartPhone
  * @return {Boolean}
@@ -1235,7 +1245,7 @@ function isSmartPhone() {
 };
 
 /**
- * <h4>タブレット判定</h4>
+ * タブレット判定
  * @static
  * @method isTablet
  * @return {Boolean}
@@ -1245,7 +1255,7 @@ function isTablet() {
 };
 
 /**
- * <h4>iPhone判定</h4>
+ * iPhone判定
  * @static
  * @method isIPhone
  * @return {Boolean}
@@ -1255,7 +1265,7 @@ function isIPhone() {
 };
 
 /**
- * <h4>iPad判定</h4>
+ * iPad判定
  * @static
  * @method isIPad
  * @return {Boolean}
@@ -1265,7 +1275,7 @@ function isIPad() {
 };
 
 /**
- * <h4>iPod判定</h4>
+ * iPod判定
  * @static
  * @method isIPod
  * @return {Boolean}
@@ -1275,7 +1285,7 @@ function isIPod() {
 };
 
 /**
- * <h4>AndroidPhone判定</h4>
+ * AndroidPhone判定
  * @static
  * @method isAndroidPhone
  * @return {Boolean}
@@ -1285,7 +1295,7 @@ function isAndroidPhone() {
 };
 
 /**
- * <h4>AndroidTablet判定</h4>
+ * AndroidTablet判定
  * @static
  * @method isAndroidTablet
  * @return {Boolean}
@@ -1297,10 +1307,10 @@ function isAndroidTablet() {
 /* Browser
 -----------------------------------------------------------------*/
 /**
- * <h4>ブラウザ判定</h4>
+ * ブラウザ判定
  * @static
  * @method isBrowser
- * @param {String} key ブラウザ名<br>
+ * @param {string} key ブラウザ名<br>
  * ブラウザ名 | 引数文字列 <br>
  * Microsoft Edge | edge <br>
  * Internet Explorer | ie <br>
@@ -1348,10 +1358,10 @@ function isBrowser(browser, ver) {
 };
 
 /**
- * <h4>IE判定</h4>
+ * IE判定
  * @static
  * @method isIE
- * @param {Number}  ver バージョンナンバー 省略可
+ * @param {number}  ver バージョンナンバー 省略可
  * @return {Boolean}
  */
 function isIE(ver) {
@@ -1362,8 +1372,9 @@ function isIE(ver) {
   }
 };
 
+// NOTE: edgeがChromium採用予定なので判定処理をアップデート予定
 /**
- * <h4>Microsoft Edge判定</h4>
+ * Microsoft Edge判定
  * @static
  * @method isEdge
  * @param {Number|String}  ver バージョン名
@@ -1375,7 +1386,7 @@ function isEdge(ver) {
 };
 
 /**
- * <h4>PC版 Chrome判定</h4>
+ * PC版 Chrome判定
  * @static
  * @method isChrome
  * @return {Boolean}
@@ -1389,7 +1400,7 @@ function isChrome(ver) {
 };
 
 /**
- * <h4>PC版 Firefox判定</h4>
+ * PC版 Firefox判定
  * @static
  * @method isFirefox
  * @return {Boolean}
@@ -1403,7 +1414,7 @@ function isFirefox(ver) {
 };
 
 /**
- * <h4>PC版 Safari判定</h4>
+ * PC版 Safari判定
  * @static
  * @method isSafari
  * @return {Boolean}
@@ -1417,7 +1428,7 @@ function isSafari(ver) {
 };
 
 /**
- * <h4>MobileSafari判定</h4>
+ * MobileSafari判定
  * @static
  * @method isMobileSafari
  * @param {Number|String} ver バージョンナンバー  省略可
@@ -1432,7 +1443,7 @@ function isMobileSafari(ver) {
 };
 
 /**
- * <h4>Android標準Browser判定</h4>
+ * Android標準Browser判定
  * @static
  * @method isAndroidBrowser
  * @param {Number|String} ver バージョンナンバー 省略可
@@ -1447,7 +1458,7 @@ function isAndroidBrowser(ver) {
 };
 
 /**
- * <h4>Mobile Chrome判定</h4>
+ * Mobile Chrome判定
  * @static
  * @method isMobileChrome
  * @param {Number|String} ver バージョンナンバー 省略可
@@ -1458,7 +1469,7 @@ function isMobileChrome(ver) {
 };
 
 /**
- * <h4>ios Chrome判定</h4>
+ * ios Chrome判定
  * @static
  * @method isIosChrome
  * @param {Number|String} ver バージョンナンバー 省略可
@@ -1473,7 +1484,7 @@ function isIosChrome(ver) {
 };
 
 /**
- * <h4>Android Chrome判定</h4>
+ * Android Chrome判定
  * @static
  * @method isAndroidChrome
  * @param {Number|String} ver バージョンナンバー 省略可
@@ -1488,7 +1499,7 @@ function isAndroidChrome(ver) {
 };
 
 /**
- * <h4>webkit ブラウザ判定</h4>
+ * webkit ブラウザ判定
  * @static
  * @method isWebkit
  * @return {Boolean}
@@ -1500,7 +1511,7 @@ function isWebkit() {
 /* Utility
 -----------------------------------------------------------------*/
 /**
- * <h4>File APIの有無</h4>
+ * File APIの有無
  * @static
  * @method isFileAPI
  * @return {Boolean}
@@ -1510,7 +1521,7 @@ function isFileAPI() {
 };
 
 /**
- * <h4>RequestFileSystemの有無</h4>
+ * RequestFileSystemの有無
  * @static
  * @method isRequestFileSystem
  * @return {Boolean}
@@ -1520,7 +1531,7 @@ function isRequestFileSystem() {
 };
 
 /**
- * <h4>Storage機能が使えるか判定</h4>
+ * Storage機能が使えるか判定
  * @static
  * @method isStorage
  * @return {Boolean}
@@ -1542,7 +1553,7 @@ function isStorage() {
 };
 
 /**
- * <h4>TouchScreen判定</h4>
+ * TouchScreen判定
  * @static
  * @method isTouchScreen
  * @return {Boolean}
@@ -1578,8 +1589,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 
 /**
- * <h4>イベント</h4>
- * <p>イベントクラスの継承して使用出来ます｡メディエーターとしても使用すことも可能</p>
+ * イベント
+ * イベントクラスの継承して使用出来ます｡メディエーターとしても使用すことも可能
  *
  * @class Events
  * @constructor
@@ -1601,263 +1612,263 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
  */
 
 var Events = function () {
-  /**
-   * constructor
+	/**
+  * constructor
+  */
+	function Events() {
+		_classCallCheck(this, Events);
+
+		/**
+   * id
+   * @private
+   * @property _id
+   * @type {string}
    */
-  function Events() {
-    _classCallCheck(this, Events);
+		this._id = __WEBPACK_IMPORTED_MODULE_0__utils__["m" /* createId */]();
 
-    /**
-     * <h4>id</h4>
-     * @private
-     * @property _id
-     * @type {String}
-     */
-    this._id = __WEBPACK_IMPORTED_MODULE_0__utils__["m" /* createId */]();
+		/**
+   * イベントリスナーを連想配列で格納します
+   * @private
+   * @property _listeners
+   * @type {object}
+   * @example
+   *   _listeners[eventName] = [{
+   *      attr    : eventObj.attr, <br>
+   *      listener: listener, <br>
+   *      context : context <br>
+   *   }]
+   */
+		this._listeners = {};
+	}
 
-    /**
-     * <h4>イベントリスナーを連想配列で格納します</h4>
-     * @private
-     * @property _listeners
-     * @type {Object}
-     * @example
-     *   _listeners[eventName] = [{
-     *      attr    : eventObj.attr, <br>
-     *      listener: listener, <br>
-     *      context : context <br>
-     *   }]
-     */
-    this._listeners = {};
-  }
+	/**
+  * イベント登録
+  * イベント名に属性名を付与するも可能
+  * @method on
+  * @param {string} type イベントタイプ
+  * @param {function} listener イベントリスナー
+  * @param {object} context コンテキスト
+  * @return {Events}
+  */
 
-  /**
-   * <h4>イベント登録</h4>
-   * <p>イベント名に属性名を付与するも可能</p>
-   * @method on
-   * @param {String} type イベントタイプ
-   * @param {Function} listener イベントリスナー
-   * @param {Object} context コンテキスト
+
+	_createClass(Events, [{
+		key: 'on',
+		value: function on(type, listener, context) {
+			this._addEvent(type, listener, context);
+			return this;
+		}
+
+		/**
+   * 1度だけ実行するイベント登録
+   * @method onece
+   * @param {string} type イベントタイプ
+   * @param {function} listener イベントリスナー
+   * @param {object} context コンテキスト
    * @return {Events}
    */
 
+	}, {
+		key: 'onece',
+		value: function onece(type, listener, context) {
+			var _this = this,
+			    _arguments = arguments;
 
-  _createClass(Events, [{
-    key: 'on',
-    value: function on(type, listener, context) {
-      this._addEvent(type, listener, context);
-      return this;
-    }
+			this.on(type, function () {
+				_this.off(type);
+				listener.apply(_this, _arguments);
+			}, context);
 
-    /**
-     * <h4>1度だけ実行するイベント登録</h4>
-     * @method onece
-     * @param {String} type イベントタイプ
-     * @param {Function} listener イベントリスナー
-     * @param {Object} context コンテキスト
-     * @return {Events}
-     */
+			return this;
+		}
 
-  }, {
-    key: 'onece',
-    value: function onece(type, listener, context) {
-      var _this = this,
-          _arguments = arguments;
+		/**
+   * イベント削除
+   * type省略時は、全てのイベントを削除<br>
+   * listener省略時は、指定イベントタイプ全て削除
+   *
+   * @method off
+   * @param {string} type イベントタイプ 省略可
+   * @param {function} listener イベントリスナー 省略可
+   * @return {Events}
+   */
 
-      this.on(type, function () {
-        _this.off(type);
-        listener.apply(_this, _arguments);
-      }, context);
+	}, {
+		key: 'off',
+		value: function off(type, listener) {
+			this._removeEvent(type, listener);
+			return this;
+		}
 
-      return this;
-    }
+		/**
+   * イベント追加
+   * @private
+   * @method _addEvent
+   * @param {string} type イベントタイプ
+   * @param {function} listener コールバック関数
+   * @param {object} context コンテキスト
+   * @return {Void}
+   */
 
-    /**
-     * <h4>イベント削除</h4>
-     * <p>type省略時は、全てのイベントを削除<br>
-     * listener省略時は、指定イベントタイプ全て削除</p>
-     *
-     * @method off
-     * @param {String} type イベントタイプ 省略可
-     * @param {Function} listener イベントリスナー 省略可
-     * @return {Events}
-     */
+	}, {
+		key: '_addEvent',
+		value: function _addEvent(type, listener, context) {
+			var _this2 = this;
 
-  }, {
-    key: 'off',
-    value: function off(type, listener) {
-      this._removeEvent(type, listener);
-      return this;
-    }
+			var events = type.split(' ');
+			if (__WEBPACK_IMPORTED_MODULE_0__utils__["T" /* isFunction */](listener)) {
+				__WEBPACK_IMPORTED_MODULE_0__utils__["s" /* each */](events, function (item) {
+					var eventObj = _this2._getEventNameMap(item);
+					_this2._listeners[eventObj.type] = _this2._listeners[eventObj.type] || [];
+					_this2._listeners[eventObj.type].push({
+						attr: eventObj.attr,
+						listener: listener,
+						context: context
+					});
+				});
+			}
+		}
 
-    /**
-     * <h4>イベント追加</h4>
-     * @private
-     * @method _addEvent
-     * @param {String} type イベントタイプ
-     * @param {Function} listener コールバック関数
-     * @param {Object} context コンテキスト
-     * @return {Void}
-     */
+		/**
+   * イベント削除
+   * @private
+   * @method _removeEvent
+   * @param {string} type イベントタイプ
+   * @param {function} listener コールバック関数
+   * @return {Void}
+   */
 
-  }, {
-    key: '_addEvent',
-    value: function _addEvent(type, listener, context) {
-      var _this2 = this;
+	}, {
+		key: '_removeEvent',
+		value: function _removeEvent(type, listener) {
+			var _this3 = this;
 
-      var events = type.split(' ');
-      if (__WEBPACK_IMPORTED_MODULE_0__utils__["S" /* isFunction */](listener)) {
-        __WEBPACK_IMPORTED_MODULE_0__utils__["s" /* each */](events, function (item) {
-          var eventObj = _this2._getEventNameMap(item);
-          _this2._listeners[eventObj.type] = _this2._listeners[eventObj.type] || [];
-          _this2._listeners[eventObj.type].push({
-            attr: eventObj.attr,
-            listener: listener,
-            context: context
-          });
-        });
-      }
-    }
+			var events = type ? type.split(' ') : [],
+			    ary = null,
+			    listeners = void 0;
 
-    /**
-     * <h4>イベント削除</h4>
-     * @private
-     * @method _removeEvent
-     * @param {String} type イベントタイプ
-     * @param {Function} listener コールバック関数
-     * @return {Void}
-     */
+			listener = __WEBPACK_IMPORTED_MODULE_0__utils__["x" /* getFunctionName */](listener);
 
-  }, {
-    key: '_removeEvent',
-    value: function _removeEvent(type, listener) {
-      var _this3 = this;
+			__WEBPACK_IMPORTED_MODULE_0__utils__["s" /* each */](events, function (event) {
+				var eventObj = _this3._getEventNameMap(event);
 
-      var events = type ? type.split(' ') : [],
-          ary = null,
-          listeners = void 0;
+				if (eventObj && eventObj.attr && _this3._listeners[eventObj.type]) {
+					// イベント属性指定がある場合
+					listeners = _this3._listeners[eventObj.type];
 
-      listener = __WEBPACK_IMPORTED_MODULE_0__utils__["x" /* getFunctionName */](listener);
+					__WEBPACK_IMPORTED_MODULE_0__utils__["s" /* each */](listeners, function (item) {
+						if (item.attr !== eventObj.attr) {
+							if (listener) {
+								if (listener !== __WEBPACK_IMPORTED_MODULE_0__utils__["x" /* getFunctionName */](item.listener)) {
+									ary = ary || [];
+									ary.push(item);
+								}
+							} else {
+								ary = ary || [];
+								ary.push(item);
+							}
+						}
+					});
 
-      __WEBPACK_IMPORTED_MODULE_0__utils__["s" /* each */](events, function (event) {
-        var eventObj = _this3._getEventNameMap(event);
+					_this3._listeners[eventObj.type] = ary;
+				} else if (eventObj) {
+					// イベントタイプ指定ある場合
+					if (listener) {
+						listeners = _this3._listeners[eventObj.type];
 
-        if (eventObj && eventObj.attr && _this3._listeners[eventObj.type]) {
-          // イベント属性指定がある場合
-          listeners = _this3._listeners[eventObj.type];
+						__WEBPACK_IMPORTED_MODULE_0__utils__["s" /* each */](listeners, function (item) {
+							if (listener !== __WEBPACK_IMPORTED_MODULE_0__utils__["x" /* getFunctionName */](item.listener)) {
+								ary = ary || [];
+								ary.push(item);
+							}
+						});
+					}
 
-          __WEBPACK_IMPORTED_MODULE_0__utils__["s" /* each */](listeners, function (item) {
-            if (item.attr !== eventObj.attr) {
-              if (listener) {
-                if (listener !== __WEBPACK_IMPORTED_MODULE_0__utils__["x" /* getFunctionName */](item.listener)) {
-                  ary = ary || [];
-                  ary.push(item);
-                }
-              } else {
-                ary = ary || [];
-                ary.push(item);
-              }
-            }
-          });
+					_this3._listeners[eventObj.type] = ary;
+				} else {
+					// イベント全て削除
+					_this3._listeners = null;
+					_this3._listeners = {};
+				}
+			});
+		}
 
-          _this3._listeners[eventObj.type] = ary;
-        } else if (eventObj) {
-          // イベントタイプ指定ある場合
-          if (listener) {
-            listeners = _this3._listeners[eventObj.type];
+		/**
+   * イベント名、イベント属性を連想配列にして返す
+   * @private
+   * @method _getEventNameMap
+   * @param {string} type イベントタイプ
+   * @return {object}
+   */
 
-            __WEBPACK_IMPORTED_MODULE_0__utils__["s" /* each */](listeners, function (item) {
-              if (listener !== __WEBPACK_IMPORTED_MODULE_0__utils__["x" /* getFunctionName */](item.listener)) {
-                ary = ary || [];
-                ary.push(item);
-              }
-            });
-          }
+	}, {
+		key: '_getEventNameMap',
+		value: function _getEventNameMap(type) {
+			var events = type.split('.');
+			return {
+				type: events[0],
+				attr: events[1]
+			};
+		}
 
-          _this3._listeners[eventObj.type] = ary;
-        } else {
-          // イベント全て削除
-          _this3._listeners = null;
-          _this3._listeners = {};
-        }
-      });
-    }
+		/**
+   * 登録イベントがあるか判定します
+   * @method hasEvent
+   * @param {string} type イベントタイプ
+   * @return {Boolean}
+   */
 
-    /**
-     * <h4>イベント名、イベント属性を連想配列にして返す</h4>
-     * @private
-     * @method _getEventNameMap
-     * @param {String} type イベントタイプ
-     * @return {Object}
-     */
+	}, {
+		key: 'hasEvent',
+		value: function hasEvent(type) {
+			var flag = false,
+			    events = this._getEventNameMap(type),
+			    listeners = this._listeners[events.type];
 
-  }, {
-    key: '_getEventNameMap',
-    value: function _getEventNameMap(type) {
-      var events = type.split('.');
-      return {
-        type: events[0],
-        attr: events[1]
-      };
-    }
+			// イベントリスナーの有無
+			if (listeners) {
+				// 属性指定がある場合
+				if (events.attr) {
+					__WEBPACK_IMPORTED_MODULE_0__utils__["s" /* each */](listeners, function (item) {
+						if (item.attr === events.attr) {
+							flag = true;
+							return false;
+						}
+					});
+				} else {
+					flag = true;
+				}
+			}
+			return flag;
+		}
 
-    /**
-     * <h4>登録イベントがあるか判定します</h4>
-     * @method hasEvent
-     * @param {String} type イベントタイプ
-     * @return {Boolean}
-     */
+		/**
+   * イベント発行
+   * 第二引数以降に値を渡すとcallbackに引数として渡します
+   * @method trigger
+   * @param {string} type イベントタイプ
+   * @return {Events}
+   */
 
-  }, {
-    key: 'hasEvent',
-    value: function hasEvent(type) {
-      var flag = false,
-          events = this._getEventNameMap(type),
-          listeners = this._listeners[events.type];
+	}, {
+		key: 'trigger',
+		value: function trigger(type) {
+			var events = this._getEventNameMap(type),
+			    listeners = this._listeners[events.type],
+			    args = __WEBPACK_IMPORTED_MODULE_0__utils__["g" /* argsToArray */](arguments, 1);
 
-      // イベントリスナーの有無
-      if (listeners) {
-        // 属性指定がある場合
-        if (events.attr) {
-          __WEBPACK_IMPORTED_MODULE_0__utils__["s" /* each */](listeners, function (item) {
-            if (item.attr === events.attr) {
-              flag = true;
-              return false;
-            }
-          });
-        } else {
-          flag = true;
-        }
-      }
-      return flag;
-    }
+			if (listeners) {
+				__WEBPACK_IMPORTED_MODULE_0__utils__["s" /* each */](listeners, function (item) {
+					if (!events.attr || item.attr === events.attr) {
+						item.listener.apply(item.context, args);
+					}
+				});
+			}
+			return this;
+		}
+	}]);
 
-    /**
-     * <h4>イベント発行</h4>
-     * <p>第二引数以降に値を渡すとcallbackに引数として渡します</p>
-     * @method trigger
-     * @param {String} type イベントタイプ
-     * @return {Events}
-     */
-
-  }, {
-    key: 'trigger',
-    value: function trigger(type) {
-      var events = this._getEventNameMap(type),
-          listeners = this._listeners[events.type],
-          args = __WEBPACK_IMPORTED_MODULE_0__utils__["g" /* argsToArray */](arguments, 1);
-
-      if (listeners) {
-        __WEBPACK_IMPORTED_MODULE_0__utils__["s" /* each */](listeners, function (item) {
-          if (!events.attr || item.attr === events.attr) {
-            item.listener.apply(item.context, args);
-          }
-        });
-      }
-      return this;
-    }
-  }]);
-
-  return Events;
+	return Events;
 }();
 
 /* harmony default export */ __webpack_exports__["a"] = (Events);
@@ -1886,99 +1897,101 @@ var Events = function () {
  */
 
 /**
- * <h4>argumentsを配列に変換して返す</h4>
- * <p>スライス位置を指定して切り取り可能</p>
+ * argumentsを配列に変換して返す
+ * スライス位置を指定して切り取り可能
  * @static
  * @method argsToArray
  * @param {arguments} args arguments
- * @param {Number} index スライスする切り取り開始位置
- * @param {Number} lastIndex スライスする切り取り終了位置
- * @type {Array} argumentsを配列に変換して返す
+ * @param {number} index スライスする切り取り開始位置
+ * @param {number} lastIndex スライスする切り取り終了位置
+ * @type {array} argumentsを配列に変換して返す
  */
 var argsToArray = function () {
-  var slice = Array.prototype.slice;
+	var slice = Array.prototype.slice;
 
-  return function (args, index, lastIndex) {
-    index = index || 0;
-    lastIndex = lastIndex || args.length;
-    return slice.call(args, index, lastIndex);
-  };
+	return function (args) {
+		var index = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
+		var lastIndex = arguments[2];
+
+		lastIndex = lastIndex || args.length;
+		return slice.call(args, index, lastIndex);
+	};
 }();
 
 /**
- * <h4>each</h4>
+ * each
  * @static
  * @method each
  * @param {Array|Object|Number} obj eachを行うオブジェクト、または回数
- * @param {Function} callback イテレーション毎のコールバック関数
- * @return {Object} 第一引数に渡されたオブジェクト
+ * @param {function} callback イテレーション毎のコールバック関数
+ * @return {object} 第一引数に渡されたオブジェクト
  */
 function each(obj, callback) {
-  var isContinue = void 0,
-      i = void 0;
+	var isContinue = void 0,
+	    i = void 0;
 
-  if (__WEBPACK_IMPORTED_MODULE_0__is__["g" /* isArray */](obj)) {
-    var l = obj.length;
-    i = 0;
-    for (; i < l; i += 1) {
-      isContinue = callback.call(obj[i], obj[i], i, obj);
-      if (isContinue === false) {
-        break;
-      }
-    }
-  } else if (__WEBPACK_IMPORTED_MODULE_0__is__["D" /* isObject */](obj) || __WEBPACK_IMPORTED_MODULE_0__is__["p" /* isFunction */](obj)) {
-    for (i in obj) {
-      isContinue = callback.call(obj[i], obj[i], i, obj);
-      if (isContinue === false) {
-        break;
-      }
-    }
-  } else if (__WEBPACK_IMPORTED_MODULE_0__is__["B" /* isNumber */](obj)) {
-    i = 0;
-    for (; i < obj; i += 1) {
-      isContinue = callback.call(null, i, i, obj);
-      if (isContinue === false) {
-        break;
-      }
-    }
-  }
+	if (__WEBPACK_IMPORTED_MODULE_0__is__["g" /* isArray */](obj)) {
+		var l = obj.length;
+		i = 0;
+		for (; i < l; i += 1) {
+			isContinue = callback.call(obj[i], obj[i], i, obj);
+			if (isContinue === false) {
+				break;
+			}
+		}
+	} else if (__WEBPACK_IMPORTED_MODULE_0__is__["D" /* isObject */](obj) || __WEBPACK_IMPORTED_MODULE_0__is__["p" /* isFunction */](obj)) {
+		for (i in obj) {
+			isContinue = callback.call(obj[i], obj[i], i, obj);
+			if (isContinue === false) {
+				break;
+			}
+		}
+	} else if (__WEBPACK_IMPORTED_MODULE_0__is__["B" /* isNumber */](obj)) {
+		i = 0;
+		for (; i < obj; i += 1) {
+			isContinue = callback.call(null, i, i, obj);
+			if (isContinue === false) {
+				break;
+			}
+		}
+	}
 
-  return obj;
+	return obj;
 };
 
 /**
- * <h4>配列から最大値を探す</h4>
+ * 配列から最大値を探す
  * @static
  * @method findMax
- * @param  {Array} nums 数値を格納した配列
- * @return {Number}
+ * @param  {array} nums 数値を格納した配列
+ * @return {number}
  */
 function findMax(nums) {
-  return Math.max.apply(null, nums);
+	return Math.max.apply(null, nums);
 };
 
 /**
- * <h4>配列から最小値を探す</h4>
+ * 配列から最小値を探す
  * @static
  * @method findMin
- * @param  {Array} nums 数値を格納した配列
- * @return {Number}
+ * @param  {array} nums 数値を格納した配列
+ * @return {number}
  */
 function findMin(nums) {
-  return Math.min.apply(null, nums);
+	return Math.min.apply(null, nums);
 };
 
 /**
- * <h4>配列をシャッフルして返す</h4>
+ * 配列をシャッフルして返す
  * @static
  * @method shuffle
- * @param {Array} ary シャッフルする配列
- * @return {Array} 配列をシャッフルして返す
+ * @param {array} ary シャッフルする配列
+ * @return {array} 配列をシャッフルして返す
  */
 function shuffle(ary) {
-  return ary.sort(function () {
-    return Math.random() - 0.5;
-  });
+	return ary.sort(function () {
+		return Math.random() - 0.5;
+	});
 };
 
 /***/ }),
@@ -2000,10 +2013,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 
 /**
- * <h4>Size</h4>
+ * Size
  * @class Size
  * @param {Number|Object|Array} width  幅
- * @param {Number} height 高さ
+ * @param {number} height 高さ
  */
 
 var Size = function () {
@@ -2014,27 +2027,27 @@ var Size = function () {
 		_classCallCheck(this, Size);
 
 		/**
-   * <h4>width</h4>
+   * width
    * @property width
-   * @type {Number}
+   * @type {number}
    */
 		this.width = width;
 
 		/**
-   * <h4>height</h4>
+   * height
    * @property height
-   * @type {Number}
+   * @type {number}
    */
 		this.height = height;
 	}
 
 	/**
-  * <h4>argumentsからオブジェクトを生成</h4>
+  * argumentsからオブジェクトを生成
   * @static
   * @method toJson
   * @param {Number|Object|Array} width  幅
-  * @param {Number} height 高さ
-  * @return {Object} width,heightを格納したオブジェクト
+  * @param {number} height 高さ
+  * @return {object} width,heightを格納したオブジェクト
   */
 
 
@@ -2043,7 +2056,7 @@ var Size = function () {
 
 
 		/**
-   * <h4>初期値にセット</h4>
+   * 初期値にセット
    * @method identity
    * @return {Size}
    */
@@ -2054,7 +2067,7 @@ var Size = function () {
 		}
 
 		/**
-   * <h4>Sizeのクローン</h4>
+   * Sizeのクローン
    * @method clone
    * @return {Size}
    */
@@ -2066,7 +2079,7 @@ var Size = function () {
 		}
 
 		/**
-   * <h4>0サイズ判定</h4>
+   * 0サイズ判定
    * @method isZero
    * @return {Boolean}
    */
@@ -2078,8 +2091,8 @@ var Size = function () {
 		}
 
 		/**
-   * <h4>サイズが等しいか判定</h4>
-   * <p>可変長引数で複数のオブジェクト判定可能</p>
+   * サイズが等しいか判定
+   * 可変長引数で複数のオブジェクト判定可能
    * @method equals
    * @param {Size} size sizeインスタンス
    * @return {Boolean}
@@ -2092,9 +2105,9 @@ var Size = function () {
 		}
 
 		/**
-   * <h4>中心の取得</h4>
+   * 中心の取得
    * @method getCenter
-   * @return {Object} x, y
+   * @return {object} x, y
    */
 
 	}, {
@@ -2107,9 +2120,9 @@ var Size = function () {
 		}
 
 		/**
-   * <h4>対角線の長さの取得</h4>
+   * 対角線の長さの取得
    * @method diagonal
-   * @return {Number}
+   * @return {number}
    */
 
 	}, {
@@ -2119,10 +2132,10 @@ var Size = function () {
 		}
 
 		/**
-   * <h4>Sizeのセット</h4>
+   * Sizeのセット
    * @method set
    * @param {Number|Object|Array} width  幅
-   * @param {Number} height 高さ
+   * @param {number} height 高さ
    * @return {Size}
    */
 
@@ -2135,9 +2148,9 @@ var Size = function () {
 		}
 
 		/**
-   * <h4>幅のセット</h4>
+   * 幅のセット
    * @method setWidth
-   * @param {Number} width  幅
+   * @param {number} width  幅
    * @return {Size}
    */
 
@@ -2149,9 +2162,9 @@ var Size = function () {
 		}
 
 		/**
-   * <h4>高さのセット</h4>
+   * 高さのセット
    * @method setWidth
-   * @param {Number} height 高さ
+   * @param {number} height 高さ
    * @return {Size}
    */
 
@@ -2163,10 +2176,10 @@ var Size = function () {
 		}
 
 		/**
-   * <h4>加算</h4>
+   * 加算
    * @method add
    * @param {Number|Object|Array} width  幅
-   * @param {Number} height 高さ
+   * @param {number} height 高さ
    * @return {Size}
    */
 
@@ -2179,10 +2192,10 @@ var Size = function () {
 		}
 
 		/**
-   * <h4>減算</h4>
+   * 減算
    * @method sub
-   * @param {Number} subWidth  幅
-   * @param {Number} subHeight 高さ
+   * @param {number} subWidth  幅
+   * @param {number} subHeight 高さ
    * @return {Size}
    */
 
@@ -2195,10 +2208,10 @@ var Size = function () {
 		}
 
 		/**
-   * <h4>積算</h4>
+   * 積算
    * @method mult
-   * @param {Number} multWidth  幅
-   * @param {Number} multHeight 高さ
+   * @param {number} multWidth  幅
+   * @param {number} multHeight 高さ
    * @return {Size}
    */
 
@@ -2211,11 +2224,11 @@ var Size = function () {
 		}
 
 		/**
-   * <h4>割算</h4>
+   * 割算
    *
    * @method sub
-   * @param {Number} divWidth  幅を割る数
-   * @param {Number} divHeight 高さを割る数
+   * @param {number} divWidth  幅を割る数
+   * @param {number} divHeight 高さを割る数
    * @return {Size}
    */
 
@@ -2228,7 +2241,7 @@ var Size = function () {
 		}
 
 		/**
-   * <h4>サイズの加算</h4>
+   * サイズの加算
    * @method addSize
    * @param {Size} size 加算するSize
    * @return {Size}
@@ -2243,7 +2256,7 @@ var Size = function () {
 		}
 
 		/**
-   * <h4>サイズの減算</h4>
+   * サイズの減算
    * @method addSize
    * @param {Size} size 減算するSize
    * @return {Size}
@@ -2258,9 +2271,9 @@ var Size = function () {
 		}
 
 		/**
-   * <h4>サイズの積算</h4>
+   * サイズの積算
    * @method multSize
-   * @param {Number} num 積数
+   * @param {number} num 積数
    * @return {Size}
    */
 
@@ -2273,9 +2286,9 @@ var Size = function () {
 		}
 
 		/**
-   * <h4>サイズの割算</h4>
+   * サイズの割算
    * @method divSize
-   * @param {Number} num 割算
+   * @param {number} num 割算
    * @return {Size}
    */
 
@@ -2288,9 +2301,9 @@ var Size = function () {
 		}
 
 		/**
-   * <h4>サイズの面積</h4>
+   * サイズの面積
    * @method area
-   * @return {Number}
+   * @return {number}
    */
 
 	}, {
@@ -2301,12 +2314,12 @@ var Size = function () {
 	}], [{
 		key: "toJson",
 		value: function toJson(width, height) {
-			if (__WEBPACK_IMPORTED_MODULE_0__utils__["_7" /* isObject */](width)) {
+			if (__WEBPACK_IMPORTED_MODULE_0__utils__["_8" /* isObject */](width)) {
 				return {
 					width: width.width,
 					height: width.height
 				};
-			} else if (__WEBPACK_IMPORTED_MODULE_0__utils__["I" /* isArray */](width)) {
+			} else if (__WEBPACK_IMPORTED_MODULE_0__utils__["J" /* isArray */](width)) {
 				return {
 					width: width[0],
 					height: width[1]
@@ -2320,7 +2333,7 @@ var Size = function () {
 		}
 
 		/**
-   * <h4>２つのサイズの最小サイズをマージしてSizeインスタンスを生成</h4>
+   * ２つのサイズの最小サイズをマージしてSizeインスタンスを生成
    * @static
    * @method createMin
    * @param {Size} size1 sizeインスタンス
@@ -2335,7 +2348,7 @@ var Size = function () {
 		}
 
 		/**
-   * <h4>２つのサイズの最大サイズをマージしてSizeインスタンスを生成</h4>
+   * ２つのサイズの最大サイズをマージしてSizeインスタンスを生成
    * @static
    * @method createMax
    * @param {Size} size1 sizeインスタンス
@@ -2350,20 +2363,20 @@ var Size = function () {
 		}
 
 		/**
-   * <h4>ランダムなSizeインスタンスを生成</h4>
+   * ランダムなSizeインスタンスを生成
    * @static
    * @method max
-   * @param {Number} min 最小サイズ
-   * @param {Number} max 最大サイズ
+   * @param {number} min 最小サイズ
+   * @param {number} max 最大サイズ
    * @return {Size}
    */
 
 	}, {
 		key: "random",
 		value: function random(min, max) {
-			min = __WEBPACK_IMPORTED_MODULE_0__utils__["_5" /* isNumber */](min) ? min : 0;
-			max = __WEBPACK_IMPORTED_MODULE_0__utils__["_5" /* isNumber */](max) ? max : 1;
-			return new Size(__WEBPACK_IMPORTED_MODULE_0__utils__["_34" /* random */](min, max), __WEBPACK_IMPORTED_MODULE_0__utils__["_34" /* random */](min, max));
+			min = __WEBPACK_IMPORTED_MODULE_0__utils__["_6" /* isNumber */](min) ? min : 0;
+			max = __WEBPACK_IMPORTED_MODULE_0__utils__["_6" /* isNumber */](max) ? max : 1;
+			return new Size(__WEBPACK_IMPORTED_MODULE_0__utils__["_35" /* random */](min, max), __WEBPACK_IMPORTED_MODULE_0__utils__["_35" /* random */](min, max));
 		}
 	}]);
 
@@ -2392,12 +2405,15 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 
 
+// FIXME: class_graphicsに移動
+// FIXME: PIXIに合わす
+// see: https://github.com/pixijs/pixi.js/blob/dev/packages/graphics/src/utils/buildCircle.js
 /**
- * <h4>Circle</h4>
+ * Circle
  * @class Circle
- * @param  {Number} x      x座標
- * @param  {Number} y      y座標
- * @param  {Number} radius 半径
+ * @param  {number} x      x座標
+ * @param  {number} y      y座標
+ * @param  {number} radius 半径
  */
 
 var Circle = function () {
@@ -2408,22 +2424,22 @@ var Circle = function () {
     _classCallCheck(this, Circle);
 
     /**
-     * <h4>座標</h4>
+     * 座標
      * @property position
      * @type {Vector2}
      */
     this.position = new __WEBPACK_IMPORTED_MODULE_1__Vector2__["a" /* default */](x, y);
 
     /**
-     * <h4>半径</h4>
+     * 半径
      * @property radius
-     * @type {Number}
+     * @type {number}
      */
     this.radius = radius;
   }
 
   /**
-   * <h4>クローンを生成</h4>
+   * クローンを生成
    * @method clone
    * @return {Circle}
    */
@@ -2436,7 +2452,7 @@ var Circle = function () {
     }
 
     /**
-     * <h4>衝突判定</h4>
+     * 衝突判定
      * @static
      * @method isCollision
      * @param  {Circle}  circle1 Circle1
@@ -2453,7 +2469,7 @@ var Circle = function () {
     }
 
     /**
-     * <h4>座標を含んでいるか</h4>
+     * 座標を含んでいるか
      * @static
      * @method inside
      * @param  {Circle}  circle Circle
@@ -2469,12 +2485,12 @@ var Circle = function () {
     }
 
     /**
-     * <h4>ラジアンと半径から円弧を求める</h4>
+     * ラジアンと半径から円弧を求める
      * @static
      * @method radToArc
-     * @param {Number} rad ラジアン
-     * @param {Number} radius 半径
-     * @return {Number} 円弧
+     * @param {number} rad ラジアン
+     * @param {number} radius 半径
+     * @return {number} 円弧
      */
 
   }, {
@@ -2484,13 +2500,13 @@ var Circle = function () {
     }
 
     /**
-     * <h4>円周の現在の位置を返す</h4>
+     * 円周の現在の位置を返す
      * @static
      * @method betweenArc
-     * @param  {Number} radius        半径
-     * @param  {Number} startAngle    開始アングル
-     * @param  {Number} endAngle      終了アングル
-     * @param  {Number} tick          座標ポイント比 0-1の値
+     * @param  {number} radius        半径
+     * @param  {number} startAngle    開始アングル
+     * @param  {number} endAngle      終了アングル
+     * @param  {number} tick          座標ポイント比 0-1の値
      * @return {Vector}
      */
 
@@ -2505,15 +2521,15 @@ var Circle = function () {
     }
 
     /**
-     * <h4>円周を分割して座標を配列格納して返します</h4>
+     * 円周を分割して座標を配列格納して返します
      * @static
      * @method circumference
-     * @param  {Number}   radius   半径
-     * @param  {Number}   split    分割数
-     * @param  {Number}   angle    スタートアングル
+     * @param  {number}   radius   半径
+     * @param  {number}   split    分割数
+     * @param  {number}   angle    スタートアングル
      * @param  {Boolean}   isCCW   反時計回り
-     * @param  {Function} callback コールバック関数
-     * @return {Array}
+     * @param  {function} callback コールバック関数
+     * @return {array}
      */
 
   }, {
@@ -2526,7 +2542,7 @@ var Circle = function () {
           flag = false,
           _angle = 0;
 
-      angle = __WEBPACK_IMPORTED_MODULE_0__utils__["_5" /* isNumber */](angle) ? angle : 0;
+      angle = __WEBPACK_IMPORTED_MODULE_0__utils__["_6" /* isNumber */](angle) ? angle : 0;
 
       if (isCCW) {
         rad *= -1;
@@ -2579,11 +2595,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 
 
+// FIXME: class_graphicsに移動
 /*----------------------------------------------------------------------
   @constructor
 ----------------------------------------------------------------------*/
 /**
- * <h4>Triangle</h4>
+ * Triangle
  *
  * @class Triangle
  * @constructor
@@ -2600,15 +2617,15 @@ var Triangle = function () {
     _classCallCheck(this, Triangle);
 
     /**
-     * <h4>頂点データ</h4>
+     * 頂点データ
      * @property vertices
-     * @type {Array}
+     * @type {array}
      */
     this.vertices = [vertexA, vertexB, vertexC];
   }
 
   /**
-   * <h4>クローンを生成</h4>
+   * クローンを生成
    *
    * @method clone
    * @return {Triangle}
@@ -2622,7 +2639,7 @@ var Triangle = function () {
     }
 
     /**
-     * <h4>3点の座標から外接円を求めます</h4>
+     * 3点の座標から外接円を求めます
      *
      * @static
      * @method outerCircle
@@ -2657,7 +2674,7 @@ var Triangle = function () {
     }
 
     /**
-     * <h4>3点の座標から内接円を求めます</h4>
+     * 3点の座標から内接円を求めます
      *
      * @static
      * @method innerCircle
@@ -2685,14 +2702,14 @@ var Triangle = function () {
     }
 
     /**
-     * <h4>3点の座標から傍接円を求めます</h4>
+     * 3点の座標から傍接円を求めます
      *
      * @static
      * @method excenter
      * @param {Vector2} vertexA 頂点A
      * @param {Vector2} vertexB 頂点B
      * @param {Vector2} vertexC 頂点C
-     * @return {Array} 傍接円a,b,cの座標、半径の円データ
+     * @return {array} 傍接円a,b,cの座標、半径の円データ
      */
 
   }, {
@@ -2730,7 +2747,7 @@ var Triangle = function () {
     }
 
     /**
-     * <h4>3点の座標から垂心座標を求めます</h4>
+     * 3点の座標から垂心座標を求めます
      *
      * @static
      * @method orthocenter
@@ -2766,7 +2783,7 @@ var Triangle = function () {
     }
 
     /**
-     * <h4>3点の座標から重心座標を求めます</h4>
+     * 3点の座標から重心座標を求めます
      * @static
      * @method centerGravity
      * @param {Vector2} vertexA 頂点A
@@ -2785,13 +2802,13 @@ var Triangle = function () {
     }
 
     /**
-     * <h4>三点の座標から辺の長さを返す</h4>
+     * 三点の座標から辺の長さを返す
      * @static
      * @method offsetsToSides
      * @param {Vector2} vertexA 頂点A
      * @param {Vector2} vertexB 頂点B
      * @param {Vector2} vertexC 頂点C
-     * @return {Array} a, b, cの辺の長さ
+     * @return {array} a, b, cの辺の長さ
      */
 
   }, {
@@ -2801,13 +2818,13 @@ var Triangle = function () {
     }
 
     /**
-     * <h4>頂点から角度を求める</h4>
+     * 頂点から角度を求める
      * @static
      * @method verticesToAngles
      * @param {Vector2} vertexA 頂点A
      * @param {Vector2} vertexB 頂点B
      * @param {Vector2} vertexC 頂点C
-     * @return {Array} a, b, c各辺の角度
+     * @return {array} a, b, c各辺の角度
      */
 
   }, {
@@ -2826,7 +2843,7 @@ var Triangle = function () {
     }
 
     /**
-     * <h4>三角形内に座標を含んでいるか</h4>
+     * 三角形内に座標を含んでいるか
      * @static
      * @method inside
      * @param  {Triangle} triangle triangle
@@ -2851,15 +2868,15 @@ var Triangle = function () {
     }
 
     /**
-     * <h4>反時計回り(Counter ClockWise)か調べ数値を返す</h4>
-     * <p>反時計回りの場合は正の値、時計回りの場合は負の値、一直線上の場合は0を返す</p>
+     * 反時計回り(Counter ClockWise)か調べ数値を返す
+     * 反時計回りの場合は正の値、時計回りの場合は負の値、一直線上の場合は0を返す
      *
      * @static
      * @method ccw
      * @param {Vec2} v1 Vec2
      * @param {Vec2} v2 Vec2
      * @param {Vec2} v3 Vec2
-     * @return {Number} 反時計回りの場合は正の値、時計回りの場合は負の値、一直線上の場合は0を返す
+     * @return {number} 反時計回りの場合は正の値、時計回りの場合は負の値、一直線上の場合は0を返す
      */
 
   }, {
@@ -2889,6 +2906,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /// Author Yoshihito Fujiwara
 /// Copyright (c) 2012 Yoshihito Fujiwara
 
+
+// FIXME: npm module化
 
 
 global.INK = __WEBPACK_IMPORTED_MODULE_0__index__;
@@ -2933,107 +2952,116 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "each", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["s"]; });
 /* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "findMax", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["u"]; });
 /* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "findMin", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["v"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "shuffle", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["_39"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "isDevelop", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["M"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "nowDate", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["_28"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "hasHash", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["z"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "hasString", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["A"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "hasUA", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["B"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "shuffle", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["_47"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "isDevelop", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["N"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "nowDate", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["_29"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "hasHash", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["A"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "hasString", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["B"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "hasUA", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["C"]; });
 /* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "UA", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["f"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "ua", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["_45"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "isArray", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["I"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "isBoolean", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["J"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "isFunction", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["S"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "isNumber", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["_5"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "isObject", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["_7"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "isPlainObject", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["_9"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "isString", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["_16"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "isRegexp", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["_10"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "isUndefined", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["_19"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "isNull", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["_4"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "isMultibyte", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["_3"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "isEmail", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["P"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "isOS", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["_6"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "isWindows", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["_21"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "isMac", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["_0"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "isIos", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["Y"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "isAndroid", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["D"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "isDevice", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["N"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "isPC", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["_8"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "isSmartDevice", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["_13"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "isSmartPhone", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["_14"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "isTablet", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["_17"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "isIPhone", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["V"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "isIPad", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["U"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "isIPod", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["W"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "isAndroidPhone", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["G"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "isAndroidTablet", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["H"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "isBrowser", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["K"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "isIE", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["T"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "isEdge", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["O"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "isChrome", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["L"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "isFirefox", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["R"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "isSafari", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["_12"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "isMobileSafari", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["_2"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "isAndroidBrowser", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["E"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "isMobileChrome", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["_1"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "isIosChrome", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["Z"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "isAndroidChrome", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["F"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "isWebkit", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["_20"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "isFileAPI", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["Q"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "isRequestFileSystem", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["_11"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "isStorage", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["_15"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "isTouchScreen", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["_18"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "ua", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["_54"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "isArray", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["J"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "isBoolean", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["K"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "isFunction", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["T"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "isNumber", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["_6"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "isObject", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["_8"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "isPlainObject", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["_10"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "isString", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["_17"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "isRegexp", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["_11"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "isUndefined", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["_20"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "isNull", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["_5"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "isMultibyte", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["_4"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "isEmail", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["Q"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "isOS", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["_7"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "isWindows", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["_22"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "isMac", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["_1"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "isIos", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["Z"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "isAndroid", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["E"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "isDevice", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["O"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "isPC", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["_9"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "isSmartDevice", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["_14"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "isSmartPhone", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["_15"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "isTablet", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["_18"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "isIPhone", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["W"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "isIPad", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["V"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "isIPod", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["X"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "isAndroidPhone", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["H"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "isAndroidTablet", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["I"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "isBrowser", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["L"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "isIE", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["U"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "isEdge", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["P"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "isChrome", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["M"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "isFirefox", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["S"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "isSafari", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["_13"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "isMobileSafari", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["_3"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "isAndroidBrowser", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["F"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "isMobileChrome", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["_2"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "isIosChrome", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["_0"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "isAndroidChrome", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["G"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "isWebkit", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["_21"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "isFileAPI", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["R"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "isRequestFileSystem", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["_12"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "isStorage", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["_16"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "isTouchScreen", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["_19"]; });
 /* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "getHash", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["y"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "queryHashMap", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["_31"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "getQuery", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["z"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "queryHashMap", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["_32"]; });
 /* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "PI", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["c"]; });
 /* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "TWO_PI", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["e"]; });
 /* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "HARF_PI", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["b"]; });
 /* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "RAD_TO_DEG", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["d"]; });
 /* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "DEG_TO_RAD", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["a"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "sqrt2", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["_42"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "radToCoord", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["_32"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "sqrt2", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["_51"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "radToCoord", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["_33"]; });
 /* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "degToCoord", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["n"]; });
 /* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "coordToRad", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["l"]; });
 /* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "coordToDeg", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["k"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "radToDeg", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["_33"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "radToDeg", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["_34"]; });
 /* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "degToRad", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["o"]; });
 /* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "diagonal", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["p"]; });
 /* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "diagonalToSideLength", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["q"]; });
 /* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "compare", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["j"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "sign", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["_40"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "sign", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["_48"]; });
 /* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "fract", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["w"]; });
 /* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "clamp", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["i"]; });
 /* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "factorial", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["t"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "inRange", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["C"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "isIntersect", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["X"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "lerp", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["_22"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "smoothstep", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["_41"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "normalize", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["_27"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "map", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["_24"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "random", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["_34"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "randomInt", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["_35"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "roundToDigit", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["_38"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "zeroPadding", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["_47"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "inRange", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["D"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "isIntersect", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["Y"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "lerp", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["_23"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "smoothstep", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["_49"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "normalize", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["_28"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "map", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["_25"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "random", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["_35"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "randomInt", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["_38"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "randomLow", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["_42"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "randomLow2", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["_43"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "randomHight", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["_36"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "randomHight2", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["_37"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "randomNormalize", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["_44"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "randomLinerLow", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["_41"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "randomLinerHight", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["_40"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "randomLinerCenter", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["_39"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "zeroPadding", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["_56"]; });
 /* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "createId", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["m"]; });
 /* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "digit", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["r"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "objectToQuery", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["_29"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "removeSpace", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["_36"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "replaceAll", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["_37"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "toHarfNumber", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["_43"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "uuid", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["_46"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "objectToQuery", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["_30"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "removeSpace", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["_45"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "replaceAll", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["_46"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "toHarfNumber", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["_52"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "uuid", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["_55"]; });
 /* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "base64FileSize", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["h"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "mixin", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["_25"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "mixin", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["_26"]; });
 /* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "getFunctionName", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["x"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "typeOf", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["_44"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "preload", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["_30"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "noop", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["_26"]; });
-/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "log", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["_23"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__class_events__ = __webpack_require__(18);
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "spec", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["_50"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "typeOf", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["_53"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "preload", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["_31"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "noop", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["_27"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "log", function() { return __WEBPACK_IMPORTED_MODULE_0__utils__["_24"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__class_events__ = __webpack_require__(19);
 /* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "Events", function() { return __WEBPACK_IMPORTED_MODULE_1__class_events__["a"]; });
 /* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "Ticker", function() { return __WEBPACK_IMPORTED_MODULE_1__class_events__["c"]; });
 /* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "Mediaquery", function() { return __WEBPACK_IMPORTED_MODULE_1__class_events__["b"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__class_utils__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__class_utils__ = __webpack_require__(22);
 /* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "Debug", function() { return __WEBPACK_IMPORTED_MODULE_2__class_utils__["a"]; });
 /* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "Ease", function() { return __WEBPACK_IMPORTED_MODULE_2__class_utils__["b"]; });
 /* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "WebCamera", function() { return __WEBPACK_IMPORTED_MODULE_2__class_utils__["c"]; });
@@ -3056,6 +3084,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
+
+// export * from "./class_graphics"; 追加予定
 // export * from "./class_algorithm"; 未実装
 
 var VERSION = "0.0.3";
@@ -3090,6 +3120,8 @@ var isDevelop = true;
 
 "use strict";
 /* harmony export (immutable) */ __webpack_exports__["a"] = nowDate;
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 /// INKjs Javascript Library
 /// The MIT License (MIT)
 /// Source https://github.com/yoshihitofujiwara/INKjs
@@ -3101,23 +3133,22 @@ var isDevelop = true;
  */
 
 /**
- * <h4>現在の日時情報を格納したオブジェクトを返す</h4>
+ * 現在の日時情報を格納したオブジェクトを返す
  * @static
  * @method nowDate
- * @return {Object}
+ * @return {object}
  */
 function nowDate() {
+  var _ref;
+
   var date = new Date();
 
-  return {
+  return _ref = {
     date: date,
     year: date.getFullYear(),
     month: date.getMonth() + 1,
-    day: date.getDate(),
-    hour: date.getHours(),
-    minute: date.getMinutes(),
-    second: date.getSeconds()
-  };
+    day: date.getDay()
+  }, _defineProperty(_ref, "date", date.getDate()), _defineProperty(_ref, "hour", date.getHours()), _defineProperty(_ref, "minute", date.getMinutes()), _defineProperty(_ref, "second", date.getSeconds()), _ref;
 };
 
 /***/ }),
@@ -3143,10 +3174,10 @@ function nowDate() {
 var url = window.location;
 
 /**
- * <h4>LocationHashの有無</h4>
+ * LocationHashの有無
  * @static
  * @method hasHash
- * @param {String} key ハッシュ名 省略可
+ * @param {string} key ハッシュ名 省略可
  * @return {Boolean}
  */
 function hasHash(key) {
@@ -3174,11 +3205,11 @@ function hasHash(key) {
 };
 
 /**
- * <h4>文字列を検索し、指定の文字列があるか判定</h4>
+ * 文字列を検索し、指定の文字列があるか判定
  * @static
  * @method hasString
- * @param {String} str 対象の文字列
- * @param {String} haStr 検索文字
+ * @param {string} str 対象の文字列
+ * @param {string} haStr 検索文字
  * @return {Boolean}
  */
 function hasString(str, hasStr) {
@@ -3186,10 +3217,10 @@ function hasString(str, hasStr) {
 };
 
 /**
- * <h4>ユーザーエージェントに指定の文字列があるか判定します</h4>
+ * ユーザーエージェントに指定の文字列があるか判定します
  * @static
  * @method hasUA
- * @param {String} str 指定の文字列
+ * @param {string} str 指定の文字列
  * @return {Boolean}
  */
 function hasUA(str) {
@@ -3202,7 +3233,8 @@ function hasUA(str) {
 
 "use strict";
 /* harmony export (immutable) */ __webpack_exports__["a"] = getHash;
-/* harmony export (immutable) */ __webpack_exports__["b"] = queryHashMap;
+/* harmony export (immutable) */ __webpack_exports__["b"] = getQuery;
+/* harmony export (immutable) */ __webpack_exports__["c"] = queryHashMap;
 /// INKjs Javascript Library
 /// The MIT License (MIT)
 /// Source https://github.com/yoshihitofujiwara/INKjs
@@ -3218,56 +3250,68 @@ var url = window.location;
   @method
 ----------------------------------------------------------------------*/
 /**
- * <h4>hashを配列にして返す</h4>
+ * hashを配列にして返す
  * @static
  * @method getHash
- * @return {Array} hashの配列
+ * @return {array} hashの配列
  */
 function getHash() {
-  var ary = url.hash.split("#").slice(1);
-  if (ary.length) {
-    var i = 0,
-        l = ary.length;
-    for (; i < l; i += 1) {
-      ary[i] = "#" + ary[i];
-    }
-  }
-  return ary;
+	var ary = url.hash.split("#").slice(1);
+	if (ary.length) {
+		var i = 0,
+		    l = ary.length;
+		for (; i < l; i += 1) {
+			ary[i] = "#" + ary[i];
+		}
+	}
+	return ary;
 };
 
 /**
- * <h4>リクエストパラメータ値を連想配列として取得</h4>
+ * getQuery
+ *
+ * @export location
+ * @param {string} query 取得したいクエリ名
+ * @returns {string} クエリの値を返す。値がない場合はundefined
+ */
+function getQuery(query) {
+	var querys = queryHashMap();
+	return querys[query];
+};
+
+/**
+ * リクエストパラメータ値を連想配列として取得
  * @static
  * @method queryHashMap
- * @param {String} query urlもしくは、パラメーター。省略時は現在のURL
- * @return {Object} リクエストパラメータ値を連想配列にして返す
+ * @param {string} query urlもしくは、パラメーター。省略時は現在のURL
+ * @return {object} リクエストパラメータ値を連想配列にして返す
  */
 function queryHashMap(query) {
-  var map = {},
-      array = [],
-      params = void 0;
+	var map = {},
+	    array = [],
+	    params = void 0;
 
-  if (query) {
-    if (query.indexOf("?") > -1) {
-      params = query.split("?")[1].split("&");
-    } else {
-      params = query.split("&");
-    }
-  } else {
-    params = url.search.slice(1).split("&");
-  }
+	if (query) {
+		if (query.indexOf("?") > -1) {
+			params = query.split("?")[1].split("&");
+		} else {
+			params = query.split("&");
+		}
+	} else {
+		params = url.search.slice(1).split("&");
+	}
 
-  if (params[0] !== "") {
-    var i = 0,
-        l = params.length;
+	if (params[0] !== "") {
+		var i = 0,
+		    l = params.length;
 
-    for (; i < l; i += 1) {
-      array = params[i].split("=");
-      map[array[0]] = decodeURI(array[1] || array[0]);
-    }
-  }
+		for (; i < l; i += 1) {
+			array = params[i].split("=");
+			map[array[0]] = decodeURI(array[1] || array[0]);
+		}
+	}
 
-  return map;
+	return map;
 };
 
 /***/ }),
@@ -3280,7 +3324,7 @@ function queryHashMap(query) {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return HARF_PI; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return RAD_TO_DEG; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DEG_TO_RAD; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "B", function() { return sqrt2; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "y", function() { return sqrt2; });
 /* harmony export (immutable) */ __webpack_exports__["u"] = radToCoord;
 /* harmony export (immutable) */ __webpack_exports__["j"] = degToCoord;
 /* harmony export (immutable) */ __webpack_exports__["i"] = coordToRad;
@@ -3290,20 +3334,16 @@ function queryHashMap(query) {
 /* harmony export (immutable) */ __webpack_exports__["l"] = diagonal;
 /* harmony export (immutable) */ __webpack_exports__["m"] = diagonalToSideLength;
 /* harmony export (immutable) */ __webpack_exports__["g"] = compare;
-/* harmony export (immutable) */ __webpack_exports__["z"] = sign;
+/* harmony export (immutable) */ __webpack_exports__["w"] = sign;
 /* harmony export (immutable) */ __webpack_exports__["o"] = fract;
 /* harmony export (immutable) */ __webpack_exports__["f"] = clamp;
 /* harmony export (immutable) */ __webpack_exports__["n"] = factorial;
 /* harmony export (immutable) */ __webpack_exports__["p"] = inRange;
 /* harmony export (immutable) */ __webpack_exports__["q"] = isIntersect;
 /* harmony export (immutable) */ __webpack_exports__["r"] = lerp;
-/* harmony export (immutable) */ __webpack_exports__["A"] = smoothstep;
+/* harmony export (immutable) */ __webpack_exports__["x"] = smoothstep;
 /* harmony export (immutable) */ __webpack_exports__["t"] = normalize;
 /* harmony export (immutable) */ __webpack_exports__["s"] = map;
-/* harmony export (immutable) */ __webpack_exports__["w"] = random;
-/* harmony export (immutable) */ __webpack_exports__["x"] = randomInt;
-/* harmony export (immutable) */ __webpack_exports__["y"] = roundToDigit;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__is__ = __webpack_require__(2);
 /// INKjs Javascript Library
 /// The MIT License (MIT)
 /// Source https://github.com/yoshihitofujiwara/INKjs
@@ -3311,150 +3351,153 @@ function queryHashMap(query) {
 /// Copyright (c) 2012 Yoshihito Fujiwara
 
 
-
 /**
  * @class Math
  */
 
 /**
- * <h4>π (半円)</h4>
+ * π (半円)
  * @static
  * @property PI
- * @type {Number}
+ * @type {number}
  */
 var PI = Math.PI;
 
 /**
- * <h4>π * 2 (円)</h4>
+ * π * 2 (円)
  * @static
  * @property TWO_PI
- * @type {Number}
+ * @type {number}
  */
 var TWO_PI = PI * 2;
 
 /**
- * <h4>π * 2 (1/4円)</h4>
+ * π * 2 (1/4円)
  * @static
  * @property HARF_PI
- * @type {Number}
+ * @type {number}
  */
 var HARF_PI = PI / 2;
 
 /**
- * <h4>ラジアンからに角度変換する積数</h4>
+ * ラジアンからに角度変換する積数
  * @static
  * @property RAD_TO_DEG
- * @type {Number}
+ * @type {number}
  */
 var RAD_TO_DEG = 180 / PI;
 
 /**
- * <h4>角度からラジアンに変換する積数</h4>
+ * 角度からラジアンに変換する積数
  * @static
  * @property DEG_TO_RAD
- * @type {Number}
+ * @type {number}
  */
 var DEG_TO_RAD = PI / 180;
 
 /**
- * <h4>√2</h4>
+ * √2
  * @static
  * @property sqrt2
- * @type {Number}
+ * @type {number}
  */
 var sqrt2 = Math.sqrt(2);
 
 /* Convert
 -----------------------------------------------------------------*/
 /**
- * <h4>ラジアンと半径から座標生成</h4>
+ * ラジアンと半径から座標生成
  * @method radToCoord
- * @param  {Number} rad ラジアン
- * @param  {Number} radius 半径
- * @return {Object} x, y座標を格納したオブジェクト
+ * @param  {number} rad ラジアン
+ * @param  {number} radius 半径
+ * @return {object} x, y座標を格納したオブジェクト
  */
-function radToCoord(rad, radius) {
+function radToCoord(rad) {
+  var radius = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 1;
+
   return {
-    x: Math.cos(rad) * (radius || 1),
-    y: Math.sin(rad) * (radius || 1)
+    x: Math.cos(rad) * radius,
+    y: Math.sin(rad) * radius
   };
 };
 
 /**
- * <h4>角度と半径から座標を生成</h4>
+ * 角度と半径から座標を生成
  * @method degToCoord
- * @param  {Number} deg ラジアン
- * @param  {Number} radius 半径
- * @return {Object} x, y座標を格納したオブジェクト
+ * @param  {number} deg ラジアン
+ * @param  {number} radius 半径
+ * @return {object} x, y座標を格納したオブジェクト
  */
-function degToCoord(deg, radius) {
-  return radToCoord(degToRad(deg), radius || 1);
+function degToCoord(deg) {
+  var radius = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 1;
+
+  return radToCoord(degToRad(deg), radius);
 };
 
 /**
- * <h4>座標からRadianを取得</h4>
+ * 座標からRadianを取得
  * @static
  * @method coordToRad
- * @param  {Number} x x座標値
- * @param  {Number} y y座標値
- * @return {Number} Radian
+ * @param  {number} x x座標値
+ * @param  {number} y y座標値
+ * @return {number} Radian
  */
 function coordToRad(x, y) {
   return Math.atan2(y, x);
 };
 
 /**
- * <h4>座標からDegreesを取得</h4>
+ * 座標からDegreesを取得
  * @static
  * @method coordToDeg
- * @param  {Number} x x座標値
- * @param  {Number} y y座標値
- * @return {Number} Degrees
+ * @param  {number} x x座標値
+ * @param  {number} y y座標値
+ * @return {number} Degrees
  */
 function coordToDeg(x, y) {
   return Math.atan2(y, x) * RAD_TO_DEG;
 };
 
 /**
- * <h4>ラジアンから角度を求める</h4>
+ * ラジアンから角度を求める
  * @static
  * @method radToDeg
- * @param {Number} rad ラジアン
- * @return {Number} degree
+ * @param {number} rad ラジアン
+ * @return {number} degree
  */
 function radToDeg(rad) {
   return rad * RAD_TO_DEG;
 };
 
 /**
- * <h4>角度をラジアンに変換して返す</h4>
+ * 角度をラジアンに変換して返す
  * @static
  * @method degToRad
- * @param {Number} deg 角度
- * @return {Number} radian
+ * @param {number} deg 角度
+ * @return {number} radian
  */
 function degToRad(deg) {
   return deg * DEG_TO_RAD;
 };
 
 /**
- * <h4>対角線の長さ</h4>
+ * 対角線の長さ
  * @static
  * @method diagonal
- * @param  {Number} x 横
- * @param  {Number} y 縦
- * @return {Number}
+ * @param  {number} x 横
+ * @param  {number} y 縦
+ * @return {number}
  */
 function diagonal(x, y) {
   return Math.sqrt(Math.pow(x, 2) + Math.pow(y, 2));
 };
 
 /**
- * <h4>対角線の長さから正方形の辺の長さを求める（なす角45°）</h4>
+ * 対角線の長さから正方形の辺の長さを求める（なす角45°）
  * @static
  * @method diagonalToSideLength
- * @param  {Number} diagonal 対角線の長さ
- * @return {Rect}
+ * @param  {number} diagonal 対角線の長さ
+ * @return {number}
  */
 function diagonalToSideLength(diagonal) {
   return diagonal / utils.sqrt2;
@@ -3463,14 +3506,13 @@ function diagonalToSideLength(diagonal) {
 /* Utilitys
 -----------------------------------------------------------------*/
 /**
- * <h4>順序付けのために2つの引数を比較</h4>
- * <p>引数が等しい場合は0、2番目より小さい場合は負の整数、<br>
- * 最初の引数が2番目の引数より大きい場合は正の整数を返す</p>
+ * 順序付けのために2つの引数を比較
+ * 引数が等しい場合は0、2番目より小さい場合は負の整数、最初の引数が2番目の引数より大きい場合は正の整数を返す
  * @static
  * @method compare
- * @param  {Number} num1 指定数値
- * @param  {Number} num2 比較数値
- * @return {Number} -1, 0, 1のいずれかの値
+ * @param  {number} num1 指定数値
+ * @param  {number} num2 比較数値
+ * @return {number} -1, 0, 1のいずれかの値
  */
 function compare(num1, num2) {
   if (num1 === num2) {
@@ -3483,12 +3525,12 @@ function compare(num1, num2) {
 };
 
 /**
- * <h4>値の符号化</h4>
- * <p>numが正なら+1.0、0.0なら0.0、負なら-1.0を返す</p>
+ * 値の符号化
+ * numが正なら+1.0、0.0なら0.0、負なら-1.0を返す
  * @static
  * @method sign
- * @param  {Number} num
- * @return {Number} -1, 0, 1のいずれかの値
+ * @param  {number} num
+ * @return {number} -1, 0, 1のいずれかの値
  */
 function sign(num) {
   if (0 < num) {
@@ -3501,35 +3543,35 @@ function sign(num) {
 };
 
 /**
- * <h4>小数点を取り出す</h4>
+ * 小数点を取り出す
  * @static
  * @method fract
- * @param  {Number} num
- * @return {Number}
+ * @param  {number} num
+ * @return {number}
  */
 function fract(num) {
   return num - Math.floor(num);
 };
 
 /**
- * <h4>数値の有効範囲を適用して返す</h4>
+ * 値の有効範囲を適用して返す
  * @static
  * @method clamp
- * @param {Number} num 数値
- * @param {Number} min 最小値
- * @param {Number} max 最大値
- * @return {Number} 有効範囲を適用した数値
+ * @param {number} num 数値
+ * @param {number} min 最小値
+ * @param {number} max 最大値
+ * @return {number} 有効範囲を適用した数値
  */
 function clamp(num, min, max) {
   return Math.max(Math.min(num, max), min);
 };
 
 /**
- * <h4>階乗の計算</h4>
+ * 階乗の計算
  * @static
  * @method factorial
- * @param {Number} num 階乗数
- * @return {Number}
+ * @param {number} num 階乗数
+ * @return {number}
  */
 function factorial(num) {
   var total = 1;
@@ -3541,12 +3583,12 @@ function factorial(num) {
 };
 
 /**
- * <h4>範囲内に値があるか</h4>
+ * 範囲内に値があるか
  * @static
  * @method inRange
- * @param  {Number} val 数値
- * @param  {Number} min 最小値
- * @param  {Number} max 最大値
+ * @param  {number} val 数値
+ * @param  {number} min 最小値
+ * @param  {number} max 最大値
  * @return {Boolean}
  */
 function inRange(val, min, max) {
@@ -3554,13 +3596,13 @@ function inRange(val, min, max) {
 };
 
 /**
- * <h4>範囲が交差するか</h4>
+ * 値の範囲が交差するか
  * @static
  * @method isIntersect
- * @param  {Number} rangeMin1 範囲1の最小値
- * @param  {Number} rangeMax1 範囲1の最大値
- * @param  {Number} rangeMin2 範囲2の最小値
- * @param  {Number} rangeMax2 範囲2の最大値
+ * @param  {number} rangeMin1 範囲1の最小値
+ * @param  {number} rangeMax1 範囲1の最大値
+ * @param  {number} rangeMin2 範囲2の最小値
+ * @param  {number} rangeMax2 範囲2の最大値
  * @return {Boolean}
  */
 function isIntersect(rangeMin1, rangeMax1, rangeMin2, rangeMax2) {
@@ -3568,27 +3610,26 @@ function isIntersect(rangeMin1, rangeMax1, rangeMin2, rangeMax2) {
 };
 
 /**
- * <h4>指定の値を線形補間した値を返します</h4>
+ * 線形補間
  * @static
  * @method lerp
- * @param  {Number} val 線形補間する指定の値
- * @param  {Number} min   最小値
- * @param  {Number} max   最大値
- * @return {Number}       線形補間した値
+ * @param  {number} val 線形補間する指定の値
+ * @param  {number} min   最小値
+ * @param  {number} max   最大値
+ * @return {number}       線形補間した値
  */
 function lerp(val, min, max) {
   return (max - min) * val + min;
 };
 
 /**
- * <h4>エルミート補完</h4>
- * <p>valを、minからmaxの範囲で正規化する</p>
+ * エルミート補完
  * @static
  * @method smoothstep
- * @param  {Number} val 線形補間する指定の値
- * @param  {Number} min   最小値
- * @param  {Number} max   最大値
- * @return {Number}       線形補間した値
+ * @param  {number} val 線形補間する指定の値
+ * @param  {number} min   最小値
+ * @param  {number} max   最大値
+ * @return {number}       線形補間した値
  */
 function smoothstep(val, min, max) {
   // return clamp((val - min) / (max - min), 0, 1);
@@ -3597,94 +3638,189 @@ function smoothstep(val, min, max) {
 };
 
 /**
- * <h4>値を正規化します</h4>
+ * 正規化(0.0-1.0)
  * @static
  * @method normalize
- * @param  {Number} val 正規化する値
- * @param  {Number} min   最小値
- * @param  {Number} max   最大値
- * @return {Number}       正規化した値
+ * @param  {number} val 正規化する値
+ * @param  {number} min   最小値
+ * @param  {number} max   最大値
+ * @return {number}       正規化した値
  */
 function normalize(val, min, max) {
   return (val - min) / (max - min);
 };
 
 /**
- * <h4>値を最適化します</h4>
- * <p>valueを範囲scorpeA1 - scorpeA2から範囲scorpeB1 - scorpeB2へ変換</p>
+ * 値の有効範囲の最適化（マッピング）
+ * valueを範囲scorpeA1 - scorpeA2から範囲scorpeB1 - scorpeB2へ変換
  * @static
  * @method map
- * @param  {Number} val   最適化する値
- * @param  {Number} fromMin 現在基準の最小値
- * @param  {Number} fromMax 現在基準の最大値
- * @param  {Number} toMin 最適化基準の最小値
- * @param  {Number} toMax 最適化基準の最大値
- * @return {Number}         最適化した値
+ * @param  {number} val   最適化する値
+ * @param  {number} fromMin 現在基準の最小値
+ * @param  {number} fromMax 現在基準の最大値
+ * @param  {number} toMin 最適化基準の最小値
+ * @param  {number} toMax 最適化基準の最大値
+ * @return {number}         最適化した値
  */
 function map(val, fromMin, fromMax, toMin, toMax) {
   return lerp(normalize(val, fromMin, fromMax), toMin, toMax);
 };
 
+/***/ }),
+/* 16 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (immutable) */ __webpack_exports__["a"] = random;
+/* harmony export (immutable) */ __webpack_exports__["d"] = randomInt;
+/* harmony export (immutable) */ __webpack_exports__["h"] = randomLow;
+/* harmony export (immutable) */ __webpack_exports__["i"] = randomLow2;
+/* harmony export (immutable) */ __webpack_exports__["b"] = randomHight;
+/* harmony export (immutable) */ __webpack_exports__["c"] = randomHight2;
+/* harmony export (immutable) */ __webpack_exports__["j"] = randomNormalize;
+/* harmony export (immutable) */ __webpack_exports__["g"] = randomLinerLow;
+/* harmony export (immutable) */ __webpack_exports__["f"] = randomLinerHight;
+/* harmony export (immutable) */ __webpack_exports__["e"] = randomLinerCenter;
+/// INKjs Javascript Library
+/// The MIT License (MIT)
+/// Source https://github.com/yoshihitofujiwara/INKjs
+/// Author Yoshihito Fujiwara
+/// Copyright (c) 2012 Yoshihito Fujiwara
+
+
 /**
- * <h4>乱数の生成</h4>
- * @static
- * @param {Number} min 最小値 ※省略可
- * @param {Number} max 最大値 ※省略可
- * @param {Boolean} isInt 整数値を返すか ※省略可
- * @return {Number} 乱数を返します
+ * @class Random
+ * see: https://ics.media/entry/11292
  */
-function random(min, max, isInt) {
-  var random = Math.random(),
-      value = void 0;
 
-  if (arguments.length === 0 || __WEBPACK_IMPORTED_MODULE_0__is__["h" /* isBoolean */](min)) {
-    isInt = min;
-    value = random;
-  } else if (arguments.length === 1 || __WEBPACK_IMPORTED_MODULE_0__is__["h" /* isBoolean */](max)) {
-    isInt = max;
-    value = random * min;
-  } else {
-    if (min > max) {
-      var num = min;
-      min = max;
-      max = num;
-    }
-    value = random * (max - min) + min;
-  }
+/**
+ * 乱数の生成
+ * @static
+ * @param {number} min 最小値 ※省略可
+ * @param {number} max 最大値 ※省略可
+ * @return {number} 乱数を返します
+ */
+function random() {
+  var min = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
+  var max = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 1;
 
-  if (isInt) {
-    return Math.round(value);
-  } else {
-    return value;
+  var random = Math.random();
+
+  if (min > max) {
+    var num = min;
+    min = max;
+    max = num;
   }
+  return random * (max - min) + min;
 };
 
 /**
- * <h4>int型の乱数の生成</h4>
+ * int型の乱数の生成
  * @static
- * @param {Number} min 最小値 ※省略可
- * @param {Number} max 最大値 ※省略可
- * @return {Number} 乱数を返します
+ * @param {number} min 最小値 ※省略可
+ * @param {number} max 最大値 ※省略可
+ * @return {number} 乱数を返します
  */
 function randomInt(min, max) {
-  return random(min, max, true);
+  return Math.round(random(min, max));
 }
 
 /**
- * <h4>数を固定小数点に変換します</h4>
- * @static
- * @method roundToDigit
- * @param  {Number} value 値
- * @param  {Number} digit 固定小数点数
- * @return {Number}       固定小数点の数値
+ * randomLow
+ * 0.0付近の出現率が高い乱数の生成
+ *
+ * @export
+ * @returns {number} 0.0 - 1.0までの値を返す
  */
-function roundToDigit(val, digit) {
-  var mult = Math.pow(10, digit);
-  return Math.round(val * mult) / mult;
+function randomLow() {
+  return Math.random() * Math.random();
+};
+
+/**
+ * randomLow2
+ * 0.0付近の出現率が高い乱数の生成（randomLowより高い）
+ *
+ * @export
+ * @returns {number} 0.0 - 1.0までの値を返す
+ */
+function randomLow2() {
+  var r = Math.random();
+  return r * r;
+};
+
+/**
+ * randomHight
+ * 1.0付近の出現率が高い乱数の生成
+ *
+ * @export
+ * @returns {number} 0.0 - 1.0までの値を返す
+ */
+function randomHight() {
+  return 1.0 - Math.random() * Math.random();
+};
+
+/**
+ * randomHight2
+ * 1.0付近の出現率が高い乱数の生成（randomHightより高い）
+ *
+ * @export
+ * @returns {number} 0.0 - 1.0までの値を返す
+ */
+function randomHight2() {
+  var r = Math.random();
+  return 1.0 - r * r;
+};
+
+/**
+ * randomNormalize
+ * 中央値(0.5)付近の値を多く出す
+ *
+ * @export
+ * @returns
+ */
+function randomNormalize() {
+  var r1 = Math.random();
+  var r2 = Math.random();
+  var value = Math.sqrt(-2.0 * Math.log(r1)) * Math.sin(2.0 * Math.PI * r2);
+  // 値を0以上1未満になるよう正規化する
+  return (value + 3) / 6;
+};
+
+/**
+ * randomLinerLow
+ * 直線的に0.0付近の出現率を高くする
+ *
+ * @export
+ * @returns {number} 0.0 - 1.0までの値を返す
+ */
+function randomLinerLow() {
+  return 1.0 - Math.sqrt(Math.random());
+};
+
+/**
+ * randomLinerHight
+ * 直線的に1.0付近の出現率を高くする
+ *
+ * @export
+ * @returns {number} 0.0 - 1.0までの値を返す
+ */
+function randomLinerHight() {
+  return Math.sqrt(Math.random());
+};
+
+/**
+ * randomLinerCenter
+ * 中央値(0.5)付近の値を多く出す
+ *
+ * @export
+ * @returns {number} 0.0 - 1.0までの値を返す
+ */
+function randomLinerCenter() {
+  return (Math.random() + Math.random()) * 0.5;
 };
 
 /***/ }),
-/* 16 */
+/* 17 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3707,23 +3843,22 @@ function roundToDigit(val, digit) {
 
 
 
+
 /**
  * @class String
  */
 
-/// FIXME: 挙動確認
 /**
  * zeroPadding 数値桁数を揃える
  * @param  {Number} value 値
  * @param  {Number} digit 桁数 (1桁=1, 2桁=2)
- * @param  {Boolean} isBeyondValue 指定したvalueが、揃える桁数を超えている場合桁数を揃えるか
  * @return {String}
  */
 function zeroPadding(value, digit, isBeyondValue) {
   var _value = "" + value,
       zero = ("" + Math.pow(10, digit)).slice(1);
 
-  if (digit * 10 > value || isBeyondValue) {
+  if (digit * 10 > value) {
     return (zero + _value).slice(-digit);
   } else {
     return _value;
@@ -3731,8 +3866,8 @@ function zeroPadding(value, digit, isBeyondValue) {
 };
 
 /**
- * <h4>id生成します</h4>
- * <p>文字列にナンバーを追加して返します</p>
+ * id生成します
+ * 文字列にナンバーを追加して返します
  *
  * @static
  * @method createId
@@ -3742,14 +3877,15 @@ function zeroPadding(value, digit, isBeyondValue) {
 var createId = function () {
   var _count = 0;
 
-  return function (str) {
-    str = str ? str : "id_";
+  return function () {
+    var str = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : "id_";
+
     return str + (_count += 1);
   };
 }();
 
 /**
- * <h4>ランダムな4桁のコードを返す</h4>
+ * ランダムな4桁のコードを返す
  * @static
  * @method digit
  * @return {String} ランダムな4桁のコード
@@ -3759,14 +3895,16 @@ function digit() {
 };
 
 /**
- * <h4>objectToQuery オブジェクトをクエリ文字列に変換 (ネスト構造に再起処理はしません)</h4>
+ * objectToQuery オブジェクトをクエリ文字列に変換 (ネスト構造に再起処理はしません)
  * @static
  * @method objectToQuery
  * @param  {Object} obj 対象のオブジェクト
  * @param  {Boolean} isQuestion 先頭に?加えるか ※初期false
  * @return {String}
  */
-function objectToQuery(obj, isQuestion) {
+function objectToQuery(obj) {
+  var isQuestion = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
+
   var query = "";
   __WEBPACK_IMPORTED_MODULE_0__array__["b" /* each */](obj, function (key, val) {
     if (query) {
@@ -3790,7 +3928,7 @@ function objectToQuery(obj, isQuestion) {
 };
 
 /**
- * <h4>空白文字の削除</h4>
+ * 空白文字の削除
  * @static
  * @method removeSpace
  * @param {String} str 対象の文字列
@@ -3801,8 +3939,8 @@ function removeSpace(str) {
 };
 
 /**
- * <h4>文字列の全置換</h4>
- * <p>対象の文字列と、削除文字列がマッチしたものを全置換します</p>
+ * 文字列の全置換
+ * 対象の文字列と、削除文字列がマッチしたものを全置換します
  * @static
  * @method replaceAll
  * @param {String} str 置換対象の文字列
@@ -3828,7 +3966,7 @@ function toHarfNumber(str) {
 };
 
 /**
- * <h4>UUIDの生成して返す</h4>
+ * UUIDの生成して返す
  * @static
  * @method uuid
  * @return {String} UUID
@@ -3838,14 +3976,15 @@ function uuid() {
 };
 
 /***/ }),
-/* 17 */
+/* 18 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (immutable) */ __webpack_exports__["a"] = base64FileSize;
 /* harmony export (immutable) */ __webpack_exports__["d"] = mixin;
 /* harmony export (immutable) */ __webpack_exports__["b"] = getFunctionName;
-/* harmony export (immutable) */ __webpack_exports__["g"] = typeOf;
+/* harmony export (immutable) */ __webpack_exports__["g"] = spec;
+/* harmony export (immutable) */ __webpack_exports__["h"] = typeOf;
 /* harmony export (immutable) */ __webpack_exports__["f"] = preload;
 /* harmony export (immutable) */ __webpack_exports__["e"] = noop;
 /* harmony export (immutable) */ __webpack_exports__["c"] = log;
@@ -3867,175 +4006,201 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
  */
 
 /**
- * <h4>base64画像のファイルサイズ取得(bytes)</h4>
- * <p>厳密なファイルサイズではありません。
- * デバッグ時におおよそのファイルサイズを見るために使用しますので多少誤差があります</p>
+ * NOTE: β.ver
+ * base64画像のファイルサイズ取得(bytes)
+ * 厳密なファイルサイズではありません。
+ * デバッグ時におおよそのファイルサイズを見るために使用しますので多少誤差があります
  * @static
  * @method base64FileSize
  * @param  {Base64} base64 base64画像
- * @return {Number} bytes
+ * @return {number} bytes
  */
 function base64FileSize(base64) {
-  var len = base64.indexOf(";base64,") + 8,
-      bytes = (base64.length - len) * 3 / 4;
-  return bytes;
+	var len = base64.indexOf(";base64,") + 8,
+	    bytes = (base64.length - len) * 3 / 4;
+	return bytes;
 };
 
 /**
- * <h4>オブジェクトの拡張</h4>
+ * オブジェクトの拡張
  * @static
  * @method mixin
  * @param {Boolean} isDeep ディープコピーするか 初期値: false 省略可
- * @param {Object} arguments 拡張するオブジェクト
- * @return {Object} 拡張したオブジェクトを返します
+ * @param {object} arguments 拡張するオブジェクト
+ * @return {object} 拡張したオブジェクトを返します
  */
 function mixin(isDeep, objA, objB) {
-  var options = void 0,
-      name = void 0,
-      src = void 0,
-      copy = void 0,
-      copyIsArray = void 0,
-      clone = void 0,
-      target = arguments[0] || {},
-      i = 1,
-      length = arguments.length,
-      deep = false;
+	var options = void 0,
+	    name = void 0,
+	    src = void 0,
+	    copy = void 0,
+	    copyIsArray = void 0,
+	    clone = void 0,
+	    target = arguments[0] || {},
+	    i = 1,
+	    length = arguments.length,
+	    deep = false;
 
-  if (typeof target === "boolean") {
-    deep = target;
-    target = arguments[i] || {};
-    i++;
-  }
+	if (typeof target === "boolean") {
+		deep = target;
+		target = arguments[i] || {};
+		i++;
+	}
 
-  if ((typeof target === "undefined" ? "undefined" : _typeof(target)) !== "object" && !__WEBPACK_IMPORTED_MODULE_0__is__["p" /* isFunction */](target)) {
-    target = {};
-  }
+	if ((typeof target === "undefined" ? "undefined" : _typeof(target)) !== "object" && !__WEBPACK_IMPORTED_MODULE_0__is__["p" /* isFunction */](target)) {
+		target = {};
+	}
 
-  if (i === length) {
-    target = this;
-    i--;
-  }
+	if (i === length) {
+		target = this;
+		i--;
+	}
 
-  for (; i < length; i++) {
-    if ((options = arguments[i]) != null) {
-      for (name in options) {
-        src = target[name];
-        copy = options[name];
+	for (; i < length; i++) {
+		if ((options = arguments[i]) != null) {
+			for (name in options) {
+				src = target[name];
+				copy = options[name];
 
-        if (target === copy) {
-          continue;
-        }
+				if (target === copy) {
+					continue;
+				}
 
-        if (deep && copy && (__WEBPACK_IMPORTED_MODULE_0__is__["F" /* isPlainObject */](copy) || (copyIsArray = Array.isArray(copy)))) {
-          if (copyIsArray) {
-            copyIsArray = false;
-            clone = src && Array.isArray(src) ? src : [];
-          } else {
-            clone = src && __WEBPACK_IMPORTED_MODULE_0__is__["F" /* isPlainObject */](src) ? src : {};
-          }
-          target[name] = mixin(deep, clone, copy);
-        } else if (copy !== undefined) {
-          target[name] = copy;
-        }
-      }
-    }
-  }
+				if (deep && copy && (__WEBPACK_IMPORTED_MODULE_0__is__["F" /* isPlainObject */](copy) || (copyIsArray = Array.isArray(copy)))) {
+					if (copyIsArray) {
+						copyIsArray = false;
+						clone = src && Array.isArray(src) ? src : [];
+					} else {
+						clone = src && __WEBPACK_IMPORTED_MODULE_0__is__["F" /* isPlainObject */](src) ? src : {};
+					}
+					target[name] = mixin(deep, clone, copy);
+				} else if (copy !== undefined) {
+					target[name] = copy;
+				}
+			}
+		}
+	}
 
-  return target;
+	return target;
 };
 
 /**
- * <h4>匿名関数名を返す</h4>
- * <p>無名関数はundefinedを返します</p>
+ * 匿名関数名を返す
+ * 無名関数はundefinedを返します
  * @static
  * @method getFunctionName
- * @param {Function} fn 名前を取得したい関数
- * @return {String} 関数名
+ * @param {function} fn 名前を取得したい関数
+ * @return {string} 関数名
  */
 function getFunctionName(fn) {
-  if (__WEBPACK_IMPORTED_MODULE_0__is__["p" /* isFunction */](fn)) {
-    if (fn.prototype.constructor && fn.prototype.constructor.name) {
-      return fn.prototype.constructor.name;
-    } else {
-      return ("" + fn).replace(/^\s*function\s*([^\(]*)[\S\s]+$/im, "$1");
-    }
-  }
+	if (__WEBPACK_IMPORTED_MODULE_0__is__["p" /* isFunction */](fn)) {
+		if (fn.prototype.constructor && fn.prototype.constructor.name) {
+			return fn.prototype.constructor.name;
+		} else {
+			return ("" + fn).replace(/^\s*function\s*([^\(]*)[\S\s]+$/im, "$1");
+		}
+	}
 };
 
 /**
- * <h4>型名取得</h4>
+ * NOTE: α.ver
+ * spec - CPU性能を返す（だいたい）
+ *
+ * @export
+ * @returns
+ */
+function spec() {
+	var SPEED_CONSTANT = 8.9997e-9;
+	//if speed=(c*a)/t, then constant=(s*t)/a and time=(a*c)/s
+
+	var START_TIME = performance.now();
+	var AMOUNT = 150000000;
+	for (var i = AMOUNT; i > 0; i--) {}
+	var END_TIME = performance.now();
+	var sub = (END_TIME - START_TIME) / 1000;
+	var speed = SPEED_CONSTANT * AMOUNT / sub;
+
+	return {
+		core: navigator.hardwareConcurrency || "Chrome Only",
+		time: Math.round(sub * 1000) / 1000, // sec
+		clock: Math.round(speed * 1000) / 1000 // GHZ
+	};
+}
+
+/**
+ * 型名取得
  * @static
  * @method typeOf
- * @param {Object} 判定するオブジェクト
- * @return {String} 型名を返す
+ * @param {object} 判定するオブジェクト
+ * @return {string} 型名を返す
  */
 function typeOf(obj) {
-  if (__WEBPACK_IMPORTED_MODULE_0__is__["g" /* isArray */](obj)) {
-    return "array";
-  } else if (__WEBPACK_IMPORTED_MODULE_0__is__["h" /* isBoolean */](obj)) {
-    return "boolean";
-  } else if (__WEBPACK_IMPORTED_MODULE_0__is__["p" /* isFunction */](obj)) {
-    return "function";
-  } else if (__WEBPACK_IMPORTED_MODULE_0__is__["B" /* isNumber */](obj)) {
-    return "number";
-  } else if (__WEBPACK_IMPORTED_MODULE_0__is__["D" /* isObject */](obj)) {
-    return "object";
-  } else if (__WEBPACK_IMPORTED_MODULE_0__is__["M" /* isString */](obj)) {
-    return "string";
-  } else if (__WEBPACK_IMPORTED_MODULE_0__is__["G" /* isRegexp */](obj)) {
-    return "regexp";
-  } else if (__WEBPACK_IMPORTED_MODULE_0__is__["A" /* isNull */](obj)) {
-    return "null";
-  } else if (__WEBPACK_IMPORTED_MODULE_0__is__["P" /* isUndefined */](obj)) {
-    return "undefined";
-  } else if (obj.toString && obj.toString()) {
-    return obj.toString().toLowerCase();
-  }
+	if (__WEBPACK_IMPORTED_MODULE_0__is__["g" /* isArray */](obj)) {
+		return "array";
+	} else if (__WEBPACK_IMPORTED_MODULE_0__is__["h" /* isBoolean */](obj)) {
+		return "boolean";
+	} else if (__WEBPACK_IMPORTED_MODULE_0__is__["p" /* isFunction */](obj)) {
+		return "function";
+	} else if (__WEBPACK_IMPORTED_MODULE_0__is__["B" /* isNumber */](obj)) {
+		return "number";
+	} else if (__WEBPACK_IMPORTED_MODULE_0__is__["D" /* isObject */](obj)) {
+		return "object";
+	} else if (__WEBPACK_IMPORTED_MODULE_0__is__["M" /* isString */](obj)) {
+		return "string";
+	} else if (__WEBPACK_IMPORTED_MODULE_0__is__["G" /* isRegexp */](obj)) {
+		return "regexp";
+	} else if (__WEBPACK_IMPORTED_MODULE_0__is__["A" /* isNull */](obj)) {
+		return "null";
+	} else if (__WEBPACK_IMPORTED_MODULE_0__is__["P" /* isUndefined */](obj)) {
+		return "undefined";
+	} else if (obj.toString && obj.toString()) {
+		return obj.toString().toLowerCase();
+	}
 };
 
 /**
- * <h4>画像のプリロード</h4>
+ * 画像のプリロード
  * @static
  * @method preload
- * @param {String} src 画像パス
+ * @param {string} src 画像パス
  * @return {Image} 生成した、イメージ要素
  */
 function preload(src) {
-  var img = new Image();
-  img.src = src;
-  return img;
+	var img = new Image();
+	img.src = src;
+	return img;
 };
 
 /**
- * <h4>空の関数</h4>
+ * 空の関数
  * @static
  * @method noop
- * @return {Function}
+ * @return {function}
  */
 function noop() {};
 
 /**
- * <h4>コンソールログの出力</h4>
+ * コンソールログの出力
  * @static
  * @method log
- * @return {Function}
+ * @return {function}
  */
 function log() {
-  if (!INK || INK.isDevelop) {
-    console.log.apply(console, __WEBPACK_IMPORTED_MODULE_1__array__["a" /* argsToArray */](arguments));
-  }
+	if (!INK || INK.isDevelop) {
+		console.log.apply(console, __WEBPACK_IMPORTED_MODULE_1__array__["a" /* argsToArray */](arguments));
+	}
 };
 
 /***/ }),
-/* 18 */
+/* 19 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Events__ = __webpack_require__(3);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__Events__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Ticker__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Ticker__ = __webpack_require__(20);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_1__Ticker__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Mediaquery__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Mediaquery__ = __webpack_require__(21);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_2__Mediaquery__["a"]; });
 /// INKjs Javascript Library
 /// The MIT License (MIT)
@@ -4048,7 +4213,7 @@ function log() {
 
 
 /***/ }),
-/* 19 */
+/* 20 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4071,12 +4236,12 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 
 
-// MAX_FPS {Number} FPSのMAX値
+// MAX_FPS {number} FPSのMAX値
 var MAX_FPS = 60;
 
 /**
- * <h4>Ticker</h4>
- * <p>fpsの設定値は、FPSの実行を保証するものではありません。実際の処理ではFPS値が前後する場合があります</p>
+ * Ticker
+ * fpsの設定値は、FPSの実行を保証するものではありません。実際の処理ではFPS値が前後する場合があります
  * @class Ticker
  * @extends Events
  * @constructor
@@ -4092,10 +4257,10 @@ var Ticker = function (_Events) {
     _classCallCheck(this, Ticker);
 
     /**
-     * <h4>イベントリスト</h4>
+     * イベントリスト
      * @private
      * @property _EVENTS
-     * @type {Object}
+     * @type {object}
      */
     var _this = _possibleConstructorReturn(this, (Ticker.__proto__ || Object.getPrototypeOf(Ticker)).call(this));
 
@@ -4104,42 +4269,42 @@ var Ticker = function (_Events) {
     };
 
     /**
-     * <h4>フレームレート</h4>
+     * フレームレート
      * @property fps
-     * @type {Number}
+     * @type {number}
      */
     _this.fps = MAX_FPS;
 
     /**
-     * <h4>tickイベント毎にカウントされます</h4>
+     * tickイベント毎にカウントされます
      * @property tickCount
-     * @type {Number}
+     * @type {number}
      */
     _this.tickCount = 1;
 
     /**
-     * <h4>requestAnimationFrame毎にカウントされます</h4>
+     * requestAnimationFrame毎にカウントされます
      * @property fpsCount
-     * @type {Number}
+     * @type {number}
      */
     _this.fpsCount = 1;
 
     /**
-     * <h4>初回tickイベントが呼び出された時間</h4>
+     * 初回tickイベントが呼び出された時間
      * @property startTime
-     * @type {Number}
+     * @type {number}
      */
     _this.startTime = 0;
 
     /**
-     * <h4>最後にtickイベントが呼び出された時間</h4>
+     * 最後にtickイベントが呼び出された時間
      * @property lastTime
-     * @type {Number}
+     * @type {number}
      */
     _this.lastTime = 0;
 
     /**
-     * <h4>tickイベントの再起処理呼び出されているか</h4>
+     * tickイベントの再起処理呼び出されているか
      * @private
      * @property _isTick
      * @type {Boolean}
@@ -4147,19 +4312,22 @@ var Ticker = function (_Events) {
     _this._isTick = false;
 
     /**
-     * <h4>tickイベントタイマーid</h4>
+     * tickイベントタイマーid
      * @private
      * @property _tickerId
-     * @type {String}
+     * @type {string}
      */
     _this._tickerId = null;
     return _this;
   }
 
+  /*----------------------------------------------------------------------
+  	@method
+  ----------------------------------------------------------------------*/
   /**
-   * <h4>FPSの設定(1-60内の値)</h4>
+   * FPSの設定(1-60内の値)
    * @method setFPS
-   * @param {Number} fps 1-60fps
+   * @param {number} fps 1-60fps
    * @return {Ticker}
    */
 
@@ -4172,7 +4340,7 @@ var Ticker = function (_Events) {
     }
 
     /**
-     * <h4>値のリセット</h4>
+     * 値のリセット
      * @method reset
      * @return {Ticker}
      */
@@ -4188,13 +4356,13 @@ var Ticker = function (_Events) {
     }
 
     /**
-     * <h4>イベント登録</h4>
-     * <p>イベント名に属性名を付与するも可能</p>
+     * イベント登録
+     * イベント名に属性名を付与するも可能
      * @overide
      * @method on
-     * @param {String} type イベントタイプ
-     * @param {Function} listener イベントリスナー
-     * @param {Object} context コンテキスト
+     * @param {string} type イベントタイプ
+     * @param {function} listener イベントリスナー
+     * @param {object} context コンテキスト
      * @return {Events}
      */
 
@@ -4211,13 +4379,13 @@ var Ticker = function (_Events) {
     }
 
     /**
-     * <h4>イベント削除</h4>
-     * <p>type省略時は、全てのイベントを削除<br>
-     * listener省略時は、指定イベントタイプ全て削除</p>
+     * イベント削除
+     * type省略時は、全てのイベントを削除<br>
+     * listener省略時は、指定イベントタイプ全て削除
      * @overide
      * @method off
-     * @param {String} type イベントタイプ 省略可
-     * @param {Function} listener イベントリスナー 省略可
+     * @param {string} type イベントタイプ 省略可
+     * @param {function} listener イベントリスナー 省略可
      * @return {Events}
      */
 
@@ -4233,7 +4401,7 @@ var Ticker = function (_Events) {
     }
 
     /**
-     * <h4>requestAnimationFrameの再起処理</h4>
+     * requestAnimationFrameの再起処理
      * @private
      * @method _tick
      * @return {Void}
@@ -4259,7 +4427,7 @@ var Ticker = function (_Events) {
 /* harmony default export */ __webpack_exports__["a"] = (Ticker);
 
 /***/ }),
-/* 20 */
+/* 21 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4284,10 +4452,10 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 /// NOTE: アップデート予定なし
 /**
- * <h4>Mediaqueryのブレイクポイントイベント</h4>
- * <p>!!!: 対象の要素(head)にcssでフォントファミリーを指定してください<br>
+ * Mediaqueryのブレイクポイントイベント
+ * !!!: 対象の要素(head)にcssでフォントファミリーを指定してください<br>
  * ブレイクポイントで変更した、フォントファミリーをイベントオブジェクトに渡します<br>
- * シングルトン: コンストラクタを呼び出しで使用しません｡</p>
+ * シングルトン: コンストラクタを呼び出しで使用しません｡
  *
  * @class Mediaquery
  * @extends Events
@@ -4305,10 +4473,10 @@ var Mediaquery = function (_Events) {
     _classCallCheck(this, Mediaquery);
 
     /**
-     * <h4>イベントリスト</h4>
+     * イベントリスト
      * @private
      * @property _EVENTS
-     * @type {Object}
+     * @type {object}
      */
     var _this = _possibleConstructorReturn(this, (Mediaquery.__proto__ || Object.getPrototypeOf(Mediaquery)).call(this));
 
@@ -4317,7 +4485,7 @@ var Mediaquery = function (_Events) {
     };
 
     /**
-     * <h4>スタイルを監視する要素</h4>
+     * スタイルを監視する要素
      * @property elm
      * @default head
      * @type {DOM}
@@ -4329,7 +4497,7 @@ var Mediaquery = function (_Events) {
     }
 
     /**
-     * <h4>要素を監視しているか</h4>
+     * 要素を監視しているか
      * @property isObserver
      * @default false
      * @type {Boolean}
@@ -4337,25 +4505,25 @@ var Mediaquery = function (_Events) {
     _this.isObserver = false;
 
     /**
-     * <h4>監視するスタイル名</h4>
+     * 監視するスタイル名
      * @property observeStyle
      * @default "font-family"
-     * @type {String}
+     * @type {string}
      */
     _this.observeStyle = "font-family";
 
     /**
-     * <h4>要素の現在のスタイルを保管します</h4>
+     * 要素の現在のスタイルを保管します
      * @property mediaStyle
-     * @type {String}
+     * @type {string}
      */
     _this.mediaStyle = null;
     return _this;
   }
 
   /**
-   * <h4>イベントコントローラー</h4>
-   * <p>状態を監視し、フォトサイズに変更があればイベントを発行します</p>
+   * イベントコントローラー
+   * 状態を監視し、フォトサイズに変更があればイベントを発行します
    * @private
    * @method _controller
    * @return {Void}
@@ -4382,11 +4550,11 @@ var Mediaquery = function (_Events) {
     }
 
     /**
-     * <h4>イベント登録</h4>
+     * イベント登録
      * @method on
-     * @param {String} type イベントタイプ
-     * @param {Function} listener イベントリスナー
-     * @param {Object} context コンテキスト
+     * @param {string} type イベントタイプ
+     * @param {function} listener イベントリスナー
+     * @param {object} context コンテキスト
      * @return {Events}
      */
 
@@ -4404,10 +4572,10 @@ var Mediaquery = function (_Events) {
 
 
     /**
-     * <h4>イベント発行</h4>
-     * <p>第二引数以降に値を渡すとcallbackに引数として渡します</p>
+     * イベント発行
+     * 第二引数以降に値を渡すとcallbackに引数として渡します
      * @method trigger
-     * @param {String} type イベントタイプ
+     * @param {string} type イベントタイプ
      * @return {Events}
      */
     value: function trigger(type) {
@@ -4434,15 +4602,15 @@ var Mediaquery = function (_Events) {
 /* harmony default export */ __webpack_exports__["a"] = (Mediaquery);
 
 /***/ }),
-/* 21 */
+/* 22 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Debug__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Debug__ = __webpack_require__(23);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__Debug__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Ease__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Ease__ = __webpack_require__(24);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_1__Ease__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__WebCamera__ = __webpack_require__(24);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__WebCamera__ = __webpack_require__(25);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_2__WebCamera__["a"]; });
 /// INKjs Javascript Library
 /// The MIT License (MIT)
@@ -4457,7 +4625,7 @@ var Mediaquery = function (_Events) {
 
 
 /***/ }),
-/* 22 */
+/* 23 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4487,8 +4655,8 @@ var _isChangeLog = true;
 
 // NOTE: アップデート予定なし
 /**
- * <h4>デバッグ機能を提供します</h4>
- * <p>!!!: コンストラクタを呼び出しで、使用しません</p>
+ * デバッグ機能を提供します
+ * !!!: コンストラクタを呼び出しで、使用しません
  *
  * @class Debug
  * @constructor
@@ -4505,7 +4673,7 @@ var Debug = function () {
   }
 
   /**
-   * <h4>view要素を生成</h4>
+   * view要素を生成
    * @private
    * @static
    * @method _createView
@@ -4538,7 +4706,7 @@ var Debug = function () {
     }
 
     /**
-     * <h4>viewイベント設定</h4>
+     * viewイベント設定
      * @private
      * @static
      * @method _addEvent
@@ -4563,7 +4731,7 @@ var Debug = function () {
           var _x = event.clientX,
               _y = event.clientY;
 
-          if (AMP.isNumber(x)) {
+          if (__WEBPACK_IMPORTED_MODULE_0__utils__["_6" /* isNumber */](x)) {
             var diffX = _x - x,
                 diffY = _y - y;
 
@@ -4596,7 +4764,7 @@ var Debug = function () {
     }
 
     /**
-     * <h4>ログを出力します</h4>
+     * ログを出力します
      * @static
      * @method log
      * @param {Any} args 出力するオブジェクト ※可変長引数可能
@@ -4613,9 +4781,9 @@ var Debug = function () {
       if (_isChangeLog) {
         __WEBPACK_IMPORTED_MODULE_0__utils__["s" /* each */](__WEBPACK_IMPORTED_MODULE_0__utils__["g" /* argsToArray */](arguments), function (data) {
           // データタイプに合わせてログを出力
-          if (__WEBPACK_IMPORTED_MODULE_0__utils__["I" /* isArray */](data)) {
+          if (__WEBPACK_IMPORTED_MODULE_0__utils__["J" /* isArray */](data)) {
             _views.text.value += JSON.stringify(data) + "\n";
-          } else if (__WEBPACK_IMPORTED_MODULE_0__utils__["_7" /* isObject */](data)) {
+          } else if (__WEBPACK_IMPORTED_MODULE_0__utils__["_8" /* isObject */](data)) {
             _views.text.value += JSON.stringify(data, null, "\t") + "\n";
           } else {
             _views.text.value += data + "\n";
@@ -4629,7 +4797,7 @@ var Debug = function () {
     }
 
     /**
-     * <h4>ログのクリア</h4>
+     * ログのクリア
      * @static
      * @method clear
      * @return {Debug}
@@ -4645,7 +4813,7 @@ var Debug = function () {
     }
 
     /**
-     * <h4>ログ出力を開始します</h4>
+     * ログ出力を開始します
      * @static
      * @method start
      * @return {Debug}
@@ -4659,7 +4827,7 @@ var Debug = function () {
     }
 
     /**
-     * <h4>ログ出力を停止します</h4>
+     * ログ出力を停止します
      * @static
      * @method stop
      * @return {Debug}
@@ -4673,7 +4841,7 @@ var Debug = function () {
     }
 
     /**
-     * <h4>ログviewを非表示にします</h4>
+     * ログviewを非表示にします
      * @static
      * @method hide
      * @return {Debug}
@@ -4690,7 +4858,7 @@ var Debug = function () {
     }
 
     /**
-     * <h4>ログviewを表示します</h4>
+     * ログviewを表示します
      * @static
      * @method show
      * @return {Debug}
@@ -4707,7 +4875,7 @@ var Debug = function () {
     }
 
     /**
-     * <h4>ログの表示状態</h4>
+     * ログの表示状態
      * @static
      * @method isShow
      * @return {Boolean}
@@ -4720,11 +4888,11 @@ var Debug = function () {
     }
 
     /**
-     * <h4>ログの表示状態</h4>
+     * ログの表示状態
      * @static
      * @method position
-    * @param {Number} x
-    * @param {Number} y
+    * @param {number} x
+    * @param {number} y
      * @return {Debug}
      */
 
@@ -4745,7 +4913,7 @@ var Debug = function () {
 /* harmony default export */ __webpack_exports__["a"] = (Debug);
 
 /***/ }),
-/* 23 */
+/* 24 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4760,18 +4928,18 @@ var Debug = function () {
 
 
 /**
- * <h4>Ease</h4>
+ * Ease
  * @class Ease
  * @constructor
  **/
 function Ease() {}
 
 /**
- * <h4>PowIn</h4>
+ * PowIn
  * @static
  * @method createPowIn
- * @param {Number} pow
- * @return {Function}
+ * @param {number} pow
+ * @return {function}
  **/
 Ease.createPowIn = function (pow) {
   return function (t) {
@@ -4780,11 +4948,11 @@ Ease.createPowIn = function (pow) {
 };
 
 /**
- * <h4>PowOut</h4>
+ * PowOut
  * @static
  * @method createPowOut
- * @param {Number} pow
- * @return {Function}
+ * @param {number} pow
+ * @return {function}
  **/
 Ease.createPowOut = function (pow) {
   return function (t) {
@@ -4793,11 +4961,11 @@ Ease.createPowOut = function (pow) {
 };
 
 /**
- * <h4>PowInOut</h4>
+ * PowInOut
  * @static
  * @method createPowInOut
- * @param {Number} pow
- * @return {Function}
+ * @param {number} pow
+ * @return {function}
  **/
 Ease.createPowInOut = function (pow) {
   return function (t) {
@@ -4810,11 +4978,11 @@ Ease.createPowInOut = function (pow) {
 };
 
 /**
- * <h4>BackIn</h4>
+ * BackIn
  * @static
  * @method createBackIn
- * @param {Number} amount
- * @return {Function}
+ * @param {number} amount
+ * @return {function}
  **/
 Ease.createBackIn = function (amount) {
   return function (t) {
@@ -4823,11 +4991,11 @@ Ease.createBackIn = function (amount) {
 };
 
 /**
- * <h4>BackOut</h4>
+ * BackOut
  * @static
  * @method createBackOut
- * @param {Number} amount
- * @return {Function}
+ * @param {number} amount
+ * @return {function}
  **/
 Ease.createBackOut = function (amount) {
   return function (t) {
@@ -4836,11 +5004,11 @@ Ease.createBackOut = function (amount) {
 };
 
 /**
- * <h4>BackInOut</h4>
+ * BackInOut
  * @static
  * @method createBackInOut
- * @param {Number} amount
- * @return {Function}
+ * @param {number} amount
+ * @return {function}
  **/
 Ease.createBackInOut = function (amount) {
   amount *= 1.525;
@@ -4854,12 +5022,12 @@ Ease.createBackInOut = function (amount) {
 };
 
 /**
- * <h4>ElasticIn</h4>
+ * ElasticIn
  * @static
  * @method createElasticIn
- * @param {Number} amplitude
- * @param {Number} period
- * @return {Function}
+ * @param {number} amplitude
+ * @param {number} period
+ * @return {function}
  **/
 Ease.createElasticIn = function (amplitude, period) {
   return function (t) {
@@ -4873,12 +5041,12 @@ Ease.createElasticIn = function (amplitude, period) {
 };
 
 /**
- * <h4>ElasticOut</h4>
+ * ElasticOut
  * @static
  * @method createElasticOut
- * @param {Number} amplitude
- * @param {Number} period
- * @return {Function}
+ * @param {number} amplitude
+ * @param {number} period
+ * @return {function}
  **/
 Ease.createElasticOut = function (amplitude, period) {
   return function (t) {
@@ -4892,12 +5060,12 @@ Ease.createElasticOut = function (amplitude, period) {
 };
 
 /**
- * <h4>ElasticInOut</h4>
+ * ElasticInOut
  * @static
  * @method createElasticInOut
- * @param {Number} amplitude
- * @param {Number} period
- * @return {Function}
+ * @param {number} amplitude
+ * @param {number} period
+ * @return {function}
  **/
 Ease.createElasticInOut = function (amplitude, period) {
   return function (t) {
@@ -4915,8 +5083,8 @@ Ease.createElasticInOut = function (amplitude, period) {
 /**
  * @static
  * @method linear
- * @param {Number} t
- * @return {Number}
+ * @param {number} t
+ * @return {number}
  **/
 Ease.linear = function (t) {
   return t;
@@ -4925,8 +5093,8 @@ Ease.linear = function (t) {
 /**
  * @static
  * @method sineIn, easeInSine
- * @param {Number} t
- * @return {Number}
+ * @param {number} t
+ * @return {number}
  **/
 Ease.sineIn = Ease.easeInSine = function (t) {
   return 1 - Math.cos(t * Math.PI / 2);
@@ -4935,8 +5103,8 @@ Ease.sineIn = Ease.easeInSine = function (t) {
 /**
  * @static
  * @method sineOut
- * @param {Number} t
- * @return {Number}
+ * @param {number} t
+ * @return {number}
  **/
 Ease.sineOut = Ease.easeOutSine = function (t) {
   return Math.sin(t * Math.PI / 2);
@@ -4945,8 +5113,8 @@ Ease.sineOut = Ease.easeOutSine = function (t) {
 /**
  * @static
  * @method sineInOut
- * @param {Number} t
- * @return {Number}
+ * @param {number} t
+ * @return {number}
  **/
 Ease.sineInOut = Ease.easeInOutSine = function (t) {
   return -0.5 * (Math.cos(Math.PI * t) - 1);
@@ -4955,128 +5123,128 @@ Ease.sineInOut = Ease.easeInOutSine = function (t) {
 /**
  * @static
  * @method quadIn
- * @param {Number} t
- * @return {Number}
+ * @param {number} t
+ * @return {number}
  **/
 Ease.quadIn = Ease.easeInQuad = Ease.createPowIn(2);
 
 /**
  * @static
  * @method quadOut
- * @param {Number} t
- * @return {Number}
+ * @param {number} t
+ * @return {number}
  **/
 Ease.quadOut = Ease.easeOutQuad = Ease.createPowOut(2);
 
 /**
  * @static
  * @method quadInOut
- * @param {Number} t
- * @return {Number}
+ * @param {number} t
+ * @return {number}
  **/
 Ease.quadInOut = Ease.easeInOutQuad = Ease.createPowInOut(2);
 
 /**
  * @static
  * @method cubicIn
- * @param {Number} t
- * @return {Number}
+ * @param {number} t
+ * @return {number}
  **/
 Ease.cubicIn = Ease.easeInCubic = Ease.createPowIn(3);
 
 /**
  * @static
  * @method cubicOut
- * @param {Number} t
- * @return {Number}
+ * @param {number} t
+ * @return {number}
  **/
 Ease.cubicOut = Ease.easeOutCubic = Ease.createPowOut(3);
 
 /**
  * @static
  * @method cubicInOut
- * @param {Number} t
- * @return {Number}
+ * @param {number} t
+ * @return {number}
  **/
 Ease.cubicInOut = Ease.easeInOutCubic = Ease.createPowInOut(3);
 
 /**
  * @static
  * @method quartIn
- * @param {Number} t
- * @return {Number}
+ * @param {number} t
+ * @return {number}
  **/
 Ease.quartIn = Ease.easeInQuart = Ease.createPowIn(4);
 
 /**
  * @static
  * @method quartOut
- * @param {Number} t
- * @return {Number}
+ * @param {number} t
+ * @return {number}
  **/
 Ease.quartOut = Ease.easeOutQuart = Ease.createPowOut(4);
 
 /**
  * @static
  * @method quartInOut
- * @param {Number} t
- * @return {Number}
+ * @param {number} t
+ * @return {number}
  **/
 Ease.quartInOut = Ease.easeInOutQuart = Ease.createPowInOut(4);
 
 /**
  * @static
  * @method quintIn
- * @param {Number} t
- * @return {Number}
+ * @param {number} t
+ * @return {number}
  **/
 Ease.quintIn = Ease.easeInQuint = Ease.createPowIn(5);
 
 /**
  * @static
  * @method quintOut
- * @param {Number} t
- * @return {Number}
+ * @param {number} t
+ * @return {number}
  **/
 Ease.quintOut = Ease.easeOutQuint = Ease.createPowOut(5);
 
 /**
  * @static
  * @method quintInOut
- * @param {Number} t
- * @return {Number}
+ * @param {number} t
+ * @return {number}
  **/
 Ease.quintInOut = Ease.easeInOutQuint = Ease.createPowInOut(5);
 
 /**
  * @static
  * @method expoIn
- * @param {Number} t
- * @return {Number}
+ * @param {number} t
+ * @return {number}
  **/
 Ease.expoIn = Ease.easeInExpo = Ease.createPowIn(6);
 
 /**
  * @static
  * @method expoOut
- * @param {Number} t
- * @return {Number}
+ * @param {number} t
+ * @return {number}
  **/
 Ease.expoOut = Ease.easeOutExpo = Ease.createPowOut(6);
 
 /**
  * @static
  * @method expoInOut
- * @param {Number} t
- * @return {Number}
+ * @param {number} t
+ * @return {number}
  **/
 Ease.expoInOut = Ease.easeInOutExpo = Ease.createPowInOut(6);
 
 /**
  * @static
  * @method circIn
- * @param {Number} t
- * @return {Number}
+ * @param {number} t
+ * @return {number}
  **/
 Ease.circIn = Ease.easeInCirc = function (t) {
   return -(Math.sqrt(1 - t * t) - 1);
@@ -5085,8 +5253,8 @@ Ease.circIn = Ease.easeInCirc = function (t) {
 /**
  * @static
  * @method circOut
- * @param {Number} t
- * @return {Number}
+ * @param {number} t
+ * @return {number}
  **/
 Ease.circOut = Ease.easeOutCirc = function (t) {
   return Math.sqrt(1 - --t * t);
@@ -5095,8 +5263,8 @@ Ease.circOut = Ease.easeOutCirc = function (t) {
 /**
  * @static
  * @method circInOut
- * @param {Number} t
- * @return {Number}
+ * @param {number} t
+ * @return {number}
  **/
 Ease.circInOut = Ease.easeInOutCirc = function (t) {
   if ((t *= 2) < 1) {
@@ -5109,56 +5277,56 @@ Ease.circInOut = Ease.easeInOutCirc = function (t) {
 /**
  * @static
  * @method backIn
- * @param {Number} t
- * @return {Number}
+ * @param {number} t
+ * @return {number}
  **/
 Ease.backIn = Ease.easeInBack = Ease.createBackIn(1.7);
 
 /**
  * @static
  * @method backOut
- * @param {Number} t
- * @return {Number}
+ * @param {number} t
+ * @return {number}
  **/
 Ease.backOut = Ease.easeOutBack = Ease.createBackOut(1.7);
 
 /**
  * @static
  * @method backInOut
- * @param {Number} t
- * @return {Number}
+ * @param {number} t
+ * @return {number}
  **/
 Ease.backInOut = Ease.easeInOutBack = Ease.createBackInOut(1.7);
 
 /**
  * @static
  * @method elasticIn
- * @param {Number} t
- * @return {Number}
+ * @param {number} t
+ * @return {number}
  **/
 Ease.elasticIn = Ease.easeInElastic = Ease.createElasticIn(1, 0.3);
 
 /**
  * @static
  * @method elasticOut
- * @param {Number} t
- * @return {Number}
+ * @param {number} t
+ * @return {number}
  **/
 Ease.elasticOut = Ease.easeOutElastic = Ease.createElasticOut(1, 0.3);
 
 /**
  * @static
  * @method elasticInOut
- * @param {Number} t
- * @return {Number}
+ * @param {number} t
+ * @return {number}
  **/
 Ease.elasticInOut = Ease.easeInOutElastic = Ease.createElasticInOut(1, 0.3 * 1.5);
 
 /**
  * @method bounceIn
- * @param {Number} t
+ * @param {number} t
  * @static
- * @return {Number}
+ * @return {number}
  **/
 Ease.bounceIn = Ease.easeInBounce = function (t) {
   return 1 - Ease.bounceOut(1 - t);
@@ -5167,8 +5335,8 @@ Ease.bounceIn = Ease.easeInBounce = function (t) {
 /**
  * @static
  * @method bounceOut
- * @param {Number} t
- * @return {Number}
+ * @param {number} t
+ * @return {number}
  **/
 Ease.bounceOut = Ease.easeOutBounce = function (t) {
   if (t < 1 / 2.75) {
@@ -5185,8 +5353,8 @@ Ease.bounceOut = Ease.easeOutBounce = function (t) {
 /**
  * @static
  * @method bounceInOut
- * @param {Number} t
- * @return {Number}
+ * @param {number} t
+ * @return {number}
  **/
 Ease.bounceInOut = Ease.easeInOutBounce = function (t) {
   if (t < 0.5) {
@@ -5197,14 +5365,12 @@ Ease.bounceInOut = Ease.easeInOutBounce = function (t) {
 };
 
 /***/ }),
-/* 24 */
+/* 25 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__class_events_Events__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_get_user_media_promise__ = __webpack_require__(25);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_get_user_media_promise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_get_user_media_promise__);
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -5222,9 +5388,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 
 
-
 /**
- * <h4>WebCamera</h4>
  * @class WebCamera
  * @constructor
  */
@@ -5239,10 +5403,10 @@ var WebCamera = function (_Events) {
     _classCallCheck(this, WebCamera);
 
     /**
-     * <h4>イベントリスト</h4>
+     * イベントリスト
      * @private
      * @property _EVENTS
-     * @type {Object}
+     * @type {object}
      */
     var _this = _possibleConstructorReturn(this, (WebCamera.__proto__ || Object.getPrototypeOf(WebCamera)).call(this));
 
@@ -5255,7 +5419,7 @@ var WebCamera = function (_Events) {
 
     /// FIXME: offscreenレンダリング可能か？
     /**
-     * <h4>表示用video</h4>
+     * 表示用video
      * @property video
      * @type {DOM}
      */
@@ -5263,9 +5427,9 @@ var WebCamera = function (_Events) {
 
     /**
      * options
-     * @type {Object}
+     * @type {object}
      */
-    _this.options = __WEBPACK_IMPORTED_MODULE_1__utils__["_25" /* mixin */](true, {
+    _this.options = __WEBPACK_IMPORTED_MODULE_1__utils__["_26" /* mixin */](true, {
       constraints: {
         video: true,
         audio: false
@@ -5285,15 +5449,13 @@ var WebCamera = function (_Events) {
     value: function setup() {
       var _this2 = this;
 
-      __WEBPACK_IMPORTED_MODULE_2_get_user_media_promise___default()(this.options.constraints).then(function (stream) {
+      navigator.mediaDevices.getUserMedia(this.options.constraints).then(function (stream) {
         _this2.trigger(_this2._EVENTS.DONE, stream);
-        _this2.video.src = window.URL.createObjectURL(stream);
-        _this2.video.onloadedmetadata = function (evt) {
-          _this2.trigger(_this2._EVENTS.LOAD, evt);
-        };
+        _this2.video.srcObject = stream;
+        _this2.trigger(_this2._EVENTS.LOAD);
       }).catch(function (err) {
         _this2.trigger(_this2._EVENTS.ERROR, err);
-        __WEBPACK_IMPORTED_MODULE_1__utils__["_23" /* log */](err.name + ": " + err.message);
+        __WEBPACK_IMPORTED_MODULE_1__utils__["_24" /* log */](err.name + ": " + err.message);
       });
 
       return this;
@@ -5322,136 +5484,12 @@ var WebCamera = function (_Events) {
       this.video.pause();
       return this;
     }
-
-    // /**
-    //  * @static
-    //  * @method getUserMedia
-    //  * @return {getUserMedia}
-    //  */
-    // static getUserMedia
-
   }]);
 
   return WebCamera;
 }(__WEBPACK_IMPORTED_MODULE_0__class_events_Events__["a" /* default */]);
 
 /* harmony default export */ __webpack_exports__["a"] = (WebCamera);
-
-/***/ }),
-/* 25 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;// loosely based on example code at https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getUserMedia
-(function (root) {
-  'use strict';
-
-  /**
-   * Error thrown when any required feature is missing (Promises, navigator, getUserMedia)
-   * @constructor
-   */
-  function NotSupportedError() {
-    this.name = 'NotSupportedError';
-    this.message = 'getUserMedia is not implemented in this browser';
-  }
-  NotSupportedError.prototype = Error.prototype;
-
-  /**
-   * Fake Promise instance that behaves like a Promise except that it always rejects with a NotSupportedError.
-   * Used for situations where there is no global Promise constructor.
-   *
-   * The message will report that the getUserMedia API is not available.
-   * This is technically true because every browser that supports getUserMedia also supports promises.
-   **
-   * @see http://caniuse.com/#feat=stream
-   * @see http://caniuse.com/#feat=promises
-   * @constructor
-   */
-  function FakePromise() {
-    // make it chainable like a real promise
-    this.then = function() {
-      return this;
-    };
-
-    // but always reject with an error
-    var err = new NotSupportedError();
-    this.catch = function(cb) {
-      setTimeout(function () {
-        cb(err);
-      });
-    }
-  }
-
-  var isPromiseSupported = typeof Promise !== 'undefined';
-
-  // checks for root.navigator to enable server-side rendering of things that depend on this
-  // (will need to be updated on client, but at least doesn't throw this way)
-  var navigatorExists = typeof navigator !== "undefined";
-  // gump = mondern promise-based interface
-  // gum = old callback-based interface
-  var gump = navigatorExists && navigator.mediaDevices && navigator.mediaDevices.getUserMedia;
-  var gum = navigatorExists && (navigator.getUserMedia || navigator.webkitGetUserMedia ||  navigator.mozGetUserMedia || navigator.msGetUserMedia);
-
-  /**
-   * Wrapper for navigator.mediaDevices.getUserMedia.
-   * Always returns a Promise or Promise-like object, even in environments without a global Promise constructor
-   *
-   * @stream https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getUserMedia
-   *
-   * @param {Object} constraints - must include one or both of audio/video along with optional details for video
-   * @param {Boolean} [constraints.audio] - include audio data in the stream
-   * @param {Boolean|Object} [constraints.video] - include video data in the stream. May be a boolean or an object with additional constraints, see
-   * @returns {Promise<MediaStream>} a promise that resolves to a MediaStream object
-     */
-  function getUserMedia(constraints) {
-    // ensure that Promises are supported and we have a navigator object
-    if (!isPromiseSupported) {
-      return new FakePromise();
-    }
-
-    // Try the more modern, promise-based MediaDevices API first
-    //https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getUserMedia
-    if(gump) {
-      return navigator.mediaDevices.getUserMedia(constraints);
-    }
-
-    // fall back to the older method second, wrap it in a promise.
-    return new Promise(function(resolve, reject) {
-      // if navigator doesn't exist, then we can't use the getUserMedia API. (And probably aren't even in a browser.)
-      // assuming it does, try getUserMedia and then all of the prefixed versions
-
-      if (!gum) {
-        return reject(new NotSupportedError());
-      }
-      gum.call(navigator, constraints, resolve, reject);
-    });
-  }
-
-  getUserMedia.NotSupportedError = NotSupportedError;
-
-  // eslint-disable-next-line no-implicit-coercion
-  getUserMedia.isSupported = !!(isPromiseSupported && (gump || gum));
-
-  // UMD, loosely based on https://github.com/umdjs/umd/blob/master/templates/returnExportsGlobal.js
-  if (true) {
-    // AMD. Register as an anonymous module.
-    !(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = (function () {
-      return getUserMedia;
-    }).apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
-				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
-  } else if (typeof module === 'object' && module.exports) {
-    // Node. Does not work with strict CommonJS, but
-    // only CommonJS-like enviroments that support module.exports,
-    // like Node.
-    module.exports = getUserMedia;
-  } else {
-    // Browser globals
-    // polyfill the MediaDevices API if it does not exist.
-    root.navigator || (root.navigator = {});
-    root.navigator.mediaDevices || (root.navigator.mediaDevices = {});
-    root.navigator.mediaDevices.getUserMedia || (root.navigator.mediaDevices.getUserMedia = getUserMedia);
-  }
-}(this));
-
 
 /***/ }),
 /* 26 */
@@ -5507,11 +5545,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 
 
+// FIXME: class_graphicsに移動
 /**
- * <h4>ベジェ曲線</h4>
+ * ベジェ曲線
  * @class BezierCurve
- * @param {Array} vertices パスポイントリスト
- * @param {Number} placing ベジェ曲線状の位置(0-1)
+ * @param {array} vertices パスポイントリスト
+ * @param {number} placing ベジェ曲線状の位置(0-1)
  */
 
 var BezierCurve = function () {
@@ -5522,16 +5561,16 @@ var BezierCurve = function () {
     _classCallCheck(this, BezierCurve);
 
     /**
-     * <h4>パス座標リスト</h4>
+     * パス座標リスト
      * @property vertices
-     * @type {Array}
+     * @type {array}
      */
     this.vertices = vertices;
 
     /**
-     * <h4>ベジェ曲線上の位置（正規化された値）</h4>
+     * ベジェ曲線上の位置（正規化された値）
      * @properth placing
-     * @type {Number}
+     * @type {number}
      */
     this.placing = placing || 0;
 
@@ -5542,9 +5581,9 @@ var BezierCurve = function () {
     this.position = new __WEBPACK_IMPORTED_MODULE_1__Vector2__["a" /* default */](vertices[0].x, vertices[0].y);
 
     /**
-     * <h4>始点からのラジアン角</h4>
+     * 始点からのラジアン角
      * @property rad
-     * @type {Number}
+     * @type {number}
      */
     this.rad = null;
 
@@ -5553,13 +5592,13 @@ var BezierCurve = function () {
   }
 
   /**
-   * <h4>2次ベジエ曲線</h4>
+   * 2次ベジエ曲線
    * @static
    * @method quadratic
    * @param  {Vector2} startPoint 開始位置
    * @param  {Vector2} pathPoint  パスポイント
    * @param  {Vector2} endPoint   終了位置
-   * @param  {Number} placing パスポイント（軌道）位置 (0 < 1)
+   * @param  {number} placing パスポイント（軌道）位置 (0 < 1)
    * @return {BezierCurve}
    */
 
@@ -5569,7 +5608,7 @@ var BezierCurve = function () {
 
 
     /**
-     * <h4>インスタンスのcloneを生成</h4>
+     * インスタンスのcloneを生成
      * @method clone
      * @return {BezierCurve}
      */
@@ -5578,9 +5617,9 @@ var BezierCurve = function () {
     }
 
     /**
-     * <h4>パスポイントのイテレーション処理</h4>
+     * パスポイントのイテレーション処理
      * @method each
-     * @param {Function} callback コールバック関数
+     * @param {function} callback コールバック関数
      * @return {BezierCurve}
      */
 
@@ -5592,10 +5631,10 @@ var BezierCurve = function () {
     }
 
     /**
-     * <h4>現在地を更新</h4>
+     * 現在地を更新
      *
      * @method update
-     * @param {Number} placing パスポイント（軌道）位置 (0 < 1)
+     * @param {number} placing パスポイント（軌道）位置 (0 < 1)
      * @return {BezierCurve}
      */
 
@@ -5646,14 +5685,14 @@ var BezierCurve = function () {
     }
 
     /**
-     * <h4>3次ベジエ曲線</h4>
+     * 3次ベジエ曲線
      * @static
      * @method cubicz
      * @param  {Vector2} startPoint 開始位置
      * @param  {Vector2} pathPoint1 パスポイント1
      * @param  {Vector2} pathPoint2 パスポイント2
      * @param  {Vector2} endPoint   終了位置
-     * @param  {Number} placing パスポイント（軌道）位置 (0 < 1)
+     * @param  {number} placing パスポイント（軌道）位置 (0 < 1)
      * @return {BezierCurve}
      */
 
@@ -5688,8 +5727,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 
 
+// FIXME: class_graphicsに移動
+
 /**
- * <h4>Line</h4>
+ * Line
  * @class Line
  * @param {Vector2} vec1 開始座標オブジェクト
  * @param {Vector2} vec2 終了座標オブジェクト
@@ -5703,16 +5744,16 @@ var Line = function () {
     _classCallCheck(this, Line);
 
     /**
-     * <h4>頂点リスト</h4>
+     * 頂点リスト
      * @property vertices
-     * @type {Array}
+     * @type {array}
      */
     this.vertices = [vec1, vec2];
   }
 
   /**
-    * <h4>二つの直線(延長線含む)の交差点を返します</h4>
-    * <p>交差点がない場合、nullを返します</p>
+    * 二つの直線(延長線含む)の交差点を返します
+    * 交差点がない場合、nullを返します
     * @static
     * @method intersection
     * @param {Line} line1 Lineインスタンス1
@@ -5726,7 +5767,7 @@ var Line = function () {
 
 
     /**
-     * <h4>Lineのクローンを生成します</h4>
+     * Lineのクローンを生成します
      * @method clone
      * @return {Line}
      */
@@ -5735,7 +5776,7 @@ var Line = function () {
     }
 
     /**
-     * <h4>Lineの始点・終点をセットします</h4>
+     * Lineの始点・終点をセットします
      * @method setVertices
      * @param {Vector2} v1 開始座標オブジェクト
      * @param {Vector2} v2 終了座標オブジェクト
@@ -5750,9 +5791,9 @@ var Line = function () {
     }
 
     /**
-     * <h4>スタートからエンドポイントの距離(大きさ)</h4>
+     * スタートからエンドポイントの距離(大きさ)
      * @method mag
-     * @return {Number}
+     * @return {number}
      */
 
   }, {
@@ -5762,9 +5803,9 @@ var Line = function () {
     }
 
     /**
-     * <h4>Lineのアングル(ラジアン角)を返します</h4>
+     * Lineのアングル(ラジアン角)を返します
      * @method angle
-     * @return {Number}
+     * @return {number}
      */
 
   }, {
@@ -5807,7 +5848,7 @@ var Line = function () {
     }
 
     /**
-     * <h4>直線の交点を返します</h4>
+     * 直線の交点を返します
      * @static
      * @method cross
      * @param {Line} line1 Lineインスタンス1
@@ -5826,7 +5867,7 @@ var Line = function () {
     }
 
     /**
-     * <h4>二つの直線が交わるかチェックします(延長線は含まない)</h4>
+     * 二つの直線が交わるかチェックします(延長線は含まない)
      * @static
      * @method intersection
      * @param {Line} line1 Lineインスタンス1
@@ -5854,7 +5895,7 @@ var Line = function () {
     }
 
     /**
-     * <h4>二つの直線が等しいかチェックします</h4>
+     * 二つの直線が等しいかチェックします
      * @static
      * @method equals
      * @param {Line} line1 Lineインスタンス1
@@ -5904,12 +5945,14 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 
 
+// FIXME: class_graphicsに移動
+
 /**
- * <h4>Delaunay</h4>
+ * Delaunay
  * @class Delaunay
- * @param {Number} width Delaunay領域の幅
- * @param {Number} height Delaunay領域の高さ
- * @param {Array} vertices 頂点リスト
+ * @param {number} width Delaunay領域の幅
+ * @param {number} height Delaunay領域の高さ
+ * @param {array} vertices 頂点リスト
  */
 
 var Delaunay = function () {
@@ -5920,43 +5963,43 @@ var Delaunay = function () {
     _classCallCheck(this, Delaunay);
 
     /**
-     * <h4>Delaunay領域の幅</h4>
+     * Delaunay領域の幅
      * @property width
-     * @type {Number}
+     * @type {number}
      */
     this.width = width || 0;
 
     /**
-     * <h4>Delaunay領域の高さ</h4>
+     * Delaunay領域の高さ
      * @property width
-     * @type {Number}
+     * @type {number}
      */
     this.height = height || 0;
 
     /**
-     * <h4>頂点リスト</h4>
+     * 頂点リスト
      * @property vertices
-     * @type {Array}
+     * @type {array}
      */
     this.vertices = vertices || [];
 
     /**
-     * <h4>生成したDelaunay</h4>
+     * 生成したDelaunay
      * @property delaunays
-     * @type {Array}
+     * @type {array}
      */
     this.delaunays = [];
 
     /**
-     * <h4>ランダムポイント生成時の再起処理の制限最大回数</h4>
+     * ランダムポイント生成時の再起処理の制限最大回数
      * @property maxAttempts
-     * @type {Number}
+     * @type {number}
      */
     this.maxAttempts = 1000;
   }
 
   /**
-   * <h4>初期値にセット</h4>
+   * 初期値にセット
    * @method identity
    * @return {Delaunay}
    */
@@ -5973,10 +6016,10 @@ var Delaunay = function () {
     }
 
     /**
-     * <h4>Delaunay領域の設定</h4>
+     * Delaunay領域の設定
      * @method setSize
-     * @param {Number} width Delaunay領域の幅
-     * @param {Number} height Delaunay領域の高さ
+     * @param {number} width Delaunay領域の幅
+     * @param {number} height Delaunay領域の高さ
      * @return {Delaunay}
      */
 
@@ -5989,10 +6032,10 @@ var Delaunay = function () {
     }
 
     /**
-     * <h4>頂点リストの設定</h4>
-     * <p>設定されている頂点リストを削除して設定しなおします</p>
+     * 頂点リストの設定
+     * 設定されている頂点リストを削除して設定しなおします
      * @method setVertices
-     * @param {Array} vertices 頂点リスト
+     * @param {array} vertices 頂点リスト
      * @return {Delaunay}
      */
 
@@ -6004,17 +6047,17 @@ var Delaunay = function () {
     }
 
     /**
-     * <h4>頂点削除</h4>
+     * 頂点削除
      * @method removeVertex
-     * @param {Number} 削除するインデックス ※引数がない場合、全て削除
-     * @param {Number} 削除数
+     * @param {number} 削除するインデックス ※引数がない場合、全て削除
+     * @param {number} 削除数
      * @return {Delaunay}
      */
 
   }, {
     key: "removeVertex",
     value: function removeVertex(index, len) {
-      if (__WEBPACK_IMPORTED_MODULE_0__utils__["_5" /* isNumber */](index)) {
+      if (__WEBPACK_IMPORTED_MODULE_0__utils__["_6" /* isNumber */](index)) {
         this.vertices.splice(index, len || 1);
       } else {
         this.vertices = [];
@@ -6023,7 +6066,7 @@ var Delaunay = function () {
     }
 
     /**
-     * <h4>Delaunay削除</h4>
+     * Delaunay削除
      * @method removeDelaunay
      * @return {Delaunay}
      */
@@ -6036,10 +6079,10 @@ var Delaunay = function () {
     }
 
     /**
-     * <h4>ランダムな頂点を生成</h4>
-     * <p>生成後自動的に、setVerticesで頂点リストを設定します</p>
+     * ランダムな頂点を生成
+     * 生成後自動的に、setVerticesで頂点リストを設定します
      * @method randomVertices
-     * @param {Number} interval 頂点同士の間隔
+     * @param {number} interval 頂点同士の間隔
      * @return {Delaunay}
      */
 
@@ -6060,8 +6103,8 @@ var Delaunay = function () {
 
       for (; i <= this.maxAttempts; i += 1) {
         vertex = {
-          x: __WEBPACK_IMPORTED_MODULE_0__utils__["_34" /* random */](1, this.width - 1, true),
-          y: __WEBPACK_IMPORTED_MODULE_0__utils__["_34" /* random */](1, this.height - 1, true)
+          x: __WEBPACK_IMPORTED_MODULE_0__utils__["_38" /* randomInt */](1, this.width - 1),
+          y: __WEBPACK_IMPORTED_MODULE_0__utils__["_38" /* randomInt */](1, this.height - 1)
         };
         l = vertices.length;
 
@@ -6083,11 +6126,11 @@ var Delaunay = function () {
     }
 
     /**
-     * <h4>Delaunay領域の辺に、指定した間隔の頂点を生成して返す</h4>
+     * Delaunay領域の辺に、指定した間隔の頂点を生成して返す
      * @method getOuterVertices
-     * @param {Number} interval 間隔
+     * @param {number} interval 間隔
      * @param {Boolean} isRandom 間隔のランダム性を有効にするか
-     * @return {Array} Delaunay領域の辺に、指定した間隔の頂点を生成して返す
+     * @return {array} Delaunay領域の辺に、指定した間隔の頂点を生成して返す
      */
 
   }, {
@@ -6106,7 +6149,7 @@ var Delaunay = function () {
 
         while (vertex < range) {
           if (isRandom) {
-            vertex += interval + __WEBPACK_IMPORTED_MODULE_0__utils__["_34" /* random */](0, max, true);
+            vertex += interval + __WEBPACK_IMPORTED_MODULE_0__utils__["_38" /* randomInt */](0, max);
           } else {
             vertex += interval;
           }
@@ -6136,7 +6179,7 @@ var Delaunay = function () {
     }
 
     /**
-     * <h4>ドロネー生成</h4>
+     * ドロネー生成
      * @method createDelaunay
      * @return {Delaunay}
      */
@@ -6168,12 +6211,12 @@ var Delaunay = function () {
     /* Private
     -----------------------------------------------------------------*/
     /**
-     * <h4>全ての三角形の外接円にvertexが含まれるか判定し、オブジェクトに振り分けて返す</h4>
+     * 全ての三角形の外接円にvertexが含まれるか判定し、オブジェクトに振り分けて返す
      * @private
      * @method _checkTriangles
-     * @param {Array} delaunays delaunayリスト
-     * @param {Object} vertex 頂点
-     * @return {Object} 三角外円にvertexが含まれるか判定したオブジェクト {ok:[], ng:[]}
+     * @param {array} delaunays delaunayリスト
+     * @param {object} vertex 頂点
+     * @return {object} 三角外円にvertexが含まれるか判定したオブジェクト {ok:[], ng:[]}
      */
 
   }, {
@@ -6201,11 +6244,11 @@ var Delaunay = function () {
     }
 
     /**
-     * <h4>各三角形を辺に分割して、重なる辺を取り除いた2点の頂点リストを返す</h4>
+     * 各三角形を辺に分割して、重なる辺を取り除いた2点の頂点リストを返す
      * @private
      * @method _mergeSides
-     * @param {Array} trianglesEdge 三角形頂点リスト
-     * @return {Array} 重なる辺を取り除いた2点の頂点リストを返す
+     * @param {array} trianglesEdge 三角形頂点リスト
+     * @return {array} 重なる辺を取り除いた2点の頂点リストを返す
      */
 
   }, {
@@ -6248,11 +6291,11 @@ var Delaunay = function () {
     }
 
     /**
-     * <h4>三角形の集合から辺の集合へ</h4>
+     * 三角形の集合から辺の集合へ
      * @private
      * @method _edgesToSides
-     * @param {Array} triangles 三角形集合の頂点を格納した配列
-     * @return {Array} 辺の集合配列
+     * @param {array} triangles 三角形集合の頂点を格納した配列
+     * @return {array} 辺の集合配列
      */
 
   }, {
@@ -6266,12 +6309,12 @@ var Delaunay = function () {
     }
 
     /**
-     * <h4>各頂点と点vertexを結んで三角形に分割する</h4>
+     * 各頂点と点vertexを結んで三角形に分割する
      * @private
      * @method _createTriangle
-     * @param {Array} points 2点の座標を格納したリスト
-     * @param {Object} vertex 追加する頂点
-     * @return {Array} 生成した三角形リスト
+     * @param {array} points 2点の座標を格納したリスト
+     * @param {object} vertex 追加する頂点
+     * @return {array} 生成した三角形リスト
      */
 
   }, {
@@ -6285,12 +6328,12 @@ var Delaunay = function () {
     }
 
     /**
-     * <h4>ラップする三角形の頂点を含む三角形を削除して返す</h4>
+     * ラップする三角形の頂点を含む三角形を削除して返す
      * @private
      * @method _removeWrapTriangl
-     * @param {Array} triangle ラップしている大三角形
-     * @param {Array} delaunays ドロネー
-     * @return {Array} ラップする三角形の頂点を含む三角形を削除して返す
+     * @param {array} triangle ラップしている大三角形
+     * @param {array} delaunays ドロネー
+     * @return {array} ラップする三角形の頂点を含む三角形を削除して返す
      */
 
   }, {
@@ -6308,12 +6351,12 @@ var Delaunay = function () {
     }
 
     /**
-     * <h4>Delaunay領域をラップする三角形を生成</h4>
+     * Delaunay領域をラップする三角形を生成
      * @private
      * @method _createWrapTriangle
-     * @param {Number} width  Delaunay領域の幅 ※省略可
-     * @param {Number} height Delaunay領域の高さ ※省略可
-     * @return {Array} Delaunay領域をラップする三角形の座標を格納した配列
+     * @param {number} width  Delaunay領域の幅 ※省略可
+     * @param {number} height Delaunay領域の高さ ※省略可
+     * @return {array} Delaunay領域をラップする三角形の座標を格納した配列
      */
 
   }, {
@@ -6358,13 +6401,16 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 
 
+// FIXME: class_graphicsに移動
+// FIXME: PIXIに合わす
+// see: https://github.com/pixijs/pixi.js/blob/dev/packages/graphics/src/utils/buildRectangle.js
 /**
- * <h4>Rect</h4>
+ * Rect
  * @class Rect
- * @param {Number} x x座標
- * @param {Number} y y座標
- * @param {Number} width 幅
- * @param {Number} height 高さ
+ * @param {number} x x座標
+ * @param {number} y y座標
+ * @param {number} width 幅
+ * @param {number} height 高さ
  */
 
 var Rect = function () {
@@ -6375,14 +6421,14 @@ var Rect = function () {
     _classCallCheck(this, Rect);
 
     /**
-     * <h4>座標</h4>
+     * 座標
      * @property position
      * @type {Vector2}
      */
     this.position = new __WEBPACK_IMPORTED_MODULE_1__Vector2__["a" /* default */](x, y);
 
     /**
-     * <h4>サイズ</h4>
+     * サイズ
      * @property size
      * @type {Size}
      */
@@ -6390,7 +6436,7 @@ var Rect = function () {
   }
 
   /**
-   * <h4>衝突判定</h4>
+   * 衝突判定
    * @static
    * @method isCollision
    * @param  {Rect}  rect1 矩形1
@@ -6406,14 +6452,14 @@ var Rect = function () {
           s1 = rect1.size,
           p2 = rect2.position,
           s2 = rect2.size,
-          hasX = __WEBPACK_IMPORTED_MODULE_0__utils__["X" /* isIntersect */](p1.x, p1.x + s1.width, p2.x, p2.x + s2.width),
-          hasY = __WEBPACK_IMPORTED_MODULE_0__utils__["X" /* isIntersect */](p1.y, p1.y + s1.height, p2.y, p2.y + s2.height);
+          hasX = __WEBPACK_IMPORTED_MODULE_0__utils__["Y" /* isIntersect */](p1.x, p1.x + s1.width, p2.x, p2.x + s2.width),
+          hasY = __WEBPACK_IMPORTED_MODULE_0__utils__["Y" /* isIntersect */](p1.y, p1.y + s1.height, p2.y, p2.y + s2.height);
 
       return hasX && hasY;
     }
 
     /**
-     * <h4>座標を含んでいるか</h4>
+     * 座標を含んでいるか
      * @method inside
      * @param  {Rect}  rect 矩形
      * @param  {Vector2} vec2 Vector2
@@ -6425,8 +6471,8 @@ var Rect = function () {
     value: function inside(rect, vec2) {
       var p = rect.position,
           s = rect.size,
-          hasX = __WEBPACK_IMPORTED_MODULE_0__utils__["X" /* isIntersect */](p.x, p.x + s.width, vec2.x, vec2.x),
-          hasY = __WEBPACK_IMPORTED_MODULE_0__utils__["X" /* isIntersect */](p.y, p.y + s.height, vec2.y, vec2.y);
+          hasX = __WEBPACK_IMPORTED_MODULE_0__utils__["Y" /* isIntersect */](p.x, p.x + s.width, vec2.x, vec2.x),
+          hasY = __WEBPACK_IMPORTED_MODULE_0__utils__["Y" /* isIntersect */](p.y, p.y + s.height, vec2.y, vec2.y);
 
       return hasX && hasY;
     }

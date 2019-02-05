@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,15 +9,24 @@
 </head>
 
 <body>
+	<video id="video" width="640" height="480" autoplay></video>
 
 
+	<script src="../dist/ink-0.0.3.js"></script>
+
+	<script>
+		var webcam = new INK.WebCamera(document.getElementById("video"));
+		webcam.setup();
+
+		setTimeout(function (params) {
+			webcam.pause();
+		}, 5000);
+		// console.log(INK.WebCamera);
 
 
-<script src="../dist/ink-0.0.1.js"></script>
+	</script>
 
-<script>
-	console.log("----");
-	console.log(window);
-</script>
+
 </body>
+
 </html>

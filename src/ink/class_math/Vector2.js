@@ -8,10 +8,10 @@ import * as utils from "../utils";
 
 
 /**
- * <h4>2Dベクトル・座標を管理します</h4>
+ * 2Dベクトル・座標を管理します
  * @class Vector2
- * @param {Number} x x座標値
- * @param {Number} y y座標値
+ * @param {number} x x座標値
+ * @param {number} y y座標値
  * @param {Boolean} isDegrees アングルモードをDegreesにするか
  */
 export default class Vector2 {
@@ -21,27 +21,27 @@ export default class Vector2 {
 
   constructor(x, y) {
     /**
-     * <h4>X座標</h4>
+     * X座標
      * @property x
-     * @type {Number}
+     * @type {number}
      */
     this.x = x;
 
     /**
-     * <h4>Y座標</h4>
+     * Y座標
      * @property y
-     * @type {Number}
+     * @type {number}
      */
     this.y = y;
   }
 
 
   /**
-   * <h4>ラジアン角から2Dベクトルを作成</h4>
+   * ラジアン角から2Dベクトルを作成
    * @static
    * @method radToVector2
-   * @param {Number} rad radian
-   * @param {Number} mag ベクトルの大きさ
+   * @param {number} rad radian
+   * @param {number} mag ベクトルの大きさ
    * @return {Vector2}
    */
   static radToVector2(rad, mag){
@@ -50,11 +50,11 @@ export default class Vector2 {
 
 
   /**
-   * <h4>角度から2Dベクトルを作成</h4>
+   * 角度から2Dベクトルを作成
    * @static
    * @method degToVector2
-   * @param {Number} deg degrees
-   * @param {Number} mag ベクトルの大きさ
+   * @param {number} deg degrees
+   * @param {number} mag ベクトルの大きさ
    * @return {Vector2}
    */
   static degToVector2(deg, mag){
@@ -63,10 +63,10 @@ export default class Vector2 {
 
 
   /**
-   * <h4>ランダムな2Dベクトルを作成</h4>
+   * ランダムな2Dベクトルを作成
    * @static
    * @method random
-   * @param {Number} mag ベクトルの大きさ
+   * @param {number} mag ベクトルの大きさ
    * @return {Vector2}
    */
   static random(mag){
@@ -75,7 +75,7 @@ export default class Vector2 {
 
 
   /**
-   * <h4>座標の同値判定</h4>
+   * 座標の同値判定
    * @static
    * @method equals
    * @param {Vector2} v1 Vector2
@@ -88,12 +88,12 @@ export default class Vector2 {
 
 
   /**
-   * <h4>2つのベクトル座標間のユーグリッド距離</h4>
+   * 2つのベクトル座標間のユーグリッド距離
    * @static
    * @method distance
    * @param {Vector2} v1 Vector2
    * @param {Vector2} v2 Vector2
-   * @return {Number} 2つのベクトル間のユーグリッド距離
+   * @return {number} 2つのベクトル間のユーグリッド距離
    */
   static distance(v1, v2){
     return v1.clone().sub(v2).mag();
@@ -101,7 +101,7 @@ export default class Vector2 {
 
 
   /**
-   * <h4>Vector2のcloneを生成します</h4>
+   * Vector2のcloneを生成します
    * @method clone
    * @return {Vector2}
    */
@@ -111,7 +111,7 @@ export default class Vector2 {
 
 
   /**
-   * <h4>初期値にセット</h4>
+   * 初期値にセット
    * @method identity
    * @return {Vector2}
    */
@@ -123,10 +123,10 @@ export default class Vector2 {
 
 
   /**
-   * <h4>ベクトル座標のセット</h4>
+   * ベクトル座標のセット
    * @method set
-   * @param {Number} x x座標値
-   * @param {Number} y y座標値
+   * @param {number} x x座標値
+   * @param {number} y y座標値
    * @return {Vector2}
    */
   set(x, y){
@@ -137,7 +137,7 @@ export default class Vector2 {
 
 
   /**
-   * <h4>ベクトル座標の加算</h4>
+   * ベクトル座標の加算
    * @method add
    * @param {Vector2} vec2 Vector2
    * @return {Vector2}
@@ -150,7 +150,7 @@ export default class Vector2 {
 
 
   /**
-   * <h4>ベクトル座標の減算</h4>
+   * ベクトル座標の減算
    * @method sub
    * @param {Vector2} vec2 Vector2
    * @return {Vector2}
@@ -163,9 +163,9 @@ export default class Vector2 {
 
 
   /**
-   * <h4>ベクトル座標の乗算</h4>
+   * ベクトル座標の乗算
    * @method mult
-   * @param {Number} num 乗数
+   * @param {number} num 乗数
    * @return {Vector2}
    */
   mult(num){
@@ -176,9 +176,9 @@ export default class Vector2 {
 
 
   /**
-   * <h4>ベクトル座標の除算</h4>
+   * ベクトル座標の除算
    * @method div
-   * @param {Number} num 除数
+   * @param {number} num 除数
    * @return {Vector2}
    */
   div(num){
@@ -189,9 +189,9 @@ export default class Vector2 {
 
 
   /**
-   * <h4>ベクトルの大きさを設定</h4>
+   * ベクトルの大きさを設定
    * @method setMag
-   * @param {Number} mag ベクトルの大きさ
+   * @param {number} mag ベクトルの大きさ
    * @return {Vector2}
    */
   setMag(mag){
@@ -202,9 +202,9 @@ export default class Vector2 {
 
 
   /**
-   * <h4>ベクトル2乗を返す</h4>
+   * ベクトル2乗を返す
    * @method magSq
-   * @return {Number} ベクトルの大きさ(長さ)の2乗を返す
+   * @return {number} ベクトルの大きさ(長さ)の2乗を返す
    */
   magSq(){
     return this.x * this.x + this.y * this.y;
@@ -212,9 +212,9 @@ export default class Vector2 {
 
 
   /**
-   * <h4>ベクトルの大きさ(長さ)を返す</h4>
+   * ベクトルの大きさ(長さ)を返す
    * @method mag
-   * @return {Number} ベクトルの大きさ(長さ)を返す
+   * @return {number} ベクトルの大きさ(長さ)を返す
    */
   mag(){
     return Math.sqrt(this.magSq(this.x, this.y));
@@ -222,9 +222,9 @@ export default class Vector2 {
 
 
   /**
-   * <h4>ベクトルのアングル(angle mode指定)取得</h4>
+   * ベクトルのアングル(angle mode指定)取得
    * @method angle
-   * @return {Number} アングルを返す
+   * @return {number} アングルを返す
    */
   angle(){
     return Math.atan2(this.y, this.x);
@@ -232,9 +232,9 @@ export default class Vector2 {
 
 
   /**
-   * <h4>ベクトルのアングル(angle mode指定)をセットする</h4>
+   * ベクトルのアングル(angle mode指定)をセットする
    * @method setAngle
-   * @param {Number} angle radianかdegrees値(angle mode指定)
+   * @param {number} angle radianかdegrees値(angle mode指定)
    * @return {Vector2}
    */
   setAngle(angle){
@@ -245,9 +245,9 @@ export default class Vector2 {
 
 
   /**
-   * <h4>ベクトルのアングル(ラジアン角)を加算</h4>
+   * ベクトルのアングル(ラジアン角)を加算
    * @method addAngle
-   * @param {Number} angle 加算するangle量
+   * @param {number} angle 加算するangle量
    * @return {Vector2}
    */
   addAngle(angle){
@@ -257,9 +257,9 @@ export default class Vector2 {
 
 
   /**
-   * <h4>ベクトルのアングル(ラジアン角)を減算</h4>
+   * ベクトルのアングル(ラジアン角)を減算
    * @method subAngle
-   * @param {Number} angle 減算するangle量
+   * @param {number} angle 減算するangle量
    * @return {Vector2}
    */
   subAngle(angle){
@@ -269,9 +269,9 @@ export default class Vector2 {
 
 
   /**
-   * <h4>ベクトルのアングル(ラジアン角)の乗算</h4>
+   * ベクトルのアングル(ラジアン角)の乗算
    * @method multAngle
-   * @param {Number} num 乗数
+   * @param {number} num 乗数
    * @return {Vector2}
    */
   multAngle(num){
@@ -281,9 +281,9 @@ export default class Vector2 {
 
 
   /**
-   * <h4>ベクトルのアングル(ラジアン角)の除算</h4>
+   * ベクトルのアングル(ラジアン角)の除算
    * @method divAngle
-   * @param {Number} num 除数
+   * @param {number} num 除数
    * @return {Vector2}
    */
   divAngle(num){
@@ -293,7 +293,7 @@ export default class Vector2 {
 
 
   /**
-   * <h4>正規化</h4>
+   * 正規化
    * @method normalize
    * @return {Vector2}
    */
@@ -307,9 +307,9 @@ export default class Vector2 {
 
 
   /**
-   * <h4>最大値の制限</h4>
+   * 最大値の制限
    * @method limit
-   * @param {Number} max 最大値
+   * @param {number} max 最大値
    * @return {Vector2}
    */
   limit(max){
@@ -321,10 +321,10 @@ export default class Vector2 {
 
 
   /**
-   * <h4>線形補間</h4>
+   * 線形補間
    * @method lerp
    * @param {Vector2} vec2 Vector2
-   * @param {Number} amount amount量
+   * @param {number} amount amount量
    * @return {Vector2}
    */
   lerp(vec2, amount){
@@ -335,10 +335,10 @@ export default class Vector2 {
 
 
   /**
-   * <h4>内積</h4>
+   * 内積
    * @method dot
    * @param {Vector2} vec2 Vector2
-   * @return {Number} ベクトルの内積
+   * @return {number} ベクトルの内積
    */
   dot(vec2){
     return Vector2.dot(this, vec2);
@@ -346,10 +346,10 @@ export default class Vector2 {
 
 
   /**
-   * <h4>外積</h4>
+   * 外積
    * @method dot
    * @param {Vector2} vec2 Vector2
-   * @return {Number} ベクトルの外積
+   * @return {number} ベクトルの外積
    */
   cross(vec2){
     return Vector2.cross(this, vec2);
@@ -360,7 +360,7 @@ export default class Vector2 {
   /// Not Recommended
   ///==========================================================================
   /**
-   * <h4>ベクトル差分を返す</h4>
+   * ベクトル差分を返す
    * @method diff
    * @param {Vector2} vec2 Vector2
    * @return {Vector2}
@@ -370,20 +370,20 @@ export default class Vector2 {
   }
 
   /**
-   * <h4>ベクトルの大きさ(長さ)の差分を返す</h4>
+   * ベクトルの大きさ(長さ)の差分を返す
    * @method diffMag
    * @param {Vector2} vec2 Vector2
-   * @return {Number}
+   * @return {number}
    */
   diffMag(vec2){
     return vec2.diff(this).mag();
   }
 
   /**
-   * <h4>ベクトルのラジアン差分を返す</h4>
+   * ベクトルのラジアン差分を返す
    * @method diffRad
    * @param {Vector2} vec2 Vector2
-   * @return {Number}
+   * @return {number}
    */
   diffRad(vec2){
     let rad1 = Math.atan2(this.y, this.x),
@@ -393,22 +393,22 @@ export default class Vector2 {
   }
 
   /**
-   * <h4>ベクトルの角度差分を返す</h4>
+   * ベクトルの角度差分を返す
    * @method diffDeg
    * @param {Vector2} vec2 Vector2
-   * @param {Number} y y座標値
-   * @return {Number}
+   * @param {number} y y座標値
+   * @return {number}
    */
   diffDeg(vec2){
     return this.diffRad(vec2) * utils.RAD_TO_DEG;
   }
 
   /**
-   * <h4>2つのベクトルの大きさの中間値を返す</h4>
+   * 2つのベクトルの大きさの中間値を返す
    * @method betweenMag
    * @param {Vector2} vec2 Vector2
-   * @param {Number} ratio 中間ポイント 0 < 1 初期値: 0.5
-   * @return {Number}
+   * @param {number} ratio 中間ポイント 0 < 1 初期値: 0.5
+   * @return {number}
    */
   betweenMag(vec2, ratio){
     let mag1 = this.mag(),
@@ -420,11 +420,11 @@ export default class Vector2 {
   }
 
   /**
-   * <h4>2つのベクトルの大きさの中間ラジアン値を返す</h4>
+   * 2つのベクトルの大きさの中間ラジアン値を返す
    * @method betweenRad
    * @param {Vector2} vec2 Vector2
-   * @param {Number} ratio 中間ポイント 0 < 1 初期値: 0.5
-   * @return {Number}
+   * @param {number} ratio 中間ポイント 0 < 1 初期値: 0.5
+   * @return {number}
    */
   betweenRad(vec2, ratio){
     let rad1 = Math.atan2(this.y, this.x),
@@ -435,11 +435,11 @@ export default class Vector2 {
   }
 
   /**
-   * <h4>2つのベクトルの大きさの中間角を返す</h4>
+   * 2つのベクトルの大きさの中間角を返す
    * @method betweenDeg
    * @param {Vector2} vec2 Vector2
-   * @param {Number} ratio 中間ポイント 0 < 1 初期値: 0.5
-   * @return {Number}
+   * @param {number} ratio 中間ポイント 0 < 1 初期値: 0.5
+   * @return {number}
    */
   betweenDeg(vec2, ratio){
     return this.betweenRad(vec2, ratio) * utils.RAD_TO_DEG;
@@ -447,11 +447,11 @@ export default class Vector2 {
 
 
   /**
-   * <h4>角度から2Dベクトルを作成</h4>
+   * 角度から2Dベクトルを作成
    * @static
    * @method degTo2d
-   * @param {Number} deg degrees
-   * @param {Number} mag ベクトルの大きさ
+   * @param {number} deg degrees
+   * @param {number} mag ベクトルの大きさ
    * @return {Vector2}
    */
   static degToVector2(deg, mag){
@@ -462,11 +462,11 @@ export default class Vector2 {
 
 
   /**
-   * <h4>ベクトルの角度を取得する</h4>
+   * ベクトルの角度を取得する
    * @static
    * @method angle
    * @param {Vector2} vec2 Vector2
-   * @return {Number} アングルを返す
+   * @return {number} アングルを返す
    */
   static angle(vec2){
     return Math.atan2(vec2.y, vec2.x);
@@ -474,13 +474,13 @@ export default class Vector2 {
 
 
   /**
-   * <h4>ベクトルの内積</h4>
+   * ベクトルの内積
    *
    * @static
    * @method dot
    * @param {Vector2} v1 Vector2
    * @param {Vector2} v2 Vector2
-   * @return {Number} ベクトルの内積
+   * @return {number} ベクトルの内積
    */
   static dot(v1, v2){
     return v1.x * v2.x + v1.y * v2.y;
@@ -488,12 +488,12 @@ export default class Vector2 {
 
 
   /**
-   * <h4>ベクトルの外積</h4>
+   * ベクトルの外積
    * @static
    * @method cross
    * @param {Vector2} v1 Vector2
    * @param {Vector2} v2 Vector2
-   * @return {Number} ベクトルの外積
+   * @return {number} ベクトルの外積
    */
   static cross(v1, v2){
     return v1.x * v2.y - v1.y * v2.x;
@@ -501,12 +501,12 @@ export default class Vector2 {
 
 
   /**
-   * <h4>ベクトル間の角度</h4>
+   * ベクトル間の角度
    * @static
    * @method angleBetween
    * @param {Vector2} v1 Vector2
    * @param {Vector2} v2 Vector2
-   * @return {Number} ラジアン角
+   * @return {number} ラジアン角
    */
   static angleBetween(v1, v2) {
     return Math.acos(v1.dot(v2) / (v1.mag() * v2.mag()));
@@ -514,12 +514,12 @@ export default class Vector2 {
 
 
   /**
-   * <h4>別のベクトルに対する線形補間</h4>
+   * 別のベクトルに対する線形補間
    * @static
    * @method lerp
    * @param {Vector2} v1 Vector2
    * @param {Vector2} v2 Vector2
-   * @param {Number} amount amount量
+   * @param {number} amount amount量
    * @return {Vector2}
    */
   static lerp(v1, v2, amount){

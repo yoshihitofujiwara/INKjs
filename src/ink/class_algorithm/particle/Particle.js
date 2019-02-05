@@ -13,14 +13,14 @@
     @constructor
   ----------------------------------------------------------------------*/
   /**
-   * <h4>Particle</h4>
+   * Particle
    *
    * @constructor
    * @class AMP.Particle
    * @extends AMP.ParticleInterface
    * @param {Number|AMP.Vector2} x x座標 もしくは座標オブジェクト
-   * @param {Number} y y座標
-   * @param {Object} option値
+   * @param {number} y y座標
+   * @param {object} option値
    */
   function Particle(x, y, options){
     // super class call
@@ -39,11 +39,11 @@
     @property
   --------------------------------------------------------------------------*/
   /**
-   * <h4>バージョン情報</h4>
+   * バージョン情報
    *
    * @static
    * @property VERSION
-   * @type {String}
+   * @type {string}
    */
   Particle.VERSION = AMP.ParticleInterface.VERSION;
 

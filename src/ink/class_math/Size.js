@@ -8,10 +8,10 @@ import * as utils from "../utils";
 
 
 /**
- * <h4>Size</h4>
+ * Size
  * @class Size
  * @param {Number|Object|Array} width  幅
- * @param {Number} height 高さ
+ * @param {number} height 高さ
  */
 export default class Size {
   /**
@@ -19,28 +19,28 @@ export default class Size {
    */
   constructor(width, height) {
 	  /**
-	   * <h4>width</h4>
+	   * width
 	   * @property width
-	   * @type {Number}
+	   * @type {number}
 	   */
 		this.width = width;
 
 	  /**
-	   * <h4>height</h4>
+	   * height
 	   * @property height
-	   * @type {Number}
+	   * @type {number}
 	   */
 		this.height = height;
 	}
 
 
 	/**
-	 * <h4>argumentsからオブジェクトを生成</h4>
+	 * argumentsからオブジェクトを生成
 	 * @static
 	 * @method toJson
 	 * @param {Number|Object|Array} width  幅
-	 * @param {Number} height 高さ
-	 * @return {Object} width,heightを格納したオブジェクト
+	 * @param {number} height 高さ
+	 * @return {object} width,heightを格納したオブジェクト
 	 */
 	static toJson(width, height){
 	  if(utils.isObject(width)){
@@ -65,7 +65,7 @@ export default class Size {
 
 
 	/**
-	 * <h4>２つのサイズの最小サイズをマージしてSizeインスタンスを生成</h4>
+	 * ２つのサイズの最小サイズをマージしてSizeインスタンスを生成
 	 * @static
 	 * @method createMin
 	 * @param {Size} size1 sizeインスタンス
@@ -78,7 +78,7 @@ export default class Size {
 
 
 	/**
-	 * <h4>２つのサイズの最大サイズをマージしてSizeインスタンスを生成</h4>
+	 * ２つのサイズの最大サイズをマージしてSizeインスタンスを生成
 	 * @static
 	 * @method createMax
 	 * @param {Size} size1 sizeインスタンス
@@ -91,11 +91,11 @@ export default class Size {
 
 
 	/**
-	 * <h4>ランダムなSizeインスタンスを生成</h4>
+	 * ランダムなSizeインスタンスを生成
 	 * @static
 	 * @method max
-	 * @param {Number} min 最小サイズ
-	 * @param {Number} max 最大サイズ
+	 * @param {number} min 最小サイズ
+	 * @param {number} max 最大サイズ
 	 * @return {Size}
 	 */
 	static random(min, max){
@@ -106,7 +106,7 @@ export default class Size {
 
 
 	/**
-	 * <h4>初期値にセット</h4>
+	 * 初期値にセット
 	 * @method identity
 	 * @return {Size}
 	 */
@@ -118,7 +118,7 @@ export default class Size {
 
 
 	/**
-	 * <h4>Sizeのクローン</h4>
+	 * Sizeのクローン
 	 * @method clone
 	 * @return {Size}
 	 */
@@ -128,7 +128,7 @@ export default class Size {
 
 
 	/**
-	 * <h4>0サイズ判定</h4>
+	 * 0サイズ判定
 	 * @method isZero
 	 * @return {Boolean}
 	 */
@@ -138,8 +138,8 @@ export default class Size {
 
 
 	/**
-	 * <h4>サイズが等しいか判定</h4>
-	 * <p>可変長引数で複数のオブジェクト判定可能</p>
+	 * サイズが等しいか判定
+	 * 可変長引数で複数のオブジェクト判定可能
 	 * @method equals
 	 * @param {Size} size sizeインスタンス
 	 * @return {Boolean}
@@ -149,9 +149,9 @@ export default class Size {
 	}
 
 	/**
-	 * <h4>中心の取得</h4>
+	 * 中心の取得
 	 * @method getCenter
-	 * @return {Object} x, y
+	 * @return {object} x, y
 	 */
 	getCenter(){
 		return {
@@ -162,9 +162,9 @@ export default class Size {
 
 
 	/**
-	 * <h4>対角線の長さの取得</h4>
+	 * 対角線の長さの取得
 	 * @method diagonal
-	 * @return {Number}
+	 * @return {number}
 	 */
 	diagonal(){
 		return utils.diagonal(this.width, this.height);
@@ -172,10 +172,10 @@ export default class Size {
 
 
 	/**
-	 * <h4>Sizeのセット</h4>
+	 * Sizeのセット
 	 * @method set
 	 * @param {Number|Object|Array} width  幅
-	 * @param {Number} height 高さ
+	 * @param {number} height 高さ
 	 * @return {Size}
 	 */
 	set(width, height){
@@ -186,9 +186,9 @@ export default class Size {
 
 
 	/**
-	 * <h4>幅のセット</h4>
+	 * 幅のセット
 	 * @method setWidth
-	 * @param {Number} width  幅
+	 * @param {number} width  幅
 	 * @return {Size}
 	 */
 	setWidth(width){
@@ -198,9 +198,9 @@ export default class Size {
 
 
 	/**
-	 * <h4>高さのセット</h4>
+	 * 高さのセット
 	 * @method setWidth
-	 * @param {Number} height 高さ
+	 * @param {number} height 高さ
 	 * @return {Size}
 	 */
 	setHeight(height){
@@ -210,10 +210,10 @@ export default class Size {
 
 
 	/**
-	 * <h4>加算</h4>
+	 * 加算
 	 * @method add
 	 * @param {Number|Object|Array} width  幅
-	 * @param {Number} height 高さ
+	 * @param {number} height 高さ
 	 * @return {Size}
 	 */
 	add(addWidth, addHeight){
@@ -224,10 +224,10 @@ export default class Size {
 
 
 	/**
-	 * <h4>減算</h4>
+	 * 減算
 	 * @method sub
-	 * @param {Number} subWidth  幅
-	 * @param {Number} subHeight 高さ
+	 * @param {number} subWidth  幅
+	 * @param {number} subHeight 高さ
 	 * @return {Size}
 	 */
 	sub(subWidth, subHeight){
@@ -238,10 +238,10 @@ export default class Size {
 
 
 	/**
-	 * <h4>積算</h4>
+	 * 積算
 	 * @method mult
-	 * @param {Number} multWidth  幅
-	 * @param {Number} multHeight 高さ
+	 * @param {number} multWidth  幅
+	 * @param {number} multHeight 高さ
 	 * @return {Size}
 	 */
 	mult(multWidth, multHeight){
@@ -252,11 +252,11 @@ export default class Size {
 
 
 	/**
-	 * <h4>割算</h4>
+	 * 割算
 	 *
 	 * @method sub
-	 * @param {Number} divWidth  幅を割る数
-	 * @param {Number} divHeight 高さを割る数
+	 * @param {number} divWidth  幅を割る数
+	 * @param {number} divHeight 高さを割る数
 	 * @return {Size}
 	 */
 	div(divWidth, divHeight){
@@ -267,7 +267,7 @@ export default class Size {
 
 
 	/**
-	 * <h4>サイズの加算</h4>
+	 * サイズの加算
 	 * @method addSize
 	 * @param {Size} size 加算するSize
 	 * @return {Size}
@@ -280,7 +280,7 @@ export default class Size {
 
 
 	/**
-	 * <h4>サイズの減算</h4>
+	 * サイズの減算
 	 * @method addSize
 	 * @param {Size} size 減算するSize
 	 * @return {Size}
@@ -293,9 +293,9 @@ export default class Size {
 
 
 	/**
-	 * <h4>サイズの積算</h4>
+	 * サイズの積算
 	 * @method multSize
-	 * @param {Number} num 積数
+	 * @param {number} num 積数
 	 * @return {Size}
 	 */
 	multSize(num){
@@ -306,9 +306,9 @@ export default class Size {
 
 
 	/**
-	 * <h4>サイズの割算</h4>
+	 * サイズの割算
 	 * @method divSize
-	 * @param {Number} num 割算
+	 * @param {number} num 割算
 	 * @return {Size}
 	 */
 	divSize(num){
@@ -319,9 +319,9 @@ export default class Size {
 
 
 	/**
-	 * <h4>サイズの面積</h4>
+	 * サイズの面積
 	 * @method area
-	 * @return {Number}
+	 * @return {number}
 	 */
 	area(){
 		return this.width * this.height;

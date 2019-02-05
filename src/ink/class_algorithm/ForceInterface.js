@@ -13,13 +13,13 @@
     @constructor
   ----------------------------------------------------------------------*/
   /**
-   * <h4>ForceInterface</h4>
+   * ForceInterface
    *
    * @constructor
    * @class AMP.ForceInterface
    * @extends AMP.Vector2
-   * @param {Number} vx Vector.x
-   * @param {Number} vy Vector.y
+   * @param {number} vx Vector.x
+   * @param {number} vy Vector.y
    */
   function ForceInterface(vx, vy){
     // super class call
@@ -38,11 +38,11 @@
     @property
   --------------------------------------------------------------------------*/
   /**
-   * <h4>バージョン情報</h4>
+   * バージョン情報
    *
    * @static
    * @property VERSION
-   * @type {String}
+   * @type {string}
    */
   ForceInterface.VERSION = '1.0.0';
 
@@ -52,12 +52,12 @@
     @method
   --------------------------------------------------------------------------*/
   /**
-   * <h4>ForceInterfaceインスタンスの生成</h4>
+   * ForceInterfaceインスタンスの生成
    *
    * @static
    * @method get
-   * @param {Number} x x座標
-   * @param {Number} y y座標
+   * @param {number} x x座標
+   * @param {number} y y座標
    * @return {ForceInterface}
    */
   ForceInterface.get = function(x, y){
@@ -66,7 +66,7 @@
 
 
   /**
-   * <h4>加速度の取得</h4>
+   * 加速度の取得
    *
    * @method speed
    * @return {Particle}
@@ -77,7 +77,7 @@
 
 
   /**
-   * <h4>加速度の設定</h4>
+   * 加速度の設定
    *
    * @method speed
    * @return {Particle}
@@ -89,8 +89,8 @@
 
 
   /**
-   * <h4>パーティクルに加える力を生成</h4>
-   * <p>インターフェースのみ実装</p>
+   * パーティクルに加える力を生成
+   * インターフェースのみ実装
    *
    * @interface
    * @method createForce

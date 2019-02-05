@@ -8,8 +8,8 @@ import * as utils from "../utils";
 
 
 /**
- * <h4>イベント</h4>
- * <p>イベントクラスの継承して使用出来ます｡メディエーターとしても使用すことも可能</p>
+ * イベント
+ * イベントクラスの継承して使用出来ます｡メディエーターとしても使用すことも可能
  *
  * @class Events
  * @constructor
@@ -33,20 +33,20 @@ export default class Events {
   /**
    * constructor
    */
-  constructor() {
+	constructor() {
     /**
-     * <h4>id</h4>
+     * id
      * @private
      * @property _id
-     * @type {String}
+     * @type {string}
      */
-    this._id = utils.createId();
+		this._id = utils.createId();
 
     /**
-     * <h4>イベントリスナーを連想配列で格納します</h4>
+     * イベントリスナーを連想配列で格納します
      * @private
      * @property _listeners
-     * @type {Object}
+     * @type {object}
      * @example
      *   _listeners[eventName] = [{
      *      attr    : eventObj.attr, <br>
@@ -54,212 +54,212 @@ export default class Events {
      *      context : context <br>
      *   }]
      */
-    this._listeners = {};
-  }
+		this._listeners = {};
+	}
 
 
   /**
-   * <h4>イベント登録</h4>
-   * <p>イベント名に属性名を付与するも可能</p>
+   * イベント登録
+   * イベント名に属性名を付与するも可能
    * @method on
-   * @param {String} type イベントタイプ
-   * @param {Function} listener イベントリスナー
-   * @param {Object} context コンテキスト
+   * @param {string} type イベントタイプ
+   * @param {function} listener イベントリスナー
+   * @param {object} context コンテキスト
    * @return {Events}
    */
-  on(type, listener, context){
-    this._addEvent(type, listener, context);
-    return this;
-  }
+	on(type, listener, context) {
+		this._addEvent(type, listener, context);
+		return this;
+	}
 
 
   /**
-   * <h4>1度だけ実行するイベント登録</h4>
+   * 1度だけ実行するイベント登録
    * @method onece
-   * @param {String} type イベントタイプ
-   * @param {Function} listener イベントリスナー
-   * @param {Object} context コンテキスト
+   * @param {string} type イベントタイプ
+   * @param {function} listener イベントリスナー
+   * @param {object} context コンテキスト
    * @return {Events}
    */
-  onece(type, listener, context){
-    this.on(type, () => {
-      this.off(type);
-      listener.apply(this, arguments);
-    }, context);
+	onece(type, listener, context) {
+		this.on(type, () => {
+			this.off(type);
+			listener.apply(this, arguments);
+		}, context);
 
-    return this;
-  }
+		return this;
+	}
 
 
   /**
-   * <h4>イベント削除</h4>
-   * <p>type省略時は、全てのイベントを削除<br>
-   * listener省略時は、指定イベントタイプ全て削除</p>
+   * イベント削除
+   * type省略時は、全てのイベントを削除<br>
+   * listener省略時は、指定イベントタイプ全て削除
    *
    * @method off
-   * @param {String} type イベントタイプ 省略可
-   * @param {Function} listener イベントリスナー 省略可
+   * @param {string} type イベントタイプ 省略可
+   * @param {function} listener イベントリスナー 省略可
    * @return {Events}
    */
-  off(type, listener){
-    this._removeEvent(type, listener);
-    return this;
-  }
+	off(type, listener) {
+		this._removeEvent(type, listener);
+		return this;
+	}
 
 
   /**
-   * <h4>イベント追加</h4>
+   * イベント追加
    * @private
    * @method _addEvent
-   * @param {String} type イベントタイプ
-   * @param {Function} listener コールバック関数
-   * @param {Object} context コンテキスト
+   * @param {string} type イベントタイプ
+   * @param {function} listener コールバック関数
+   * @param {object} context コンテキスト
    * @return {Void}
    */
-  _addEvent(type, listener, context){
-    let events = type.split(' ');
-    if(utils.isFunction(listener)){
+	_addEvent(type, listener, context) {
+		let events = type.split(' ');
+		if (utils.isFunction(listener)) {
 			utils.each(events, (item) => {
-        let eventObj = this._getEventNameMap(item);
-        this._listeners[eventObj.type] = this._listeners[eventObj.type] || [];
-        this._listeners[eventObj.type].push({
-          attr    : eventObj.attr,
-          listener: listener,
-          context : context
-        });
-      });
-    }
-  }
+				let eventObj = this._getEventNameMap(item);
+				this._listeners[eventObj.type] = this._listeners[eventObj.type] || [];
+				this._listeners[eventObj.type].push({
+					attr: eventObj.attr,
+					listener: listener,
+					context: context
+				});
+			});
+		}
+	}
 
 
   /**
-   * <h4>イベント削除</h4>
+   * イベント削除
    * @private
    * @method _removeEvent
-   * @param {String} type イベントタイプ
-   * @param {Function} listener コールバック関数
+   * @param {string} type イベントタイプ
+   * @param {function} listener コールバック関数
    * @return {Void}
    */
-  _removeEvent(type, listener){
-    let events = type ? type.split(' ') : [],
-    ary = null,
-    listeners;
+	_removeEvent(type, listener) {
+		let events = type ? type.split(' ') : [],
+			ary = null,
+			listeners;
 
-    listener = utils.getFunctionName(listener);
+		listener = utils.getFunctionName(listener);
 
-    utils.each(events, (event) => {
-      let eventObj = this._getEventNameMap(event);
+		utils.each(events, (event) => {
+			let eventObj = this._getEventNameMap(event);
 
-      if(eventObj && eventObj.attr && this._listeners[eventObj.type]){
-        // イベント属性指定がある場合
-        listeners = this._listeners[eventObj.type];
+			if (eventObj && eventObj.attr && this._listeners[eventObj.type]) {
+				// イベント属性指定がある場合
+				listeners = this._listeners[eventObj.type];
 
-        utils.each(listeners, (item) => {
-          if(item.attr !== eventObj.attr){
-            if(listener){
-              if(listener !== utils.getFunctionName(item.listener)){
-                ary = ary || [];
-                ary.push(item);
-              }
-            } else {
-              ary = ary || [];
-              ary.push(item);
-            }
-          }
-        });
+				utils.each(listeners, (item) => {
+					if (item.attr !== eventObj.attr) {
+						if (listener) {
+							if (listener !== utils.getFunctionName(item.listener)) {
+								ary = ary || [];
+								ary.push(item);
+							}
+						} else {
+							ary = ary || [];
+							ary.push(item);
+						}
+					}
+				});
 
-        this._listeners[eventObj.type] = ary;
+				this._listeners[eventObj.type] = ary;
 
-      } else if(eventObj){
-        // イベントタイプ指定ある場合
-        if(listener){
-          listeners = this._listeners[eventObj.type];
+			} else if (eventObj) {
+				// イベントタイプ指定ある場合
+				if (listener) {
+					listeners = this._listeners[eventObj.type];
 
-          utils.each(listeners, (item) => {
-            if(listener !== utils.getFunctionName(item.listener)){
-              ary = ary || [];
-              ary.push(item);
-            }
-          });
-        }
+					utils.each(listeners, (item) => {
+						if (listener !== utils.getFunctionName(item.listener)) {
+							ary = ary || [];
+							ary.push(item);
+						}
+					});
+				}
 
-        this._listeners[eventObj.type] = ary;
+				this._listeners[eventObj.type] = ary;
 
-      } else {
-        // イベント全て削除
-        this._listeners = null;
-        this._listeners = {};
-      }
-    });
-  }
+			} else {
+				// イベント全て削除
+				this._listeners = null;
+				this._listeners = {};
+			}
+		});
+	}
 
 
   /**
-   * <h4>イベント名、イベント属性を連想配列にして返す</h4>
+   * イベント名、イベント属性を連想配列にして返す
    * @private
    * @method _getEventNameMap
-   * @param {String} type イベントタイプ
-   * @return {Object}
+   * @param {string} type イベントタイプ
+   * @return {object}
    */
-  _getEventNameMap(type){
-    let events = type.split('.');
-    return {
-      type: events[0],
-      attr: events[1]
-    };
-  }
+	_getEventNameMap(type) {
+		let events = type.split('.');
+		return {
+			type: events[0],
+			attr: events[1]
+		};
+	}
 
 
   /**
-   * <h4>登録イベントがあるか判定します</h4>
+   * 登録イベントがあるか判定します
    * @method hasEvent
-   * @param {String} type イベントタイプ
+   * @param {string} type イベントタイプ
    * @return {Boolean}
    */
-  hasEvent(type){
-    let flag = false,
-    events = this._getEventNameMap(type),
-    listeners = this._listeners[events.type];
+	hasEvent(type) {
+		let flag = false,
+			events = this._getEventNameMap(type),
+			listeners = this._listeners[events.type];
 
 
-    // イベントリスナーの有無
-    if(listeners){
-      // 属性指定がある場合
-      if(events.attr){
-        utils.each(listeners, (item) => {
-          if(item.attr === events.attr){
-            flag = true;
-            return false;
-          }
-        });
+		// イベントリスナーの有無
+		if (listeners) {
+			// 属性指定がある場合
+			if (events.attr) {
+				utils.each(listeners, (item) => {
+					if (item.attr === events.attr) {
+						flag = true;
+						return false;
+					}
+				});
 
-      } else {
-        flag = true;
-      }
-    }
-    return flag;
-  }
+			} else {
+				flag = true;
+			}
+		}
+		return flag;
+	}
 
 
   /**
-   * <h4>イベント発行</h4>
-   * <p>第二引数以降に値を渡すとcallbackに引数として渡します</p>
+   * イベント発行
+   * 第二引数以降に値を渡すとcallbackに引数として渡します
    * @method trigger
-   * @param {String} type イベントタイプ
+   * @param {string} type イベントタイプ
    * @return {Events}
    */
-  trigger(type){
-    let events = this._getEventNameMap(type),
-    listeners = this._listeners[events.type],
-    args = utils.argsToArray(arguments, 1);
+	trigger(type) {
+		let events = this._getEventNameMap(type),
+			listeners = this._listeners[events.type],
+			args = utils.argsToArray(arguments, 1);
 
-    if(listeners){
-      utils.each(listeners, (item) => {
-        if(!events.attr || item.attr === events.attr){
-          item.listener.apply(item.context, args);
-        }
-      });
-    }
-    return this;
-  }
+		if (listeners) {
+			utils.each(listeners, (item) => {
+				if (!events.attr || item.attr === events.attr) {
+					item.listener.apply(item.context, args);
+				}
+			});
+		}
+		return this;
+	}
 }

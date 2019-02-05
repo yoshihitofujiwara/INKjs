@@ -13,12 +13,12 @@
     @constructor
   ----------------------------------------------------------------------*/
   /**
-   * <h4>重力 v4実装予定</h4>
+   * 重力 v4実装予定
    *
    * @class AMP.GravityForce
    * @extends AMP.Force
-   * @param {Number} x x座標
-   * @param {Number} y y座標
+   * @param {number} x x座標
+   * @param {number} y y座標
    */
   function GravityForce(x, y){
     // superClass constructor call
@@ -37,11 +37,11 @@
     @property
   --------------------------------------------------------------------------*/
   /**
-   * <h4>バージョン情報</h4>
+   * バージョン情報
    *
    * @static
    * @property VERSION
-   * @type {String}
+   * @type {string}
    */
   GravityForce.VERSION = '1.0.0';
 
@@ -51,12 +51,12 @@
     @method
   --------------------------------------------------------------------------*/
   /**
-   * <h4>Forceインスタンスの生成</h4>
+   * Forceインスタンスの生成
    *
    * @static
    * @method get
-   * @param {Number} x x座標
-   * @param {Number} y y座標
+   * @param {number} x x座標
+   * @param {number} y y座標
    * @return {Force}
    */
   GravityForce.get = function(x, y){
@@ -65,10 +65,10 @@
 
 
   /**
-   * <h4>重力の取得</h4>
+   * 重力の取得
    *
    * @method getForce
-   * @param  {Number} mass 質量
+   * @param  {number} mass 質量
    * @return {AMP.Vector2}
    */
   p.getForce = function(mass){

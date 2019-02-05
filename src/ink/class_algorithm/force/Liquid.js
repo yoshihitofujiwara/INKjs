@@ -13,25 +13,25 @@
     @constructor
   ----------------------------------------------------------------------*/
   /**
-   * <h4>液体抵抗</h4>
+   * 液体抵抗
    *
    * @class AMP.Liquid
    * @extends AMP.Rect
-   * @param {Number} x      x座標
-   * @param {Number} y      y座標
-   * @param {Number} width  幅
-   * @param {Number} height 高さ
-   * @param {Number} drag   抗力
+   * @param {number} x      x座標
+   * @param {number} y      y座標
+   * @param {number} width  幅
+   * @param {number} height 高さ
+   * @param {number} drag   抗力
    */
   function Liquid(x, y, width, height, drag){
     // super class call
     AMP.Rect.call(this, x, y, width, height);
 
     /**
-     * <h4>抗力</h4>
+     * 抗力
      *
      * @property drag
-     * @type {Number}
+     * @type {number}
      */
     this.drag = drag || 1;
   }
@@ -48,11 +48,11 @@
     @property
   --------------------------------------------------------------------------*/
   /**
-   * <h4>バージョン情報</h4>
+   * バージョン情報
    *
    * @static
    * @property VERSION
-   * @type {String}
+   * @type {string}
    */
   Liquid.VERSION = '1.0.0';
 
@@ -62,15 +62,15 @@
     @method
   --------------------------------------------------------------------------*/
   /**
-   * <h4>液体抵抗</h4>
+   * 液体抵抗
    *
    * @class AMP.Liquid
    * @extends AMP.BaseClass
-   * @param {Number} x      x座標
-   * @param {Number} y      y座標
-   * @param {Number} width  幅
-   * @param {Number} height 高さ
-   * @param {Number} drag   抗力
+   * @param {number} x      x座標
+   * @param {number} y      y座標
+   * @param {number} width  幅
+   * @param {number} height 高さ
+   * @param {number} drag   抗力
    */
   Liquid.get = function(x, y, width, height, drag){
     return new Liquid(x, y, width, height, drag);
@@ -78,7 +78,7 @@
 
 
   /**
-   * <h4>力の取得</h4>
+   * 力の取得
    *
    * @method getForce
    * @return {AMP.Vector2}

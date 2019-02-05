@@ -13,12 +13,12 @@
     @constructor
   ----------------------------------------------------------------------*/
   /**
-   * <h4>振り子 v4実装予定</h4>
+   * 振り子 v4実装予定
    *
    * @class AMP.Pendulum
    * @extends AMP.BaseClass
-   * @param {Number} x x座標
-   * @param {Number} y y座標
+   * @param {number} x x座標
+   * @param {number} y y座標
    */
   function Pendulum(origin, radius, options){
     // super class call
@@ -55,18 +55,18 @@
     @property
   --------------------------------------------------------------------------*/
   /**
-   * <h4>バージョン情報</h4>
+   * バージョン情報
    *
    * @static
    * @property VERSION
-   * @type {String}
+   * @type {string}
    */
   Pendulum.VERSION = '1.0.0';
 
 
   /**
    * [OPTIONS description]
-   * @type {Object}
+   * @type {object}
    */
   Pendulum.OPTIONS = {
     angle  : AMP.HARF_PI,
@@ -80,12 +80,12 @@
     @method
   --------------------------------------------------------------------------*/
   /**
-   * <h4>Forceインスタンスの生成</h4>
+   * Forceインスタンスの生成
    *
    * @static
    * @method get
-   * @param {Number} x x座標
-   * @param {Number} y y座標
+   * @param {number} x x座標
+   * @param {number} y y座標
    * @return {Force}
    */
   Pendulum.get = function(x, y){
@@ -110,7 +110,7 @@
 
 
   /**
-   * <h4>ポジションの更新</h4>
+   * ポジションの更新
    *
    * @privete
    * @method _updatePosition

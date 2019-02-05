@@ -6,13 +6,14 @@
 
 import * as utils from '../utils';
 
+/// FIXME: 処理再考余地あり
 /// 参考
 /// http://qiita.com/pppp403/items/1df6563bb91565aa950b
 /*----------------------------------------------------------------------
   @constructor
 ----------------------------------------------------------------------*/
 /**
- * <h4>LFO</h4>
+ * LFO
  *
  * @class LFO
  * @constructor
@@ -23,61 +24,61 @@ export default class LFO {
    */
   constructor() {
     /**
-     * <h4>経過位置</h4>
+     * 経過位置
      *
      * @property x
-     * @type {Number}
+     * @type {number}
      */
   	this.x = 0;
 
     /**
-     * <h4>値</h4>
+     * 値
      *
      * @property y
-     * @type {Number}
+     * @type {number}
      */
   	this.y = 0;
 
     /**
-     * <h4>1秒間の周期</h4>
-     * <p>1秒間60FSで計算</p>
+     * 1秒間の周期
+     * 1秒間60FSで計算
      *
      * @property frequency
-     * @type {Number}
+     * @type {number}
      */
     this.frequency = 1; // phase = 6 (1sec)
     // this.frequency = 1/6; // phase = 1 (6sec)
 
     /**
-     * <h4>可変量(振り幅)</h4>
+     * 可変量(振り幅)
      *
      * @property volume
-     * @type {Number}
+     * @type {number}
      */
     this.volume = 1;
 
     /**
-     * <h4>位相(ラジアン角)</h4>
+     * 位相(ラジアン角)
      *
      * @property phase
-     * @type {Number}
+     * @type {number}
      */
     this.phase = 0;
 
     /**
-     * <h4>波形タイプ</h4>
+     * 波形タイプ
      * @example [sin, saw, square, pulse, triangle]
      *
      * @property waveType
-     * @type {String}
+     * @type {string}
      */
     this.waveType = 'sin'; //波形タイプ(sin,saw,squ,tri,custom)
 
     /**
-     * <h4>パスス幅(pulse wave)</h4>
+     * パスス幅(pulse wave)
      *
      * @property pulseWidth
-     * @type {Number}
+     * @type {number}
      */
     this.pulseWidth = utils.PI / 2;
 
@@ -88,7 +89,7 @@ export default class LFO {
 
 
   /**
-   * <h4>値の初期化</h4>
+   * 値の初期化
    *
    * @method identity
    * @return {LFO}
@@ -101,10 +102,10 @@ export default class LFO {
 
 
   /**
-   * <h4>LFO waveタイプの設定</h4>
+   * LFO waveタイプの設定
    *
    * @method setWaveType
-   * @param {String} waveType LFO waveタイプ
+   * @param {string} waveType LFO waveタイプ
    * @return {LFO}
    */
   setWaveType(waveType){
@@ -125,7 +126,7 @@ export default class LFO {
 
 
   /**
-   * <h4>アップデート</h4>
+   * アップデート
    *
    * @method update
    * @return {LFO}
@@ -150,13 +151,13 @@ export default class LFO {
 
 
   /**
-   * <h4>波形関数をエクスポートします</h4>
+   * 波形関数をエクスポートします
    *
    * @interface
    * @private
    * @method _update
-   * @param {Number} phase 位相(ラジアン)
-   * @return {Number}
+   * @param {number} phase 位相(ラジアン)
+   * @return {number}
    */
   _update (){}
 
@@ -165,60 +166,60 @@ export default class LFO {
   --------------------------------------------------------------------------*/
   // https://soulwire.co.uk/math-for-motion/
   /**
-   * <h4>サイン波</h4>
+   * サイン波
    *
    * @static
    * @mathod sin
-   * @param {Number} phase 位相(ラジアン)
-   * @return {Number}
+   * @param {number} phase 位相(ラジアン)
+   * @return {number}
    */
   static sin (phase){
     return Math.sin(phase);
   }
 
   /**
-   * <h4>矩形波</h4>
+   * 矩形波
    *
    * @static
    * @method square
-   * @param {Number} phase 位相(ラジアン)
-   * @return {Number}
+   * @param {number} phase 位相(ラジアン)
+   * @return {number}
    */
   static square (phase){
     return phase < utils.PI ? -1 : 1;
   }
 
   /**
-   * <h4>パルス波</h4>
+   * パルス波
    *
    * @static
    * @method pulse
-   * @param {Number} phase 位相(ラジアン)
-   * @return {Number}
+   * @param {number} phase 位相(ラジアン)
+   * @return {number}
    */
   static pulse (phase){
     return phase < this.pulseWidth ? -1 : 1;
   }
 
   /**
-   * <h4>ノコギリ波</h4>
+   * ノコギリ波
    *
    * @static
    * @method saw
-   * @param {Number} phase 位相(ラジアン)
-   * @return {Number}
+   * @param {number} phase 位相(ラジアン)
+   * @return {number}
    */
   static saw (phase){
     return phase / utils.PI - 1;
   }
 
   /**
-   * <h4>三角波</h4>
+   * 三角波
    *
    * @static
    * @method triangle
-   * @param {Number} phase 位相(ラジアン)
-   * @return {Number}
+   * @param {number} phase 位相(ラジアン)
+   * @return {number}
    */
   static triangle (phase){
     return phase < utils.PI ? -2 / utils.PI * phase + 1 : 2 / utils.PI * phase - 3;

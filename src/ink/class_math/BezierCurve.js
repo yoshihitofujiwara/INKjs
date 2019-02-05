@@ -9,11 +9,12 @@ import * as utils from "../utils";
 import Vector2 from "./Vector2";
 
 
+// FIXME: class_graphicsに移動
 /**
- * <h4>ベジェ曲線</h4>
+ * ベジェ曲線
  * @class BezierCurve
- * @param {Array} vertices パスポイントリスト
- * @param {Number} placing ベジェ曲線状の位置(0-1)
+ * @param {array} vertices パスポイントリスト
+ * @param {number} placing ベジェ曲線状の位置(0-1)
  */
 export default class BezierCurve {
   /**
@@ -21,16 +22,16 @@ export default class BezierCurve {
    */
   constructor(vertices, placing) {
     /**
-     * <h4>パス座標リスト</h4>
+     * パス座標リスト
      * @property vertices
-     * @type {Array}
+     * @type {array}
      */
     this.vertices = vertices;
 
     /**
-     * <h4>ベジェ曲線上の位置（正規化された値）</h4>
+     * ベジェ曲線上の位置（正規化された値）
      * @properth placing
-     * @type {Number}
+     * @type {number}
      */
     this.placing = placing || 0;
 
@@ -41,9 +42,9 @@ export default class BezierCurve {
     this.position = new Vector2(vertices[0].x, vertices[0].y);
 
     /**
-     * <h4>始点からのラジアン角</h4>
+     * 始点からのラジアン角
      * @property rad
-     * @type {Number}
+     * @type {number}
      */
     this.rad = null;
 
@@ -53,13 +54,13 @@ export default class BezierCurve {
 
 
   /**
-   * <h4>2次ベジエ曲線</h4>
+   * 2次ベジエ曲線
    * @static
    * @method quadratic
    * @param  {Vector2} startPoint 開始位置
    * @param  {Vector2} pathPoint  パスポイント
    * @param  {Vector2} endPoint   終了位置
-   * @param  {Number} placing パスポイント（軌道）位置 (0 < 1)
+   * @param  {number} placing パスポイント（軌道）位置 (0 < 1)
    * @return {BezierCurve}
    */
   static quadratic(startPoint, pathPoint, endPoint, placing){
@@ -68,14 +69,14 @@ export default class BezierCurve {
 
 
   /**
-   * <h4>3次ベジエ曲線</h4>
+   * 3次ベジエ曲線
    * @static
    * @method cubicz
    * @param  {Vector2} startPoint 開始位置
    * @param  {Vector2} pathPoint1 パスポイント1
    * @param  {Vector2} pathPoint2 パスポイント2
    * @param  {Vector2} endPoint   終了位置
-   * @param  {Number} placing パスポイント（軌道）位置 (0 < 1)
+   * @param  {number} placing パスポイント（軌道）位置 (0 < 1)
    * @return {BezierCurve}
    */
   static cubic(startPoint, pathPoint1, pathPoint2, endPoint, placing){
@@ -84,7 +85,7 @@ export default class BezierCurve {
 
 
   /**
-   * <h4>インスタンスのcloneを生成</h4>
+   * インスタンスのcloneを生成
    * @method clone
    * @return {BezierCurve}
    */
@@ -94,9 +95,9 @@ export default class BezierCurve {
 
 
   /**
-   * <h4>パスポイントのイテレーション処理</h4>
+   * パスポイントのイテレーション処理
    * @method each
-   * @param {Function} callback コールバック関数
+   * @param {function} callback コールバック関数
    * @return {BezierCurve}
    */
   each (callback){
@@ -106,10 +107,10 @@ export default class BezierCurve {
 
 
   /**
-   * <h4>現在地を更新</h4>
+   * 現在地を更新
    *
    * @method update
-   * @param {Number} placing パスポイント（軌道）位置 (0 < 1)
+   * @param {number} placing パスポイント（軌道）位置 (0 < 1)
    * @return {BezierCurve}
    */
   update(placing){

@@ -8,7 +8,7 @@ import Events from "../ink/class_events/Events";
 // import is from "../ink/utils/is";
 
 /**
- * <h4>ページ内リンクのスクロール</h4>
+ * ページ内リンクのスクロール
  * @class Scroll
  * @extends Events
  * @constructor
@@ -29,36 +29,36 @@ export default class Scroll extends Events {
     }
 
     /**
-     * <h4>プロパティオブジェクト</h4>
+     * プロパティオブジェクト
      * <p>コンストラクタが呼び出し時に、引数とoptionsをmixinしてpropsオブジェクトに格納</p>
      * @property props
      * @type {Object}
      */
     /**
-     * <h4>トリガーとなるa要素</h4>
+     * トリガーとなるa要素
      * @property props.$trigger
      * @type {jQuery}
      */
     /**
-     * <h4>ページ要素</h4>
+     * ページ要素
      * @property props.$scroll
      * @default $('html, body')
      * @type {jQuery}
      */
     /**
-     * <h4>停止位置調整値</h4>
+     * 停止位置調整値
      * @property props.adjust
      * @default 0
      * @type {Number|Function}
      */
     /**
-     * <h4>スクロールしないトリガークラス名</h4>
+     * スクロールしないトリガークラス名
      * @property props.noScrollClass
      * @default no_scroll
      * @type {String}
      */
     /**
-     * <h4>tween</h4>
+     * tween
      * <p><a href="http://api.jquery.com/animate/#animate-properties-options" target="_blank">$.animate</a></p>
      * @property props.tween
      * @type {Object}
@@ -78,7 +78,7 @@ export default class Scroll extends Events {
 
 
   /**
-   * <h4>イベント登録</h4>
+   * イベント登録
    * @method bind
    * @return {Scroll}
    */
@@ -100,7 +100,7 @@ export default class Scroll extends Events {
 
 
   /**
-   * <h4>イベント削除</h4>
+   * イベント削除
    * @method unbind
    * @return {Scroll}
    */
@@ -111,7 +111,7 @@ export default class Scroll extends Events {
 
 
   /**
-   * <h4>スクロールアニメーション</h4>
+   * スクロールアニメーション
    * @method tween
    * @param {jQuery} $target トリガー要素のインデックス
    * @return {jQuery} tween要素

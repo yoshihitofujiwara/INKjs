@@ -17,52 +17,65 @@ let url = window.location;
  * hashを配列にして返す
  * @static
  * @method getHash
- * @return {Array} hashの配列
+ * @return {array} hashの配列
  */
-export function getHash(){
-  let ary = url.hash.split("#").slice(1);
-  if(ary.length){
+export function getHash() {
+	let ary = url.hash.split("#").slice(1);
+	if (ary.length) {
 		let i = 0,
-		l = ary.length;
+			l = ary.length;
 		for (; i < l; i += 1) {
 			ary[i] = "#" + ary[i];
 		}
-  }
-  return ary;
+	}
+	return ary;
 };
 
-// FIXME: queryの引数が正確に取れているのか確認
+
+/**
+ * getQuery
+ *
+ * @export location
+ * @param {string} query 取得したいクエリ名
+ * @returns {string} クエリの値を返す。値がない場合はundefined
+ */
+export function getQuery(query) {
+	let querys = queryHashMap();
+	return querys[query];
+};
+
+
 /**
  * リクエストパラメータ値を連想配列として取得
  * @static
  * @method queryHashMap
- * @param {String} query urlもしくは、パラメーター。省略時は現在のURL
- * @return {Object} リクエストパラメータ値を連想配列にして返す
+ * @param {string} query urlもしくは、パラメーター。省略時は現在のURL
+ * @return {object} リクエストパラメータ値を連想配列にして返す
  */
-export function queryHashMap(query){
-  let map = {},
-  array = [],
-  params;
+export function queryHashMap(query) {
+	let map = {},
+		array = [],
+		params;
 
-  if(query){
-    if(query.indexOf("?") > -1){
-      params = query.split("?")[1].split("&");
-    } else {
-      params = query.split("&");
-    }
-  } else {
-    params = url.search.slice(1).split("&");
-  }
+	if (query) {
+		if (query.indexOf("?") > -1) {
+			params = query.split("?")[1].split("&");
+		} else {
+			params = query.split("&");
+		}
+	} else {
+		params = url.search.slice(1).split("&");
+	}
 
-  if(params[0] !== ""){
-    let i = 0,
-    l = params.length;
+	if (params[0] !== "") {
+		let i = 0,
+			l = params.length;
 
-    for(; i < l; i += 1){
-      array = params[i].split("=");
-      map[array[0]] = decodeURI(array[1] || array[0]);
-    }
-  }
+		for (; i < l; i += 1) {
+			array = params[i].split("=");
+			map[array[0]] = decodeURI(array[1] || array[0]);
+		}
+	}
 
-  return map;
+	return map;
 };

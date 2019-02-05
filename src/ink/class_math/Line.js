@@ -8,8 +8,10 @@
 import Vector2 from "./Vector2";
 
 
+// FIXME: class_graphicsに移動
+
 /**
- * <h4>Line</h4>
+ * Line
  * @class Line
  * @param {Vector2} vec1 開始座標オブジェクト
  * @param {Vector2} vec2 終了座標オブジェクト
@@ -20,17 +22,17 @@ export default class Line {
    */
   constructor(vec1, vec2) {
     /**
-     * <h4>頂点リスト</h4>
+     * 頂点リスト
      * @property vertices
-     * @type {Array}
+     * @type {array}
      */
     this.vertices = [vec1, vec2];
   }
 
 
  /**
-   * <h4>二つの直線(延長線含む)の交差点を返します</h4>
-   * <p>交差点がない場合、nullを返します</p>
+   * 二つの直線(延長線含む)の交差点を返します
+   * 交差点がない場合、nullを返します
    * @static
    * @method intersection
    * @param {Line} line1 Lineインスタンス1
@@ -66,7 +68,7 @@ export default class Line {
 
 
   /**
-   * <h4>直線の交点を返します</h4>
+   * 直線の交点を返します
    * @static
    * @method cross
    * @param {Line} line1 Lineインスタンス1
@@ -83,7 +85,7 @@ export default class Line {
 
 
   /**
-   * <h4>二つの直線が交わるかチェックします(延長線は含まない)</h4>
+   * 二つの直線が交わるかチェックします(延長線は含まない)
    * @static
    * @method intersection
    * @param {Line} line1 Lineインスタンス1
@@ -109,7 +111,7 @@ export default class Line {
 
 
   /**
-   * <h4>二つの直線が等しいかチェックします</h4>
+   * 二つの直線が等しいかチェックします
    * @static
    * @method equals
    * @param {Line} line1 Lineインスタンス1
@@ -131,7 +133,7 @@ export default class Line {
 
 
   /**
-   * <h4>Lineのクローンを生成します</h4>
+   * Lineのクローンを生成します
    * @method clone
    * @return {Line}
    */
@@ -141,7 +143,7 @@ export default class Line {
 
 
   /**
-   * <h4>Lineの始点・終点をセットします</h4>
+   * Lineの始点・終点をセットします
    * @method setVertices
    * @param {Vector2} v1 開始座標オブジェクト
    * @param {Vector2} v2 終了座標オブジェクト
@@ -154,9 +156,9 @@ export default class Line {
 
 
   /**
-   * <h4>スタートからエンドポイントの距離(大きさ)</h4>
+   * スタートからエンドポイントの距離(大きさ)
    * @method mag
-   * @return {Number}
+   * @return {number}
    */
   mag(){
     return this.vertices[0].clone().sub(this.vertices[1]).mag();
@@ -164,9 +166,9 @@ export default class Line {
 
 
   /**
-   * <h4>Lineのアングル(ラジアン角)を返します</h4>
+   * Lineのアングル(ラジアン角)を返します
    * @method angle
-   * @return {Number}
+   * @return {number}
    */
   angle(){
     let v = new Vector2(this.vertices[0].x, this.vertices[0].y);

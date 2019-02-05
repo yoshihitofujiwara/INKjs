@@ -15,32 +15,32 @@ let url = window.location;
  * LocationHashの有無
  * @static
  * @method hasHash
- * @param {String} key ハッシュ名 省略可
+ * @param {string} key ハッシュ名 省略可
  * @return {Boolean}
  */
-export function hasHash(key){
-  let flag = false;
+export function hasHash(key) {
+	let flag = false;
 
-  if(url.href.indexOf("#") > -1){
-    if(key){
-      let k = " " + key.replace(/^#/, "") + " ",
-      vals = url.hash.split("#"),
-			i = 0,
-			l = vals.length;
+	if (url.href.indexOf("#") > -1) {
+		if (key) {
+			let k = " " + key.replace(/^#/, "") + " ",
+				vals = url.hash.split("#"),
+				i = 0,
+				l = vals.length;
 
-			for(; i < l; i+=1){
-				if (k.indexOf(" " + vals[i] + " ") !== -1){
-          flag = true;
+			for (; i < l; i += 1) {
+				if (k.indexOf(" " + vals[i] + " ") !== -1) {
+					flag = true;
 					break;
-        }
+				}
 			}
 
-    } else {
-      flag = true;
-    }
-  }
+		} else {
+			flag = true;
+		}
+	}
 
-  return flag;
+	return flag;
 };
 
 
@@ -48,12 +48,12 @@ export function hasHash(key){
  * 文字列を検索し、指定の文字列があるか判定
  * @static
  * @method hasString
- * @param {String} str 対象の文字列
- * @param {String} haStr 検索文字
+ * @param {string} str 対象の文字列
+ * @param {string} haStr 検索文字
  * @return {Boolean}
  */
-export function hasString(str, hasStr){
-  return is.isString(str) && str.indexOf(hasStr) > -1;
+export function hasString(str, hasStr) {
+	return is.isString(str) && str.indexOf(hasStr) > -1;
 };
 
 
@@ -61,9 +61,9 @@ export function hasString(str, hasStr){
  * ユーザーエージェントに指定の文字列があるか判定します
  * @static
  * @method hasUA
- * @param {String} str 指定の文字列
+ * @param {string} str 指定の文字列
  * @return {Boolean}
  */
-export function hasUA(str){
-  return is.ua.indexOf(str) > -1;
+export function hasUA(str) {
+	return is.ua.indexOf(str) > -1;
 };

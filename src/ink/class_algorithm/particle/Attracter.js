@@ -13,13 +13,13 @@
     @constructor
   ----------------------------------------------------------------------*/
   /**
-   * <h4>Attractor</h4>
+   * Attractor
    *
    * @class AMP.Attractor
    * @extends AMP.BaseClass
    * @param {Number|AMP.Vector2} x x座標 もしくは座標オブジェクト
-   * @param {Number} y y座標
-   * @param {Object} option値
+   * @param {number} y y座標
+   * @param {object} option値
    */
   function Attractor(x, y, options){
     // super class call
@@ -38,25 +38,25 @@
     @property
   --------------------------------------------------------------------------*/
   /**
-   * <h4>バージョン情報</h4>
+   * バージョン情報
    *
    * @static
    * @property VERSION
-   * @type {String}
+   * @type {string}
    */
   Attractor.VERSION = '1.0.0';
 
 
   /**
-   * <h4>デフォルト値オブジェクト</h4>
-   * <p>コンストラクタが呼び出し時に、引数とoptionsをmixinしてプロパティとしてエクスポートします</p>
+   * デフォルト値オブジェクト
+   * コンストラクタが呼び出し時に、引数とoptionsをmixinしてプロパティとしてエクスポートします
    *
    * @static
    * @property OPTIONS
-   * @type {Object}
+   * @type {object}
    */
   /**
-   * <h4>重力</h4>
+   * 重力
    *
    * @static
    * @property OPTIONS.g
@@ -72,12 +72,12 @@
     @method
   --------------------------------------------------------------------------*/
   /**
-   * <h4>Attractorインスタンスの生成</h4>
+   * Attractorインスタンスの生成
    *
    * @static
-   * @param {Number} x x座標
-   * @param {Number} y y座標
-   * @param {Object} option値
+   * @param {number} x x座標
+   * @param {number} y y座標
+   * @param {object} option値
    * @return {}
    */
   Attractor.get = function(x, y, options){
@@ -86,7 +86,7 @@
 
 
   /**
-   * <h4>Attractorの重力</h4>
+   * Attractorの重力
    *
    * @method getForce
    * @param  {AMP.Particle} particle パーティクル

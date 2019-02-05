@@ -21,8 +21,8 @@ let _isChangeLog = true;
 
 // NOTE: アップデート予定なし
 /**
- * <h4>デバッグ機能を提供します</h4>
- * <p>!!!: コンストラクタを呼び出しで、使用しません</p>
+ * デバッグ機能を提供します
+ * !!!: コンストラクタを呼び出しで、使用しません
  *
  * @class Debug
  * @constructor
@@ -37,7 +37,7 @@ export default class Debug {
 
 
   /**
-   * <h4>view要素を生成</h4>
+   * view要素を生成
    * @private
    * @static
    * @method _createView
@@ -67,7 +67,7 @@ export default class Debug {
 
 
   /**
-   * <h4>viewイベント設定</h4>
+   * viewイベント設定
    * @private
    * @static
    * @method _addEvent
@@ -89,7 +89,7 @@ export default class Debug {
         let _x = event.clientX,
         _y = event.clientY;
 
-        if(AMP.isNumber(x)){
+				if (utils.isNumber(x)){
           let diffX = _x - x,
           diffY = _y - y;
 
@@ -124,7 +124,7 @@ export default class Debug {
 
 
   /**
-   * <h4>ログを出力します</h4>
+   * ログを出力します
    * @static
    * @method log
    * @param {Any} args 出力するオブジェクト ※可変長引数可能
@@ -155,7 +155,7 @@ export default class Debug {
 
 
   /**
-   * <h4>ログのクリア</h4>
+   * ログのクリア
    * @static
    * @method clear
    * @return {Debug}
@@ -169,7 +169,7 @@ export default class Debug {
 
 
   /**
-   * <h4>ログ出力を開始します</h4>
+   * ログ出力を開始します
    * @static
    * @method start
    * @return {Debug}
@@ -181,7 +181,7 @@ export default class Debug {
 
 
   /**
-   * <h4>ログ出力を停止します</h4>
+   * ログ出力を停止します
    * @static
    * @method stop
    * @return {Debug}
@@ -193,7 +193,7 @@ export default class Debug {
 
 
   /**
-   * <h4>ログviewを非表示にします</h4>
+   * ログviewを非表示にします
    * @static
    * @method hide
    * @return {Debug}
@@ -208,7 +208,7 @@ export default class Debug {
 
 
   /**
-   * <h4>ログviewを表示します</h4>
+   * ログviewを表示します
    * @static
    * @method show
    * @return {Debug}
@@ -223,7 +223,7 @@ export default class Debug {
 
 
   /**
-   * <h4>ログの表示状態</h4>
+   * ログの表示状態
    * @static
    * @method isShow
    * @return {Boolean}
@@ -233,11 +233,11 @@ export default class Debug {
   }
 
   /**
-   * <h4>ログの表示状態</h4>
+   * ログの表示状態
    * @static
    * @method position
-	 * @param {Number} x
-	 * @param {Number} y
+	 * @param {number} x
+	 * @param {number} y
    * @return {Debug}
    */
 	static position(x, y) {

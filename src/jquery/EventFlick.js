@@ -9,7 +9,7 @@
     フリックイベント
   ======================================================================*/
 	/**
-	 * <h4>jQueryイベント拡張</h4>
+	 * jQueryイベント拡張
 	 * <p>jQueryイベントオブジェクトを拡張し、Flickイベントを追加</p>
 	 * @class jQuery.Flick
 	 */
@@ -19,13 +19,13 @@
 		@config
 	--------------------------------------------------------------------------*/
 	/**
-	 * <h4>Flickイベントオブジェクト</h4>
+	 * Flickイベントオブジェクト
 	 * @type {Object}
 	 */
 	var Flick = {};
 
 	/**
-	 * <h4>タッチイベントが有効か</h4>
+	 * タッチイベントが有効か
 	 * @static
 	 * @property isTouch
 	 * @type {Boolean}
@@ -52,19 +52,19 @@
 
 
 	/**
-	 * <h4>オプション値</h4>
+	 * オプション値
 	 * @static
 	 * @property OPTIONS
 	 * @type {Object}
 	 */
 	/**
-	 * <h4>ヒット判定最小値</h4>
+	 * ヒット判定最小値
 	 * @static
 	 * @property OPTIONS.hit
 	 * @type {Number}
 	 */
 	/**
-	 * <h4>フリック判定最小値</h4>
+	 * フリック判定最小値
 	 * @static
 	 * @property OPTIONS.area
 	 * @type {Number}
@@ -79,7 +79,7 @@
 		@method
 	--------------------------------------------------------------------------*/
 	/**
-	 * <h4>イベントステートデータ生成</h4>
+	 * イベントステートデータ生成
 	 * @static
 	 * @method createEventData
 	 * @param  {Object} event イベントオブジェクト
@@ -101,7 +101,7 @@
 
 
 	/**
-	 * <h4>イベントフラグの生成</h4>
+	 * イベントフラグの生成
 	 * @static
 	 * @method getFlickHasMap
 	 * @param {String} type イベントタイプ
@@ -128,7 +128,7 @@
 
 
 	/**
-	 * <h4>move実行中の値のセット</h4>
+	 * move実行中の値のセット
 	 * @static
 	 * @method getFlickHasMap
 	 * @param {String} event イベントオブジェクト
@@ -157,7 +157,7 @@
 
 
 	/**
-	 * <h4>イベント登録関数の生成</h4>
+	 * イベント登録関数の生成
 	 * @static
 	 * @method getSetup
 	 * @param {String} type イベント名
@@ -177,7 +177,7 @@
 
 
 	/**
-	 * <h4>イベント削除関数の生成</h4>
+	 * イベント削除関数の生成
 	 * @static
 	 * @method getTeardown
 	 * @param {String} type イベント名
@@ -192,7 +192,7 @@
 
 
 	/**
-	 * <h4>フリックイベントハンドラ</h4>
+	 * フリックイベントハンドラ
 	 * @static
 	 * @method getFlickHandler
 	 * @param {String} type イベント名
@@ -270,7 +270,7 @@
 
 
 	/**
-	 * <h4>フリックムーブイベントハンドラ</h4>
+	 * フリックムーブイベントハンドラ
 	 * @static
 	 * @method getMoveHandler
 	 * @param {String} type イベント名
@@ -368,7 +368,7 @@
 
 
 	/**
-	 * <h4>フリックキャンセルイベントハンドラ</h4>
+	 * フリックキャンセルイベントハンドラ
 	 * <p>フリック判定最小値を一回超えないと発生しません</p>
 	 * @static
 	 * @method getCancelHandler
@@ -459,7 +459,7 @@
 	/* flick
 	-----------------------------------------------------------------*/
 	/**
-	 * <h4>フリックイベントオブジェクト</h4>
+	 * フリックイベントオブジェクト
 	 * @static
 	 * @property flick
 	 * @type {Object}
@@ -470,7 +470,7 @@
 		handler : Flick.getFlickHandler(Flick.EVENTS.flick)
 	};
 	/**
-	 * <h4>フリックイベントオブジェクトX軸</h4>
+	 * フリックイベントオブジェクトX軸
 	 * @static
 	 * @property flickX
 	 * @type {Object}
@@ -481,7 +481,7 @@
 		handler : Flick.getFlickHandler(Flick.EVENTS.flickX)
 	};
 	/**
-	 * <h4>フリックイベントオブジェクトY軸</h4>
+	 * フリックイベントオブジェクトY軸
 	 * @static
 	 * @property flickY
 	 * @type {Object}
@@ -496,7 +496,7 @@
 	/* flickmove
 	-----------------------------------------------------------------*/
 	/**
-	 * <h4>フリックムーブイベントオブジェクト</h4>
+	 * フリックムーブイベントオブジェクト
 	 * @static
 	 * @property flickmove
 	 * @type {Object}
@@ -507,7 +507,7 @@
 		handler : Flick.getMoveHandler(Flick.EVENTS.flickmove)
 	};
 	/**
-	 * <h4>フリックムーブイベントオブジェクトX軸</h4>
+	 * フリックムーブイベントオブジェクトX軸
 	 * @static
 	 * @property flickmoveX
 	 * @type {Object}
@@ -518,7 +518,7 @@
 		handler : Flick.getMoveHandler(Flick.EVENTS.flickmoveX)
 	};
 	/**
-	 * <h4>フリックムーブイベントオブジェクトY軸</h4>
+	 * フリックムーブイベントオブジェクトY軸
 	 * @static
 	 * @property flickmoveY
 	 * @type {Object}
@@ -533,7 +533,7 @@
 	/* flickcancel
 	-----------------------------------------------------------------*/
 	/**
-	 * <h4>フリックキャンセルイベントオブジェクト</h4>
+	 * フリックキャンセルイベントオブジェクト
 	 * @static
 	 * @property flickcancel
 	 * @type {Object}
@@ -544,7 +544,7 @@
     handler : Flick.getCancelHandler(Flick.EVENTS.flickcancel)
 	};
 	/**
-	 * <h4>フリックキャンセルイベントオブジェクトX軸</h4>
+	 * フリックキャンセルイベントオブジェクトX軸
 	 * @static
 	 * @property flickcancelX
 	 * @type {Object}
@@ -555,7 +555,7 @@
     handler : Flick.getCancelHandler(Flick.EVENTS.flickcancelX)
 	};
 	/**
-	 * <h4>フリックキャンセルイベントオブジェクトY軸</h4>
+	 * フリックキャンセルイベントオブジェクトY軸
 	 * @static
 	 * @property flickcancelY
 	 * @type {Object}
@@ -571,14 +571,14 @@
 		export
 	--------------------------------------------------------------------------*/
 	/**
-	 * <h4>Flickイベントをエクスポート</h4>
+	 * Flickイベントをエクスポート
 	 * @property jQuery.Flick
 	 * @type {Object}
 	 */
 	$.Flick = Flick;
 
 	/**
-	 * <h4>フリックイベント</h4>
+	 * フリックイベント
 	 * <p>X軸、Y軸4方向のフリックイベント</p>
 	 * @event flick
 	 * @example
@@ -586,7 +586,7 @@
 	 * $(elm).flick(callback);
 	 */
 	/**
-	 * <h4>フリックXイベント</h4>
+	 * フリックXイベント
 	 * <p>X軸2方向のフリックイベント</p>
 	 * @event flickX
 	 * @example
@@ -594,7 +594,7 @@
 	 * $(elm).flickX(callback);
 	 */
 	/**
-	 * <h4>フリックYイベント</h4>
+	 * フリックYイベント
 	 * <p>Y軸2方向のフリックイベント</p>
 	 * @event flickY
 	 * @example
@@ -602,7 +602,7 @@
 	 * $(elm).flickY(callback);
 	 */
 	/**
-	 * <h4>フリックキャンセルイベント</h4>
+	 * フリックキャンセルイベント
 	 * <p>X軸、Y軸4方向のフリックキャンセルイベント</p>
 	 * @event flickcancel
 	 * @example
@@ -610,7 +610,7 @@
 	 * $(elm).flickcancel(callback);
 	 */
 	/**
-	 * <h4>フリックXキャンセルイベント</h4>
+	 * フリックXキャンセルイベント
 	 * <p>X軸2方向のフリックキャンセルイベント</p>
 	 * @event flickcancelX
 	 * @example
@@ -618,7 +618,7 @@
 	 * $(elm).flickcancelX(callback);
 	 */
 	/**
-	 * <h4>フリックYキャンセルイベント</h4>
+	 * フリックYキャンセルイベント
 	 * <p>Y軸2方向のフリックキャンセルイベント</p>
 	 * @event flickcancelY
 	 * @example
@@ -626,7 +626,7 @@
 	 * $(elm).flickcancelY(callback);
 	 */
 	/**
-	 * <h4>フリックムーブイベント</h4>
+	 * フリックムーブイベント
 	 * <p>X軸、Y軸4方向のフリックムーブイベント</p>
 	 * @event flickmove
 	 * @example
@@ -634,7 +634,7 @@
 	 * $(elm).flickmove(callback);
 	 */
 	/**
-	 * <h4>フリックXムーブイベント</h4>
+	 * フリックXムーブイベント
 	 * <p>X軸2方向のフリックムーブイベント</p>
 	 * @event flickmoveX
 	 * @example
@@ -642,7 +642,7 @@
 	 * $(elm).flickmoveX(callback);
 	 */
 	/**
-	 * <h4>フリックYムーブイベント</h4>
+	 * フリックYムーブイベント
 	 * <p>Y軸2方向のフリックムーブイベント</p>
 	 * @event flickmoveY
 	 * @example

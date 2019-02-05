@@ -7,18 +7,18 @@
 
 /**
  * @class Is
+ * see: http://diveintohtml5.info/everything.html
  */
 
-let toString = Object.prototype.toString
 
-/// see: http://diveintohtml5.info/everything.html
+let toString = Object.prototype.toString
 
 
 /**
  * ユーザーエージェント
  * @static
  * @property UA
- * @type {String}
+ * @type {string}
  */
 export const UA = navigator.userAgent;
 
@@ -27,7 +27,7 @@ export const UA = navigator.userAgent;
  * ユーザーエージェント toLowerCase
  * @static
  * @property ua
- * @type {String}
+ * @type {string}
  */
 export const ua = UA.toLowerCase();
 
@@ -38,11 +38,11 @@ export const ua = UA.toLowerCase();
  * 配列型判定
  * @static
  * @method isArray
- * @param {Object} obj 判定するオブジェクト
+ * @param {object} obj 判定するオブジェクト
  * @return {Boolean}
  */
-export const isArray = Array.isArray || function(obj){
-  return toString.call(obj) === "[object Array]";
+export const isArray = Array.isArray || function (obj) {
+	return toString.call(obj) === "[object Array]";
 };
 
 
@@ -50,11 +50,11 @@ export const isArray = Array.isArray || function(obj){
  * 真偽型判定
  * @static
  * @method isBoolean
- * @param {Object} obj 判定するオブジェクト
+ * @param {object} obj 判定するオブジェクト
  * @return {Boolean}
  */
-export function isBoolean(obj){
-  return toString.call(obj) === "[object Boolean]";
+export function isBoolean(obj) {
+	return toString.call(obj) === "[object Boolean]";
 };
 
 
@@ -62,11 +62,11 @@ export function isBoolean(obj){
  * 関数型判定
  * @static
  * @method isFunction
- * @param {Object} obj 判定するオブジェクト
+ * @param {object} obj 判定するオブジェクト
  * @return {Boolean}
  */
-export function isFunction(obj){
-  return toString.call(obj) === "[object Function]";
+export function isFunction(obj) {
+	return toString.call(obj) === "[object Function]";
 };
 
 
@@ -74,11 +74,11 @@ export function isFunction(obj){
  * 数値型判定
  * @static
  * @method isNumber
- * @param {Object} obj 判定するオブジェクト
+ * @param {object} obj 判定するオブジェクト
  * @return {Boolean}
  */
-export function isNumber(obj){
-  return toString.call(obj) === "[object Number]";
+export function isNumber(obj) {
+	return toString.call(obj) === "[object Number]";
 };
 
 
@@ -86,11 +86,11 @@ export function isNumber(obj){
  * オブジェクト型判定
  * @static
  * @method isObject
- * @param {Object} obj 判定するオブジェクト
+ * @param {object} obj 判定するオブジェクト
  * @return {Boolean}
  */
-export function isObject(obj){
-  return !!obj && toString.call(obj) === "[object Object]";
+export function isObject(obj) {
+	return !!obj && toString.call(obj) === "[object Object]";
 };
 
 
@@ -98,11 +98,11 @@ export function isObject(obj){
  * プレーンオブジェクト判定
  * @static
  * @method isPlainObject
- * @param {Object} obj 判定するオブジェクト
+ * @param {object} obj 判定するオブジェクト
  * @return {Boolean}
  */
-export function isPlainObject(obj){
-  return isObject(obj) && Object.keys(obj).length === 0;
+export function isPlainObject(obj) {
+	return isObject(obj) && Object.keys(obj).length === 0;
 };
 
 
@@ -110,11 +110,11 @@ export function isPlainObject(obj){
  * 文字列型判定
  * @static
  * @method isString
- * @param {Object} obj 判定するオブジェクト
+ * @param {object} obj 判定するオブジェクト
  * @return {Boolean}
  */
-export function isString(obj){
-  return toString.call(obj) === "[object String]";
+export function isString(obj) {
+	return toString.call(obj) === "[object String]";
 };
 
 
@@ -122,11 +122,11 @@ export function isString(obj){
  * 正規表現判定
  * @static
  * @method isRegexp
- * @param {Object} obj 判定するオブジェクト
+ * @param {object} obj 判定するオブジェクト
  * @return {Boolean}
  */
 export function isRegexp(obj) {
-  return toString.call(obj) === "[object RegExp]";
+	return toString.call(obj) === "[object RegExp]";
 };
 
 
@@ -134,11 +134,11 @@ export function isRegexp(obj) {
  * undefined判定
  * @static
  * @method isUndefined
- * @param {Object} obj 判定するオブジェクト
+ * @param {object} obj 判定するオブジェクト
  * @return {Boolean}
  */
-export function isUndefined(obj){
-  return obj === void 0;
+export function isUndefined(obj) {
+	return obj === void 0;
 };
 
 
@@ -146,11 +146,11 @@ export function isUndefined(obj){
  * null判定
  * @static
  * @method isNull
- * @param {Object} obj 判定するオブジェクト
+ * @param {object} obj 判定するオブジェクト
  * @return {Boolean}
  */
-export function isNull(obj){
-  return obj === null || toString.call(obj) === "[object Null]";
+export function isNull(obj) {
+	return obj === null || toString.call(obj) === "[object Null]";
 };
 
 
@@ -158,21 +158,21 @@ export function isNull(obj){
  * マルチバイト文字列判定
  * @static
  * @method isMultibyte
- * @param  {String}  chara 一文字
+ * @param  {string}  chara 一文字
  * @return {Boolean}
  */
-export function isMultibyte(chara){
-  return ('!"#$%&\'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~'.indexOf(chara) < 0);
+export function isMultibyte(chara) {
+	return ('!"#$%&\'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~'.indexOf(chara) < 0);
 };
 
 
 /**
  * isEmail Email判定
- * @param  {String}  email メールアドレス
+ * @param  {string}  email メールアドレス
  * @return {Boolean}
  */
-export function isEmail(email){
-  return email.match(/.+@.+\..+/) !== null;
+export function isEmail(email) {
+	return email.match(/.+@.+\..+/) !== null;
 };
 
 
@@ -182,25 +182,25 @@ export function isEmail(email){
  * OS判定
  * @static
  * @method isOS
- * @param {String} os OS名 [windows, mac, ios, android]
+ * @param {string} os OS名 [windows, mac, ios, android]
  * @param {String|Number} ver バージョンナンバー Android ios のみ有効
  * @return {Boolean}
  */
-export function isOS(os, ver){
-  let _os = os.toLowerCase();
+export function isOS(os, ver) {
+	let _os = os.toLowerCase();
 
-  switch (_os){
-    case "windows":
-      return isWindows(ver);
-    case "mac":
-      return isMac(ver);
-    case "android":
-      return isAndroid(ver);
-    case "ios":
-      return isIos(ver);
-    default:
-      throw new Error(_os + " is Invalid argument");
-  }
+	switch (_os) {
+		case "windows":
+			return isWindows(ver);
+		case "mac":
+			return isMac(ver);
+		case "android":
+			return isAndroid(ver);
+		case "ios":
+			return isIos(ver);
+		default:
+			throw new Error(_os + " is Invalid argument");
+	}
 };
 
 
@@ -211,31 +211,31 @@ export function isOS(os, ver){
  * @param {Number|String} バージョン名[7, 8, 8.1, 10] 省略可
  * @return {Boolean}
  */
-export function isWindows(ver){
-  if(ver){
-    // NT Ver. プロダクト名
-    // NT 6.1  Windows 7/Windows Server 2008 R2
-    // NT 6.2  Windows 8/Windows Server 2012
-    // NT 6.3  Windows 8.1/Windows Server 2012 R2
-    // NT 10.0 Windows 10
+export function isWindows(ver) {
+	if (ver) {
+		// NT Ver. プロダクト名
+		// NT 6.1  Windows 7/Windows Server 2008 R2
+		// NT 6.2  Windows 8/Windows Server 2012
+		// NT 6.3  Windows 8.1/Windows Server 2012 R2
+		// NT 10.0 Windows 10
 
-    let _ver = ua.split(" windows nt ")[1].split(";")[0];
-    ver += ""; // cast String
+		let _ver = ua.split(" windows nt ")[1].split(";")[0];
+		ver += ""; // cast String
 
-    if(ver === "7"){
-      return _ver === "6.1";
-    } else if(ver === "8"){
-      return _ver === "6.2";
-    } else if(ver === "8.1"){
-      return _ver === "6.3";
-    } else if(ver === "10"){
-      return _ver === "10.0";
-    } else {
-      return false;
-    }
-  } else {
-    return ua.indexOf("windows") > -1;
-  }
+		if (ver === "7") {
+			return _ver === "6.1";
+		} else if (ver === "8") {
+			return _ver === "6.2";
+		} else if (ver === "8.1") {
+			return _ver === "6.3";
+		} else if (ver === "10") {
+			return _ver === "10.0";
+		} else {
+			return false;
+		}
+	} else {
+		return ua.indexOf("windows") > -1;
+	}
 };
 
 
@@ -246,13 +246,13 @@ export function isWindows(ver){
  * @param {Number|String} バージョンナンバー 省略可
  * @return {Boolean}
  */
-export function isMac(ver){
-  if(ver){
-    let serial = ("" + ver).replace(/\./g, "_");
-    return ua.indexOf("intel mac os x " + serial) > -1;
-  } else {
-    return ua.indexOf("intel mac os x ") > -1 && ua.indexOf("mobile") < 0;
-  }
+export function isMac(ver) {
+	if (ver) {
+		let serial = ("" + ver).replace(/\./g, "_");
+		return ua.indexOf("intel mac os x " + serial) > -1;
+	} else {
+		return ua.indexOf("intel mac os x ") > -1 && ua.indexOf("mobile") < 0;
+	}
 };
 
 
@@ -263,13 +263,13 @@ export function isMac(ver){
  * @param {Number|String} バージョンナンバー 省略可
  * @return {Boolean}
  */
-export function isIos(ver){
-  if(ver){
-    let serial = ("" + ver).replace(/\./g, "_");
-    return ua.indexOf("like mac os x") > -1 && ua.indexOf("mobile") > -1 && ua.indexOf("os " + serial) > -1;
-  } else {
-    return ua.indexOf("like mac os x") > -1 && ua.indexOf("mobile") > -1;
-  }
+export function isIos(ver) {
+	if (ver) {
+		let serial = ("" + ver).replace(/\./g, "_");
+		return ua.indexOf("like mac os x") > -1 && ua.indexOf("mobile") > -1 && ua.indexOf("os " + serial) > -1;
+	} else {
+		return ua.indexOf("like mac os x") > -1 && ua.indexOf("mobile") > -1;
+	}
 };
 
 
@@ -280,12 +280,12 @@ export function isIos(ver){
  * @param {Number|String} バージョンナンバー 省略可
  * @return {Boolean}
  */
-export function isAndroid (ver){
-  if(ver){
-    return ua.indexOf("android " + ver) > -1;
-  } else {
-    return ua.indexOf("android") > -1;
-  }
+export function isAndroid(ver) {
+	if (ver) {
+		return ua.indexOf("android " + ver) > -1;
+	} else {
+		return ua.indexOf("android") > -1;
+	}
 };
 
 
@@ -296,7 +296,7 @@ export function isAndroid (ver){
  *
  * @static
  * @method isDevice
- * @param {String} device デバイス名<br>
+ * @param {string} device デバイス名<br>
  * デバイス名 | 引数文字列 <br>
  * PC (for Desktop) | pc <br>
  * Smart Device | sd, smartdevice <br>
@@ -309,30 +309,30 @@ export function isAndroid (ver){
  * Android Tablet | androidTablet
  * @return {Boolean}
  */
-export function isDevice(device){
-  let _device = device.toLowerCase();
+export function isDevice(device) {
+	let _device = device.toLowerCase();
 
-  if(_device === "pc"){
-    return isPC();
-  } else if (_device === "sd" || _device === "smartdevice"){
-    return isSmartDevice();
-  } else if (_device === "sp" || _device === "smartphone"){
-    return isSmartPhone();
-  } else if (_device === "tb" || _device === "tablet"){
-    return isTablet();
-  } else if(_device === "iphone"){
-    return isIPhone();
-  } else if(_device === "ipad"){
-    return isIPad();
-  } else if(_device === "ipod"){
-    return isIPod();
-  } else if(_device === "android"){
-    return isAndroidPhone();
-  } else if(_device === "androidtablet"){
-    return isAndroidTablet();
-  } else {
-    throw new Error(_device + " is Invalid argument");
-  }
+	if (_device === "pc") {
+		return isPC();
+	} else if (_device === "sd" || _device === "smartdevice") {
+		return isSmartDevice();
+	} else if (_device === "sp" || _device === "smartphone") {
+		return isSmartPhone();
+	} else if (_device === "tb" || _device === "tablet") {
+		return isTablet();
+	} else if (_device === "iphone") {
+		return isIPhone();
+	} else if (_device === "ipad") {
+		return isIPad();
+	} else if (_device === "ipod") {
+		return isIPod();
+	} else if (_device === "android") {
+		return isAndroidPhone();
+	} else if (_device === "androidtablet") {
+		return isAndroidTablet();
+	} else {
+		throw new Error(_device + " is Invalid argument");
+	}
 };
 
 
@@ -342,8 +342,8 @@ export function isDevice(device){
  * @method isPC
  * @return {Boolean}
  */
-export function isPC(){
-  return isWindows() || isMac();
+export function isPC() {
+	return isWindows() || isMac();
 };
 
 
@@ -353,8 +353,8 @@ export function isPC(){
  * @method isSmartDevice
  * @return {Boolean}
  */
-export function isSmartDevice(){
-  return isIos() || isAndroid();
+export function isSmartDevice() {
+	return isIos() || isAndroid();
 };
 
 
@@ -364,8 +364,8 @@ export function isSmartDevice(){
  * @method isSmartPhone
  * @return {Boolean}
  */
-export function isSmartPhone(){
-  return ua.indexOf("iphone") > -1 || isAndroid() && ua.indexOf("mobile") > -1;
+export function isSmartPhone() {
+	return ua.indexOf("iphone") > -1 || isAndroid() && ua.indexOf("mobile") > -1;
 };
 
 
@@ -375,8 +375,8 @@ export function isSmartPhone(){
  * @method isTablet
  * @return {Boolean}
  */
-export function isTablet(){
-  return ua.indexOf("ipad") > -1 || isAndroid() && ua.indexOf("mobile") < 0;
+export function isTablet() {
+	return ua.indexOf("ipad") > -1 || isAndroid() && ua.indexOf("mobile") < 0;
 };
 
 
@@ -386,8 +386,8 @@ export function isTablet(){
  * @method isIPhone
  * @return {Boolean}
  */
-export function isIPhone(){
-  return ua.indexOf("iphone") > -1;
+export function isIPhone() {
+	return ua.indexOf("iphone") > -1;
 };
 
 
@@ -397,8 +397,8 @@ export function isIPhone(){
  * @method isIPad
  * @return {Boolean}
  */
-export function isIPad(){
-  return ua.indexOf("ipad") > -1;
+export function isIPad() {
+	return ua.indexOf("ipad") > -1;
 };
 
 
@@ -408,8 +408,8 @@ export function isIPad(){
  * @method isIPod
  * @return {Boolean}
  */
-export function isIPod(){
-  return ua.indexOf("ipod") > -1;
+export function isIPod() {
+	return ua.indexOf("ipod") > -1;
 };
 
 
@@ -419,8 +419,8 @@ export function isIPod(){
  * @method isAndroidPhone
  * @return {Boolean}
  */
-export function isAndroidPhone(){
-  return isAndroid() && ua.indexOf("mobile") > -1;
+export function isAndroidPhone() {
+	return isAndroid() && ua.indexOf("mobile") > -1;
 };
 
 
@@ -430,8 +430,8 @@ export function isAndroidPhone(){
  * @method isAndroidTablet
  * @return {Boolean}
  */
-export function isAndroidTablet(){
-  return isAndroid() && ua.indexOf("mobile") < 0;
+export function isAndroidTablet() {
+	return isAndroid() && ua.indexOf("mobile") < 0;
 };
 
 
@@ -441,7 +441,7 @@ export function isAndroidTablet(){
  * ブラウザ判定
  * @static
  * @method isBrowser
- * @param {String} key ブラウザ名<br>
+ * @param {string} key ブラウザ名<br>
  * ブラウザ名 | 引数文字列 <br>
  * Microsoft Edge | edge <br>
  * Internet Explorer | ie <br>
@@ -458,34 +458,34 @@ export function isAndroidTablet(){
  * @param {String | Number} ver バージョン (ie, mobileSafari, android) 省略可
  * @return {Boolean}
  */
-export function isBrowser(browser, ver){
-  let _browser = browser.toLowerCase();
+export function isBrowser(browser, ver) {
+	let _browser = browser.toLowerCase();
 
-  if(_browser === "ie"){
-    return isIE(ver);
-  } else if(_browser === "edge"){
-    return isEdge(ver);
-  } else if(_browser === "chrome"){
-    return isChrome(ver);
-  } else if(_browser === "firefox"){
-    return isFirefox(ver);
-  } else if(_browser === "safari"){
-    return isSafari(ver);
-  } else if(_browser === "mobilesafari"){
-    return isMobileSafari(ver);
-  } else if(_browser === "android"){
-    return isAndroidBrowser(ver);
-  } else if(_browser === "mobilechrome"){
-    return isMobileChrome(ver);
-  } else if(_browser === "androidchrome"){
-    return isAndroidChrome(ver);
-  } else if(_browser === "isochrome"){
-    return isIosChrome(ver);
-  } else if(_browser === "webkit"){
-    return isWebkit();
-  } else {
-    throw new Error(_browser + " is Invalid argument");
-  }
+	if (_browser === "ie") {
+		return isIE(ver);
+	} else if (_browser === "edge") {
+		return isEdge(ver);
+	} else if (_browser === "chrome") {
+		return isChrome(ver);
+	} else if (_browser === "firefox") {
+		return isFirefox(ver);
+	} else if (_browser === "safari") {
+		return isSafari(ver);
+	} else if (_browser === "mobilesafari") {
+		return isMobileSafari(ver);
+	} else if (_browser === "android") {
+		return isAndroidBrowser(ver);
+	} else if (_browser === "mobilechrome") {
+		return isMobileChrome(ver);
+	} else if (_browser === "androidchrome") {
+		return isAndroidChrome(ver);
+	} else if (_browser === "isochrome") {
+		return isIosChrome(ver);
+	} else if (_browser === "webkit") {
+		return isWebkit();
+	} else {
+		throw new Error(_browser + " is Invalid argument");
+	}
 };
 
 
@@ -493,19 +493,19 @@ export function isBrowser(browser, ver){
  * IE判定
  * @static
  * @method isIE
- * @param {Number}  ver バージョンナンバー 省略可
+ * @param {number}  ver バージョンナンバー 省略可
  * @return {Boolean}
  */
-export function isIE(ver){
-  if(ver){
-    return ua.indexOf("msie " + ver) > -1 || (ua.indexOf("trident") > -1 && ua.indexOf("rv:" + ver) > -1);
-  } else {
-    return ua.indexOf("msie") > -1 || ua.indexOf("trident") > -1;
-  }
+export function isIE(ver) {
+	if (ver) {
+		return ua.indexOf("msie " + ver) > -1 || (ua.indexOf("trident") > -1 && ua.indexOf("rv:" + ver) > -1);
+	} else {
+		return ua.indexOf("msie") > -1 || ua.indexOf("trident") > -1;
+	}
 };
 
 
-// FIXME: edgeがChromium採用予定なので判定処理をアップデート予定
+// NOTE: edgeがChromium採用予定なので判定処理をアップデート予定
 /**
  * Microsoft Edge判定
  * @static
@@ -513,9 +513,9 @@ export function isIE(ver){
  * @param {Number|String}  ver バージョン名
  * @return {Boolean}
  */
-export function isEdge(ver){
-  ver = ver || "";
-  return ua.indexOf("edge/" + ver) > -1;
+export function isEdge(ver) {
+	ver = ver || "";
+	return ua.indexOf("edge/" + ver) > -1;
 };
 
 
@@ -525,12 +525,12 @@ export function isEdge(ver){
  * @method isChrome
  * @return {Boolean}
  */
-export function isChrome(ver){
-  if(ver){
-    return ua.indexOf("chrome/" + ver) > -1 && ua.indexOf("mobile") < 0;
-  } else {
-    return ua.indexOf("chrome") > -1 && ua.indexOf("mobile") < 0;
-  }
+export function isChrome(ver) {
+	if (ver) {
+		return ua.indexOf("chrome/" + ver) > -1 && ua.indexOf("mobile") < 0;
+	} else {
+		return ua.indexOf("chrome") > -1 && ua.indexOf("mobile") < 0;
+	}
 };
 
 
@@ -540,12 +540,12 @@ export function isChrome(ver){
  * @method isFirefox
  * @return {Boolean}
  */
-export function isFirefox(ver){
-  if(ver){
-    return ua.indexOf("firefox/" + ver) > -1 && ua.indexOf("mobile") < 0;
-  } else {
-    return ua.indexOf("firefox") > -1 && ua.indexOf("mobile") < 0;
-  }
+export function isFirefox(ver) {
+	if (ver) {
+		return ua.indexOf("firefox/" + ver) > -1 && ua.indexOf("mobile") < 0;
+	} else {
+		return ua.indexOf("firefox") > -1 && ua.indexOf("mobile") < 0;
+	}
 };
 
 
@@ -555,12 +555,12 @@ export function isFirefox(ver){
  * @method isSafari
  * @return {Boolean}
  */
-export function isSafari(ver){
-  if(ver){
-    return ua.indexOf("safari") > -1 && ua.indexOf("mobile") < 0 && !isChrome() && ua.indexOf("version/" + ver) > - 1;
-  } else {
-    return ua.indexOf("safari") > -1 && ua.indexOf("mobile") < 0 && !isChrome();
-  }
+export function isSafari(ver) {
+	if (ver) {
+		return ua.indexOf("safari") > -1 && ua.indexOf("mobile") < 0 && !isChrome() && ua.indexOf("version/" + ver) > - 1;
+	} else {
+		return ua.indexOf("safari") > -1 && ua.indexOf("mobile") < 0 && !isChrome();
+	}
 };
 
 
@@ -571,12 +571,12 @@ export function isSafari(ver){
  * @param {Number|String} ver バージョンナンバー  省略可
  * @return {Boolean}
  */
-export function isMobileSafari(ver){
-  if(ver){
-    return isIos(ver) && ua.indexOf("safari") > -1;
-  } else {
-    return isIos() && ua.indexOf("safari") > -1;
-  }
+export function isMobileSafari(ver) {
+	if (ver) {
+		return isIos(ver) && ua.indexOf("safari") > -1;
+	} else {
+		return isIos() && ua.indexOf("safari") > -1;
+	}
 };
 
 
@@ -587,12 +587,12 @@ export function isMobileSafari(ver){
  * @param {Number|String} ver バージョンナンバー 省略可
  * @return {Boolean}
  */
-export function isAndroidBrowser(ver){
-  if(ver){
-    return isAndroid(ver) && ua.indexOf("safari") > -1;
-  } else {
-    return isAndroid() && ua.indexOf("safari") > -1;
-  }
+export function isAndroidBrowser(ver) {
+	if (ver) {
+		return isAndroid(ver) && ua.indexOf("safari") > -1;
+	} else {
+		return isAndroid() && ua.indexOf("safari") > -1;
+	}
 };
 
 
@@ -603,8 +603,8 @@ export function isAndroidBrowser(ver){
  * @param {Number|String} ver バージョンナンバー 省略可
  * @return {Boolean}
  */
-export function isMobileChrome(ver){
-  return isIosChrome(ver) || isAndroidChrome(ver);
+export function isMobileChrome(ver) {
+	return isIosChrome(ver) || isAndroidChrome(ver);
 };
 
 
@@ -615,12 +615,12 @@ export function isMobileChrome(ver){
  * @param {Number|String} ver バージョンナンバー 省略可
  * @return {Boolean}
  */
-export function isIosChrome(ver){
-  if(ver){
-    return isIos() && ua.indexOf("crios/" + ver) > -1;
-  } else {
-    return isIos() && ua.indexOf("crios/") > -1;
-  }
+export function isIosChrome(ver) {
+	if (ver) {
+		return isIos() && ua.indexOf("crios/" + ver) > -1;
+	} else {
+		return isIos() && ua.indexOf("crios/") > -1;
+	}
 };
 
 
@@ -631,12 +631,12 @@ export function isIosChrome(ver){
  * @param {Number|String} ver バージョンナンバー 省略可
  * @return {Boolean}
  */
-export function isAndroidChrome(ver){
-  if(ver) {
-    return isAndroid() && ua.indexOf("chrome/" + ver) > -1;
-  } else {
-    return isAndroid() && ua.indexOf("chrome/") > -1;
-  }
+export function isAndroidChrome(ver) {
+	if (ver) {
+		return isAndroid() && ua.indexOf("chrome/" + ver) > -1;
+	} else {
+		return isAndroid() && ua.indexOf("chrome/") > -1;
+	}
 };
 
 
@@ -646,8 +646,8 @@ export function isAndroidChrome(ver){
  * @method isWebkit
  * @return {Boolean}
  */
-export function isWebkit(){
-  return ua.indexOf("webkit") > -1;
+export function isWebkit() {
+	return ua.indexOf("webkit") > -1;
 };
 
 
@@ -659,8 +659,8 @@ export function isWebkit(){
  * @method isFileAPI
  * @return {Boolean}
  */
-export function isFileAPI(){
-  return !!(window.File && window.FileReader && window.FileList && window.Blob);
+export function isFileAPI() {
+	return !!(window.File && window.FileReader && window.FileList && window.Blob);
 };
 
 
@@ -670,8 +670,8 @@ export function isFileAPI(){
  * @method isRequestFileSystem
  * @return {Boolean}
  */
-export function isRequestFileSystem(){
-  return !!(window.requestFileSystem || window.webkitRequestFileSystem);
+export function isRequestFileSystem() {
+	return !!(window.requestFileSystem || window.webkitRequestFileSystem);
 };
 
 
@@ -681,20 +681,20 @@ export function isRequestFileSystem(){
  * @method isStorage
  * @return {Boolean}
  */
-export function isStorage(){
-  let isStorage = "sessionStorage" in window && "localStorage" in window;
+export function isStorage() {
+	let isStorage = "sessionStorage" in window && "localStorage" in window;
 
-  if(isStorage){
-    try {
-      localStorage.setItem("_INKJS_", 1);
-    } catch (err) {
-      isStorage = false;
-    }
-    if(isStorage){
-      localStorage.removeItem("_INKJS_");
-    }
-  }
-  return isStorage;
+	if (isStorage) {
+		try {
+			localStorage.setItem("_INKJS_", 1);
+		} catch (err) {
+			isStorage = false;
+		}
+		if (isStorage) {
+			localStorage.removeItem("_INKJS_");
+		}
+	}
+	return isStorage;
 };
 
 
@@ -705,13 +705,13 @@ export function isStorage(){
  * @return {Boolean}
  */
 export const isTouchScreen = (() => {
-  let isTouchScreen,
-  div = document.createElement("div");
+	let isTouchScreen,
+		div = document.createElement("div");
 
-  div.setAttribute("ontouchstart", "return");
-  isTouchScreen = (typeof div.ontouchstart === "function");
+	div.setAttribute("ontouchstart", "return");
+	isTouchScreen = (typeof div.ontouchstart === "function");
 
-  return function(){
-    return isTouchScreen;
-  };
+	return function () {
+		return isTouchScreen;
+	};
 })();

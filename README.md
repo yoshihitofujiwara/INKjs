@@ -2,14 +2,14 @@
 
 ---
 
-## Support browser [5/20/2018]
+## Support browser [2/4/2019]
 
 ```
 InternetExplorer 11
 Microsoft Edge [Latest Edition]
 Chrome (windows / Mac) [Latest Edition]
 FireFox (windows / Mac) [Latest Edition]
-Mac Safari [Last 2 Version]
+Mac Safari [Latest Edition]
 iOS Safari [Last 2 Version]
-Android Browser 4.4++
+Android Browser 6++
 ```

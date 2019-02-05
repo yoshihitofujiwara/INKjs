@@ -8,7 +8,7 @@ import Events from "../ink/class_events/Events";
 // import is from "../ink/utils/is";
 
 /**
- * <h4>スムーススクロール（慣性スクロール）</h4>
+ * スムーススクロール（慣性スクロール）
  * <p>WindowsPCのみマウスホイールスクロールを慣性スクロール実装します。(Macはデフォルトの慣性スクロール)</p>
  *
  * @class SmoothScroll
@@ -22,30 +22,30 @@ export default class SmoothScroll extends Events {
     super();
 
     /**
-     * <h4>プロパティオブジェクト</h4>
+     * プロパティオブジェクト
      * <p>コンストラクタが呼び出し時に、引数とoptionsをmixinしてpropsオブジェクトに格納</p>
      * @property props
      * @type {Object}
      */
     /**
-     * <h4>mousewheelイベント名</h4>
+     * mousewheelイベント名
      * @property props.mousewheel
      * @type {String}
      */
     /**
-     * <h4>スムーススクロールエリア</h4>
+     * スムーススクロールエリア
      * @property props.$scroll
      * @default $("html, body")
      * @type {jQuery}
      */
     /**
-     * <h4>スクロール量</h4>
+     * スクロール量
      * @property props.amount
      * @default 500
      * @type {Number}
      */
     /**
-     * <h4>tween</h4>
+     * tween
      * <p><a href="http://api.jquery.com/animate/#animate-properties-options" target="_blank">$.animate</a></p>
      * @property props.tween
      * @type {Object}
@@ -66,7 +66,7 @@ export default class SmoothScroll extends Events {
 
 
   /**
-   * <h4>初期化</h4>
+   * 初期化
    * @method bind
    * @return {SmoothScroll}
    */
@@ -87,7 +87,7 @@ export default class SmoothScroll extends Events {
 
 
   /**
-   * <h4>イベント削除</h4>
+   * イベント削除
    * @method unbind
    * @return {SmoothScroll}
    */
@@ -98,7 +98,7 @@ export default class SmoothScroll extends Events {
 
 
   /**
-   * <h4>スクロールアニメーション</h4>
+   * スクロールアニメーション
    * @method tween
    * @param {Number} move スクロール上下値(1 || -1)
    * @return {jQuery} tween要素

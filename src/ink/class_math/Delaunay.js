@@ -10,12 +10,14 @@ import Vector2 from "./Vector2";
 import Triangle from "./Triangle";
 
 
+// FIXME: class_graphicsに移動
+
 /**
- * <h4>Delaunay</h4>
+ * Delaunay
  * @class Delaunay
- * @param {Number} width Delaunay領域の幅
- * @param {Number} height Delaunay領域の高さ
- * @param {Array} vertices 頂点リスト
+ * @param {number} width Delaunay領域の幅
+ * @param {number} height Delaunay領域の高さ
+ * @param {array} vertices 頂点リスト
  */
 export default class Delaunay {
   /**
@@ -23,44 +25,44 @@ export default class Delaunay {
    */
   constructor(width, height, vertices) {
     /**
-     * <h4>Delaunay領域の幅</h4>
+     * Delaunay領域の幅
      * @property width
-     * @type {Number}
+     * @type {number}
      */
     this.width = width || 0;
 
     /**
-     * <h4>Delaunay領域の高さ</h4>
+     * Delaunay領域の高さ
      * @property width
-     * @type {Number}
+     * @type {number}
      */
     this.height = height || 0;
 
     /**
-     * <h4>頂点リスト</h4>
+     * 頂点リスト
      * @property vertices
-     * @type {Array}
+     * @type {array}
      */
     this.vertices = vertices || [];
 
     /**
-     * <h4>生成したDelaunay</h4>
+     * 生成したDelaunay
      * @property delaunays
-     * @type {Array}
+     * @type {array}
      */
     this.delaunays = [];
 
     /**
-     * <h4>ランダムポイント生成時の再起処理の制限最大回数</h4>
+     * ランダムポイント生成時の再起処理の制限最大回数
      * @property maxAttempts
-     * @type {Number}
+     * @type {number}
      */
     this.maxAttempts = 1000;
   }
 
 
   /**
-   * <h4>初期値にセット</h4>
+   * 初期値にセット
    * @method identity
    * @return {Delaunay}
    */
@@ -74,10 +76,10 @@ export default class Delaunay {
 
 
   /**
-   * <h4>Delaunay領域の設定</h4>
+   * Delaunay領域の設定
    * @method setSize
-   * @param {Number} width Delaunay領域の幅
-   * @param {Number} height Delaunay領域の高さ
+   * @param {number} width Delaunay領域の幅
+   * @param {number} height Delaunay領域の高さ
    * @return {Delaunay}
    */
   setSize(width, height){
@@ -88,10 +90,10 @@ export default class Delaunay {
 
 
   /**
-   * <h4>頂点リストの設定</h4>
-   * <p>設定されている頂点リストを削除して設定しなおします</p>
+   * 頂点リストの設定
+   * 設定されている頂点リストを削除して設定しなおします
    * @method setVertices
-   * @param {Array} vertices 頂点リスト
+   * @param {array} vertices 頂点リスト
    * @return {Delaunay}
    */
   setVertices(vertices){
@@ -101,10 +103,10 @@ export default class Delaunay {
 
 
   /**
-   * <h4>頂点削除</h4>
+   * 頂点削除
    * @method removeVertex
-   * @param {Number} 削除するインデックス ※引数がない場合、全て削除
-   * @param {Number} 削除数
+   * @param {number} 削除するインデックス ※引数がない場合、全て削除
+   * @param {number} 削除数
    * @return {Delaunay}
    */
   removeVertex(index, len){
@@ -118,7 +120,7 @@ export default class Delaunay {
 
 
   /**
-   * <h4>Delaunay削除</h4>
+   * Delaunay削除
    * @method removeDelaunay
    * @return {Delaunay}
    */
@@ -129,10 +131,10 @@ export default class Delaunay {
 
 
   /**
-   * <h4>ランダムな頂点を生成</h4>
-   * <p>生成後自動的に、setVerticesで頂点リストを設定します</p>
+   * ランダムな頂点を生成
+   * 生成後自動的に、setVerticesで頂点リストを設定します
    * @method randomVertices
-   * @param {Number} interval 頂点同士の間隔
+   * @param {number} interval 頂点同士の間隔
    * @return {Delaunay}
    */
   randomVertices(interval){
@@ -148,8 +150,8 @@ export default class Delaunay {
 
     for(; i <= this.maxAttempts; i += 1){
       vertex = {
-        x: utils.random(1, this.width - 1, true),
-        y: utils.random(1, this.height - 1, true)
+        x: utils.randomInt(1, this.width - 1),
+				y: utils.randomInt(1, this.height - 1)
       };
       l = vertices.length;
 
@@ -172,11 +174,11 @@ export default class Delaunay {
 
 
   /**
-   * <h4>Delaunay領域の辺に、指定した間隔の頂点を生成して返す</h4>
+   * Delaunay領域の辺に、指定した間隔の頂点を生成して返す
    * @method getOuterVertices
-   * @param {Number} interval 間隔
+   * @param {number} interval 間隔
    * @param {Boolean} isRandom 間隔のランダム性を有効にするか
-   * @return {Array} Delaunay領域の辺に、指定した間隔の頂点を生成して返す
+   * @return {array} Delaunay領域の辺に、指定した間隔の頂点を生成して返す
    */
   getOuterVertices(interval, isRandom){
     let range,
@@ -197,7 +199,7 @@ export default class Delaunay {
 
       while(vertex < range){
         if(isRandom){
-          vertex += interval + utils.random(0, max, true);
+          vertex += interval + utils.randomInt(0, max);
         } else {
           vertex += interval;
         }
@@ -227,7 +229,7 @@ export default class Delaunay {
 
 
   /**
-   * <h4>ドロネー生成</h4>
+   * ドロネー生成
    * @method createDelaunay
    * @return {Delaunay}
    */
@@ -254,12 +256,12 @@ export default class Delaunay {
   /* Private
   -----------------------------------------------------------------*/
   /**
-   * <h4>全ての三角形の外接円にvertexが含まれるか判定し、オブジェクトに振り分けて返す</h4>
+   * 全ての三角形の外接円にvertexが含まれるか判定し、オブジェクトに振り分けて返す
    * @private
    * @method _checkTriangles
-   * @param {Array} delaunays delaunayリスト
-   * @param {Object} vertex 頂点
-   * @return {Object} 三角外円にvertexが含まれるか判定したオブジェクト {ok:[], ng:[]}
+   * @param {array} delaunays delaunayリスト
+   * @param {object} vertex 頂点
+   * @return {object} 三角外円にvertexが含まれるか判定したオブジェクト {ok:[], ng:[]}
    */
   _checkTriangles(delaunays, vertex){
     let circle,
@@ -284,11 +286,11 @@ export default class Delaunay {
 
 
   /**
-   * <h4>各三角形を辺に分割して、重なる辺を取り除いた2点の頂点リストを返す</h4>
+   * 各三角形を辺に分割して、重なる辺を取り除いた2点の頂点リストを返す
    * @private
    * @method _mergeSides
-   * @param {Array} trianglesEdge 三角形頂点リスト
-   * @return {Array} 重なる辺を取り除いた2点の頂点リストを返す
+   * @param {array} trianglesEdge 三角形頂点リスト
+   * @return {array} 重なる辺を取り除いた2点の頂点リストを返す
    */
   _mergeSides(trianglesEdge){
     let poins = [],
@@ -333,11 +335,11 @@ export default class Delaunay {
 
 
   /**
-   * <h4>三角形の集合から辺の集合へ</h4>
+   * 三角形の集合から辺の集合へ
    * @private
    * @method _edgesToSides
-   * @param {Array} triangles 三角形集合の頂点を格納した配列
-   * @return {Array} 辺の集合配列
+   * @param {array} triangles 三角形集合の頂点を格納した配列
+   * @return {array} 辺の集合配列
    */
   _edgesToSides(triangles){
     let sides = [];
@@ -353,12 +355,12 @@ export default class Delaunay {
 
 
   /**
-   * <h4>各頂点と点vertexを結んで三角形に分割する</h4>
+   * 各頂点と点vertexを結んで三角形に分割する
    * @private
    * @method _createTriangle
-   * @param {Array} points 2点の座標を格納したリスト
-   * @param {Object} vertex 追加する頂点
-   * @return {Array} 生成した三角形リスト
+   * @param {array} points 2点の座標を格納したリスト
+   * @param {object} vertex 追加する頂点
+   * @return {array} 生成した三角形リスト
    */
   _createTriangle(points, vertex) {
     let triangles = [];
@@ -370,12 +372,12 @@ export default class Delaunay {
 
 
   /**
-   * <h4>ラップする三角形の頂点を含む三角形を削除して返す</h4>
+   * ラップする三角形の頂点を含む三角形を削除して返す
    * @private
    * @method _removeWrapTriangl
-   * @param {Array} triangle ラップしている大三角形
-   * @param {Array} delaunays ドロネー
-   * @return {Array} ラップする三角形の頂点を含む三角形を削除して返す
+   * @param {array} triangle ラップしている大三角形
+   * @param {array} delaunays ドロネー
+   * @return {array} ラップする三角形の頂点を含む三角形を削除して返す
    */
   _removeWrapTriangl(triangle, delaunays){
     let placeholder = [];
@@ -394,12 +396,12 @@ export default class Delaunay {
 
 
   /**
-   * <h4>Delaunay領域をラップする三角形を生成</h4>
+   * Delaunay領域をラップする三角形を生成
    * @private
    * @method _createWrapTriangle
-   * @param {Number} width  Delaunay領域の幅 ※省略可
-   * @param {Number} height Delaunay領域の高さ ※省略可
-   * @return {Array} Delaunay領域をラップする三角形の座標を格納した配列
+   * @param {number} width  Delaunay領域の幅 ※省略可
+   * @param {number} height Delaunay領域の高さ ※省略可
+   * @return {array} Delaunay領域をラップする三角形の座標を格納した配列
    */
   _createWrapTriangle(width, height){
     this.setSize(width, height);

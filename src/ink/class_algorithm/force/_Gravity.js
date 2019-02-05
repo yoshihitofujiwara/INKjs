@@ -13,13 +13,13 @@
     @constructor
   ----------------------------------------------------------------------*/
   /**
-   * <h4>重力 v4実装予定</h4>
+   * 重力 v4実装予定
    *
    * @class AMP.Gravity
    * @extends AMP.BaseClass
-   * @param {Number} x x座標
-   * @param {Number} y y座標
-   * @param {Object} option値
+   * @param {number} x x座標
+   * @param {number} y y座標
+   * @param {object} option値
    */
   function Gravity(x, y, options){
     if(AMP.isObject(x)){
@@ -52,22 +52,22 @@
     @property
   --------------------------------------------------------------------------*/
   /**
-   * <h4>バージョン情報</h4>
+   * バージョン情報
    *
    * @static
    * @property VERSION
-   * @type {String}
+   * @type {string}
    */
   Gravity.VERSION = '1.0.0';
 
 
   /**
-   * <h4>デフォルト値オブジェクト</h4>
-   * <p>コンストラクタが呼び出し時に、引数とoptionsをmixinしてプロパティとしてエクスポートします</p>
+   * デフォルト値オブジェクト
+   * コンストラクタが呼び出し時に、引数とoptionsをmixinしてプロパティとしてエクスポートします
    *
    * @static
    * @property OPTIONS
-   * @type {Object}
+   * @type {object}
    */
   Gravity.OPTIONS = {
     g   : 0.1, // 重力
@@ -80,13 +80,13 @@
     @method
   --------------------------------------------------------------------------*/
   /**
-   * <h4>Gravityインスタンスの生成</h4>
+   * Gravityインスタンスの生成
    *
    * @static
    * @method get
-   * @param {Number} x x座標
-   * @param {Number} y y座標
-   * @param {Object} option値
+   * @param {number} x x座標
+   * @param {number} y y座標
+   * @param {object} option値
    * @return {Gravity}
    */
   Gravity.get = function(x, y, options){
@@ -95,7 +95,7 @@
 
 
   /**
-   * <h4>重力を取得</h4>
+   * 重力を取得
    *
    * @method getForce
    * @param  {AMP.Particle} particle パーティクル

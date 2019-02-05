@@ -8,7 +8,7 @@ import Events from "../ink/class_events/Events";
 // import is from "../ink/utils/is";
 
 /**
- * <h4>ホバースライドアニメーション</h4>
+ * ホバースライドアニメーション
  * <p>INKjs jquery.plugins(jQuery.Slip)に依存します</p>
  * @class Slip
  * @extends Events
@@ -30,18 +30,18 @@ export default class Slip extends Events {
     }
 
     /**
-     * <h4>プロパティオブジェクト</h4>
+     * プロパティオブジェクト
      * <p>コンストラクタが呼び出し時に、引数とoptionsをmixinしてpropsオブジェクトに格納</p>
      * @property props
      * @type {Object}
      */
     /**
-     * <h4>target要素</h4>
+     * target要素
      * @propaty props.$target
      * @type {jQuery}
      */
     /**
-     * <h4>マウスイン時のアニメーション方向</h4>
+     * マウスイン時のアニメーション方向
      * <p>以下7タイプ (allはデフォルト4方向)<br>
      * all, horizontal, vertical, up, down, left, right</p>
      * @property props.inDirection
@@ -49,7 +49,7 @@ export default class Slip extends Events {
      * @type {String}
      */
     /**
-     * <h4>マウスアウト時のアニメーション方向</h4>
+     * マウスアウト時のアニメーション方向
      * <p>以下7タイプ (allはデフォルト4方向)<br>
      * all, horizontal, vertical, up, down, left, right</p>
      * @property props.outDirection
@@ -57,25 +57,25 @@ export default class Slip extends Events {
      * @type {String}
      */
     /**
-     * <h4>アニメーション要素クラス名</h4>
+     * アニメーション要素クラス名
      * @property props.tweenClass
      * @default slip_tween
      * @type {String}
      */
     /**
-     * <h4>アクティブ時に付与するクラス名</h4>
+     * アクティブ時に付与するクラス名
      * @property props.activeClass
      * @default .activeClass
      * @type {String}
      */
     /**
-     * <h4>アニメーションしない要素に付与するクラス名</h4>
+     * アニメーションしない要素に付与するクラス名
      * @property props.noTweenClass
      * @default .no_slip
      * @type {String}
      */
     /**
-     * <h4>Tween option</h4>
+     * Tween option
      * <p><a href="http://api.jquery.com/animate/#animate-properties-options" target="_blank">$.animate</a></p>
      * @property props.tween
      * @default .no_slip
@@ -97,7 +97,7 @@ export default class Slip extends Events {
 
 
   /**
-   * <h4>イベント登録</h4>
+   * イベント登録
    * @method bind
    * @return {Slip}
    */
@@ -126,7 +126,7 @@ export default class Slip extends Events {
 
 
   /**
-   * <h4>イベント削除</h4>
+   * イベント削除
    * @method unbind
    * @return {Slip}
    */
@@ -137,7 +137,7 @@ export default class Slip extends Events {
 
 
   /**
-   * <h4>アクティブ</h4>
+   * アクティブ
    * @method active
    * @param {Number} num 要素のインデックス
    * @return {Slip}
@@ -155,7 +155,7 @@ export default class Slip extends Events {
 
 
   /**
-   * <h4>待機状態のスタイル</h4>
+   * 待機状態のスタイル
    * @method passive
    * @param {Number} num 要素のインデックス
    * @return {Slip}
@@ -173,7 +173,7 @@ export default class Slip extends Events {
 
 
   /**
-   * <h4>アニメーション</h4>
+   * アニメーション
    * @private
    * @method _tween
    * @param {Number} num   要素のインデックス
@@ -193,7 +193,7 @@ export default class Slip extends Events {
   }
 
   /**
-   * <h4>Tweenスタイルの生成</h4>
+   * Tweenスタイルの生成
    * @private
    * @method _createTweenStyle
    * @param {Object} event イベントオブジェクト

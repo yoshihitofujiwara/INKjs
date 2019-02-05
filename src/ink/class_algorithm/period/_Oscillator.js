@@ -13,7 +13,7 @@
     @constructor
   ----------------------------------------------------------------------*/
   /**
-   * <h4>Oscillator v4実装予定</h4>
+   * Oscillator v4実装予定
    *
    * @class AMP.Oscillator
    * @extends AMP.BaseClass
@@ -26,7 +26,7 @@
     AMP.BaseClass.call(this);
 
     /**
-     * <h4>現在値</h4>
+     * 現在値
      *
      * @property position
      * @type {AMP.Vector2}
@@ -34,7 +34,7 @@
     this.position = new AMP.Vector2();
 
     /**
-     * <h4>角度</h4>
+     * 角度
      *
      * @property angle
      * @type {AMP.Vector2}
@@ -42,7 +42,7 @@
     this.angle = angle;
 
     /**
-     * <h4>速度</h4>
+     * 速度
      *
      * @property velocity
      * @type {AMP.Vector2}
@@ -50,7 +50,7 @@
     this.velocity = velocity;
 
     /**
-     * <h4>振り幅</h4>
+     * 振り幅
      *
      * @property amplitude
      * @type {AMP.Vector2}
@@ -70,11 +70,11 @@
     @property
   --------------------------------------------------------------------------*/
   /**
-   * <h4>バージョン情報</h4>
+   * バージョン情報
    *
    * @static
    * @property VERSION
-   * @type {String}
+   * @type {string}
    */
   Oscillator.VERSION = '1.0.0';
 
@@ -84,12 +84,12 @@
     @method
   --------------------------------------------------------------------------*/
   /**
-   * <h4>Forceインスタンスの生成</h4>
+   * Forceインスタンスの生成
    *
    * @static
    * @method get
-   * @param {Number} x x座標
-   * @param {Number} y y座標
+   * @param {number} x x座標
+   * @param {number} y y座標
    * @return {Force}
    */
   Oscillator.get = function(x, y){
@@ -98,7 +98,7 @@
 
 
   /**
-   * <h4>ポジションを更新</h4>
+   * ポジションを更新
    *
    * @method update
    * @return {Oscillator}

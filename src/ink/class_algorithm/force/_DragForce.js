@@ -13,23 +13,23 @@
     @constructor
   ----------------------------------------------------------------------*/
   /**
-   * <h4>流体抵抗 v4実装予定</h4>
+   * 流体抵抗 v4実装予定
    *
    * @class AMP.DragForce
    * @extends AMP.Force
-   * @param {Number} x x座標
-   * @param {Number} y y座標
-   * @param {Number} coefficient 反発係数
+   * @param {number} x x座標
+   * @param {number} y y座標
+   * @param {number} coefficient 反発係数
    */
   function DragForce(x, y, coefficient){
     // super class call
     AMP.ForceInterface.call(this, x, y);
 
     /**
-     * <h4>反発係数</h4>
+     * 反発係数
      *
      * @property coefficient
-     * @type {Number}
+     * @type {number}
      */
     this.coefficient = coefficient || 1;
   }
@@ -46,11 +46,11 @@
     @property
   --------------------------------------------------------------------------*/
   /**
-   * <h4>バージョン情報</h4>
+   * バージョン情報
    *
    * @static
    * @property VERSION
-   * @type {String}
+   * @type {string}
    */
   DragForce.VERSION = '1.0.0';
 
@@ -60,13 +60,13 @@
     @method
   --------------------------------------------------------------------------*/
   /**
-   * <h4>Forceインスタンスの生成</h4>
+   * Forceインスタンスの生成
    *
    * @static
    * @method get
-   * @param {Number} x x座標
-   * @param {Number} y y座標
-   * @param {Number} coefficient 反発係数
+   * @param {number} x x座標
+   * @param {number} y y座標
+   * @param {number} coefficient 反発係数
    * @return {Force}
    */
   DragForce.get = function(x, y, coefficient){
@@ -75,7 +75,7 @@
 
 
   /**
-   * <h4>流体抵抗力の取得</h4>
+   * 流体抵抗力の取得
    *
    * @method getForce
    * @param  {AMP.Vector2} velocity 速度

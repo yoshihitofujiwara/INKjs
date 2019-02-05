@@ -6,11 +6,9 @@
 
 import Events from "../class_events/Events";
 import * as utils from "../utils";
-import getUserMedia from "get-user-media-promise";
 
 
 /**
- * <h4>WebCamera</h4>
  * @class WebCamera
  * @constructor
  */
@@ -22,10 +20,10 @@ export default class WebCamera extends Events {
     super();
 
     /**
-     * <h4>イベントリスト</h4>
+     * イベントリスト
      * @private
      * @property _EVENTS
-     * @type {Object}
+     * @type {object}
      */
     this._EVENTS = {
       // FAIL        : 'fail',
@@ -36,7 +34,7 @@ export default class WebCamera extends Events {
 
     /// FIXME: offscreenレンダリング可能か？
     /**
-     * <h4>表示用video</h4>
+     * 表示用video
      * @property video
      * @type {DOM}
      */
@@ -44,7 +42,7 @@ export default class WebCamera extends Events {
 
     /**
      * options
-     * @type {Object}
+     * @type {object}
      */
     this.options = utils.mixin(true, {
       constraints: {
@@ -60,14 +58,14 @@ export default class WebCamera extends Events {
    * @return {WebCamera}
    */
   setup(){
-    getUserMedia(this.options.constraints)
+		navigator.mediaDevices.getUserMedia(
+			this.options.constraints
+		)
     .then(
       (stream) => {
         this.trigger(this._EVENTS.DONE, stream);
-        this.video.src = window.URL.createObjectURL(stream);
-        this.video.onloadedmetadata = (evt) => {
-          this.trigger(this._EVENTS.LOAD, evt);
-        };
+				this.video.srcObject = stream;
+				this.trigger(this._EVENTS.LOAD);
       }
     )
     .catch((err) => {
@@ -97,12 +95,4 @@ export default class WebCamera extends Events {
     this.video.pause();
     return this;
   }
-
-
-  // /**
-  //  * @static
-  //  * @method getUserMedia
-  //  * @return {getUserMedia}
-  //  */
-  // static getUserMedia
 }

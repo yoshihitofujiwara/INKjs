@@ -8,7 +8,7 @@ import Events from "../ink/class_events/Events";
 // import is from "../ink/utils/is";
 
 /**
- * <h4>Loader</h4>
+ * Loader
  * <p>imagesLoadedに依存</p>
  * @class Loader
  * @extends Events
@@ -24,14 +24,14 @@ export default class Loader extends Events {
     super();
 
     /**
-     * <h4>読み込み対象wrap要素</h4>
+     * 読み込み対象wrap要素
      * @property elm
      * @type {DOM}
      */
     this.elm = elm || "body";
 
     /**
-     * <h4>読み込み対象wrap要素</h4>
+     * 読み込み対象wrap要素
      * @property elm
      * @type {DOM}
      */
@@ -40,69 +40,69 @@ export default class Loader extends Events {
     }, options);
 
     /**
-     * <h4>imagesloadedオブジェクト</h4>
+     * imagesloadedオブジェクト
      * @property imagesLoaded
      * @type {imagesloaded}
      */
     this.imagesLoaded = null;
 
     /**
-     * <h4>画像読み状況をカウントアップ(0から1まで)</h4>
+     * 画像読み状況をカウントアップ(0から1まで)
      * @property updateCount
      * @type {Number}
      */
     this.loadCount = 0;
 
     /**
-     * <h4>読み込み完了画像点数</h4>
+     * 読み込み完了画像点数
      * @property loadedLength
      * @type {Number}
      */
     this.loadedLength = 0;
 
     /**
-     * <h4>Loaderイベントタイプ</h4>
+     * Loaderイベントタイプ
      * @private
      * @property _EVENT_TYPE
      * @type {Object}
      */
     /**
-     * <h4>カウントアップ毎呼び出すイベント名</h4>
+     * カウントアップ毎呼び出すイベント名
      * @private
      * @property EVENTS.COUNT
      * @default "update"
      * @type {String}
      */
     /**
-     * <h4>画像処理完了（成功・失敗）毎呼び出すイベント名</h4>
+     * 画像処理完了（成功・失敗）毎呼び出すイベント名
      * @private
      * @property EVENTS.PROGRESS
      * @default "progress"
      * @type {String}
      */
     /**
-     * <h4>画像読込み失敗毎呼び出すイベント名</h4>
+     * 画像読込み失敗毎呼び出すイベント名
      * @private
      * @property EVENTS.FAIL
      * @default "fail"
      * @type {String}
      */
     /**
-     * <h4>画像読込み成功毎呼び出すイベント名</h4>
+     * 画像読込み成功毎呼び出すイベント名
      * @private
      * @property EVENTS.DONE
      * @default "done"
      * @type {String}
      */
     /**
-     * <h4>画像全て読込み処理完了時、呼び出すイベント名</h4>
+     * 画像全て読込み処理完了時、呼び出すイベント名
      * @private
      * @property EVENTS.ALWAYS
      * @default "always"
      * @type {String}
      */
     /**
-     * <h4>画像読込みカウント終了時、呼び出すイベント名</h4>
+     * 画像読込みカウント終了時、呼び出すイベント名
      * @private
      * @property EVENTS.COUNT_COMPLEAT
      * @default "compleat"
@@ -120,7 +120,7 @@ export default class Loader extends Events {
 
 
   /**
-   * <h4>load開始</h4>
+   * load開始
    * @method load
    * @return {jQuery.Deferred} jQuery.Deferred.promiseを返す
    */
@@ -160,7 +160,7 @@ export default class Loader extends Events {
 
 
   /**
-   * <h4>カウントアップデート</h4>
+   * カウントアップデート
    * @private
    * @method _update
    * @return {Void}

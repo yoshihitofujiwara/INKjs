@@ -13,15 +13,15 @@
     @constructor
   ----------------------------------------------------------------------*/
   /**
-   * <h4>ParticleInterface</h4>
-   * <p>パーティクルクラスのインターフェース定義</p>
+   * ParticleInterface
+   * パーティクルクラスのインターフェース定義
    *
    * @constructor
    * @class AMP.ParticleInterface
    * @extends AMP.BaseClass
    * @param {Number|AMP.Vector2} x x座標 もしくは座標オブジェクト
-   * @param {Number} y y座標
-   * @param {Object} option値
+   * @param {number} y y座標
+   * @param {object} option値
    */
   function ParticleInterface(x, y, options){
     // super class call
@@ -42,7 +42,7 @@
     });
 
     /**
-     * <h4>座標</h4>
+     * 座標
      *
      * @property position
      * @type {AMP.Vector2}
@@ -50,7 +50,7 @@
     this.position = new AMP.Vector2(x, y);
 
     /**
-     * <h4>加速度</h4>
+     * 加速度
      *
      * @private
      * @property acceleration
@@ -71,62 +71,62 @@
     @property
   --------------------------------------------------------------------------*/
   /**
-   * <h4>バージョン情報</h4>
+   * バージョン情報
    *
    * @static
    * @property VERSION
-   * @type {String}
+   * @type {string}
    */
   ParticleInterface.VERSION = '1.0.0';
 
 
   /**
-   * <h4>デフォルト値オブジェクト</h4>
-   * <p>コンストラクタが呼び出し時に、引数とoptionsをmixinしてプロパティとしてエクスポートします</p>
+   * デフォルト値オブジェクト
+   * コンストラクタが呼び出し時に、引数とoptionsをmixinしてプロパティとしてエクスポートします
    *
    * @static
    * @property OPTIONS
-   * @type {Object}
+   * @type {object}
    */
   /**
-   * <h4>スピード（加速度）</h4>
+   * スピード（加速度）
    *
    * @static
    * @property OPTIONS.velocity
    * @type {AMP.Vector2}
    */
   /**
-   * <h4>質量</h4>
+   * 質量
    *
    * @static
    * @property OPTIONS.mass
    * @default 1
-   * @type {Number}
+   * @type {number}
    */
   /**
-   * <h4>摩擦係数</h4>
+   * 摩擦係数
    *
    * @static
    * @property OPTIONS.friction
    * @default 1
-   * @type {Number}
+   * @type {number}
    */
   /**
-   * <h4>減衰値</h4>
+   * 減衰値
    *
    * @static
    * @property OPTIONS.damping
    * @default 1
-   * @type {Number}
+   * @type {number}
    */
   /**
-   * <h4>加速度の最大値</h4>
-   * <p>初期値はリミット無し</p>
+   * 加速度の最大値
+   * 初期値はリミット無し
    *
    * @static
    * @property OPTIONS.maxSpeed
    * @default null
-   * @type {Number}
+   * @type {number}
    */
   ParticleInterface.OPTIONS = {
     velocity: AMP.Vector2.radToVector2(0, 0), // angle, speed
@@ -142,12 +142,12 @@
     @method
   --------------------------------------------------------------------------*/
   /**
-   * <h4>ParticleInterfaceインスタンスの生成</h4>
+   * ParticleInterfaceインスタンスの生成
    *
    * @static
-   * @param {Number} x x座標
-   * @param {Number} y y座標
-   * @param {Object} option値
+   * @param {number} x x座標
+   * @param {number} y y座標
+   * @param {object} option値
    * @return {ParticleInterface}
    */
   ParticleInterface.get = function(x, y, options){
@@ -158,7 +158,7 @@
   /* Utils
   -----------------------------------------------------------------*/
   /**
-   * <h4>加速度の取得</h4>
+   * 加速度の取得
    *
    * @method speed
    * @return {ParticleInterface}
@@ -169,7 +169,7 @@
 
 
   /**
-   * <h4>加速度の設定</h4>
+   * 加速度の設定
    *
    * @method speed
    * @return {ParticleInterface}
@@ -181,11 +181,11 @@
 
 
   /**
-   * <h4>加速度の向きを取得</h4>
+   * 加速度の向きを取得
    *
    * @method angle
    * @param {Boolean} isDegrees 角度で返すか
-   * @return {Number} ラジアン角、角度
+   * @return {number} ラジアン角、角度
    */
   p.getAngle = function(isDegrees){
     if(isDegrees){
@@ -197,10 +197,10 @@
 
 
   /**
-   * <h4>加速度の向きの設定</h4>
+   * 加速度の向きの設定
    *
    * @method setAngle
-   * @param {Number} angle ラジアン角、角度
+   * @param {number} angle ラジアン角、角度
    * @param {Boolean} isDegrees 第一引数が角度か
    * @return {ParticleInterface}
    */
@@ -212,12 +212,12 @@
 
 
   /**
-   * <h4>パーティクルとの角度の差を返します</h4>
+   * パーティクルとの角度の差を返します
    *
    * @method angleTo
    * @param  {ParticleInterface}  particle 比較するパーティクル
    * @param  {Boolean} isDegrees 角度で返すか
-   * @return {Number}
+   * @return {number}
    */
   p.angleTo = function(particle, isDegrees){
     var p = particle.position.toJSON(),
@@ -232,12 +232,12 @@
 
 
   /**
-   * <h4>指定の座標との距離を返す</h4>
+   * 指定の座標との距離を返す
    *
    * @method distanceTo
    * @param  {Number|Vector2} x x座標、もしくはVector2座標
-   * @param  {Number} y y座標
-   * @return {Number}
+   * @param  {number} y y座標
+   * @return {number}
    */
   p.distanceTo = function(x, y){
     var p = new AMP.Vector2(x, y);
@@ -246,8 +246,8 @@
 
 
   /**
-   * <h4>力を加えます</h4>
-   * <p>F = M * A</p>
+   * 力を加えます
+   * F = M * A
    *
    * @method applyForce
    * @param  {Vector2} force Vector2オブジェクト
@@ -260,7 +260,7 @@
 
 
   /**
-   * <h4>プロパティの更新</h4>
+   * プロパティの更新
    *
    * @method update
    * @return {ParticleInterface}
@@ -292,8 +292,8 @@
 
 
   /**
-   * <h4>アップデート後に、値のチェックを行います</h4>
-   * <p>インターフェースのみ実装</p>
+   * アップデート後に、値のチェックを行います
+   * インターフェースのみ実装
    *
    * @interface
    * @method validate
@@ -303,8 +303,8 @@
 
 
   /**
-   * <h4>パーティクルの生死判定</h4>
-   * <p>インターフェースのみ実装</p>
+   * パーティクルの生死判定
+   * インターフェースのみ実装
    *
    * @interface
    * @method isDead
@@ -314,8 +314,8 @@
 
 
   /**
-   * <h4>描画を行います</h4>
-   * <p>インターフェースのみ実装</p>
+   * 描画を行います
+   * インターフェースのみ実装
    *
    * @interface
    * @method draw

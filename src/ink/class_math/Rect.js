@@ -9,13 +9,16 @@ import Vector2 from "./Vector2";
 import Size from "./Size";
 
 
+// FIXME: class_graphicsに移動
+// FIXME: PIXIに合わす
+// see: https://github.com/pixijs/pixi.js/blob/dev/packages/graphics/src/utils/buildRectangle.js
 /**
- * <h4>Rect</h4>
+ * Rect
  * @class Rect
- * @param {Number} x x座標
- * @param {Number} y y座標
- * @param {Number} width 幅
- * @param {Number} height 高さ
+ * @param {number} x x座標
+ * @param {number} y y座標
+ * @param {number} width 幅
+ * @param {number} height 高さ
  */
 export default class Rect {
   /**
@@ -23,14 +26,14 @@ export default class Rect {
    */
   constructor(x, y, width, height){
     /**
-     * <h4>座標</h4>
+     * 座標
      * @property position
      * @type {Vector2}
      */
     this.position = new Vector2(x, y);
 
     /**
-     * <h4>サイズ</h4>
+     * サイズ
      * @property size
      * @type {Size}
      */
@@ -39,7 +42,7 @@ export default class Rect {
 
 
   /**
-   * <h4>衝突判定</h4>
+   * 衝突判定
    * @static
    * @method isCollision
    * @param  {Rect}  rect1 矩形1
@@ -59,7 +62,7 @@ export default class Rect {
 
 
   /**
-   * <h4>座標を含んでいるか</h4>
+   * 座標を含んでいるか
    * @method inside
    * @param  {Rect}  rect 矩形
    * @param  {Vector2} vec2 Vector2

@@ -8,7 +8,7 @@ import Events from "../ink/class_events/Events";
 import {preload} from "../ink/utils/utility";
 
 /**
- * <h4>ロールオーバー</h4>
+ * ロールオーバー
  * @class Rollover
  * @extends Events
  * @constructor
@@ -21,36 +21,36 @@ export default class Rollover extends Events {
     super();
 
     /**
-     * <h4>オプションのデフォルト値</h4>
+     * オプションのデフォルト値
      * @property options
      * @type {Object}
      */
     /**
-     * <h4>グループクラス名</h4>
+     * グループクラス名
      * @property options.groupClass
      * @default group_rover
      * @type {String}
      */
     /**
-     * <h4>アクティブクラス名</h4>
+     * アクティブクラス名
      * @property options.activeClass
      * @default active
      * @type {String}
      */
     /**
-     * <h4>ノーロールオーバークラス名</h4>
+     * ノーロールオーバークラス名
      * @property options.noOverClass
      * @default no_rover
      * @type {String}
      */
     /**
-     * <h4>ロールオーバー時に付与するファイル名</h4>
+     * ロールオーバー時に付与するファイル名
      * @property options.postfix
      * @default _on
      * @type {String}
      */
     /**
-     * <h4>ロールオーバークラス名初期値</h4>
+     * ロールオーバークラス名初期値
      * @property images
      * @type {String}
      */
@@ -65,7 +65,7 @@ export default class Rollover extends Events {
 
 
   /**
-   * <h4>ロールオーバーイベント追加</h4>
+   * ロールオーバーイベント追加
    * @method bind
    * @param {jQuery} $images 対象の画像要素
    * @param {Object} options オプション値
@@ -107,7 +107,7 @@ export default class Rollover extends Events {
 
 
   /**
-   * <h4>ロールオーバーイベント削除</h4>
+   * ロールオーバーイベント削除
    * @method unbind
    * @param {jQuery} $images 対象の画像要素
    * @param {Object} options オプション値
@@ -133,7 +133,7 @@ export default class Rollover extends Events {
 
 
   /**
-   * <h4>画像のアクティブ化</h4>
+   * 画像のアクティブ化
    * @method active
    * @param {jQuery} $images 対象の画像要素
    * @param {Object} options オプション値
@@ -167,7 +167,7 @@ export default class Rollover extends Events {
 
 
   /**
-   * <h4>画像を待機状態にする</h4>
+   * 画像を待機状態にする
    * @method passive
    * @param {jQuery} $images 対象の画像要素
    * @param {Object} options オプション値
@@ -201,7 +201,7 @@ export default class Rollover extends Events {
 
 
   /**
-   * <h4>ロールオーバーデータの生成</h4>
+   * ロールオーバーデータの生成
    * @method _createRolloverData
    * @private
    * @param {jQuery} $images 対象の画像要素

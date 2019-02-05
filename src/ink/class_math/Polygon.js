@@ -4,3 +4,4 @@
 /// Author Yoshihito Fujiwara
 /// Copyright (c) 2012 Yoshihito Fujiwara
 
+// FIXME: class_graphicsに移動
