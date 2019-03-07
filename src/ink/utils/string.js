@@ -66,7 +66,7 @@ export function digit() {
  * @static
  * @method objectToQuery
  * @param  {Object} obj 対象のオブジェクト
- * @param  {Boolean} isQuestion 先頭に?加えるか ※初期false
+ * @param  {boolean} isQuestion 先頭に?加えるか ※初期false
  * @return {String}
  */
 export function objectToQuery(obj, isQuestion = false) {

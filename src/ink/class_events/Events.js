@@ -214,7 +214,7 @@ export default class Events {
    * 登録イベントがあるか判定します
    * @method hasEvent
    * @param {string} type イベントタイプ
-   * @return {Boolean}
+   * @return {boolean}
    */
 	hasEvent(type) {
 		let flag = false,

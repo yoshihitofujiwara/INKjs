@@ -258,7 +258,7 @@ export function factorial(num) {
  * @param  {number} val 数値
  * @param  {number} min 最小値
  * @param  {number} max 最大値
- * @return {Boolean}
+ * @return {boolean}
  */
 export function inRange(val, min, max) {
 	return val >= Math.min(min, max) && val <= Math.max(min, max);
@@ -273,7 +273,7 @@ export function inRange(val, min, max) {
  * @param  {number} rangeMax1 範囲1の最大値
  * @param  {number} rangeMin2 範囲2の最小値
  * @param  {number} rangeMax2 範囲2の最大値
- * @return {Boolean}
+ * @return {boolean}
  */
 export function isIntersect(rangeMin1, rangeMax1, rangeMin2, rangeMax2) {
 	return Math.max(rangeMin1, rangeMax1) >= Math.min(rangeMin2, rangeMax2) &&

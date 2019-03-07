@@ -61,7 +61,7 @@
    * @static
    * @property OPTIONS.g
    * @default 1
-   * @type {Vector2}
+   * @type {vector2}
    */
   Attractor.OPTIONS = Attractor.OPTIONS || {};
   Attractor.OPTIONS.g = 1;

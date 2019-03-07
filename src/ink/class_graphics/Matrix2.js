@@ -239,7 +239,7 @@
 	 *
 	 * @method rotate
 	 * @param  {number}  angle    角度(Degrees)
-	 * @param  {Boolean} isRadian 第1引数をラジアン指定するか
+	 * @param  {boolean} isRadian 第1引数をラジアン指定するか
 	 * @return {Mat2}
 	 */
 	p.rotate = function(angle, isRadian){

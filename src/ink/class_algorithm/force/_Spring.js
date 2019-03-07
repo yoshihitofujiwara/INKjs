@@ -123,7 +123,7 @@
    * @method getForce
    * @param  {Number|Vector2} x 座標
    * @param  {number} y 座標
-   * @return {Vector2}
+   * @return {vector2}
    */
   p.getForce = function(x, y){
     var force = AMP.Vector2.sub(this.position, new AMP.Vector2(x, y));

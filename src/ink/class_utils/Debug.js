@@ -226,7 +226,7 @@ export default class Debug {
    * ログの表示状態
    * @static
    * @method isShow
-   * @return {Boolean}
+   * @return {boolean}
    */
   static isShow(){
     return _isShow;

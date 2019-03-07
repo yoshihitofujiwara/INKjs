@@ -33,7 +33,7 @@ export function base64FileSize(base64) {
  * オブジェクトの拡張
  * @static
  * @method mixin
- * @param {Boolean} isDeep ディープコピーするか 初期値: false 省略可
+ * @param {boolean} isDeep ディープコピーするか 初期値: false 省略可
  * @param {object} arguments 拡張するオブジェクト
  * @return {object} 拡張したオブジェクトを返します
  */

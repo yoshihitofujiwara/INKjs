@@ -53,7 +53,7 @@ export default class Mediaquery extends Events {
      * 要素を監視しているか
      * @property isObserver
      * @default false
-     * @type {Boolean}
+     * @type {boolean}
      */
 		this.isObserver = false;
 

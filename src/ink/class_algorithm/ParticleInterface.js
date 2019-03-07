@@ -54,7 +54,7 @@
      *
      * @private
      * @property acceleration
-     * @type {Vector2}
+     * @type {vector2}
      */
     this.acceleration = new AMP.Vector2();
   }
@@ -184,7 +184,7 @@
    * 加速度の向きを取得
    *
    * @method angle
-   * @param {Boolean} isDegrees 角度で返すか
+   * @param {boolean} isDegrees 角度で返すか
    * @return {number} ラジアン角、角度
    */
   p.getAngle = function(isDegrees){
@@ -201,7 +201,7 @@
    *
    * @method setAngle
    * @param {number} angle ラジアン角、角度
-   * @param {Boolean} isDegrees 第一引数が角度か
+   * @param {boolean} isDegrees 第一引数が角度か
    * @return {ParticleInterface}
    */
   p.setAngle = function(angle, isDegrees){
@@ -216,7 +216,7 @@
    *
    * @method angleTo
    * @param  {ParticleInterface}  particle 比較するパーティクル
-   * @param  {Boolean} isDegrees 角度で返すか
+   * @param  {boolean} isDegrees 角度で返すか
    * @return {number}
    */
   p.angleTo = function(particle, isDegrees){
@@ -250,7 +250,7 @@
    * F = M * A
    *
    * @method applyForce
-   * @param  {Vector2} force Vector2オブジェクト
+   * @param  {vector2} force Vector2オブジェクト
    * @return {Mover}
    */
   p.applyForce = function(force){
@@ -308,7 +308,7 @@
    *
    * @interface
    * @method isDead
-   * @return {Boolean}
+   * @return {boolean}
    */
   p.isDead = function(){};
 

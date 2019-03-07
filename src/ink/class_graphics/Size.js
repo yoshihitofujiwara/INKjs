@@ -130,7 +130,7 @@ export default class Size {
 	/**
 	 * 0サイズ判定
 	 * @method isZero
-	 * @return {Boolean}
+	 * @return {boolean}
 	 */
 	isZero(){
 		return this.width === 0 && this.height === 0;
@@ -142,7 +142,7 @@ export default class Size {
 	 * 可変長引数で複数のオブジェクト判定可能
 	 * @method equals
 	 * @param {Size} size sizeインスタンス
-	 * @return {Boolean}
+	 * @return {boolean}
 	 */
 	equals(size){
 		return (this.width === size.width && this.height === size.height);

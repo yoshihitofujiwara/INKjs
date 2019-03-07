@@ -10,9 +10,6 @@ import Vector2 from './Vector2';
 import Circle from './Circle';
 
 
-
-
-// FIXME: class_graphicsに移動
 /*----------------------------------------------------------------------
   @constructor
 ----------------------------------------------------------------------*/
@@ -21,24 +18,27 @@ import Circle from './Circle';
  *
  * @class Triangle
  * @constructor
- * @param {Vector2} vertexA 頂点A
- * @param {Vector2} vertexB 頂点B
- * @param {Vector2} vertexC 頂点C
+ * @param {vector2} vertexA 頂点A
+ * @param {vector2} vertexB 頂点B
+ * @param {vector2} vertexC 頂点C
  */
 export default class Triangle {
   /**
    * constructor
    */
-  constructor(vertexA, vertexB, vertexC) {
+  constructor(pointA, pointB, pointC) {
     /**
      * 頂点データ
-     * @property vertices
+     * @property points
      * @type {array}
      */
-    this.vertices = [vertexA, vertexB, vertexC];
+    this.points = [pointA, pointB, pointC];
   }
 
 
+	/*--------------------------------------------------------------------------
+		@method
+	--------------------------------------------------------------------------*/
   /**
    * クローンを生成
    *
@@ -46,18 +46,20 @@ export default class Triangle {
    * @return {Triangle}
    */
   clone(){
-    return new Triangle(this.vertices[0], this.vertices[1], this.vertices[2]);
+    return new Triangle(this.points[0], this.points[1], this.points[2]);
   }
 
 
+	/* static
+	--------------------------------------------------------------------------*/
   /**
    * 3点の座標から外接円を求めます
    *
    * @static
    * @method outerCircle
-   * @param {Vector2} vertexA 頂点A
-   * @param {Vector2} vertexB 頂点B
-   * @param {Vector2} vertexC 頂点C
+   * @param {vector2} vertexA 頂点A
+   * @param {vector2} vertexB 頂点B
+   * @param {vector2} vertexC 頂点C
    * @return {Circle} 中心座標、半径の円データ
    */
   static outerCircle(vertexA, vertexB, vertexC){
@@ -77,7 +79,7 @@ export default class Triangle {
     p = ((bX - aX) * (cY - aY) - (bY - aY) * (cX - aX)) * 2,
     x = ((cY - aY) * (bX2 - aX2 + bY2 - aY2) + (aY - bY) * (cX2 - aX2 + cY2 - aY2)) / p,
     y = ((aX - cX) * (bX2 - aX2 + bY2 - aY2) + (bX - aX) * (cX2 - aX2 + cY2 - aY2)) / p,
-    vector = {x: x, y: y},
+    // vector = {x: x, y: y},
     radius = Vector2.dist({x: x, y: y}, vertexA);
 
     return new Circle(x, y, radius);
@@ -89,9 +91,9 @@ export default class Triangle {
    *
    * @static
    * @method innerCircle
-   * @param {Vector2} vertexA 頂点A
-   * @param {Vector2} vertexB 頂点B
-   * @param {Vector2} vertexC 頂点C
+   * @param {vector2} vertexA 頂点A
+   * @param {vector2} vertexB 頂点B
+   * @param {vector2} vertexC 頂点C
    * @return {Circle} 中心座標、半径の円データ
    */
   static innerCircle(vertexA, vertexB, vertexC){
@@ -115,9 +117,9 @@ export default class Triangle {
    *
    * @static
    * @method excenter
-   * @param {Vector2} vertexA 頂点A
-   * @param {Vector2} vertexB 頂点B
-   * @param {Vector2} vertexC 頂点C
+   * @param {vector2} vertexA 頂点A
+   * @param {vector2} vertexB 頂点B
+   * @param {vector2} vertexC 頂点C
    * @return {array} 傍接円a,b,cの座標、半径の円データ
    */
   static excenter(vertexA, vertexB, vertexC){
@@ -158,10 +160,10 @@ export default class Triangle {
    *
    * @static
    * @method orthocenter
-   * @param {Vector2} vertexA 頂点A
-   * @param {Vector2} vertexB 頂点B
-   * @param {Vector2} vertexC 頂点C
-   * @return {Vector2} 垂心座標
+   * @param {vector2} vertexA 頂点A
+   * @param {vector2} vertexB 頂点B
+   * @param {vector2} vertexC 頂点C
+   * @return {vector2} 垂心座標
    */
   static orthocenter(vertexA, vertexB, vertexC){
     let sides = Triangle.verticesToSides(vertexA, vertexB, vertexC),
@@ -191,10 +193,10 @@ export default class Triangle {
    * 3点の座標から重心座標を求めます
    * @static
    * @method centerGravity
-   * @param {Vector2} vertexA 頂点A
-   * @param {Vector2} vertexB 頂点B
-   * @param {Vector2} vertexC 頂点C
-   * @return {Vector2} 重心座標
+   * @param {vector2} vertexA 頂点A
+   * @param {vector2} vertexB 頂点B
+   * @param {vector2} vertexC 頂点C
+   * @return {vector2} 重心座標
    */
   static centerGravity(vertexA, vertexB, vertexC){
     return new Vector2({
@@ -208,9 +210,9 @@ export default class Triangle {
    * 三点の座標から辺の長さを返す
    * @static
    * @method offsetsToSides
-   * @param {Vector2} vertexA 頂点A
-   * @param {Vector2} vertexB 頂点B
-   * @param {Vector2} vertexC 頂点C
+   * @param {vector2} vertexA 頂点A
+   * @param {vector2} vertexB 頂点B
+   * @param {vector2} vertexC 頂点C
    * @return {array} a, b, cの辺の長さ
    */
   static verticesToSides(vertexA, vertexB, vertexC){
@@ -226,9 +228,9 @@ export default class Triangle {
    * 頂点から角度を求める
    * @static
    * @method verticesToAngles
-   * @param {Vector2} vertexA 頂点A
-   * @param {Vector2} vertexB 頂点B
-   * @param {Vector2} vertexC 頂点C
+   * @param {vector2} vertexA 頂点A
+   * @param {vector2} vertexB 頂点B
+   * @param {vector2} vertexC 頂点C
    * @return {array} a, b, c各辺の角度
    */
   static verticesToAngles (vertexA, vertexB, vertexC){
@@ -248,17 +250,17 @@ export default class Triangle {
   /**
    * 三角形内に座標を含んでいるか
    * @static
-   * @method inside
+   * @method inPoint
    * @param  {Triangle} triangle triangle
-   * @param  {Vector2} vec2 Vector2
-   * @return {Boolean}
+   * @param  {vector2} vec2 Vector2
+   * @return {boolean}
    */
-  static inside(triangle, vec2){
+  static inPoint(triangle, point){
     let flag = true;
 
     utils.each(triangle.vertices, (v, i) => {
       let n = (i + 1) % 3;
-			if (Triangle.ccw(vec2, v, triangle.vertices[n]) < 0){
+			if (Triangle.ccw(point, v, triangle.vertices[n]) < 0){
         flag = false;
         return false;
       }

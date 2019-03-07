@@ -16,7 +16,7 @@ let url = window.location;
  * @static
  * @method hasHash
  * @param {string} key ハッシュ名 省略可
- * @return {Boolean}
+ * @return {boolean}
  */
 export function hasHash(key) {
 	let flag = false;
@@ -50,7 +50,7 @@ export function hasHash(key) {
  * @method hasString
  * @param {string} str 対象の文字列
  * @param {string} haStr 検索文字
- * @return {Boolean}
+ * @return {boolean}
  */
 export function hasString(str, hasStr) {
 	return is.isString(str) && str.indexOf(hasStr) > -1;
@@ -62,7 +62,7 @@ export function hasString(str, hasStr) {
  * @static
  * @method hasUA
  * @param {string} str 指定の文字列
- * @return {Boolean}
+ * @return {boolean}
  */
 export function hasUA(str) {
 	return is.ua.indexOf(str) > -1;

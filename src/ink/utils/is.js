@@ -39,7 +39,7 @@ export const ua = UA.toLowerCase();
  * @static
  * @method isArray
  * @param {object} obj 判定するオブジェクト
- * @return {Boolean}
+ * @return {boolean}
  */
 export const isArray = Array.isArray || function (obj) {
 	return toString.call(obj) === "[object Array]";
@@ -51,7 +51,7 @@ export const isArray = Array.isArray || function (obj) {
  * @static
  * @method isBoolean
  * @param {object} obj 判定するオブジェクト
- * @return {Boolean}
+ * @return {boolean}
  */
 export function isBoolean(obj) {
 	return toString.call(obj) === "[object Boolean]";
@@ -63,7 +63,7 @@ export function isBoolean(obj) {
  * @static
  * @method isFunction
  * @param {object} obj 判定するオブジェクト
- * @return {Boolean}
+ * @return {boolean}
  */
 export function isFunction(obj) {
 	return toString.call(obj) === "[object Function]";
@@ -75,7 +75,7 @@ export function isFunction(obj) {
  * @static
  * @method isNumber
  * @param {object} obj 判定するオブジェクト
- * @return {Boolean}
+ * @return {boolean}
  */
 export function isNumber(obj) {
 	return toString.call(obj) === "[object Number]";
@@ -87,7 +87,7 @@ export function isNumber(obj) {
  * @static
  * @method isObject
  * @param {object} obj 判定するオブジェクト
- * @return {Boolean}
+ * @return {boolean}
  */
 export function isObject(obj) {
 	return !!obj && toString.call(obj) === "[object Object]";
@@ -99,7 +99,7 @@ export function isObject(obj) {
  * @static
  * @method isPlainObject
  * @param {object} obj 判定するオブジェクト
- * @return {Boolean}
+ * @return {boolean}
  */
 export function isPlainObject(obj) {
 	return isObject(obj) && Object.keys(obj).length === 0;
@@ -111,7 +111,7 @@ export function isPlainObject(obj) {
  * @static
  * @method isString
  * @param {object} obj 判定するオブジェクト
- * @return {Boolean}
+ * @return {boolean}
  */
 export function isString(obj) {
 	return toString.call(obj) === "[object String]";
@@ -123,7 +123,7 @@ export function isString(obj) {
  * @static
  * @method isRegexp
  * @param {object} obj 判定するオブジェクト
- * @return {Boolean}
+ * @return {boolean}
  */
 export function isRegexp(obj) {
 	return toString.call(obj) === "[object RegExp]";
@@ -135,7 +135,7 @@ export function isRegexp(obj) {
  * @static
  * @method isUndefined
  * @param {object} obj 判定するオブジェクト
- * @return {Boolean}
+ * @return {boolean}
  */
 export function isUndefined(obj) {
 	return obj === void 0;
@@ -147,7 +147,7 @@ export function isUndefined(obj) {
  * @static
  * @method isNull
  * @param {object} obj 判定するオブジェクト
- * @return {Boolean}
+ * @return {boolean}
  */
 export function isNull(obj) {
 	return obj === null || toString.call(obj) === "[object Null]";
@@ -159,7 +159,7 @@ export function isNull(obj) {
  * @static
  * @method isMultibyte
  * @param  {string}  chara 一文字
- * @return {Boolean}
+ * @return {boolean}
  */
 export function isMultibyte(chara) {
 	return ('!"#$%&\'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~'.indexOf(chara) < 0);
@@ -169,7 +169,7 @@ export function isMultibyte(chara) {
 /**
  * isEmail Email判定
  * @param  {string}  email メールアドレス
- * @return {Boolean}
+ * @return {boolean}
  */
 export function isEmail(email) {
 	return email.match(/.+@.+\..+/) !== null;
@@ -184,7 +184,7 @@ export function isEmail(email) {
  * @method isOS
  * @param {string} os OS名 [windows, mac, ios, android]
  * @param {String|Number} ver バージョンナンバー Android ios のみ有効
- * @return {Boolean}
+ * @return {boolean}
  */
 export function isOS(os, ver) {
 	let _os = os.toLowerCase();
@@ -209,7 +209,7 @@ export function isOS(os, ver) {
  * @static
  * @method isWindows
  * @param {Number|String} バージョン名[7, 8, 8.1, 10] 省略可
- * @return {Boolean}
+ * @return {boolean}
  */
 export function isWindows(ver) {
 	if (ver) {
@@ -244,7 +244,7 @@ export function isWindows(ver) {
  * @static
  * @method isMac
  * @param {Number|String} バージョンナンバー 省略可
- * @return {Boolean}
+ * @return {boolean}
  */
 export function isMac(ver) {
 	if (ver) {
@@ -261,7 +261,7 @@ export function isMac(ver) {
  * @static
  * @method isIos
  * @param {Number|String} バージョンナンバー 省略可
- * @return {Boolean}
+ * @return {boolean}
  */
 export function isIos(ver) {
 	if (ver) {
@@ -278,7 +278,7 @@ export function isIos(ver) {
  * @static
  * @method isAndroid
  * @param {Number|String} バージョンナンバー 省略可
- * @return {Boolean}
+ * @return {boolean}
  */
 export function isAndroid(ver) {
 	if (ver) {
@@ -307,7 +307,7 @@ export function isAndroid(ver) {
  * iPod | ipod <br>
  * Android Phone | androidPhone <br>
  * Android Tablet | androidTablet
- * @return {Boolean}
+ * @return {boolean}
  */
 export function isDevice(device) {
 	let _device = device.toLowerCase();
@@ -340,7 +340,7 @@ export function isDevice(device) {
  * PC判定
  * @static
  * @method isPC
- * @return {Boolean}
+ * @return {boolean}
  */
 export function isPC() {
 	return isWindows() || isMac();
@@ -351,7 +351,7 @@ export function isPC() {
  * スマートデバイス判定
  * @static
  * @method isSmartDevice
- * @return {Boolean}
+ * @return {boolean}
  */
 export function isSmartDevice() {
 	return isIos() || isAndroid();
@@ -362,7 +362,7 @@ export function isSmartDevice() {
  * SmartPhone判定
  * @static
  * @method isSmartPhone
- * @return {Boolean}
+ * @return {boolean}
  */
 export function isSmartPhone() {
 	return ua.indexOf("iphone") > -1 || isAndroid() && ua.indexOf("mobile") > -1;
@@ -373,7 +373,7 @@ export function isSmartPhone() {
  * タブレット判定
  * @static
  * @method isTablet
- * @return {Boolean}
+ * @return {boolean}
  */
 export function isTablet() {
 	return ua.indexOf("ipad") > -1 || isAndroid() && ua.indexOf("mobile") < 0;
@@ -384,7 +384,7 @@ export function isTablet() {
  * iPhone判定
  * @static
  * @method isIPhone
- * @return {Boolean}
+ * @return {boolean}
  */
 export function isIPhone() {
 	return ua.indexOf("iphone") > -1;
@@ -395,7 +395,7 @@ export function isIPhone() {
  * iPad判定
  * @static
  * @method isIPad
- * @return {Boolean}
+ * @return {boolean}
  */
 export function isIPad() {
 	return ua.indexOf("ipad") > -1;
@@ -406,7 +406,7 @@ export function isIPad() {
  * iPod判定
  * @static
  * @method isIPod
- * @return {Boolean}
+ * @return {boolean}
  */
 export function isIPod() {
 	return ua.indexOf("ipod") > -1;
@@ -417,7 +417,7 @@ export function isIPod() {
  * AndroidPhone判定
  * @static
  * @method isAndroidPhone
- * @return {Boolean}
+ * @return {boolean}
  */
 export function isAndroidPhone() {
 	return isAndroid() && ua.indexOf("mobile") > -1;
@@ -428,7 +428,7 @@ export function isAndroidPhone() {
  * AndroidTablet判定
  * @static
  * @method isAndroidTablet
- * @return {Boolean}
+ * @return {boolean}
  */
 export function isAndroidTablet() {
 	return isAndroid() && ua.indexOf("mobile") < 0;
@@ -456,7 +456,7 @@ export function isAndroidTablet() {
  * Android Chrome | androidchrome <br>
  * Webkit Browser | webkit
  * @param {String | Number} ver バージョン (ie, mobileSafari, android) 省略可
- * @return {Boolean}
+ * @return {boolean}
  */
 export function isBrowser(browser, ver) {
 	let _browser = browser.toLowerCase();
@@ -494,7 +494,7 @@ export function isBrowser(browser, ver) {
  * @static
  * @method isIE
  * @param {number}  ver バージョンナンバー 省略可
- * @return {Boolean}
+ * @return {boolean}
  */
 export function isIE(ver) {
 	if (ver) {
@@ -511,7 +511,7 @@ export function isIE(ver) {
  * @static
  * @method isEdge
  * @param {Number|String}  ver バージョン名
- * @return {Boolean}
+ * @return {boolean}
  */
 export function isEdge(ver) {
 	ver = ver || "";
@@ -523,7 +523,7 @@ export function isEdge(ver) {
  * PC版 Chrome判定
  * @static
  * @method isChrome
- * @return {Boolean}
+ * @return {boolean}
  */
 export function isChrome(ver) {
 	if (ver) {
@@ -538,7 +538,7 @@ export function isChrome(ver) {
  * PC版 Firefox判定
  * @static
  * @method isFirefox
- * @return {Boolean}
+ * @return {boolean}
  */
 export function isFirefox(ver) {
 	if (ver) {
@@ -553,7 +553,7 @@ export function isFirefox(ver) {
  * PC版 Safari判定
  * @static
  * @method isSafari
- * @return {Boolean}
+ * @return {boolean}
  */
 export function isSafari(ver) {
 	if (ver) {
@@ -569,7 +569,7 @@ export function isSafari(ver) {
  * @static
  * @method isMobileSafari
  * @param {Number|String} ver バージョンナンバー  省略可
- * @return {Boolean}
+ * @return {boolean}
  */
 export function isMobileSafari(ver) {
 	if (ver) {
@@ -585,7 +585,7 @@ export function isMobileSafari(ver) {
  * @static
  * @method isAndroidBrowser
  * @param {Number|String} ver バージョンナンバー 省略可
- * @return {Boolean}
+ * @return {boolean}
  */
 export function isAndroidBrowser(ver) {
 	if (ver) {
@@ -601,7 +601,7 @@ export function isAndroidBrowser(ver) {
  * @static
  * @method isMobileChrome
  * @param {Number|String} ver バージョンナンバー 省略可
- * @return {Boolean}
+ * @return {boolean}
  */
 export function isMobileChrome(ver) {
 	return isIosChrome(ver) || isAndroidChrome(ver);
@@ -613,7 +613,7 @@ export function isMobileChrome(ver) {
  * @static
  * @method isIosChrome
  * @param {Number|String} ver バージョンナンバー 省略可
- * @return {Boolean}
+ * @return {boolean}
  */
 export function isIosChrome(ver) {
 	if (ver) {
@@ -629,7 +629,7 @@ export function isIosChrome(ver) {
  * @static
  * @method isAndroidChrome
  * @param {Number|String} ver バージョンナンバー 省略可
- * @return {Boolean}
+ * @return {boolean}
  */
 export function isAndroidChrome(ver) {
 	if (ver) {
@@ -644,7 +644,7 @@ export function isAndroidChrome(ver) {
  * webkit ブラウザ判定
  * @static
  * @method isWebkit
- * @return {Boolean}
+ * @return {boolean}
  */
 export function isWebkit() {
 	return ua.indexOf("webkit") > -1;
@@ -657,7 +657,7 @@ export function isWebkit() {
  * File APIの有無
  * @static
  * @method isFileAPI
- * @return {Boolean}
+ * @return {boolean}
  */
 export function isFileAPI() {
 	return !!(window.File && window.FileReader && window.FileList && window.Blob);
@@ -668,7 +668,7 @@ export function isFileAPI() {
  * RequestFileSystemの有無
  * @static
  * @method isRequestFileSystem
- * @return {Boolean}
+ * @return {boolean}
  */
 export function isRequestFileSystem() {
 	return !!(window.requestFileSystem || window.webkitRequestFileSystem);
@@ -679,7 +679,7 @@ export function isRequestFileSystem() {
  * Storage機能が使えるか判定
  * @static
  * @method isStorage
- * @return {Boolean}
+ * @return {boolean}
  */
 export function isStorage() {
 	let isStorage = "sessionStorage" in window && "localStorage" in window;
@@ -702,7 +702,7 @@ export function isStorage() {
  * TouchScreen判定
  * @static
  * @method isTouchScreen
- * @return {Boolean}
+ * @return {boolean}
  */
 export const isTouchScreen = (() => {
 	let isTouchScreen,

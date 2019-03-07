@@ -75,7 +75,7 @@ export default class Ticker extends Events {
      * tickイベントの再起処理呼び出されているか
      * @private
      * @property _isTick
-     * @type {Boolean}
+     * @type {boolean}
      */
 		this._isTick = false;
 
