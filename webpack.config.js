@@ -19,7 +19,7 @@ let plugins = [
 
 module.exports = {
   entry: {
-		"ink": `${JS}ink/ink.js`
+		"ink": `${JS}/ink.js`
   },
 
   output: {
