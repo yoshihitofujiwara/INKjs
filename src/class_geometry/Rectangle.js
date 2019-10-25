@@ -5,7 +5,6 @@
 /// Copyright (c) 2012 Yoshihito Fujiwara
 
 import * as utils from "../utils";
-import Vector2 from "./Vector2";
 import Point2 from "./Point2";
 
 
@@ -18,7 +17,7 @@ import Point2 from "./Point2";
  */
 export default class Rectangle extends Point2 {
 	/**
-	 *Creates an instance of Rectangle.
+   * constructor
 	 * @param {number} x
 	 * @param {number} y
 	 * @param {number} [width=0]

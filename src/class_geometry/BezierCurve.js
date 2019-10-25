@@ -10,7 +10,6 @@ import Vector2 from "./Vector2";
 
 
 /**
- * ベジェ曲線
  * @class BezierCurve
  * @param {array} vertices パスポイントリスト
  * @param {number} placing ベジェ曲線状の位置(0-1)
@@ -18,6 +17,8 @@ import Vector2 from "./Vector2";
 export default class BezierCurve {
   /**
    * constructor
+   * @param {array} vertices パス座標リスト
+   * @param {number} placing ベジェ曲線上の位置（正規化された値）
    */
 	constructor(vertices, placing) {
     /**
@@ -29,13 +30,14 @@ export default class BezierCurve {
 
     /**
      * ベジェ曲線上の位置（正規化された値）
-     * @properth placing
+     * @property placing
      * @type {number}
      */
 		this.placing = placing || 0;
 
     /**
-     * position 現在のポジション
+     * 現在のポジション
+     * @property position
      * @type {vector2}
      */
 		this.position = new Vector2(vertices[0].x, vertices[0].y);

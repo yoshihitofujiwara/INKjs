@@ -8,10 +8,7 @@
 import Vector2 from "./Vector2";
 
 
-// FIXME: class_graphicsに移動
-
 /**
- * Line
  * @class Line
  * @param {vector2} vec1 開始座標オブジェクト
  * @param {vector2} vec2 終了座標オブジェクト

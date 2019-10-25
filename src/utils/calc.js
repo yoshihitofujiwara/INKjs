@@ -170,26 +170,6 @@ export function diagonalToSideLength(diagonal) {
 /* Utilitys
 -----------------------------------------------------------------*/
 /**
- * 順序付けのために2つの引数を比較
- * 引数が等しい場合は0、2番目より小さい場合は負の整数、最初の引数が2番目の引数より大きい場合は正の整数を返す
- * @static
- * @method compare
- * @param  {number} num1 指定数値
- * @param  {number} num2 比較数値
- * @return {number} -1, 0, 1のいずれかの値
- */
-export function compare(num1, num2) {
-	if (num1 === num2) {
-		return 0;
-	} else if (num1 < num2) {
-		return -1;
-	} else {
-		return 1;
-	}
-};
-
-
-/**
  * 値の符号化
  * numが正なら+1.0、0.0なら0.0、負なら-1.0を返す
  * @static

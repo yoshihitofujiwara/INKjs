@@ -16,9 +16,9 @@ import * as is from "./is";
 
 /**
  * zeroPadding 数値桁数を揃える
- * @param  {Number} value 値
- * @param  {Number} digit 桁数 (1桁=1, 2桁=2)
- * @return {String}
+ * @param  {number} value 値
+ * @param  {number} digit 桁数 (1桁=1, 2桁=2)
+ * @return {string}
  */
 export function zeroPadding(value, digit, isBeyondValue) {
 	let _value = "" + value,
@@ -38,8 +38,8 @@ export function zeroPadding(value, digit, isBeyondValue) {
  *
  * @static
  * @method createId
- * @param {String} str id名 初期値: 'id_' 省略可
- * @return {String} 生成したid
+ * @param {string} str id名 初期値: 'id_' 省略可
+ * @return {string} 生成したid
  */
 export const createId = (() => {
 	let _count = 0;
@@ -51,23 +51,12 @@ export const createId = (() => {
 
 
 /**
- * ランダムな4桁のコードを返す
- * @static
- * @method digit
- * @return {String} ランダムな4桁のコード
- */
-export function digit() {
-	return (((1 + Math.random()) * 0x10000) | 0).toString(16).substring(1);
-};
-
-
-/**
  * objectToQuery オブジェクトをクエリ文字列に変換 (ネスト構造に再起処理はしません)
  * @static
  * @method objectToQuery
  * @param  {Object} obj 対象のオブジェクト
  * @param  {boolean} isQuestion 先頭に?加えるか ※初期false
- * @return {String}
+ * @return {string}
  */
 export function objectToQuery(obj, isQuestion = false) {
 	let query = "";
@@ -97,8 +86,8 @@ export function objectToQuery(obj, isQuestion = false) {
  * 空白文字の削除
  * @static
  * @method removeSpace
- * @param {String} str 対象の文字列
- * @return {String} 空白文字を削除した文字列
+ * @param {string} str 対象の文字列
+ * @return {string} 空白文字を削除した文字列
  */
 export function removeSpace(str) {
 	return str.replace(/\s+/g, "");
@@ -110,10 +99,10 @@ export function removeSpace(str) {
  * 対象の文字列と、削除文字列がマッチしたものを全置換します
  * @static
  * @method replaceAll
- * @param {String} str 置換対象の文字列
- * @param {String} del 削除する文字列
- * @param {String} add 追加する文字列
- * @return {String} 置換した文字列
+ * @param {string} str 置換対象の文字列
+ * @param {string} del 削除する文字列
+ * @param {string} add 追加する文字列
+ * @return {string} 置換した文字列
  */
 export function replaceAll(str, del, add) {
 	add = add ? add : "";
@@ -123,23 +112,12 @@ export function replaceAll(str, del, add) {
 
 /**
  * toHarfNumber 全角数値を半角数値へ変換
- * @param  {String} str 数値文字列
- * @return {String}
+ * @param  {string} str 数値文字列
+ * @return {string}
  */
 export function toHarfNumber(str) {
 	str = str.replace(/-/g, "");
 	return str.replace(/[０-９]/g, (s) => {
 		return String.fromCharCode(s.charCodeAt(0) - 0xFEE0);
 	});
-};
-
-
-/**
- * UUIDの生成して返す
- * @static
- * @method uuid
- * @return {String} UUID
- */
-export function uuid() {
-	return (digit() + digit() + "-" + digit() + "-" + digit() + "-" + digit() + "-" + digit() + digit() + digit());
 };

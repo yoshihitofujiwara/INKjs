@@ -4,13 +4,13 @@
 /// Author Yoshihito Fujiwara
 /// Copyright (c) 2012 Yoshihito Fujiwara
 
-export * from "./utils";
-export * from "./class_events";
-export * from "./class_utils";
-export * from "./class_graphics";
 // export * from "./class_algorithm"; 未実装
+export * from "./class_events";
+export * from "./class_geometry";
+export * from "./class_utils";
+export * from "./utils";
 
-const VERSION = "0.0.3";
+const VERSION = "0.0.4";
 
 export {
 	VERSION

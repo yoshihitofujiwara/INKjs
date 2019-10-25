@@ -43,15 +43,15 @@ export default class Debug {
    * @method _createView
    * @return {Void}
    */
-  static _createView(){
+  static _createView() {
     // view要素生成
-    let childNode = '<div style="min-width:250px;font-size:12px;background:#41454e;">\n<div style="padding:5px;line-height:12px;font-weight:bold;color:#f9f9f9!important;text-align:center;background:#272a32;">DEBUG</div>\n<textarea id="INKJS_DEBUG_TEXT" style="box-sizing:border-box;width:100%;min-height:150px;padding:10px;font-family:consolas;color:#272a32!important;font-size:14px;line-height:1.5;border:5px solid #41454e;"></textarea>\n</div>';
+    let childNode = '<div style="min-width:250px;font-size:12px;background:#41454e;">\n<div style="padding:5px;line-height:12px;font-weight:bold;color:#f9f9f9!important;text-align:center;background:#272a32;">DEBUG</div>\n<textarea id="INKJS_DEBUG_TEXT" style="box-sizing:border-box;width:100%;min-height:150px;padding:10px;font-family:consolas;color:#272a32!important;font-size:14px;line-height:1.5;border:5px solid #41454e;background:#fff;"></textarea>\n</div>';
 
     // view要素の追加
     let el = DOC.createElement("div");
 
     el.id = "INKJS_DEBUG";
-    el.setAttribute("style", "position:fixed;z-index:9999999;left:10px;bottom:10px;");
+    el.setAttribute("style", "position:fixed;z-index:2147483647;left:10px;bottom:10px;");
     el.innerHTML = childNode;
     DOC.body.appendChild(el);
 
@@ -73,53 +73,64 @@ export default class Debug {
    * @method _addEvent
    * @return {Void}
    */
-  static _addEvent(){
+  static _addEvent() {
     let isDrag = false,
-    x = null,
-    y = null;
+      x = null,
+      y = null;
 
     // down
-    _views.wrap.addEventListener("mousedown", () => {
+    _views.wrap.addEventListener("mousedown", start);
+    _views.wrap.addEventListener("touchstart", start);
+    function start() {
       isDrag = true;
-    });
+    }
 
     // move
-    DOC.addEventListener("mousemove", () => {
-      if(isDrag){
-        let _x = event.clientX,
-        _y = event.clientY;
-
-				if (utils.isNumber(x)){
-          let diffX = _x - x,
-          diffY = _y - y;
-
-          x = _x;
-          y = _y;
-
-          let position = "position:fixed;";
-          position += "top:" + (_views.wrap.offsetTop + diffY) + "px;";
-          position += "left:" + (_views.wrap.offsetLeft + diffX) + "px;";
-          _views.wrap.setAttribute("style", position);
-          return false;
-
-        } else {
-          x = _x;
-          y = _y;
-        }
+    DOC.addEventListener("mousemove", (event) => {
+      if (isDrag) {
+        move(event.clientX, event.clientY);
       }
     });
+    DOC.addEventListener("touchmove", (event) => {
+      if (isDrag) {
+        move(event.touches[0].clientX, event.touches[0].clientY);
+      }
+    });
+    function move(x, y) {
+      if (utils.isNumber(x)) {
+        let diffX = _x - x,
+          diffY = _y - y;
+
+        x = _x;
+        y = _y;
+
+        let position = "position:fixed;z-index:2147483647;";
+        position += "top:" + (_views.wrap.offsetTop + diffY) + "px;";
+        position += "left:" + (_views.wrap.offsetLeft + diffX) + "px;";
+        _views.wrap.setAttribute("style", position);
+        return false;
+
+      } else {
+        x = _x;
+        y = _y;
+      }
+    }
 
     // up
-    DOC.addEventListener("mouseup", () => {
+    DOC.addEventListener("mouseup", stop);
+    DOC.addEventListener("touchend", stop);
+    function stop() {
       isDrag = false;
       x = null;
       y = null;
-    });
+    }
 
     // cancel
-    _views.text.addEventListener("mousemove", () => {
+    _views.text.addEventListener("mousemove", cancel);
+    _views.text.addEventListener("touchmove", cancel);
+    function cancel() {
       isDrag = false;
-    });
+    }
   }
 
 
@@ -130,17 +141,17 @@ export default class Debug {
    * @param {Any} args 出力するオブジェクト ※可変長引数可能
    * @return {Debug}
    */
-  static log(){
-    if(!_views){
+  static log() {
+    if (!_views) {
       Debug._createView();
     }
 
-    if(_isChangeLog){
+    if (_isChangeLog) {
       utils.each(utils.argsToArray(arguments), (data) => {
         // データタイプに合わせてログを出力
-        if(utils.isArray(data)){
+        if (utils.isArray(data)) {
           _views.text.value += JSON.stringify(data) + "\n";
-        } else if(utils.isObject(data)){
+        } else if (utils.isObject(data)) {
           _views.text.value += JSON.stringify(data, null, "\t") + "\n";
         } else {
           _views.text.value += data + "\n";
@@ -160,8 +171,8 @@ export default class Debug {
    * @method clear
    * @return {Debug}
    */
-  static clear(){
-    if(_views){
+  static clear() {
+    if (_views) {
       _views.text.value = "";
     }
     return Debug;
@@ -174,7 +185,7 @@ export default class Debug {
    * @method start
    * @return {Debug}
    */
-  static start(){
+  static start() {
     _isChangeLog = true;
     return Debug;
   }
@@ -186,7 +197,7 @@ export default class Debug {
    * @method stop
    * @return {Debug}
    */
-  static stop(){
+  static stop() {
     _isChangeLog = false;
     return Debug;
   }
@@ -198,8 +209,8 @@ export default class Debug {
    * @method hide
    * @return {Debug}
    */
-  static hide(){
-    if(_views && _isShow){
+  static hide() {
+    if (_views && _isShow) {
       _isShow = false;
       _views.wrap.setAttribute("style", (_views.wrap.getAttribute("style") + "display:none;"));
     }
@@ -213,8 +224,8 @@ export default class Debug {
    * @method show
    * @return {Debug}
    */
-  static show(){
-    if(_views && !_isShow){
+  static show() {
+    if (_views && !_isShow) {
       _isShow = true;
       _views.wrap.setAttribute("style", (_views.wrap.getAttribute("style") + "display:block;"));
     }
@@ -228,7 +239,7 @@ export default class Debug {
    * @method isShow
    * @return {boolean}
    */
-  static isShow(){
+  static isShow() {
     return _isShow;
   }
 
@@ -240,11 +251,11 @@ export default class Debug {
 	 * @param {number} y
    * @return {Debug}
    */
-	static position(x, y) {
-		let position = "position:fixed;";
-		position += "top:" + (x || 0) + "px;";
-		position += "left:" + (y || 0) + "px;";
-		_views.wrap.setAttribute("style", position);
+  static position(x, y) {
+    let position = "position:fixed;";
+    position += "top:" + (x || 0) + "px;";
+    position += "left:" + (y || 0) + "px;";
+    _views.wrap.setAttribute("style", position);
     return Debug;
-	}
+  }
 }

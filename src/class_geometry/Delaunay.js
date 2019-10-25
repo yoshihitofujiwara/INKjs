@@ -11,7 +11,6 @@ import Triangle from "./Triangle";
 
 
 /**
- * Delaunay
  * @class Delaunay
  * @param {number} width Delaunay領域の幅
  * @param {number} height Delaunay領域の高さ

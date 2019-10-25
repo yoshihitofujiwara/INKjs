@@ -12,18 +12,27 @@
 	<video id="video" width="640" height="480" autoplay></video>
 
 
-	<script src="../dist/ink-0.0.3.js"></script>
+	<script src="../dist/ink-0.0.4.js"></script>
 
 	<script>
-		var webcam = new INK.WebCamera(document.getElementById("video"));
-		webcam.setup();
+		// var webcam = new INK.WebCamera(document.getElementById("video"));
+		// webcam.setup();
 
-		setTimeout(function (params) {
-			webcam.pause();
-		}, 5000);
-		// console.log(INK.WebCamera);
+		// setTimeout(function (params) {
+		// 	webcam.pause();
+		// }, 5000);
+		// // console.log(INK.WebCamera);
 
+		let event = new INK.Events();
+		console.log(event);
 
+		event.on("hgoge", (a,b,c,d) =>{
+			console.log(a,b,c, d);
+		});
+
+		event.trigger("hgoge", "a", "b", "c", {data: 1});
+
+		// console.log(INK.Events);
 	</script>
 
 

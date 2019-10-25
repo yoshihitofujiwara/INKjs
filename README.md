@@ -2,7 +2,7 @@
 
 ---
 
-## Support browser [2/4/2019]
+## Support browser [25/10/2019]
 
 ```
 InternetExplorer 11

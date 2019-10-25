@@ -4,24 +4,17 @@
 /// Author Yoshihito Fujiwara
 /// Copyright (c) 2012 Yoshihito Fujiwara
 
-import * as utils from "../utils";
-import Vector2 from "./Vector2";
 import Point2 from "./Point2";
 
 
 /**
- * Polygon
- *
- * @export
  * @class Polygon
- * @extends {Point2}
  */
 export default class Polygon {
-	/**
-	 *Creates an instance of Polygon.
-	 * @param {*} [points=[]]
-	 * @memberof Polygon
-	 */
+  /**
+   * constructor
+   * @param {array} points Pointリスト
+   */
 	constructor(points) {
 		this.points = points;
 	}
@@ -41,13 +34,8 @@ export default class Polygon {
 	}
 
 
-	// 座標を含むか
-	// contains(x, y){}
-
-
 	/* static
 	--------------------------------------------------------------------------*/
-
 	/**
 	 * NOTE: 線分の工作判定はいるのか？
 	 *

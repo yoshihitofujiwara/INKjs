@@ -30,66 +30,6 @@ export function base64FileSize(base64) {
 
 
 /**
- * オブジェクトの拡張
- * @static
- * @method mixin
- * @param {boolean} isDeep ディープコピーするか 初期値: false 省略可
- * @param {object} arguments 拡張するオブジェクト
- * @return {object} 拡張したオブジェクトを返します
- */
-export function mixin(isDeep, objA, objB) {
-	let options, name, src, copy, copyIsArray, clone,
-		target = arguments[0] || {},
-		i = 1,
-		length = arguments.length,
-		deep = false;
-
-	if (typeof target === "boolean") {
-		deep = target;
-		target = arguments[i] || {};
-		i++;
-	}
-
-	if (typeof target !== "object" && !is.isFunction(target)) {
-		target = {};
-	}
-
-	if (i === length) {
-		target = this;
-		i--;
-	}
-
-	for (; i < length; i++) {
-		if ((options = arguments[i]) != null) {
-			for (name in options) {
-				src = target[name];
-				copy = options[name];
-
-				if (target === copy) {
-					continue;
-				}
-
-				if (deep && copy && (is.isPlainObject(copy) ||
-					(copyIsArray = Array.isArray(copy)))) {
-					if (copyIsArray) {
-						copyIsArray = false;
-						clone = src && Array.isArray(src) ? src : [];
-					} else {
-						clone = src && is.isPlainObject(src) ? src : {};
-					}
-					target[name] = mixin(deep, clone, copy);
-				} else if (copy !== undefined) {
-					target[name] = copy;
-				}
-			}
-		}
-	}
-
-	return target;
-};
-
-
-/**
  * 匿名関数名を返す
  * 無名関数はundefinedを返します
  * @static
@@ -98,13 +38,101 @@ export function mixin(isDeep, objA, objB) {
  * @return {string} 関数名
  */
 export function getFunctionName(fn) {
-	if (is.isFunction(fn)) {
-		if (fn.prototype.constructor && fn.prototype.constructor.name) {
-			return fn.prototype.constructor.name;
-		} else {
-			return ("" + fn).replace(/^\s*function\s*([^\(]*)[\S\s]+$/im, "$1");
-		}
-	}
+  if (is.isFunction(fn)) {
+    if (fn.prototype.constructor && fn.prototype.constructor.name) {
+      return fn.prototype.constructor.name;
+    } else {
+      return ("" + fn).replace(/^\s*function\s*([^\(]*)[\S\s]+$/im, "$1");
+    }
+  }
+};
+
+
+/**
+ * オブジェクトの拡張
+ * @static
+ * @method mixin
+ * @param {boolean} isDeep ディープコピーするか 初期値: false 省略可
+ * @param {object} arguments 拡張するオブジェクト
+ * @return {object} 拡張したオブジェクトを返します
+ */
+export function mixin(isDeep, objA, objB) {
+  let options, name, src, copy, copyIsArray, clone,
+    target = arguments[0] || {},
+    i = 1,
+    length = arguments.length,
+    deep = false;
+
+  if (typeof target === "boolean") {
+    deep = target;
+    target = arguments[i] || {};
+    i++;
+  }
+
+  if (typeof target !== "object" && !is.isFunction(target)) {
+    target = {};
+  }
+
+  if (i === length) {
+    target = this;
+    i--;
+  }
+
+  for (; i < length; i++) {
+    if ((options = arguments[i]) != null) {
+
+      for (name in options) {
+        copy = options[name];
+
+        if (name === "__proto__" || target === copy) {
+          continue;
+        }
+
+        if (deep && copy && (is.isPlainObject(copy) ||
+          (copyIsArray = Array.isArray(copy)))) {
+          src = target[name];
+
+          if (copyIsArray && !Array.isArray(src)) {
+            clone = [];
+          } else if (!copyIsArray && !is.isPlainObject(src)) {
+            clone = {};
+          } else {
+            clone = src;
+          }
+          copyIsArray = false;
+
+          target[name] = mixin(deep, clone, copy);
+
+        } else if (copy !== undefined) {
+          target[name] = copy;
+        }
+      }
+    }
+  }
+
+  return target;
+};
+
+
+/**
+ * 現在の日時情報を格納したオブジェクトを返す
+ * @static
+ * @method nowDate
+ * @return {object}
+ */
+export function nowDate() {
+  let date = new Date();
+
+  return {
+    date: date,
+    year: date.getFullYear(),
+    month: date.getMonth() + 1,
+    day: date.getDay(),
+    date: date.getDate(),
+    hour: date.getHours(),
+    minute: date.getMinutes(),
+    second: date.getSeconds()
+  };
 };
 
 
@@ -132,52 +160,6 @@ export function spec() {
 		clock: Math.round(speed * 1000) / 1000 // GHZ
 	}
 }
-
-
-/**
- * 型名取得
- * @static
- * @method typeOf
- * @param {object} 判定するオブジェクト
- * @return {string} 型名を返す
- */
-export function typeOf(obj) {
-	if (is.isArray(obj)) {
-		return "array";
-	} else if (is.isBoolean(obj)) {
-		return "boolean";
-	} else if (is.isFunction(obj)) {
-		return "function";
-	} else if (is.isNumber(obj)) {
-		return "number";
-	} else if (is.isObject(obj)) {
-		return "object";
-	} else if (is.isString(obj)) {
-		return "string";
-	} else if (is.isRegexp(obj)) {
-		return "regexp";
-	} else if (is.isNull(obj)) {
-		return "null";
-	} else if (is.isUndefined(obj)) {
-		return "undefined";
-	} else if (obj.toString && obj.toString()) {
-		return obj.toString().toLowerCase();
-	}
-};
-
-
-/**
- * 画像のプリロード
- * @static
- * @method preload
- * @param {string} src 画像パス
- * @return {Image} 生成した、イメージ要素
- */
-export function preload(src) {
-	let img = new Image();
-	img.src = src;
-	return img;
-};
 
 
 /**

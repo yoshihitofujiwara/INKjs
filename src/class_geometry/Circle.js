@@ -9,11 +9,9 @@ import Line from "./Line";
 import Point2 from "./Point2";
 import Polygon from "./Polygon";
 import Vector2 from "./Vector2";
-import { Point } from "pixi.js";
 
 
 /**
- * Circle
  * @class Circle
  * @param  {number} x      x座標
  * @param  {number} y      y座標
@@ -22,23 +20,12 @@ import { Point } from "pixi.js";
 export default class Circle extends Point2 {
   /**
    * constructor
-  /**
-	 *Creates an instance of Circle.
-	 * @param {*} x
-	 * @param {*} y
-	 * @param {*} radius
+	 * @param {number} x
+	 * @param {number} y
+	 * @param {number} radius
 	 * @memberof Circle
 	 */
 	constructor(x, y, radius) {
-		super(x, y);
-
-		// /**
-		//  * 座標
-		//  * @property position
-		//  * @type {vector2}
-		//  */
-		// this.position = new Vector2(x, y);
-
 		/**
 		 * x
 		 * @property x
@@ -49,6 +36,8 @@ export default class Circle extends Point2 {
 		 * @property x
 		 * @type {number}
 		 */
+		super(x, y);
+
     /**
      * 半径
      * @property radius

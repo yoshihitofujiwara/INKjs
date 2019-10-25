@@ -10,8 +10,10 @@
  * see: http://diveintohtml5.info/everything.html
  */
 
-
+let object = {};
 let toString = Object.prototype.toString
+let getProto = Object.getPrototypeOf;
+let hasOwn = object.hasOwnProperty;
 
 
 /**
@@ -102,7 +104,22 @@ export function isObject(obj) {
  * @return {boolean}
  */
 export function isPlainObject(obj) {
-	return isObject(obj) && Object.keys(obj).length === 0;
+  // return isObject(obj) && Object.keys(obj).length === 0;
+  let proto, ctor;
+
+  if (!obj || toString.call(obj) !== "[object Object]") {
+    return false;
+  }
+
+  proto = getProto(obj);
+
+  if (!proto) {
+    return true;
+  }
+
+  ctor = hasOwn.call(proto, "constructor") && proto.constructor;
+
+  return typeof ctor === "function" && hasOwn.toString.call(ctor) === hasOwn.toString.call(Object);
 };
 
 

@@ -19,14 +19,12 @@ export default class Size {
    */
   constructor(width, height) {
 	  /**
-	   * width
 	   * @property width
 	   * @type {number}
 	   */
 		this.width = width;
 
 	  /**
-	   * height
 	   * @property height
 	   * @type {number}
 	   */
@@ -68,9 +66,9 @@ export default class Size {
 	 * ２つのサイズの最小サイズをマージしてSizeインスタンスを生成
 	 * @static
 	 * @method createMin
-	 * @param {Size} size1 sizeインスタンス
-	 * @param {Size} size2 sizeインスタンス
-	 * @return {Size}
+	 * @param {size} size1 sizeインスタンス
+	 * @param {size} size2 sizeインスタンス
+	 * @return {size}
 	 */
 	static createMin(size1, size2){
 		return new Size(Math.min(size1.width, size2.width), Math.min(size1.height, size2.height));
@@ -81,9 +79,9 @@ export default class Size {
 	 * ２つのサイズの最大サイズをマージしてSizeインスタンスを生成
 	 * @static
 	 * @method createMax
-	 * @param {Size} size1 sizeインスタンス
-	 * @param {Size} size2 sizeインスタンス
-	 * @return {Size}
+	 * @param {size} size1 sizeインスタンス
+	 * @param {size} size2 sizeインスタンス
+	 * @return {size}
 	 */
 	static createMax(size1, size2){
 		return new Size(Math.max(size1.width, size2.width), Math.max(size1.height, size2.height));
@@ -96,7 +94,7 @@ export default class Size {
 	 * @method max
 	 * @param {number} min 最小サイズ
 	 * @param {number} max 最大サイズ
-	 * @return {Size}
+	 * @return {size}
 	 */
 	static random(min, max){
 		min = utils.isNumber(min) ? min : 0;
@@ -108,7 +106,7 @@ export default class Size {
 	/**
 	 * 初期値にセット
 	 * @method identity
-	 * @return {Size}
+	 * @return {size}
 	 */
 	identity(){
 	  this.width = 0;
@@ -120,7 +118,7 @@ export default class Size {
 	/**
 	 * Sizeのクローン
 	 * @method clone
-	 * @return {Size}
+	 * @return {size}
 	 */
 	clone(){
 		return new Size(this.width, this.height);
@@ -141,12 +139,13 @@ export default class Size {
 	 * サイズが等しいか判定
 	 * 可変長引数で複数のオブジェクト判定可能
 	 * @method equals
-	 * @param {Size} size sizeインスタンス
+	 * @param {size} size sizeインスタンス
 	 * @return {boolean}
 	 */
 	equals(size){
 		return (this.width === size.width && this.height === size.height);
 	}
+
 
 	/**
 	 * 中心の取得
@@ -176,7 +175,7 @@ export default class Size {
 	 * @method set
 	 * @param {Number|Object|Array} width  幅
 	 * @param {number} height 高さ
-	 * @return {Size}
+	 * @return {size}
 	 */
 	set(width, height){
 		this.setWidth(width);
@@ -189,7 +188,7 @@ export default class Size {
 	 * 幅のセット
 	 * @method setWidth
 	 * @param {number} width  幅
-	 * @return {Size}
+	 * @return {size}
 	 */
 	setWidth(width){
 		this.width = width;
@@ -201,7 +200,7 @@ export default class Size {
 	 * 高さのセット
 	 * @method setWidth
 	 * @param {number} height 高さ
-	 * @return {Size}
+	 * @return {size}
 	 */
 	setHeight(height){
 		this.height = height;
@@ -214,7 +213,7 @@ export default class Size {
 	 * @method add
 	 * @param {Number|Object|Array} width  幅
 	 * @param {number} height 高さ
-	 * @return {Size}
+	 * @return {size}
 	 */
 	add(addWidth, addHeight){
 		this.width += addWidth;
@@ -228,7 +227,7 @@ export default class Size {
 	 * @method sub
 	 * @param {number} subWidth  幅
 	 * @param {number} subHeight 高さ
-	 * @return {Size}
+	 * @return {size}
 	 */
 	sub(subWidth, subHeight){
 		this.width -= subWidth;
@@ -242,7 +241,7 @@ export default class Size {
 	 * @method mult
 	 * @param {number} multWidth  幅
 	 * @param {number} multHeight 高さ
-	 * @return {Size}
+	 * @return {size}
 	 */
 	mult(multWidth, multHeight){
 		this.width *= multWidth;
@@ -257,7 +256,7 @@ export default class Size {
 	 * @method sub
 	 * @param {number} divWidth  幅を割る数
 	 * @param {number} divHeight 高さを割る数
-	 * @return {Size}
+	 * @return {size}
 	 */
 	div(divWidth, divHeight){
 		this.width /= divWidth;
@@ -269,8 +268,8 @@ export default class Size {
 	/**
 	 * サイズの加算
 	 * @method addSize
-	 * @param {Size} size 加算するSize
-	 * @return {Size}
+	 * @param {size} size 加算するSize
+	 * @return {size}
 	 */
 	addSize(size){
 		this.width += size.width;
@@ -282,8 +281,8 @@ export default class Size {
 	/**
 	 * サイズの減算
 	 * @method addSize
-	 * @param {Size} size 減算するSize
-	 * @return {Size}
+	 * @param {size} size 減算するSize
+	 * @return {size}
 	 */
 	subSize(size){
 		this.width -= size.width;
@@ -296,7 +295,7 @@ export default class Size {
 	 * サイズの積算
 	 * @method multSize
 	 * @param {number} num 積数
-	 * @return {Size}
+	 * @return {size}
 	 */
 	multSize(num){
 		this.width *= num;
@@ -309,7 +308,7 @@ export default class Size {
 	 * サイズの割算
 	 * @method divSize
 	 * @param {number} num 割算
-	 * @return {Size}
+	 * @return {size}
 	 */
 	divSize(num){
 		this.width /= num;

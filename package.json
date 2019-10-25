@@ -1,7 +1,7 @@
 {
   "name": "ink-javascript",
-  "version": "0.0.3",
-  "description": "JavaScript Utility Library",
+  "version": "0.0.4",
+  "description": "JavaScript Library",
   "author": "Yoshihito Fujiwara",
   "homepage": "https://github.com/yoshihitofujiwara/INKjs",
   "main": "src/ink/index.js",

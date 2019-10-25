@@ -13,10 +13,10 @@
     @constructor
   ----------------------------------------------------------------------*/
   /**
-   * Mat2 v4実装予定
+   * Matrix2 v4実装予定
    *
    * @constructor
-   * @class Mat2
+   * @class Matrix2
    * @param {number} a  水平方向の縮尺
    * @param {number} b  垂直方向の傾斜率
    * @param {number} c  水平方向の傾斜率
@@ -24,12 +24,12 @@
    * @param {number} tx 水平方向の移動距離
    * @param {number} ty 垂直方向の移動距離
    */
-	function Mat2(a, b, c, d, tx, ty){
+	function Matrix2(a, b, c, d, tx, ty){
     // super class call
     AMP.BaseClass.call(this);
 
 		/**
-		 * Mat2データ
+		 * Matrix2データ
 		 *
 		 * @private
 		 * @property _m2
@@ -50,10 +50,10 @@
 	}
 
   // 基底クラスを継承
-  AMP.inherits(Mat2, AMP.BaseClass);
+  AMP.inherits(Matrix2, AMP.BaseClass);
 
 	// prototype
-	var p = Mat2.prototype;
+	var p = Matrix2.prototype;
 
 
 
@@ -67,7 +67,7 @@
    * @property VERSION
    * @type {string}
    */
-  Mat2.VERSION = '1.0.0';
+  Matrix2.VERSION = '1.0.0';
 
 
 
@@ -75,7 +75,7 @@
     @method
   --------------------------------------------------------------------------*/
   /**
-   * Mat2インスタンスの生成
+   * Matrix2インスタンスの生成
    *
    * @static
    * @method get
@@ -86,8 +86,8 @@
    * @param {number} tx 水平方向の移動距離
    * @param {number} ty 垂直方向の移動距離
    */
-	Mat2.get = function(a, b, c, d, tx, ty){
-		return new Mat2(a, b, c, d, tx, ty);
+	Matrix2.get = function(a, b, c, d, tx, ty){
+		return new Matrix2(a, b, c, d, tx, ty);
 	};
 
 
@@ -95,10 +95,10 @@
    * インスタンスのクローンを生成します
    *
    * @method clone
-   * @return {Mat2}
+   * @return {Matrix2}
    */
 	p.clone = function(){
-		return new Mat2(this._m2);
+		return new Matrix2(this._m2);
 	};
 
 
@@ -112,7 +112,7 @@
    * @param {number} d  垂直方向の縮尺
    * @param {number} tx 水平方向の移動距離
    * @param {number} ty 垂直方向の移動距離
-   * @return {Mat2}
+   * @return {Matrix2}
 	 */
 	p.set = function(a, b, c, d, tx, ty){
 		var mat = AMP.isArray(a) ? a : AMP.argsToArray(arguments);
@@ -138,7 +138,7 @@
 	 * Matrixデータを初期値にします
 	 *
 	 * @method identity
-   * @return {Mat2}
+   * @return {Matrix2}
 	 */
 	p.identity = function(){
 		this._m2 = [
@@ -156,7 +156,7 @@
 	 * @method translate
    * @param {number} x 水平方向の移動距離
    * @param {number} y 垂直方向の移動距離
-   * @return {Mat2}
+   * @return {Matrix2}
 	 */
 	p.translate = function(x, y){
 		this.translateX(x);
@@ -170,7 +170,7 @@
 	 *
 	 * @method translateX
    * @param {number} x 水平方向の移動距離
-   * @return {Mat2}
+   * @return {Matrix2}
 	 */
 	p.translateX = function(x){
 		this._m2[2] = this._m2[0] * x + this._m2[1] * this._m2[5];
@@ -183,7 +183,7 @@
 	 *
 	 * @method translateY
    * @param {number} y 垂直方向の移動距離
-   * @return {Mat2}
+   * @return {Matrix2}
 	 */
 	p.translateY = function(y){
 		this._m2[5] = this._m2[3] * this._m2[2] + this._m2[4] * y;
@@ -197,7 +197,7 @@
 	 * @method scale
 	 * @param  {number} scaleX 横の拡大倍率
 	 * @param  {number} scaleY 縦の拡大倍率
-	 * @return {Mat2}
+	 * @return {Matrix2}
 	 */
 	p.scale = function(scaleX, scaleY){
 		this.scaleX(scaleX);
@@ -211,7 +211,7 @@
 	 *
 	 * @method scaleX
 	 * @param  {number} scaleX 横の拡大倍率
-	 * @return {Mat2}
+	 * @return {Matrix2}
 	 */
 	p.scaleX = function(scaleX){
 		this._m2[0] *= scaleX;
@@ -225,7 +225,7 @@
 	 *
 	 * @method scaleY
 	 * @param  {number} scaleY 縦の拡大倍率
-	 * @return {Mat2}
+	 * @return {Matrix2}
 	 */
 	p.scaleY = function(scaleY){
 		this._m2[1] *= scaleY;
@@ -240,7 +240,7 @@
 	 * @method rotate
 	 * @param  {number}  angle    角度(Degrees)
 	 * @param  {boolean} isRadian 第1引数をラジアン指定するか
-	 * @return {Mat2}
+	 * @return {Matrix2}
 	 */
 	p.rotate = function(angle, isRadian){
 		if(!isRadian){
@@ -268,7 +268,7 @@
 	 * @method skew
 	 * @param  {number} skewX degrees
 	 * @param  {number} skewY degrees
-	 * @return {Mat2}
+	 * @return {Matrix2}
 	 */
 	p.skew = function(skewX, skewY){
 		skewX = AMP.isNumber(skewX) ? skewX * AMP.DEG_TO_RAD : 0;
@@ -285,7 +285,7 @@
 	 *
 	 * @method skewX
 	 * @param  {number} skewX degrees
-	 * @return {Mat2}
+	 * @return {Matrix2}
 	 */
 	p.skewX = function(skewX){
 		var skewY = Math.atan2(this._m2[3], this._m2[0]) * AMP.DEG_TO_RAD;
@@ -302,7 +302,7 @@
 	 *
 	 * @method skewY
 	 * @param  {number} skewY degrees
-	 * @return {Mat2}
+	 * @return {Matrix2}
 	 */
 	p.skewY = function(skewY){
 		var skewX = Math.atan2(-this._m2[1], this._m2[4]) * AMP.DEG_TO_RAD;
@@ -324,7 +324,7 @@
    * @param {number} d  垂直方向の縮尺
    * @param {number} tx 水平方向の移動距離
    * @param {number} ty 垂直方向の移動距離
-	 * @return {Mat2}
+	 * @return {Matrix2}
 	 */
 	p.append = function(a, b, c, d, tx, ty) {
 		var a1 = this._m2[0],
@@ -347,7 +347,7 @@
 
 
 	/**
-	 * Mat2データを配列で返す
+	 * Matrix2データを配列で返す
 	 *
 	 * @method toArray
 	 * @return {array}
@@ -397,7 +397,7 @@
 	 * 反転
 	 *
 	 * @method invert
-	 * @return {Mat2}
+	 * @return {Matrix2}
 	 */
 	p.invert = function(){
     var a = this._m2[0],
@@ -421,7 +421,7 @@
 
 	/// 未実装
 	/**
-	 * Mat2インスタンスにして返す
+	 * Matrix2インスタンスにして返す
 	 *
 	 * @static
 	 * @method toMatrix
@@ -432,9 +432,9 @@
 	 * @param  {number} skewX  skewX
 	 * @param  {number} skewY  skewY
 	 * @param  {number} rotate rotate(degrees)
-	 * @return {Mat2}
+	 * @return {Matrix2}
 	 */
-	// Mat2.toMatrix = function(x, y, scaleX, scaleY, skewX, skewY, rotate){};
+	// Matrix2.toMatrix = function(x, y, scaleX, scaleY, skewX, skewY, rotate){};
 
 
 
@@ -442,7 +442,7 @@
     exports
   --------------------------------------------------------------------------*/
 
-  AMP.Mat2 = Mat2;
+  AMP.Matrix2 = Matrix2;
 
 
 }(window, AMP));
