@@ -45,6 +45,7 @@
     "webpack-stream": "^4.0.1"
   },
   "dependencies": {
-    "es6-promise": "^4.2.5"
+    "es6-promise": "^4.2.8",
+    "promise-polyfill": "^8.1.3"
   }
 }

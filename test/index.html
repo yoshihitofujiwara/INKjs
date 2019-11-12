@@ -9,30 +9,80 @@
 </head>
 
 <body>
-	<video id="video" width="640" height="480" autoplay></video>
-
-
 	<script src="../dist/ink-0.0.4.js"></script>
 
 	<script>
-		// var webcam = new INK.WebCamera(document.getElementById("video"));
-		// webcam.setup();
+		// console.log(INK.Deferred);
+		// console.log(INK.Deferred.serials);
+			// var worker = new Worker('worker.js');
+			// worker.addEventListener("message", (params) => {
+			// 	console.log(params.data);
+			// }, false);
+		// worker.postMessage("postMessage");
 
-		// setTimeout(function (params) {
-		// 	webcam.pause();
-		// }, 5000);
-		// // console.log(INK.WebCamera);
+		// console.log("INK.Deferred.serials");
 
-		let event = new INK.Events();
-		console.log(event);
+		// function a(params) {
+		// 	console.log(params);
+		// 	let def = new INK.Deferred();
+		// 	setTimeout(() => {
+		// 		console.log("a");
+		// 		def.resolve("val a");
+		// 	}, 500);
+		// 	return def.promise;
+		// }
 
-		event.on("hgoge", (a,b,c,d) =>{
-			console.log(a,b,c, d);
-		});
+		// function b(params) {
+		// 	console.log(params);
+		// 	let def = new INK.Deferred();
+		// 	// console.log("b start");
+		// 	setTimeout(() => {
+		// 		console.log("b");
+		// 		def.resolve("val b");
+		// 	}, 500);
+		// 	return def.promise;
+		// }
 
-		event.trigger("hgoge", "a", "b", "c", {data: 1});
+		// function c(params) {
+		// 	console.log(params);
+		// 	let def = new INK.Deferred();
+		// 	setTimeout(() => {
+		// 		console.log("c");
+		// 		def.resolve("val c");
+		// 	}, 500);
+		// 	return def.promise;
+		// }
 
-		// console.log(INK.Events);
+		// INK.Deferred.serials(
+		// 	function (params) {
+		// 		console.log("START");
+		// 		return 1;
+		// 	},
+		// 	c,
+		// 	(v)=>{
+		// 		console.log("===1===");
+		// 		console.log("//////");
+		// 		console.log(v);
+		// 		console.log("//////");
+
+		// 		return INK.Deferred.parallel(a, b, c);
+		// 		// return c();
+		// 	},
+		// 	(v) => {
+		// 		console.log("===2===");
+		// 		console.log("//////");
+		// 		console.log(v);
+		// 		console.log("//////");
+		// 		return INK.Deferred.serials(a, c, b);
+		// 	},
+		// 	(v)=>{
+		// 		console.log("===3===");
+		// 		console.log("//////");
+		// 		console.log(a);
+		// 		console.log("//////");
+		// 		console.log("!!!!!!!!!!!!!!!!!!");
+		// 	}
+		// );
 	</script>
 
 

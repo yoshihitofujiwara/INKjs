@@ -8,6 +8,7 @@ const webpack = require("webpack");
 const JS = `${__dirname}/src/`;
 
 let plugins = [
+  new webpack.ProvidePlugin({Promise: "es6-promise"}),
   new webpack.optimize.AggressiveMergingPlugin()
 ];
 
