@@ -6078,7 +6078,7 @@ var Deferred = function () {
 
     /**
      * serials
-     * @param  {Deferred} callbacks
+     * @param  {promise|deferred} callbacks
      */
 
   }], [{
@@ -6097,13 +6097,13 @@ var Deferred = function () {
 
     /**
      * parallel
-     * @param  {Deferred} callbacks
+     * @param  {promise|deferred} callbacks
      */
 
   }, {
     key: "parallel",
     value: function parallel() {
-      var def = new INK.Deferred();
+      var def = new Deferred();
 
       for (var _len = arguments.length, callbacks = Array(_len), _key = 0; _key < _len; _key++) {
         callbacks[_key] = arguments[_key];
@@ -6116,6 +6116,19 @@ var Deferred = function () {
         ary.push(callbacks[i]());
       }
       Promise.all(ary).then(def.resolve.bind(def));
+      return def.promise;
+    }
+
+    /**
+     * delay
+     * @param {number} ms
+     */
+
+  }, {
+    key: "delay",
+    value: function delay(ms) {
+      var def = new Deferred();
+      setTimeout(def.resolve.bind(def), ms);
       return def.promise;
     }
   }]);

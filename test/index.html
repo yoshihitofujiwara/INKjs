@@ -12,46 +12,44 @@
 	<script src="../dist/ink-0.0.4.js"></script>
 
 	<script>
-		// console.log(INK.Deferred);
-		// console.log(INK.Deferred.serials);
-			// var worker = new Worker('worker.js');
-			// worker.addEventListener("message", (params) => {
-			// 	console.log(params.data);
-			// }, false);
+		// 	var worker = new Worker('worker.js');
+		// 	worker.addEventListener("message", (params) => {
+		// 		console.log(params.data);
+		// 	}, false);
 		// worker.postMessage("postMessage");
 
-		// console.log("INK.Deferred.serials");
+		console.log("INK.Deferred.serials");
 
-		// function a(params) {
-		// 	console.log(params);
-		// 	let def = new INK.Deferred();
-		// 	setTimeout(() => {
-		// 		console.log("a");
-		// 		def.resolve("val a");
-		// 	}, 500);
-		// 	return def.promise;
-		// }
+		function a(params) {
+			console.log(params);
+			let def = new INK.Deferred();
+			setTimeout(() => {
+				console.log("a");
+				def.resolve("val a");
+			}, 500);
+			return def.promise;
+		}
 
-		// function b(params) {
-		// 	console.log(params);
-		// 	let def = new INK.Deferred();
-		// 	// console.log("b start");
-		// 	setTimeout(() => {
-		// 		console.log("b");
-		// 		def.resolve("val b");
-		// 	}, 500);
-		// 	return def.promise;
-		// }
+		function b(params) {
+			console.log(params);
+			let def = new INK.Deferred();
+			// console.log("b start");
+			setTimeout(() => {
+				console.log("b");
+				def.resolve("val b");
+			}, 500);
+			return def.promise;
+		}
 
-		// function c(params) {
-		// 	console.log(params);
-		// 	let def = new INK.Deferred();
-		// 	setTimeout(() => {
-		// 		console.log("c");
-		// 		def.resolve("val c");
-		// 	}, 500);
-		// 	return def.promise;
-		// }
+		function c(params) {
+			console.log(params);
+			let def = new INK.Deferred();
+			setTimeout(() => {
+				console.log("c");
+				def.resolve("val c");
+			}, 500);
+			return def.promise;
+		}
 
 		// INK.Deferred.serials(
 		// 	function (params) {
@@ -83,6 +81,35 @@
 		// 		console.log("!!!!!!!!!!!!!!!!!!");
 		// 	}
 		// );
+
+			function sampleResolve(value) {
+				return new Promise(resolve => {
+					setTimeout(() => {
+						resolve(value * 2);
+					}, 2000);
+				})
+			}
+
+			/**
+			 * sampleResolve()をawaitしているため、Promiseの結果が返されるまで処理が一時停止される
+			 * 今回の場合、2秒後にresolve(10)が返ってきてその後の処理（return result + 5;）が再開される
+			 * resultにはresolveされた10が格納されているため、result + 5 = 15がreturnされる
+			 */
+			// async function sample() {
+			// 	await INK.Deferred.delay(5000);
+			// 	await INK.Deferred.serials(a, c, b);
+			// 	await INK.Deferred.serials(a, c, b);
+			// }
+
+			INK.Deferred.serials(a, c, b);
+
+
+			// sample().then(result => {
+			// 	console.log(result); // => 15
+			// });
+
+			// console.log(100);
+
 	</script>
 
 

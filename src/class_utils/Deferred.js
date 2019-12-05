@@ -47,7 +47,7 @@ export default class Deferred {
 
   /**
    * serials
-   * @param  {Deferred} callbacks
+   * @param  {promise|deferred} callbacks
    */
   static serials(...callbacks){
     let def = new Deferred();
@@ -63,16 +63,27 @@ export default class Deferred {
 
   /**
    * parallel
-   * @param  {Deferred} callbacks
+   * @param  {promise|deferred} callbacks
    */
   static parallel(...callbacks){
-    let def = new INK.Deferred();
+    let def = new Deferred();
     let ary = [],
     i = 0, l = callbacks.length;
     for(; i < l; i+=1){
       ary.push(callbacks[i]());
     }
     Promise.all(ary).then(def.resolve.bind(def));
+    return def.promise;
+  }
+
+
+  /**
+   * delay
+   * @param {number} ms
+   */
+  static delay(ms){
+    let def = new Deferred();
+    setTimeout(def.resolve.bind(def), ms);
     return def.promise;
   }
 }
