@@ -264,6 +264,9 @@ export function isWindows(ver) {
  * @return {boolean}
  */
 export function isMac(ver) {
+  if(isTouchScreen()){
+    return false;
+  }
 	if (ver) {
 		let serial = ("" + ver).replace(/\./g, "_");
 		return ua.indexOf("intel mac os x " + serial) > -1;
@@ -393,7 +396,7 @@ export function isSmartPhone() {
  * @return {boolean}
  */
 export function isTablet() {
-	return ua.indexOf("ipad") > -1 || isAndroid() && ua.indexOf("mobile") < 0;
+	return isIPad() || isAndroidTablet();
 };
 
 
@@ -415,7 +418,11 @@ export function isIPhone() {
  * @return {boolean}
  */
 export function isIPad() {
-	return ua.indexOf("ipad") > -1;
+  let _isIpad = ua.indexOf("ipad") > -1;
+  if(!_isIpad){ // MacOsでタッチができる場合
+    _isIpad = isMac() && isTouchScreen();
+  }
+  return _isIpad;
 };
 
 

@@ -1,6 +1,6 @@
 /**
  * INK.js
- * Version: 0.0.4
+ * Version: 0.0.5
  * Source : https://github.com/yoshihitofujiwara/INKjs
  * Author : Yoshihito Fujiwara
  * Copyright (c) 2012-2019 Yoshihito Fujiwara

@@ -64,12 +64,12 @@ export default class Triangle {
    */
   static outerCircle(vertexA, vertexB, vertexC){
     let
-    aX = vertexA.x,
-    bX = vertexB.x,
-    cX = vertexC.x,
-    aY = vertexA.y,
-    bY = vertexB.y,
-    cY = vertexC.y,
+    aX = sA.x,
+    bX = sB.x,
+    cX = sC.x,
+    aY = sA.y,
+    bY = sB.y,
+    cY = sC.y,
     aX2 = aX * aX,
     bX2 = bX * bX,
     cX2 = cX * cX,
@@ -103,8 +103,8 @@ export default class Triangle {
     sC = sides[2],
     area = (sA + sB + sC) / 2,
     vector = {
-      x: (sA * a.x + sB * b.x + sC * c.x) / (sA + sB + sC),
-      y: (sA * a.y + sB * b.y + sC * c.y) / (sA + sB + sC)
+      x: (sA * sA.x + sB * sB.x + sC * sC.x) / (sA + sB + sC),
+      y: (sA * sA.y + sB * sB.y + sC * sC.y) / (sA + sB + sC)
     },
     radius = Math.sqrt(area * (area - sA) * (area - sB) * (area - sC)) / area;
 
@@ -131,22 +131,22 @@ export default class Triangle {
     s2 = Math.sqrt(area * (area - sA) * (area - sB) * (area - sC)) * 2;
 
     let vA = {
-      x: (-sA * a.x + sB * b.x + sC * c.x) / (-sA + sB + sC),
-      y: (-sA * a.y + sB * b.y + sC * c.y) / (-sA + sB + sC)
+      x: (-sA * sA.x + sB * sB.x + sC * sC.x) / (-sA + sB + sC),
+      y: (-sA * sA.y + sB * sB.y + sC * sC.y) / (-sA + sB + sC)
     },
     rA = s2 / (-sA + sB + sC),
     cA = new Circle(vA.x, vA.y, rA);
 
     let vB = {
-      x: (sA * a.x + -sB * b.x + sC * c.x) / (sA- b + sC),
-      y: (sA * a.y + -sB * b.y + sC * c.y) / (sA- b + sC)
+      x: (sA * sA.x + -sB * sB.x + sC * sC.x) / (sA- b + sC),
+      y: (sA * sA.y + -sB * sB.y + sC * sC.y) / (sA- b + sC)
     },
     rB = s2 / (sA - sB + sC),
     cB = new Circle(vB.x, vB.y, rB);
 
     let vC = {
-      x: (sA * a.x + sB * b.x + -sC * c.x) / (sA + sB - c),
-      y: (sA * a.y + sB * b.y + -sC * c.y) / (sA + sB - c)
+      x: (sA * sA.x + sB * sB.x + -sC * sC.x) / (sA + sB - c),
+      y: (sA * sA.y + sB * sB.y + -sC * sC.y) / (sA + sB - c)
     },
     rC = s2 / (sA + sB - sC),
     cC = new Circle(vC.x, vC.y, rC);
@@ -183,8 +183,8 @@ export default class Triangle {
     tanC = sinC / cosC || 0;
 
     return new Vector2({
-      x: (a.x * tanA + b.x * tanB + c.x * tanC) / (tanA + tanB + tanC),
-      y: (a.y * tanA + b.y * tanB + c.y * tanC) / (tanA + tanB + tanC)
+      x: (sA.x * tanA + sB.x * tanB + sC.x * tanC) / (tanA + tanB + tanC),
+      y: (sA.y * tanA + sB.y * tanB + sC.y * tanC) / (tanA + tanB + tanC)
     });
   }
 
@@ -200,8 +200,8 @@ export default class Triangle {
    */
   static centerGravity(vertexA, vertexB, vertexC){
     return new Vector2({
-      x: (vertexA.x + vertexB.x + vertexC.x) / 3,
-      y: (vertexA.y + vertexB.y + vertexC.y) / 3
+      x: (sA.x + sB.x + sC.x) / 3,
+      y: (sA.y + sB.y + sC.y) / 3
     });
   }
 
@@ -217,9 +217,9 @@ export default class Triangle {
    */
   static verticesToSides(vertexA, vertexB, vertexC){
     return [
-      Vector2.dist(vertexB, vertexC),
-      Vector2.dist(vertexC, vertexA),
-      Vector2.dist(vertexA, vertexB)
+      Vector2.distance(vertexB, vertexC),
+      Vector2.distance(vertexC, vertexA),
+      Vector2.distance(vertexA, vertexB)
     ];
   }
 

@@ -10,7 +10,7 @@ export * from "./class_geometry";
 export * from "./class_utils";
 export * from "./utils";
 
-const VERSION = "0.0.4";
+const VERSION = "0.0.5";
 
 export {
 	VERSION
