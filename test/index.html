@@ -9,7 +9,7 @@
 </head>
 
 <body>
-	<script src="../dist/ink-0.0.4.js"></script>
+	<script src="../dist/ink-0.0.6.js"></script>
 
 	<script>
 		// 	var worker = new Worker('worker.js');
@@ -18,11 +18,68 @@
 		// 	}, false);
 		// worker.postMessage("postMessage");
 
-		console.log("INK.Deferred.serials");
+	let connectedGamepadIndex;
+	let loopID;
+
+
+	console.log("navigator.getGamepads()", navigator.getGamepads());
+	// ゲームパッドの接続
+	window.addEventListener("gamepadconnected", function (e) {
+		console.log("navigator.getGamepads()", navigator.getGamepads());
+		connectedGamepadIndex = e.gamepad.index;
+		loopID = requestAnimationFrame(loop);
+	});
+
+	// ゲームパッドの切断
+	window.addEventListener("gamepaddisconnected", function (e) {
+		console.log("Gamepad disconnected");
+		connectedGamepadIndex = null;
+		cancelAnimationFrame(loopID);
+	});
+
+		const BUTTON_A_INDEX = 0;
+
+		const BUTTON_B_INDEX = 1;
+		const BUTTON_X_INDEX = 2;
+		const BUTTON_Y_INDEX = 3;
+		const BUTTON_LB_INDEX = 4;
+		const BUTTON_RB_INDEX = 5;
+		const BUTTON_LT_INDEX = 6;
+		const BUTTON_RT_INDEX = 7;
+		const BUTTON_BACK_INDEX = 8;
+		const BUTTON_START_INDEX = 9;
+		const BUTTON_L3_INDEX = 10;
+		const BUTTON_R3_INDEX = 11;
+		const BUTTON_UP_INDEX = 12;
+		const BUTTON_DOWN_INDEX = 13;
+		const BUTTON_LEFT_INDEX = 14;
+		const BUTTON_RIGHT_INDEX = 15;
+		const BUTTON_HOME_INDEX = 16;
+
+	function loop(timestamp) {
+		// ゲームパッドの入力情報を毎フレーム取得します。
+		let gamepads = navigator.getGamepads();
+		let gp = gamepads[connectedGamepadIndex];
+
+		console.log(gp);
+
+		// ボタンが押されているかどうかを取得します。
+		// let aButton = gp.buttons[BUTTON_A_INDEX];
+		// if (aButton.pressed) {
+		// 	console.log(`Aボタンが押されました。value:${aButton.value}`);
+		// }
+
+		loopID = requestAnimationFrame(loop);
+	}
+
+
+
+		console.log("INK.Deferred.serial");
 
 		function a(params) {
-			console.log(params);
 			let def = new INK.Deferred();
+			// console.log("ここでエラー");
+			// console.log(hoge);
 			setTimeout(() => {
 				console.log("a");
 				def.resolve("val a");
@@ -31,27 +88,31 @@
 		}
 
 		function b(params) {
-			console.log(params);
 			let def = new INK.Deferred();
-			// console.log("b start");
+			// console.log("ここでエラー");
+			// console.log(hoge);
 			setTimeout(() => {
+				console.log("b start");
 				console.log("b");
 				def.resolve("val b");
+				// def.reject("val b");
 			}, 500);
 			return def.promise;
 		}
 
 		function c(params) {
-			console.log(params);
 			let def = new INK.Deferred();
+
 			setTimeout(() => {
+				// console.log("ここでエラー");
+				// console.log(hoge);
 				console.log("c");
 				def.resolve("val c");
 			}, 500);
 			return def.promise;
 		}
 
-		// INK.Deferred.serials(
+		// INK.Deferred.serial(
 		// 	function (params) {
 		// 		console.log("START");
 		// 		return 1;
@@ -71,7 +132,7 @@
 		// 		console.log("//////");
 		// 		console.log(v);
 		// 		console.log("//////");
-		// 		return INK.Deferred.serials(a, c, b);
+		// 		return INK.Deferred.serial(a, c, b);
 		// 	},
 		// 	(v)=>{
 		// 		console.log("===3===");
@@ -84,11 +145,15 @@
 
 			function sampleResolve(value) {
 				return new Promise(resolve => {
+					// console.log(hoge);
 					setTimeout(() => {
+						console.log("sampleResolve");
 						resolve(value * 2);
 					}, 2000);
 				})
 			}
+
+
 
 			/**
 			 * sampleResolve()をawaitしているため、Promiseの結果が返されるまで処理が一時停止される
@@ -97,18 +162,17 @@
 			 */
 			// async function sample() {
 			// 	await INK.Deferred.delay(5000);
-			// 	await INK.Deferred.serials(a, c, b);
-			// 	await INK.Deferred.serials(a, c, b);
+			// 	await INK.Deferred.serial(a, c, b);
+			// 	await INK.Deferred.serial(a, c, b);
 			// }
 
-			INK.Deferred.serials(a, c, b);
+			// INK.Deferred.serial(a, b, c);
+				// INK.Deferred.parallel(a, b, sampleResolve)
 
 
-			// sample().then(result => {
-			// 	console.log(result); // => 15
-			// });
 
-			// console.log(100);
+
+
 
 	</script>
 

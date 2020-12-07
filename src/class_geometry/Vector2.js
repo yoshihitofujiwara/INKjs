@@ -333,7 +333,7 @@ export default class Vector2 {
    * @return {vector2}
    */
   static random(mag) {
-    return Vector2.radToVector2(utils.random(utils.TWO_PI), mag);
+    return Vector2.radToVector2(utils.TWO_PI * Math.random(), mag);
   }
 
 

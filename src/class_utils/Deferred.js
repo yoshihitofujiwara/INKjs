@@ -2,7 +2,7 @@
 /// The MIT License (MIT)
 /// Source https://github.com/yoshihitofujiwara/INKjs
 /// Author Yoshihito Fujiwara
-/// Copyright (c) 2012-2019 Yoshihito Fujiwara
+/// Copyright (c) 2012-2020 Yoshihito Fujiwara
 
 
 /*----------------------------------------------------------------------
@@ -46,17 +46,17 @@ export default class Deferred {
 
 
   /**
-   * serials
+   * serial
    * @param  {promise|deferred} callbacks
    */
-  static serials(...callbacks){
+  static serial(...callbacks){
     let def = new Deferred();
     let pipe = Promise.resolve();
     let i = 0, l = callbacks.length;
     for(; i < l; i+=1){
-      pipe = pipe.then(callbacks[i]);
+			pipe = pipe.then(callbacks[i]);
     }
-    pipe.then(def.resolve.bind(def));
+		pipe.then(def.resolve.bind(def)).catch(e => console.error(e));
     return def.promise;
   }
 
@@ -72,7 +72,7 @@ export default class Deferred {
     for(; i < l; i+=1){
       ary.push(callbacks[i]());
     }
-    Promise.all(ary).then(def.resolve.bind(def));
+    Promise.all(ary).then(def.resolve.bind(def)).catch(e => console.error(e));
     return def.promise;
   }
 
@@ -85,5 +85,5 @@ export default class Deferred {
     let def = new Deferred();
     setTimeout(def.resolve.bind(def), ms);
     return def.promise;
-  }
+	}
 }

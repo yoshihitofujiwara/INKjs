@@ -537,9 +537,12 @@ export function isIE(ver) {
  * @param {Number|String}  ver バージョン名
  * @return {boolean}
  */
-export function isEdge(ver) {
-	ver = ver || "";
-	return ua.indexOf("edge/" + ver) > -1;
+export function isEdge(ver = "") {
+	if(ua.indexOf("edg/") > -1){	// chrome edge
+		return ua.indexOf("edg/" + ver) > -1;
+	} else { // old edge
+		return ua.indexOf("edge/" + ver) > -1;
+	}
 };
 
 

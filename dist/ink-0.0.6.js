@@ -1,9 +1,9 @@
 /**
  * INK.js
- * Version: 0.0.5
+ * Version: 0.0.6
  * Source : https://github.com/yoshihitofujiwara/INKjs
  * Author : Yoshihito Fujiwara
- * Copyright (c) 2012-2019 Yoshihito Fujiwara
+ * Copyright (c) 2012-2020 Yoshihito Fujiwara
  *
  * Released under the MIT license
  * http://opensource.org/licenses/mit-license.php
@@ -699,7 +699,7 @@ var Vector2 = function () {
   }, {
     key: "random",
     value: function random(mag) {
-      return Vector2.radToVector2(__WEBPACK_IMPORTED_MODULE_0__utils__["_32" /* random */](__WEBPACK_IMPORTED_MODULE_0__utils__["e" /* TWO_PI */]), mag);
+      return Vector2.radToVector2(__WEBPACK_IMPORTED_MODULE_0__utils__["e" /* TWO_PI */] * Math.random(), mag);
     }
 
     /**
@@ -1475,9 +1475,16 @@ function isIE(ver) {
  * @param {Number|String}  ver バージョン名
  * @return {boolean}
  */
-function isEdge(ver) {
-  ver = ver || "";
-  return ua.indexOf("edge/" + ver) > -1;
+function isEdge() {
+  var ver = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : "";
+
+  if (ua.indexOf("edg/") > -1) {
+    // chrome edge
+    return ua.indexOf("edg/" + ver) > -1;
+  } else {
+    // old edge
+    return ua.indexOf("edge/" + ver) > -1;
+  }
 };
 
 /**
@@ -3245,7 +3252,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /// The MIT License (MIT)
 /// Source https://github.com/yoshihitofujiwara/INKjs
 /// Author Yoshihito Fujiwara
-/// Copyright (c) 2012-2019 Yoshihito Fujiwara
+/// Copyright (c) 2012-2020 Yoshihito Fujiwara
 
 
 
@@ -3388,7 +3395,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /// The MIT License (MIT)
 /// Source https://github.com/yoshihitofujiwara/INKjs
 /// Author Yoshihito Fujiwara
-/// Copyright (c) 2012-2019 Yoshihito Fujiwara
+/// Copyright (c) 2012-2020 Yoshihito Fujiwara
 
 // export * from "./class_algorithm"; 未実装
 
@@ -6033,7 +6040,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 /// The MIT License (MIT)
 /// Source https://github.com/yoshihitofujiwara/INKjs
 /// Author Yoshihito Fujiwara
-/// Copyright (c) 2012-2019 Yoshihito Fujiwara
+/// Copyright (c) 2012-2020 Yoshihito Fujiwara
 
 
 /*----------------------------------------------------------------------
@@ -6085,13 +6092,13 @@ var Deferred = function () {
     }
 
     /**
-     * serials
+     * serial
      * @param  {promise|deferred} callbacks
      */
 
   }], [{
-    key: "serials",
-    value: function serials() {
+    key: "serial",
+    value: function serial() {
       var def = new Deferred();
       var pipe = Promise.resolve();
       var i = 0,
@@ -6099,7 +6106,9 @@ var Deferred = function () {
       for (; i < l; i += 1) {
         pipe = pipe.then(arguments.length <= i ? undefined : arguments[i]);
       }
-      pipe.then(def.resolve.bind(def));
+      pipe.then(def.resolve.bind(def)).catch(function (e) {
+        return console.error(e);
+      });
       return def.promise;
     }
 
@@ -6123,7 +6132,9 @@ var Deferred = function () {
       for (; i < l; i += 1) {
         ary.push(callbacks[i]());
       }
-      Promise.all(ary).then(def.resolve.bind(def));
+      Promise.all(ary).then(def.resolve.bind(def)).catch(function (e) {
+        return console.error(e);
+      });
       return def.promise;
     }
 
