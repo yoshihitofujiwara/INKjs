@@ -2,15 +2,12 @@
 /// The MIT License (MIT)
 /// Source https://github.com/yoshihitofujiwara/INKjs
 /// Author Yoshihito Fujiwara
-/// Copyright (c) 2012 Yoshihito Fujiwara
+/// Copyright (c) 2012 - 2021 Yoshihito Fujiwara
 
 import * as utils from "../utils";
 
 
 /**
- * イベント
- * イベントクラスの継承して使用出来ます｡メディエーターとしても使用すことも可能
- *
  * @class Events
  * @constructor
  * @example

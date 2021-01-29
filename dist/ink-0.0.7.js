@@ -1,9 +1,9 @@
 /**
  * INK.js
- * Version: 0.0.6
+ * Version: 0.0.7
  * Source : https://github.com/yoshihitofujiwara/INKjs
  * Author : Yoshihito Fujiwara
- * Copyright (c) 2012-2020 Yoshihito Fujiwara
+ * Copyright (c) 2012-2021 Yoshihito Fujiwara
  *
  * Released under the MIT license
  * http://opensource.org/licenses/mit-license.php
@@ -78,7 +78,7 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__array__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__array__ = __webpack_require__(3);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "g", function() { return __WEBPACK_IMPORTED_MODULE_0__array__["a"]; });
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "q", function() { return __WEBPACK_IMPORTED_MODULE_0__array__["b"]; });
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "s", function() { return __WEBPACK_IMPORTED_MODULE_0__array__["c"]; });
@@ -195,7 +195,7 @@
 /// The MIT License (MIT)
 /// Source https://github.com/yoshihitofujiwara/INKjs
 /// Author Yoshihito Fujiwara
-/// Copyright (c) 2012 Yoshihito Fujiwara
+/// Copyright (c) 2012 - 2021 Yoshihito Fujiwara
 
 
 
@@ -222,7 +222,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 /// The MIT License (MIT)
 /// Source https://github.com/yoshihitofujiwara/INKjs
 /// Author Yoshihito Fujiwara
-/// Copyright (c) 2012 Yoshihito Fujiwara
+/// Copyright (c) 2012 - 2021 Yoshihito Fujiwara
 
 
 
@@ -970,7 +970,7 @@ var Vector2 = function () {
 /// The MIT License (MIT)
 /// Source https://github.com/yoshihitofujiwara/INKjs
 /// Author Yoshihito Fujiwara
-/// Copyright (c) 2012 Yoshihito Fujiwara
+/// Copyright (c) 2012 - 2021 Yoshihito Fujiwara
 
 
 /**
@@ -1677,6 +1677,127 @@ var isTouchScreen = function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return argsToArray; });
+/* harmony export (immutable) */ __webpack_exports__["b"] = each;
+/* harmony export (immutable) */ __webpack_exports__["c"] = findMax;
+/* harmony export (immutable) */ __webpack_exports__["d"] = findMin;
+/* harmony export (immutable) */ __webpack_exports__["e"] = shuffle;
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__is__ = __webpack_require__(2);
+/// INKjs Javascript Library
+/// The MIT License (MIT)
+/// Source https://github.com/yoshihitofujiwara/INKjs
+/// Author Yoshihito Fujiwara
+/// Copyright (c) 2012 - 2021 Yoshihito Fujiwara
+
+
+
+/**
+ * @class Array
+ */
+
+/**
+ * argumentsを配列に変換して返す
+ * スライス位置を指定して切り取り可能
+ * @static
+ * @method argsToArray
+ * @param {arguments} args arguments
+ * @param {number} index スライスする切り取り開始位置
+ * @param {number} lastIndex スライスする切り取り終了位置
+ * @type {array} argumentsを配列に変換して返す
+ */
+var argsToArray = function () {
+	var slice = Array.prototype.slice;
+
+	return function (args) {
+		var index = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
+		var lastIndex = arguments[2];
+
+		lastIndex = lastIndex || args.length;
+		return slice.call(args, index, lastIndex);
+	};
+}();
+
+/**
+ * each
+ * @static
+ * @method each
+ * @param {Array|Object|Number} obj eachを行うオブジェクト、または回数
+ * @param {function} callback イテレーション毎のコールバック関数
+ * @return {object} 第一引数に渡されたオブジェクト
+ */
+function each(obj, callback) {
+	var isContinue = void 0,
+	    i = void 0;
+
+	if (__WEBPACK_IMPORTED_MODULE_0__is__["g" /* isArray */](obj)) {
+		var l = obj.length;
+		i = 0;
+		for (; i < l; i += 1) {
+			isContinue = callback.call(obj[i], obj[i], i, obj);
+			if (isContinue === false) {
+				break;
+			}
+		}
+	} else if (__WEBPACK_IMPORTED_MODULE_0__is__["D" /* isObject */](obj) || __WEBPACK_IMPORTED_MODULE_0__is__["p" /* isFunction */](obj)) {
+		for (i in obj) {
+			isContinue = callback.call(obj[i], obj[i], i, obj);
+			if (isContinue === false) {
+				break;
+			}
+		}
+	} else if (__WEBPACK_IMPORTED_MODULE_0__is__["B" /* isNumber */](obj)) {
+		i = 0;
+		for (; i < obj; i += 1) {
+			isContinue = callback.call(null, i, i, obj);
+			if (isContinue === false) {
+				break;
+			}
+		}
+	}
+
+	return obj;
+};
+
+/**
+ * 配列から最大値を探す
+ * @static
+ * @method findMax
+ * @param  {array} nums 数値を格納した配列
+ * @return {number}
+ */
+function findMax(nums) {
+	return Math.max.apply(null, nums);
+};
+
+/**
+ * 配列から最小値を探す
+ * @static
+ * @method findMin
+ * @param  {array} nums 数値を格納した配列
+ * @return {number}
+ */
+function findMin(nums) {
+	return Math.min.apply(null, nums);
+};
+
+/**
+ * 配列をシャッフルして返す
+ * @static
+ * @method shuffle
+ * @param {array} ary シャッフルする配列
+ * @return {array} 配列をシャッフルして返す
+ */
+function shuffle(ary) {
+	return ary.sort(function () {
+		return Math.random() - 0.5;
+	});
+};
+
+/***/ }),
+/* 4 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils__ = __webpack_require__(0);
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -1686,7 +1807,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 /// The MIT License (MIT)
 /// Source https://github.com/yoshihitofujiwara/INKjs
 /// Author Yoshihito Fujiwara
-/// Copyright (c) 2012 Yoshihito Fujiwara
+/// Copyright (c) 2012 - 2021 Yoshihito Fujiwara
 
 
 
@@ -1778,7 +1899,7 @@ var Point2 = function () {
 /* harmony default export */ __webpack_exports__["a"] = (Point2);
 
 /***/ }),
-/* 4 */
+/* 5 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1791,14 +1912,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 /// The MIT License (MIT)
 /// Source https://github.com/yoshihitofujiwara/INKjs
 /// Author Yoshihito Fujiwara
-/// Copyright (c) 2012 Yoshihito Fujiwara
+/// Copyright (c) 2012 - 2021 Yoshihito Fujiwara
 
 
 
 /**
- * イベント
- * イベントクラスの継承して使用出来ます｡メディエーターとしても使用すことも可能
- *
  * @class Events
  * @constructor
  * @example
@@ -2081,127 +2199,6 @@ var Events = function () {
 /* harmony default export */ __webpack_exports__["a"] = (Events);
 
 /***/ }),
-/* 5 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return argsToArray; });
-/* harmony export (immutable) */ __webpack_exports__["b"] = each;
-/* harmony export (immutable) */ __webpack_exports__["c"] = findMax;
-/* harmony export (immutable) */ __webpack_exports__["d"] = findMin;
-/* harmony export (immutable) */ __webpack_exports__["e"] = shuffle;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__is__ = __webpack_require__(2);
-/// INKjs Javascript Library
-/// The MIT License (MIT)
-/// Source https://github.com/yoshihitofujiwara/INKjs
-/// Author Yoshihito Fujiwara
-/// Copyright (c) 2012 Yoshihito Fujiwara
-
-
-
-/**
- * @class Array
- */
-
-/**
- * argumentsを配列に変換して返す
- * スライス位置を指定して切り取り可能
- * @static
- * @method argsToArray
- * @param {arguments} args arguments
- * @param {number} index スライスする切り取り開始位置
- * @param {number} lastIndex スライスする切り取り終了位置
- * @type {array} argumentsを配列に変換して返す
- */
-var argsToArray = function () {
-	var slice = Array.prototype.slice;
-
-	return function (args) {
-		var index = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
-		var lastIndex = arguments[2];
-
-		lastIndex = lastIndex || args.length;
-		return slice.call(args, index, lastIndex);
-	};
-}();
-
-/**
- * each
- * @static
- * @method each
- * @param {Array|Object|Number} obj eachを行うオブジェクト、または回数
- * @param {function} callback イテレーション毎のコールバック関数
- * @return {object} 第一引数に渡されたオブジェクト
- */
-function each(obj, callback) {
-	var isContinue = void 0,
-	    i = void 0;
-
-	if (__WEBPACK_IMPORTED_MODULE_0__is__["g" /* isArray */](obj)) {
-		var l = obj.length;
-		i = 0;
-		for (; i < l; i += 1) {
-			isContinue = callback.call(obj[i], obj[i], i, obj);
-			if (isContinue === false) {
-				break;
-			}
-		}
-	} else if (__WEBPACK_IMPORTED_MODULE_0__is__["D" /* isObject */](obj) || __WEBPACK_IMPORTED_MODULE_0__is__["p" /* isFunction */](obj)) {
-		for (i in obj) {
-			isContinue = callback.call(obj[i], obj[i], i, obj);
-			if (isContinue === false) {
-				break;
-			}
-		}
-	} else if (__WEBPACK_IMPORTED_MODULE_0__is__["B" /* isNumber */](obj)) {
-		i = 0;
-		for (; i < obj; i += 1) {
-			isContinue = callback.call(null, i, i, obj);
-			if (isContinue === false) {
-				break;
-			}
-		}
-	}
-
-	return obj;
-};
-
-/**
- * 配列から最大値を探す
- * @static
- * @method findMax
- * @param  {array} nums 数値を格納した配列
- * @return {number}
- */
-function findMax(nums) {
-	return Math.max.apply(null, nums);
-};
-
-/**
- * 配列から最小値を探す
- * @static
- * @method findMin
- * @param  {array} nums 数値を格納した配列
- * @return {number}
- */
-function findMin(nums) {
-	return Math.min.apply(null, nums);
-};
-
-/**
- * 配列をシャッフルして返す
- * @static
- * @method shuffle
- * @param {array} ary シャッフルする配列
- * @return {array} 配列をシャッフルして返す
- */
-function shuffle(ary) {
-	return ary.sort(function () {
-		return Math.random() - 0.5;
-	});
-};
-
-/***/ }),
 /* 6 */
 /***/ (function(module, exports) {
 
@@ -2235,7 +2232,7 @@ module.exports = g;
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Line__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Point2__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Point2__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Polygon__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Vector2__ = __webpack_require__(1);
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -2250,7 +2247,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 /// The MIT License (MIT)
 /// Source https://github.com/yoshihitofujiwara/INKjs
 /// Author Yoshihito Fujiwara
-/// Copyright (c) 2012 Yoshihito Fujiwara
+/// Copyright (c) 2012 - 2021 Yoshihito Fujiwara
 
 
 
@@ -2579,7 +2576,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 /// The MIT License (MIT)
 /// Source https://github.com/yoshihitofujiwara/INKjs
 /// Author Yoshihito Fujiwara
-/// Copyright (c) 2012 Yoshihito Fujiwara
+/// Copyright (c) 2012 - 2021 Yoshihito Fujiwara
 
 
 
@@ -2787,7 +2784,7 @@ var Line = function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Point2__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Point2__ = __webpack_require__(4);
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -2796,7 +2793,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 /// The MIT License (MIT)
 /// Source https://github.com/yoshihitofujiwara/INKjs
 /// Author Yoshihito Fujiwara
-/// Copyright (c) 2012 Yoshihito Fujiwara
+/// Copyright (c) 2012 - 2021 Yoshihito Fujiwara
 
 
 
@@ -2931,7 +2928,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 /// The MIT License (MIT)
 /// Source https://github.com/yoshihitofujiwara/INKjs
 /// Author Yoshihito Fujiwara
-/// Copyright (c) 2012 Yoshihito Fujiwara
+/// Copyright (c) 2012 - 2021 Yoshihito Fujiwara
 
 
 
@@ -3252,7 +3249,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /// The MIT License (MIT)
 /// Source https://github.com/yoshihitofujiwara/INKjs
 /// Author Yoshihito Fujiwara
-/// Copyright (c) 2012-2020 Yoshihito Fujiwara
+/// Copyright (c) 2012-2021 Yoshihito Fujiwara
 
 
 
@@ -3286,6 +3283,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "Deferred", function() { return __WEBPACK_IMPORTED_MODULE_2__class_utils__["b"]; });
 /* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "Debug", function() { return __WEBPACK_IMPORTED_MODULE_2__class_utils__["a"]; });
 /* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "Ease", function() { return __WEBPACK_IMPORTED_MODULE_2__class_utils__["c"]; });
+/* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "Gamepad", function() { return __WEBPACK_IMPORTED_MODULE_2__class_utils__["d"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils__ = __webpack_require__(0);
 /* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "argsToArray", function() { return __WEBPACK_IMPORTED_MODULE_3__utils__["g"]; });
 /* harmony namespace reexport (by provided) */ __webpack_require__.d(__webpack_exports__, "each", function() { return __WEBPACK_IMPORTED_MODULE_3__utils__["q"]; });
@@ -3395,15 +3393,14 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /// The MIT License (MIT)
 /// Source https://github.com/yoshihitofujiwara/INKjs
 /// Author Yoshihito Fujiwara
-/// Copyright (c) 2012-2020 Yoshihito Fujiwara
-
-// export * from "./class_algorithm"; 未実装
+/// Copyright (c) 2012-2021 Yoshihito Fujiwara
 
 
 
 
 
-var VERSION = "0.0.5";
+
+var VERSION = "0.0.7";
 
 
 
@@ -3412,7 +3409,7 @@ var VERSION = "0.0.5";
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Events__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Events__ = __webpack_require__(5);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__Events__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Ticker__ = __webpack_require__(21);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_1__Ticker__["a"]; });
@@ -3422,7 +3419,7 @@ var VERSION = "0.0.5";
 /// The MIT License (MIT)
 /// Source https://github.com/yoshihitofujiwara/INKjs
 /// Author Yoshihito Fujiwara
-/// Copyright (c) 2012 Yoshihito Fujiwara
+/// Copyright (c) 2012 - 2021 Yoshihito Fujiwara
 
 
 
@@ -3438,7 +3435,7 @@ var VERSION = "0.0.5";
 /// The MIT License (MIT)
 /// Source https://github.com/yoshihitofujiwara/INKjs
 /// Author Yoshihito Fujiwara
-/// Copyright (c) 2012 Yoshihito Fujiwara
+/// Copyright (c) 2012 - 2021 Yoshihito Fujiwara
 
 /**
  * @class Config
@@ -3463,7 +3460,7 @@ var isDevelop = true;
 /// The MIT License (MIT)
 /// Source https://github.com/yoshihitofujiwara/INKjs
 /// Author Yoshihito Fujiwara
-/// Copyright (c) 2012 Yoshihito Fujiwara
+/// Copyright (c) 2012 - 2021 Yoshihito Fujiwara
 
 
 
@@ -3538,7 +3535,7 @@ function hasUA(str) {
 /// The MIT License (MIT)
 /// Source https://github.com/yoshihitofujiwara/INKjs
 /// Author Yoshihito Fujiwara
-/// Copyright (c) 2012 Yoshihito Fujiwara
+/// Copyright (c) 2012 - 2021 Yoshihito Fujiwara
 
 /**
  * @class Location
@@ -3646,7 +3643,7 @@ function queryHashMap(query) {
 /// The MIT License (MIT)
 /// Source https://github.com/yoshihitofujiwara/INKjs
 /// Author Yoshihito Fujiwara
-/// Copyright (c) 2012 Yoshihito Fujiwara
+/// Copyright (c) 2012 - 2021 Yoshihito Fujiwara
 
 
 /**
@@ -3964,7 +3961,7 @@ function map(val, fromMin, fromMax, toMin, toMax) {
 /// The MIT License (MIT)
 /// Source https://github.com/yoshihitofujiwara/INKjs
 /// Author Yoshihito Fujiwara
-/// Copyright (c) 2012 Yoshihito Fujiwara
+/// Copyright (c) 2012 - 2021 Yoshihito Fujiwara
 
 
 /**
@@ -4109,13 +4106,13 @@ function randomLinerCenter() {
 /* harmony export (immutable) */ __webpack_exports__["c"] = removeSpace;
 /* harmony export (immutable) */ __webpack_exports__["d"] = replaceAll;
 /* harmony export (immutable) */ __webpack_exports__["e"] = toHarfNumber;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__array__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__array__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__is__ = __webpack_require__(2);
 /// INKjs Javascript Library
 /// The MIT License (MIT)
 /// Source https://github.com/yoshihitofujiwara/INKjs
 /// Author Yoshihito Fujiwara
-/// Copyright (c) 2012 Yoshihito Fujiwara
+/// Copyright (c) 2012 - 2021 Yoshihito Fujiwara
 
 
 
@@ -4245,7 +4242,7 @@ function toHarfNumber(str) {
 /* harmony export (immutable) */ __webpack_exports__["e"] = noop;
 /* harmony export (immutable) */ __webpack_exports__["c"] = log;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__is__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__array__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__array__ = __webpack_require__(3);
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
@@ -4254,7 +4251,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 /// The MIT License (MIT)
 /// Source https://github.com/yoshihitofujiwara/INKjs
 /// Author Yoshihito Fujiwara
-/// Copyright (c) 2012 Yoshihito Fujiwara
+/// Copyright (c) 2012 - 2021 Yoshihito Fujiwara
 
 
 
@@ -4434,7 +4431,7 @@ function log() {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Events__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Events__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils__ = __webpack_require__(0);
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -4448,7 +4445,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 /// The MIT License (MIT)
 /// Source https://github.com/yoshihitofujiwara/INKjs
 /// Author Yoshihito Fujiwara
-/// Copyright (c) 2012 Yoshihito Fujiwara
+/// Copyright (c) 2012 - 2021 Yoshihito Fujiwara
 
 
 
@@ -4648,7 +4645,7 @@ var Ticker = function (_Events) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Events__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Events__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils__ = __webpack_require__(0);
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -4662,7 +4659,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 /// The MIT License (MIT)
 /// Author Yoshihito Fujiwara
 /// Source https://bitbucket.org/yoshihitofujiwara/ampjs
-/// Copyright (c) 2012 Yoshihito Fujiwara
+/// Copyright (c) 2012 - 2021 Yoshihito Fujiwara
 
 
 
@@ -4831,7 +4828,7 @@ var Mediaquery = function (_Events) {
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_2__Delaunay__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Line__ = __webpack_require__(8);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return __WEBPACK_IMPORTED_MODULE_3__Line__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Point2__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Point2__ = __webpack_require__(4);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return __WEBPACK_IMPORTED_MODULE_4__Point2__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Polygon__ = __webpack_require__(9);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return __WEBPACK_IMPORTED_MODULE_5__Polygon__["a"]; });
@@ -4848,7 +4845,6 @@ var Mediaquery = function (_Events) {
 
 
 
-// export { default as Matrix2 } from './Matrix2'; 実装予定
 
 
 
@@ -4871,7 +4867,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 /// The MIT License (MIT)
 /// Source https://github.com/yoshihitofujiwara/INKjs
 /// Author Yoshihito Fujiwara
-/// Copyright (c) 2012 Yoshihito Fujiwara
+/// Copyright (c) 2012 - 2021 Yoshihito Fujiwara
 
 
 
@@ -5062,7 +5058,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 /// The MIT License (MIT)
 /// Source https://github.com/yoshihitofujiwara/INKjs
 /// Author Yoshihito Fujiwara
-/// Copyright (c) 2012 Yoshihito Fujiwara
+/// Copyright (c) 2012 - 2021 Yoshihito Fujiwara
 
 
 
@@ -5506,7 +5502,7 @@ var Delaunay = function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Point2__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Point2__ = __webpack_require__(4);
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -5519,7 +5515,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 /// The MIT License (MIT)
 /// Source https://github.com/yoshihitofujiwara/INKjs
 /// Author Yoshihito Fujiwara
-/// Copyright (c) 2012 Yoshihito Fujiwara
+/// Copyright (c) 2012 - 2021 Yoshihito Fujiwara
 
 
 
@@ -5628,7 +5624,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 /// The MIT License (MIT)
 /// Source https://github.com/yoshihitofujiwara/INKjs
 /// Author Yoshihito Fujiwara
-/// Copyright (c) 2012 Yoshihito Fujiwara
+/// Copyright (c) 2012 - 2021 Yoshihito Fujiwara
 
 
 
@@ -6014,13 +6010,15 @@ var Size = function () {
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_1__Debug__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Ease__ = __webpack_require__(33);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_2__Ease__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Gamepad__ = __webpack_require__(34);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return __WEBPACK_IMPORTED_MODULE_3__Gamepad__["a"]; });
 /// INKjs Javascript Library
 /// The MIT License (MIT)
 /// Source https://github.com/yoshihitofujiwara/INKjs
 /// Author Yoshihito Fujiwara
-/// Copyright (c) 2012 Yoshihito Fujiwara
+/// Copyright (c) 2012 - 2021 Yoshihito Fujiwara
 
-// export { default as Color } from './Color'; 実装予定
+
 
 
 
@@ -6032,7 +6030,8 @@ var Size = function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(Promise) {var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+/* WEBPACK VAR INJECTION */(function(Promise) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils_array__ = __webpack_require__(3);
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -6040,7 +6039,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 /// The MIT License (MIT)
 /// Source https://github.com/yoshihitofujiwara/INKjs
 /// Author Yoshihito Fujiwara
-/// Copyright (c) 2012-2020 Yoshihito Fujiwara
+/// Copyright (c) 2012-2021 Yoshihito Fujiwara
+
 
 
 /*----------------------------------------------------------------------
@@ -6048,8 +6048,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 ----------------------------------------------------------------------*/
 /**
  * @class Deferred
- * @constructor
  */
+
 var Deferred = function () {
   /**
    * constructor
@@ -6070,7 +6070,7 @@ var Deferred = function () {
   --------------------------------------------------------------------------*/
   /**
    * resolve
-   * @param {*} params
+   * @param {any} params
    */
 
 
@@ -6082,7 +6082,7 @@ var Deferred = function () {
 
     /**
      * reject
-     * @param {*} params
+     * @param {any} params
      */
 
   }, {
@@ -6093,7 +6093,7 @@ var Deferred = function () {
 
     /**
      * serial
-     * @param  {promise|deferred} callbacks
+     * @param  {promise|deferred} tasks
      */
 
   }], [{
@@ -6104,38 +6104,27 @@ var Deferred = function () {
       var i = 0,
           l = arguments.length;
       for (; i < l; i += 1) {
-        pipe = pipe.then(arguments.length <= i ? undefined : arguments[i]);
+        pipe = pipe.then(arguments.length <= i ? undefined : arguments[i]).catch(def.reject.bind(def));
       }
-      pipe.then(def.resolve.bind(def)).catch(function (e) {
-        return console.error(e);
-      });
+      pipe.then(def.resolve.bind(def));
       return def.promise;
     }
 
     /**
      * parallel
-     * @param  {promise|deferred} callbacks
+     * @param  {promise|deferred} tasks
      */
 
   }, {
     key: "parallel",
     value: function parallel() {
-      var def = new Deferred();
-
-      for (var _len = arguments.length, callbacks = Array(_len), _key = 0; _key < _len; _key++) {
-        callbacks[_key] = arguments[_key];
+      for (var _len = arguments.length, tasks = Array(_len), _key = 0; _key < _len; _key++) {
+        tasks[_key] = arguments[_key];
       }
 
-      var ary = [],
-          i = 0,
-          l = callbacks.length;
-      for (; i < l; i += 1) {
-        ary.push(callbacks[i]());
-      }
-      Promise.all(ary).then(def.resolve.bind(def)).catch(function (e) {
-        return console.error(e);
-      });
-      return def.promise;
+      return Promise.all(Object(__WEBPACK_IMPORTED_MODULE_0__utils_array__["a" /* argsToArray */])(tasks).map(function (t) {
+        return t();
+      }));
     }
 
     /**
@@ -7543,7 +7532,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 /// The MIT License (MIT)
 /// Source https://github.com/yoshihitofujiwara/INKjs
 /// Author Yoshihito Fujiwara
-/// Copyright (c) 2012 Yoshihito Fujiwara
+/// Copyright (c) 2012 - 2021 Yoshihito Fujiwara
 
 
 
@@ -7839,7 +7828,7 @@ var Debug = function () {
 /// The MIT License (MIT)
 /// Source https://github.com/yoshihitofujiwara/INKjs
 /// Author Yoshihito Fujiwara
-/// Copyright (c) 2012 Yoshihito Fujiwara
+/// Copyright (c) 2012 - 2021 Yoshihito Fujiwara
 
 
 
@@ -8279,6 +8268,172 @@ Ease.bounceInOut = Ease.easeInOutBounce = function (t) {
     return Ease.bounceOut(t * 2 - 1) * 0.5 + 0.5;
   }
 };
+
+/***/ }),
+/* 34 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+/// INKjs Javascript Library
+/// The MIT License (MIT)
+/// Source https://github.com/yoshihitofujiwara/INKjs
+/// Author Yoshihito Fujiwara
+/// Copyright (c) 2012-2021 Yoshihito Fujiwara
+
+
+/*----------------------------------------------------------------------
+  @constructor
+----------------------------------------------------------------------*/
+/**
+ * @class Gamepad
+ * @constructor
+ */
+var Gamepad = function () {
+	/**
+  * constructor
+  */
+	function Gamepad(gamepad) {
+		_classCallCheck(this, Gamepad);
+
+		console.log(gamepad);
+		this.gamepad = gamepad;
+		this._buttons = Gamepad.getButton(gamepad);
+	}
+
+	// update(gamepad){
+	// 	console.log(gamepad, this._buttons);
+	// }
+
+	_createClass(Gamepad, [{
+		key: "toKeyNames",
+		value: function toKeyNames(gamepad) {
+			var keyNames = {};
+
+			for (var i = 1; i < gamepad.buttons.length; i++) {
+				keyNames[this._buttons[i]] = gamepad.buttons[i];
+			}
+
+			keyNames.LEFT_JOG = {
+				x: gamepad.axes[0],
+				y: gamepad.axes[1]
+			};
+
+			keyNames.RIGHT_JOG = {
+				x: gamepad.axes[2],
+				y: gamepad.axes[3]
+			};
+		}
+	}], [{
+		key: "toKeyValues",
+
+
+		/*--------------------------------------------------------------------------
+    @methods
+  --------------------------------------------------------------------------*/
+
+		value: function toKeyValues(gamepad) {
+			var keyNames = {
+				isAnyPressed: gamepad.buttons.some(function (a) {
+					return a.pressed;
+				}),
+				isAnyTouched: gamepad.buttons.some(function (a) {
+					return a.touched;
+				}),
+				isAnyAxes: gamepad.axes.some(function (a) {
+					return a != 0;
+				})
+			};
+
+			keyNames.isAction = keyNames.isAnyPressed || keyNames.isAnyTouched || keyNames.isAnyAxes;
+
+			for (var i = 1; i < gamepad.buttons.length; i++) {
+				keyNames[STANDARD_BUTTONS[i]] = gamepad.buttons[i];
+			}
+
+			keyNames.LEFT_JOG = {
+				x: gamepad.axes[0],
+				y: gamepad.axes[1]
+			};
+
+			keyNames.RIGHT_JOG = {
+				x: gamepad.axes[2],
+				y: gamepad.axes[3]
+			};
+
+			return keyNames;
+		}
+	}, {
+		key: "getButton",
+		value: function getButton(gamepad) {
+			// if(gamepad.mapping)
+			return STANDARD_BUTTONS.concat();
+		}
+	}]);
+
+	return Gamepad;
+}();
+
+/*============================================================
+	Button Type
+============================================================*/
+
+/* harmony default export */ __webpack_exports__["a"] = (Gamepad);
+var STANDARD_BUTTONS = ["B", "A", "Y", "X", "L", "R", "ZL", "ZR", "-", "+", "R_STICK", "L_STICK", "UP", "DOWN", "LEFT", "RIGHT", "HOME", "CAPTURE"];
+
+/*------------------------------------------------------------
+	以下未検証
+------------------------------------------------------------*/
+/*
+const PS_BUTTON = [
+];
+
+const XBOX_BUTTON = [
+  "A",
+  "B",
+  "X",
+  "Y",
+  "LB",
+  "RB",
+  "LT",
+  "RT",
+  "START",
+  "BACK",
+  "L_STICK",
+  "R_STICK",
+  "UP",
+  "DOWN",
+  "LEFT",
+  "RIGHT"
+]
+*/
+
+/*
+		// switch pro con
+		const BUTTON_A_INDEX = 0; // B
+		const BUTTON_B_INDEX = 1; // A
+		const BUTTON_X_INDEX = 2; // Y
+		const BUTTON_Y_INDEX = 3; // X
+		const BUTTON_LB_INDEX = 4; // L
+		const BUTTON_RB_INDEX = 5; // R
+		const BUTTON_LT_INDEX = 6; // ZL
+		const BUTTON_RT_INDEX = 7; // ZR
+
+		const BUTTON_BACK_INDEX = 8; // -
+		const BUTTON_START_INDEX = 9; // +
+		const BUTTON_L3_INDEX = 10; // LEFT STICK
+		const BUTTON_R3_INDEX = 11; // RIGHT STICK
+
+		const BUTTON_UP_INDEX = 12; // up
+		const BUTTON_DOWN_INDEX = 13; // down
+		const BUTTON_LEFT_INDEX = 14; // left
+		const BUTTON_RIGHT_INDEX = 15; // right
+		const BUTTON_HOME_INDEX = 16; // HOME
+		const BUTTON_SCREEN_INDEX = 17; // SCREEN SHOT
+*/
 
 /***/ })
 /******/ ]);

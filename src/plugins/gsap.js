@@ -2,15 +2,14 @@
 /// The MIT License (MIT)
 /// Source https://github.com/yoshihitofujiwara/INKjs
 /// Author Yoshihito Fujiwara
-/// Copyright (c) 2012-2020 Yoshihito Fujiwara
+/// Copyright (c) 2012-2021 Yoshihito Fujiwara
 
 
 import { gsap, TimelineMax } from "gsap";
 
 
 /**
- * gsap
-* serial
+ * serial
  */
 export function serial() {
 	let tl = new TimelineMax(),

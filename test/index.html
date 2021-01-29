@@ -9,7 +9,7 @@
 </head>
 
 <body>
-	<script src="../dist/ink-0.0.6.js"></script>
+	<script src="../dist/ink-0.0.7.js"></script>
 
 	<script>
 		// 	var worker = new Worker('worker.js');
@@ -18,72 +18,68 @@
 		// 	}, false);
 		// worker.postMessage("postMessage");
 
-	let connectedGamepadIndex;
-	let loopID;
+		/*============================================================
+			ここから
+		============================================================*/
+		console.log(INK.Gamepad);
+		let connectedGamepadIndex;
+		let loopID;
+		let prevKV;
+		let currentKV;
 
+		// https://plaza14.biz/sitio_digisapo/apps/gamepad_api_test/
+		// https://www.voorhoede.nl/en/blog/navigating-the-web-with-a-gamepad/
 
-	console.log("navigator.getGamepads()", navigator.getGamepads());
-	// ゲームパッドの接続
-	window.addEventListener("gamepadconnected", function (e) {
 		console.log("navigator.getGamepads()", navigator.getGamepads());
-		connectedGamepadIndex = e.gamepad.index;
-		loopID = requestAnimationFrame(loop);
-	});
 
-	// ゲームパッドの切断
-	window.addEventListener("gamepaddisconnected", function (e) {
-		console.log("Gamepad disconnected");
-		connectedGamepadIndex = null;
-		cancelAnimationFrame(loopID);
-	});
+		// ゲームパッドの接続
+		window.addEventListener("gamepadconnected", (e) => {
+			console.log("navigator.getGamepads()", navigator.getGamepads());
+			connectedGamepadIndex = e.gamepad.index;
 
-		const BUTTON_A_INDEX = 0;
+			// let gamepads = navigator.getGamepads();
+			// gamepad = new INK.Gamepad(gamepads[connectedGamepadIndex]);
 
-		const BUTTON_B_INDEX = 1;
-		const BUTTON_X_INDEX = 2;
-		const BUTTON_Y_INDEX = 3;
-		const BUTTON_LB_INDEX = 4;
-		const BUTTON_RB_INDEX = 5;
-		const BUTTON_LT_INDEX = 6;
-		const BUTTON_RT_INDEX = 7;
-		const BUTTON_BACK_INDEX = 8;
-		const BUTTON_START_INDEX = 9;
-		const BUTTON_L3_INDEX = 10;
-		const BUTTON_R3_INDEX = 11;
-		const BUTTON_UP_INDEX = 12;
-		const BUTTON_DOWN_INDEX = 13;
-		const BUTTON_LEFT_INDEX = 14;
-		const BUTTON_RIGHT_INDEX = 15;
-		const BUTTON_HOME_INDEX = 16;
+			loopID = requestAnimationFrame(loop);
+		});
 
-	function loop(timestamp) {
-		// ゲームパッドの入力情報を毎フレーム取得します。
-		let gamepads = navigator.getGamepads();
-		let gp = gamepads[connectedGamepadIndex];
+		// ゲームパッドの切断
+		window.addEventListener("gamepaddisconnected", (e) => {
+			console.log("Gamepad disconnected");
+			connectedGamepadIndex = null;
+			cancelAnimationFrame(loopID);
+		});
 
-		console.log(gp);
-
-		// ボタンが押されているかどうかを取得します。
-		// let aButton = gp.buttons[BUTTON_A_INDEX];
-		// if (aButton.pressed) {
-		// 	console.log(`Aボタンが押されました。value:${aButton.value}`);
-		// }
-
-		loopID = requestAnimationFrame(loop);
-	}
+		console.log(window);
 
 
+		function loop(timestamp) {
+			// ゲームパッドの入力情報を毎フレーム取得します。
+			let gamepads = navigator.getGamepads();
+			let gp = gamepads[connectedGamepadIndex];
 
-		console.log("INK.Deferred.serial");
+			currentKV = INK.Gamepad.toKeyValues(gp);
+			// if(currentKV.isAction){
+			// 	console.log(kn);
+			// }
+			prevKV = currentKV;
+			loopID = requestAnimationFrame(loop);
+		}
+
+
+		/*============================================================
+			ここまで
+		============================================================*/
+		// console.log("INK.Deferred.serial");
 
 		function a(params) {
 			let def = new INK.Deferred();
 			// console.log("ここでエラー");
 			// console.log(hoge);
-			setTimeout(() => {
-				console.log("a");
-				def.resolve("val a");
-			}, 500);
+			// setTimeout(() => {
+			console.log("a");
+			def.resolve("val a");
+			// }, 500);
 			return def.promise;
 		}
 
@@ -91,12 +87,14 @@
 			let def = new INK.Deferred();
 			// console.log("ここでエラー");
 			// console.log(hoge);
-			setTimeout(() => {
-				console.log("b start");
-				console.log("b");
-				def.resolve("val b");
-				// def.reject("val b");
-			}, 500);
+			// setTimeout(() => {
+			console.log("b start");
+			console.log("b");
+			// def.resolve("val b");
+			// def.resolve(new Error("404"));
+			def.reject("a");
+			// def.reject("val b");
+			// }, 500);
 			return def.promise;
 		}
 
@@ -107,7 +105,7 @@
 				// console.log("ここでエラー");
 				// console.log(hoge);
 				console.log("c");
-				def.resolve("val c");
+				// def.reject(new Error("404"));
 			}, 500);
 			return def.promise;
 		}
@@ -143,33 +141,56 @@
 		// 	}
 		// );
 
-			function sampleResolve(value) {
-				return new Promise(resolve => {
-					// console.log(hoge);
-					setTimeout(() => {
-						console.log("sampleResolve");
-						resolve(value * 2);
-					}, 2000);
-				})
-			}
+		function sampleResolve(value) {
+			return new Promise(resolve => {
+				// console.log(hoge);
+				setTimeout(() => {
+					// console.log(ok);
+					console.log("sampleResolve");
+					resolve(value * 2);
+				}, 2000);
+			})
+		}
 
 
 
-			/**
-			 * sampleResolve()をawaitしているため、Promiseの結果が返されるまで処理が一時停止される
-			 * 今回の場合、2秒後にresolve(10)が返ってきてその後の処理（return result + 5;）が再開される
-			 * resultにはresolveされた10が格納されているため、result + 5 = 15がreturnされる
-			 */
-			// async function sample() {
-			// 	await INK.Deferred.delay(5000);
-			// 	await INK.Deferred.serial(a, c, b);
-			// 	await INK.Deferred.serial(a, c, b);
-			// }
+		/**
+		 * sampleResolve()をawaitしているため、Promiseの結果が返されるまで処理が一時停止される
+		 * 今回の場合、2秒後にresolve(10)が返ってきてその後の処理（return result + 5;）が再開される
+		 * resultにはresolveされた10が格納されているため、result + 5 = 15がreturnされる
+		 */
+		// async function sample() {
+		// 	await INK.Deferred.delay(5000);
+		// 	await INK.Deferred.serial(a, c, b);
+		// 	await INK.Deferred.serial(a, c, b);
+		// }
 
-			// INK.Deferred.serial(a, b, c);
-				// INK.Deferred.parallel(a, b, sampleResolve)
+		function timerPromisefy(delay) {
+			return new Promise((resolve) => {
+				setTimeout(() => {
+					resolve(delay);
+				}, delay);
+			});
+		}
+
+		INK.Deferred.serial2(a, b, sampleResolve)
+			.then(a => {
+				console.log("then");
+				console.log(a);
+			})
+			.catch((error) => {
+				console.log("catch");
+				console.error(error);
+			});
 
 
+		// INK.Deferred.parallel(a, b, sampleResolve)
+		// 	.then(a => {
+		// 		console.log(a);
+		// 	})
+		// 	.catch((error) => {
+		// 		console.error(error);
+		// 	});
 
 
 

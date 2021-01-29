@@ -13,3 +13,9 @@ Mac Safari [Latest Edition]
 iOS Safari [Last 2 Version]
 Android Browser 6++
 ```
+
+---
+
+## Node Version
+
+- 10.16.0

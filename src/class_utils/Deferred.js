@@ -2,15 +2,15 @@
 /// The MIT License (MIT)
 /// Source https://github.com/yoshihitofujiwara/INKjs
 /// Author Yoshihito Fujiwara
-/// Copyright (c) 2012-2020 Yoshihito Fujiwara
+/// Copyright (c) 2012-2021 Yoshihito Fujiwara
 
+import {argsToArray} from "../utils/array";
 
 /*----------------------------------------------------------------------
   @constructor
 ----------------------------------------------------------------------*/
 /**
  * @class Deferred
- * @constructor
  */
 export default class Deferred {
   /**
@@ -29,53 +29,42 @@ export default class Deferred {
   --------------------------------------------------------------------------*/
   /**
    * resolve
-   * @param {*} params
+   * @param {any} params
    */
   resolve(params){
     this._resolve(params);
   }
 
-
   /**
    * reject
-   * @param {*} params
+   * @param {any} params
    */
   reject(params){
     this._reject(params);
   }
 
-
   /**
    * serial
-   * @param  {promise|deferred} callbacks
+   * @param  {promise|deferred} tasks
    */
-  static serial(...callbacks){
+  static serial(...tasks){
     let def = new Deferred();
     let pipe = Promise.resolve();
-    let i = 0, l = callbacks.length;
+    let i = 0, l = tasks.length;
     for(; i < l; i+=1){
-			pipe = pipe.then(callbacks[i]);
-    }
-		pipe.then(def.resolve.bind(def)).catch(e => console.error(e));
+			pipe = pipe.then(tasks[i]).catch(def.reject.bind(def));
+		}
+		pipe.then(def.resolve.bind(def));
     return def.promise;
-  }
-
+	}
 
   /**
    * parallel
-   * @param  {promise|deferred} callbacks
+   * @param  {promise|deferred} tasks
    */
-  static parallel(...callbacks){
-    let def = new Deferred();
-    let ary = [],
-    i = 0, l = callbacks.length;
-    for(; i < l; i+=1){
-      ary.push(callbacks[i]());
-    }
-    Promise.all(ary).then(def.resolve.bind(def)).catch(e => console.error(e));
-    return def.promise;
+  static parallel(...tasks){
+		return Promise.all(argsToArray(tasks).map(t => t()));
   }
-
 
   /**
    * delay

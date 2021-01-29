@@ -2,7 +2,7 @@
 /// The MIT License (MIT)
 /// Author Yoshihito Fujiwara
 /// Source https://bitbucket.org/yoshihitofujiwara/ampjs
-/// Copyright (c) 2012 Yoshihito Fujiwara
+/// Copyright (c) 2012 - 2021 Yoshihito Fujiwara
 
 import Events from "./Events";
 import * as utils from "../utils";
